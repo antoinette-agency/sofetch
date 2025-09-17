@@ -2,7 +2,7 @@ import soFetch, {SoFetchRequest} from "../../src/soFetch";
 import {BaseTestUrl} from "./baseTestUrl";
 
 describe("So Fetch interceptors", () => {
-    it('Can add a header to the request via a SoFetchPromise', done => {
+    it('Can add a header to the request via a SoFetchPromise beforeSend interceptor', done => {
         const promise = soFetch<{headers:Record<string,string>}>(`${BaseTestUrl}/interceptors/beforeSend`).beforeSend(req => {
             expect(req.url).toBe(`${BaseTestUrl}/interceptors/beforeSend`)
             expect(req.method).toBe('GET')
@@ -16,7 +16,7 @@ describe("So Fetch interceptors", () => {
             done()
         })
     })
-    it('Can add a header to the request via the SoFetchConfig', async () => {
+    it('Can add a header to the request via the SoFetchConfig beforeSend interceptor', async () => {
        soFetch.config.beforeSend((req:SoFetchRequest) => {
            expect(req.url).toBe(`${BaseTestUrl}/interceptors/beforeSend`)
            expect(req.method).toBe('GET')

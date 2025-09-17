@@ -5,6 +5,8 @@ export class SoFetchPromise<T> extends EventTarget {
     private readonly inner: Promise<T>;
     private errorHandlers:ErrorHandlerDict = {}
     private beforeSendHandlers:((request:SoFetchRequest) => SoFetchRequest | void)[] = []
+    private beforeFetchSendHandlers:((init:RequestInit) => RequestInit | void)[] = []
+    timeout: number = 30000
     then: Promise<T>["then"];
     catch: Promise<T>["catch"];
     finally: Promise<T>["finally"];
@@ -33,7 +35,13 @@ export class SoFetchPromise<T> extends EventTarget {
         this.beforeSendHandlers.push(handler)
         return this
     }
-    
+
+    beforeFetchSend(handler: (request: RequestInit) => RequestInit | void): SoFetchPromise<T> {
+        this.beforeFetchSendHandlers.push(handler)
+        return this
+    }
+
+
     catchHTTP(status: number, handler: (response: Response) => void): SoFetchPromise<T> {
         if (!this.errorHandlers[status]) {
             this.errorHandlers[status] = []
@@ -56,5 +64,17 @@ export class SoFetchPromise<T> extends EventTarget {
             request = h(request) || request
         })
         return request
+    }
+
+    transformInit(init:RequestInit):RequestInit {
+        this.beforeFetchSendHandlers.forEach(h => {
+            init = h(init) || init
+        })
+        return init
+    }
+
+    async setTimeout(ms: number) {
+        this.timeout = ms
+        return this
     }
 }

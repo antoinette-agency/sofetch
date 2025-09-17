@@ -1,5 +1,9 @@
 import { createServer } from "http";
 import {IncomingMessage} from "node:http";
+import Busboy from "busboy";
+import {readUploadedFiles} from "./readUploadedFiles";
+import {readFormData} from "./readFormData";
+import {sleep} from "../src/sleep";
 
 function getRequestBody(req:IncomingMessage):Promise<string> {
     return new Promise<string>((resolve, reject) => {
@@ -120,6 +124,26 @@ const routes:Route[] = [
             const url = new URL(`http://localhost:3000${req.url}`)
             const value = url.searchParams.get("api-key")
             return {paramName:"api-key", value}
+        }
+    },
+    {
+        url:"/files",
+        handler:async req => {
+            const {files} = await readFormData(req)
+            return files
+        }
+    },
+    {
+        url:"/files/filesAndData",
+        handler:async req => {
+            const response = await readFormData(req)
+            return response
+        }
+    },
+    {
+        url:"/timeouts/neverReturn",
+        handler:async req => {
+            await sleep(1000 * 60)
         }
     }
 ]

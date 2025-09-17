@@ -5,6 +5,8 @@ class SoFetchPromise extends EventTarget {
     inner;
     errorHandlers = {};
     beforeSendHandlers = [];
+    beforeFetchSendHandlers = [];
+    timeout = 30000;
     then;
     catch;
     finally;
@@ -27,6 +29,10 @@ class SoFetchPromise extends EventTarget {
         this.beforeSendHandlers.push(handler);
         return this;
     }
+    beforeFetchSend(handler) {
+        this.beforeFetchSendHandlers.push(handler);
+        return this;
+    }
     catchHTTP(status, handler) {
         if (!this.errorHandlers[status]) {
             this.errorHandlers[status] = [];
@@ -47,6 +53,16 @@ class SoFetchPromise extends EventTarget {
             request = h(request) || request;
         });
         return request;
+    }
+    transformInit(init) {
+        this.beforeFetchSendHandlers.forEach(h => {
+            init = h(init) || init;
+        });
+        return init;
+    }
+    async setTimeout(ms) {
+        this.timeout = ms;
+        return this;
     }
 }
 exports.SoFetchPromise = SoFetchPromise;

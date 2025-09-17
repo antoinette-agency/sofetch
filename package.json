@@ -16,8 +16,10 @@
   "author": "Antoinette and Ludd Industries",
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
+    "@types/busboy": "^1.5.4",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.4.0",
+    "busboy": "^1.6.0",
     "jest": "^30.1.3",
     "tree-kill": "^1.2.2",
     "ts-jest": "^29.4.1",

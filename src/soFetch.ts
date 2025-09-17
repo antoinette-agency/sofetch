@@ -1,23 +1,23 @@
 import {SoFetchConfig} from "./soFetchConfig";
 import {SoFetchPromise} from "./soFetchPromise";
 import {sleep} from "./sleep";
-
-export interface SoFetchOptions {
-    cacheSeconds?: number
-}
+import {UploadPayload} from "./uploadPayload";
+import {FilesPayload} from "./filesPayload";
+import {getPayloadType, normalisePayload} from "./getPayloadType";
+import {FileWithFieldName} from "./fileWithFieldName";
 
 export type SoFetchLike<TResponse = unknown> = {
     verbose: boolean;
     config: SoFetchConfig;
-    get<T>(url: string, body?: object, options?: SoFetchOptions):SoFetchPromise<T>;
-    post<T>(url: string, body?: object, options?: SoFetchOptions):SoFetchPromise<T>;
-    put<T>(url: string, body?: object, options?: SoFetchOptions):SoFetchPromise<T>;
-    patch<T>(url: string, body?: object, options?: SoFetchOptions):SoFetchPromise<T>;
-    delete<T>(url: string, body?: object, options?: SoFetchOptions):SoFetchPromise<T>;
-    <T extends TResponse = TResponse>(url: string, body?: object, options?: SoFetchOptions): SoFetchPromise<T>;
+    get<T>(url: string, body?: object):SoFetchPromise<T>;
+    post<T>(url: string, body?: object):SoFetchPromise<T>;
+    put<T>(url: string, body?: object):SoFetchPromise<T>;
+    patch<T>(url: string, body?: object):SoFetchPromise<T>;
+    delete<T>(url: string, body?: object):SoFetchPromise<T>;
+    <T extends TResponse = TResponse>(url: string, body?: object | File | File[], files?:File | File[]): SoFetchPromise<T>;
 };
 
-const makeRequestWrapper = <TResponse>(method:string, url:string, body:object | undefined) => {
+const makeRequestWrapper = <TResponse>(method:string, url:string, body?:UploadPayload, files?:FilesPayload) => {
     const promise = new SoFetchPromise<TResponse>((resolve, reject) => {
         (async () => {
             const headers = {}
@@ -26,8 +26,19 @@ const makeRequestWrapper = <TResponse>(method:string, url:string, body:object | 
             await sleep(0) //Allows the promise to be initialised
             request = promise.transformRequest(request)
             request = soFetch.config.transformRequest(request)
+            const {files, jsonPayload} = normalisePayload(request.body)
+            let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request)
+            init = promise.transformInit(init)
+
+
+            const response = await Promise.race([
+                fetch(request.url, init),
+                new Promise<Response>((_, reject) =>
+                    setTimeout(() => reject(new Error("SoFetch timed out")), promise.timeout)
+                )
+            ]);
             
-            const response = await makeRequest(request)
+            
             promise.dispatchEvent(new CustomEvent("onRequestSuccess", {detail:response}))
             if (!response.ok) {
                 const requestHandled = promise.handleHttpError(response)
@@ -52,15 +63,31 @@ export interface SoFetchRequest {
     headers:Record<string,string>
 }
 
-const makeRequest = async(request:SoFetchRequest) => {
+const makeJsonRequest = (request:SoFetchRequest):RequestInit => {
     const {url, method, body} = request
     request.headers['content-type'] = 'application/json'
-    return await fetch(url, {
+    const init = {
         body: body ? JSON.stringify(body) : undefined,
         headers: request.headers,
         method,
-        credentials: "include"
+        credentials: "include" as RequestCredentials
+    }
+    return init
+}
+
+const makeFilesRequest = (request:SoFetchRequest, files:FileWithFieldName[]):RequestInit => {
+    const {method, headers} = request
+    const formData = new FormData()
+    files.forEach(f => {
+        formData.append(f.fieldName, f.file, f.file.name)
     })
+    const init = {
+        body: formData,
+        headers,
+        method,
+        credentials: "include" as RequestCredentials
+    }
+    return init
 }
 
 const handleResponse = async (response:Response) => {
@@ -82,32 +109,30 @@ const handleResponse = async (response:Response) => {
     return responseObject
 }
 
-const soFetch = (<TResponse>(url: string, body?: object, options?: SoFetchOptions): SoFetchPromise<TResponse> => {
-    
+const soFetch = (<TResponse>(url: string, body?: object | File | File[], files?:File | File[]): SoFetchPromise<TResponse> => {
     return makeRequestWrapper<TResponse>(body ? "POST" : "GET", url,  body)
-
 }) as SoFetchLike;
 
 soFetch.verbose = false;
 soFetch.config = soFetch.config || new SoFetchConfig()
 
-soFetch.get = (url: string, body?: object, options?: SoFetchOptions) => {
+soFetch.get = (url: string, body?: object) => {
     return makeRequestWrapper("GET", url, body)
 }
 
-soFetch.post = (url: string, body?: object, options?: SoFetchOptions) => {
+soFetch.post = (url: string, body?: object) => {
     return makeRequestWrapper("POST", url, body)
 }
 
-soFetch.put = (url: string, body?: object, options?: SoFetchOptions) => {
+soFetch.put = (url: string, body?: object) => {
     return makeRequestWrapper("PUT", url, body)
 }
 
-soFetch.patch = (url: string, body?: object, options?: SoFetchOptions) => {
+soFetch.patch = (url: string, body?: object) => {
     return makeRequestWrapper("PATCH", url, body)
 }
 
-soFetch.delete = (url: string, body?: object, options?: SoFetchOptions) => {
+soFetch.delete = (url: string, body?: object) => {
     return makeRequestWrapper("DELETE", url, body)
 }
 

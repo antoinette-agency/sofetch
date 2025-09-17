@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const soFetchConfig_1 = require("./soFetchConfig");
 const soFetchPromise_1 = require("./soFetchPromise");
 const sleep_1 = require("./sleep");
-const makeRequestWrapper = (method, url, body) => {
+const getPayloadType_1 = require("./getPayloadType");
+const makeRequestWrapper = (method, url, body, files) => {
     const promise = new soFetchPromise_1.SoFetchPromise((resolve, reject) => {
         (async () => {
             const headers = {};
@@ -12,7 +13,13 @@ const makeRequestWrapper = (method, url, body) => {
             await (0, sleep_1.sleep)(0); //Allows the promise to be initialised
             request = promise.transformRequest(request);
             request = soFetch.config.transformRequest(request);
-            const response = await makeRequest(request);
+            const { files, jsonPayload } = (0, getPayloadType_1.normalisePayload)(request.body);
+            let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request);
+            init = promise.transformInit(init);
+            const response = await Promise.race([
+                fetch(request.url, init),
+                new Promise((_, reject) => setTimeout(() => reject(new Error("SoFetch timed out")), promise.timeout))
+            ]);
             promise.dispatchEvent(new CustomEvent("onRequestSuccess", { detail: response }));
             if (!response.ok) {
                 const requestHandled = promise.handleHttpError(response);
@@ -29,14 +36,30 @@ const makeRequestWrapper = (method, url, body) => {
     });
     return promise;
 };
-const makeRequest = async (request) => {
+const makeJsonRequest = (request) => {
     const { url, method, body } = request;
     request.headers['content-type'] = 'application/json';
-    return await fetch(url, {
+    const init = {
         body: body ? JSON.stringify(body) : undefined,
         headers: request.headers,
-        method
+        method,
+        credentials: "include"
+    };
+    return init;
+};
+const makeFilesRequest = (request, files) => {
+    const { method, headers } = request;
+    const formData = new FormData();
+    files.forEach(f => {
+        formData.append(f.fieldName, f.file, f.file.name);
     });
+    const init = {
+        body: formData,
+        headers,
+        method,
+        credentials: "include"
+    };
+    return init;
 };
 const handleResponse = async (response) => {
     if (response.status === 203) {
@@ -54,24 +77,24 @@ const handleResponse = async (response) => {
     }
     return responseObject;
 };
-const soFetch = ((url, body, options) => {
+const soFetch = ((url, body, files) => {
     return makeRequestWrapper(body ? "POST" : "GET", url, body);
 });
 soFetch.verbose = false;
 soFetch.config = soFetch.config || new soFetchConfig_1.SoFetchConfig();
-soFetch.get = (url, body, options) => {
+soFetch.get = (url, body) => {
     return makeRequestWrapper("GET", url, body);
 };
-soFetch.post = (url, body, options) => {
+soFetch.post = (url, body) => {
     return makeRequestWrapper("POST", url, body);
 };
-soFetch.put = (url, body, options) => {
+soFetch.put = (url, body) => {
     return makeRequestWrapper("PUT", url, body);
 };
-soFetch.patch = (url, body, options) => {
+soFetch.patch = (url, body) => {
     return makeRequestWrapper("PATCH", url, body);
 };
-soFetch.delete = (url, body, options) => {
+soFetch.delete = (url, body) => {
     return makeRequestWrapper("DELETE", url, body);
 };
 exports.default = soFetch;
