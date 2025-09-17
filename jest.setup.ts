@@ -33,8 +33,6 @@ export default async function globalSetup() {
     console.log("Waiting for server to be ready...");
     await waitForServer(SERVER_URL, SERVER_START_TIMEOUT);
 
-    console.log("Server is ready!");
-
     // Expose the process to globalThis so teardown can access it
     (globalThis as any).__TEST_SERVER__ = server;
 }
