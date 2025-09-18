@@ -1,5 +1,10 @@
-./src
-./dist
-./test
-./testServer
-./types
+node_modules
+
+.env
+.git
+
+src
+dist
+test
+testServer
+types
