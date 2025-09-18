@@ -1,5 +1,5 @@
-import {ErrorHandlerDict} from "./errorHandlerDict";
-import {SoFetchRequest} from "./soFetch";
+import {ErrorHandlerDict} from "./errorHandlerDict.ts";
+import {SoFetchRequest} from "./soFetch.ts";
 
 export class SoFetchPromise<T> extends EventTarget {
     private readonly inner: Promise<T>;

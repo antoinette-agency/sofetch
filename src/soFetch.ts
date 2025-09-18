@@ -1,10 +1,10 @@
-import {SoFetchConfig} from "./soFetchConfig";
-import {SoFetchPromise} from "./soFetchPromise";
-import {sleep} from "./sleep";
-import {UploadPayload} from "./uploadPayload";
-import {FilesPayload} from "./filesPayload";
-import {getPayloadType, normalisePayload} from "./getPayloadType";
-import {FileWithFieldName} from "./fileWithFieldName";
+import {SoFetchConfig} from "./soFetchConfig.ts";
+import {SoFetchPromise} from "./soFetchPromise.ts";
+import {sleep} from "./sleep.ts";
+import {UploadPayload} from "./uploadPayload.ts";
+import {FilesPayload} from "./filesPayload.ts";
+import {getPayloadType, normalisePayload} from "./getPayloadType.ts";
+import {FileWithFieldName} from "./fileWithFieldName.ts";
 
 export type SoFetchLike<TResponse = unknown> = {
     verbose: boolean;

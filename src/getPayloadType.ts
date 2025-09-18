@@ -1,5 +1,5 @@
-import {UploadPayload} from "./uploadPayload";
-import {FileWithFieldName} from "./fileWithFieldName";
+import {UploadPayload} from "./uploadPayload.ts";
+import {FileWithFieldName} from "./fileWithFieldName.ts";
 
 export const normalisePayload = (payload:UploadPayload):{files?:FileWithFieldName[], jsonPayload?:object} => {
     const {isDefined, isArray, isFiles} = getPayloadType(payload)
