@@ -1,7 +1,7 @@
 declare const soFetch: SoFetchLike;
 export default soFetch;
 
-declare class SoFetchConfig {
+export declare class SoFetchConfig {
     private errorHandlers;
     private beforeSendHandlers;
     constructor();
@@ -36,7 +36,7 @@ export declare interface SoFetchLike<TResponse = unknown> {
     <T extends TResponse = TResponse>(url: string, body?: object | File | File[], files?: File | File[]): SoFetchPromise<T>;
 }
 
-declare class SoFetchPromise<T> extends EventTarget {
+export declare class SoFetchPromise<T> extends EventTarget {
     private readonly inner;
     private errorHandlers;
     private beforeSendHandlers;
