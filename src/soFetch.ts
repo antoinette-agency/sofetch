@@ -30,15 +30,15 @@ const makeRequestWrapper = <TResponse>(method:string, url:string, body?:UploadPa
             let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request)
             init = promise.transformInit(init)
 
-
             const response = await Promise.race([
                 fetch(request.url, init),
                 new Promise<Response>((_, reject) =>
                     setTimeout(() => reject(new Error("SoFetch timed out")), promise.timeout)
                 )
             ]);
-            
-            
+            if (soFetch.verbose) {
+                console.info(`SoFetch: ${init.method} ${response.status} ${request.url}`)
+            }
             promise.dispatchEvent(new CustomEvent("onRequestSuccess", {detail:response}))
             if (!response.ok) {
                 const requestHandled = promise.handleHttpError(response)
