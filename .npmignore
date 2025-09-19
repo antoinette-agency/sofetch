@@ -8,3 +8,12 @@ dist
 test
 testServer
 types
+
+api-extractor.json
+esbuild.config.js
+jest.config.ts
+jest.setup.ts
+jest.teardown.ts
+tsConfig.json
+tsConfig.build.json
+tsdoc-metadata.json

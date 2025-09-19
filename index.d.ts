@@ -25,7 +25,7 @@ declare class SoFetchConfig {
     transformRequest(request: SoFetchRequest): SoFetchRequest;
 }
 
-declare type SoFetchLike<TResponse = unknown> = {
+export declare interface SoFetchLike<TResponse = unknown> {
     verbose: boolean;
     config: SoFetchConfig;
     get<T>(url: string, body?: object): SoFetchPromise<T>;
@@ -34,7 +34,7 @@ declare type SoFetchLike<TResponse = unknown> = {
     patch<T>(url: string, body?: object): SoFetchPromise<T>;
     delete<T>(url: string, body?: object): SoFetchPromise<T>;
     <T extends TResponse = TResponse>(url: string, body?: object | File | File[], files?: File | File[]): SoFetchPromise<T>;
-};
+}
 
 declare class SoFetchPromise<T> extends EventTarget {
     private readonly inner;

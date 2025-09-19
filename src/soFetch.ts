@@ -6,7 +6,7 @@ import {FilesPayload} from "./filesPayload.ts";
 import {getPayloadType, normalisePayload} from "./getPayloadType.ts";
 import {FileWithFieldName} from "./fileWithFieldName.ts";
 
-export type SoFetchLike<TResponse = unknown> = {
+export interface SoFetchLike<TResponse = unknown>  {
     verbose: boolean;
     config: SoFetchConfig;
     get<T>(url: string, body?: object):SoFetchPromise<T>;
