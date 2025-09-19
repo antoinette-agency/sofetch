@@ -14,6 +14,8 @@ esbuild.config.js
 jest.config.ts
 jest.setup.js
 jest.teardown.js
+jest.setup.ts
+jest.teardown.ts
 tsConfig.json
 tsConfig.build.json
 tsdoc-metadata.json
