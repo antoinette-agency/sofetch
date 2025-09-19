@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2022",               
+    "target": "ESNext",               
     "lib": ["ES2022", "DOM"],    
-    "module": "NodeNext",
+    "module": "ESNext",
     "outDir": "dist",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

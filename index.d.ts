@@ -4,7 +4,7 @@ export default soFetch;
 export declare class SoFetchConfig {
     private errorHandlers;
     private beforeSendHandlers;
-    constructor();
+    onRequestCompleteHandlers: ((response: Response) => void)[];
     baseUrl: string;
     addHTTPHandler(status: number, handler: (res: Response) => void): void;
     handleHttpError(response: Response): number;
@@ -23,6 +23,7 @@ export declare class SoFetchConfig {
     }): void;
     beforeSend(handler: (request: SoFetchRequest) => SoFetchRequest | void): void;
     transformRequest(request: SoFetchRequest): SoFetchRequest;
+    onRequestComplete(handler: (r: Response) => void): void;
 }
 
 export declare interface SoFetchLike<TResponse = unknown> {
@@ -34,6 +35,7 @@ export declare interface SoFetchLike<TResponse = unknown> {
     patch<T>(url: string, body?: object): SoFetchPromise<T>;
     delete<T>(url: string, body?: object): SoFetchPromise<T>;
     <T extends TResponse = TResponse>(url: string, body?: object | File | File[], files?: File | File[]): SoFetchPromise<T>;
+    instance(): SoFetchLike<TResponse>;
 }
 
 export declare class SoFetchPromise<T> extends EventTarget {

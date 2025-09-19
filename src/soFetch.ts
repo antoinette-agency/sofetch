@@ -15,6 +15,8 @@ export interface SoFetchLike<TResponse = unknown>  {
     patch<T>(url: string, body?: object):SoFetchPromise<T>;
     delete<T>(url: string, body?: object):SoFetchPromise<T>;
     <T extends TResponse = TResponse>(url: string, body?: object | File | File[], files?:File | File[]): SoFetchPromise<T>;
+
+    instance(): SoFetchLike<TResponse>;
 };
 
 const makeRequestWrapper = <TResponse>(method:string, url:string, body?:UploadPayload, files?:FilesPayload) => {
@@ -40,6 +42,9 @@ const makeRequestWrapper = <TResponse>(method:string, url:string, body?:UploadPa
                 console.info(`SoFetch: ${init.method} ${response.status} ${request.url}`)
             }
             promise.dispatchEvent(new CustomEvent("onRequestSuccess", {detail:response}))
+            soFetch.config.onRequestCompleteHandlers.forEach(h => {
+                h(response)
+            })
             if (!response.ok) {
                 const requestHandled = promise.handleHttpError(response)
                 const configHandled = soFetch.config.handleHttpError(response)
@@ -134,6 +139,30 @@ soFetch.patch = (url: string, body?: object) => {
 
 soFetch.delete = (url: string, body?: object) => {
     return makeRequestWrapper("DELETE", url, body)
+}
+
+soFetch.instance = () => {
+    const soFetchInstance = (<TResponse>(url: string, body?: object | File | File[], files?:File | File[]): SoFetchPromise<TResponse> => {
+        return makeRequestWrapper<TResponse>(body ? "POST" : "GET", url,  body)
+    }) as SoFetchLike;
+    soFetchInstance.get = (url: string, body?: object) => {
+        return makeRequestWrapper("GET", url, body)
+    }
+    soFetchInstance.post = (url: string, body?: object) => {
+        return makeRequestWrapper("POST", url, body)
+    }
+    soFetchInstance.put = (url: string, body?: object) => {
+        return makeRequestWrapper("PUT", url, body)
+    }
+    soFetchInstance.patch = (url: string, body?: object) => {
+        return makeRequestWrapper("PATCH", url, body)
+    }
+    soFetchInstance.delete = (url: string, body?: object) => {
+        return makeRequestWrapper("DELETE", url, body)
+    }
+    soFetchInstance.verbose = soFetch.verbose
+    soFetchInstance.config = structuredClone(soFetch.config)
+    return soFetchInstance
 }
 
 export default soFetch;

@@ -13,7 +13,13 @@ describe("Reading headers using SoFetch", () => {
             done()
         })
     })
-    test("It can add a response handler to read headers on all requests", () => {
-        soFetch<string>(`${BaseTestUrl}/reading-headers/get-header`)
+    test("It can add a response handler to read headers on all requests", async () => {
+        let onRequestSuccessFired = false
+        soFetch.config.onRequestComplete((r:Response) => {
+            expect(r.headers.get('sofetch-testheader')).toBe('A string value')
+            onRequestSuccessFired = true
+        })
+        await soFetch<string>(`${BaseTestUrl}/reading-headers/get-header`)
+        expect(onRequestSuccessFired).toBeTruthy()
     })
 })

@@ -4,8 +4,7 @@ import {SoFetchRequest} from "./soFetch.ts";
 export class SoFetchConfig {
     private errorHandlers:ErrorHandlerDict = {}
     private beforeSendHandlers:((request:SoFetchRequest) => SoFetchRequest | void)[] = []
-    constructor() {
-    }
+    onRequestCompleteHandlers:((response:Response) => void)[] = []
     baseUrl: string = ""
 
     addHTTPHandler(status: number, handler: (res: Response) => void) {
@@ -61,5 +60,9 @@ export class SoFetchConfig {
             request = h(request) || request
         })
         return request
+    }
+
+    onRequestComplete(handler: (r: Response) => void) {
+        this.onRequestCompleteHandlers.push(handler)
     }
 }

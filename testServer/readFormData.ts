@@ -1,6 +1,6 @@
 import { IncomingMessage } from "http";
 import Busboy, {FileInfo} from "busboy";
-import Stream = require("node:stream");
+import {Stream} from "node:stream";
 
 export interface UploadedFile {
     fieldName: string;
