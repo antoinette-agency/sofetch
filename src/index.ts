@@ -1,7 +1,7 @@
 import soFetch, { SoFetchRequest } from "./soFetch.ts";
-import {SoFetchLike} from "./soFetch.ts";
 import {SoFetchPromise} from "./soFetchPromise.ts";
 import {SoFetchConfig} from "./soFetchConfig.ts";
+import {SoFetchLike} from "./soFetchLike.ts";
 
 export default soFetch
 

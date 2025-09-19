@@ -1,10 +1,17 @@
+declare type ErrorHandlerDict = {
+    [key: number]: Array<(r: Response) => void>;
+};
+
 declare const soFetch: SoFetchLike;
 export default soFetch;
 
 export declare class SoFetchConfig {
-    private errorHandlers;
-    private beforeSendHandlers;
-    onRequestCompleteHandlers: ((response: Response) => void)[];
+    errorHandlers: ErrorHandlerDict;
+    beforeSendHandlers: ((request: SoFetchRequest) => SoFetchRequest | void)[];
+    onRequestCompleteHandlers: ((response: Response, requestData: {
+        duration: number;
+        method: string;
+    }) => void)[];
     baseUrl: string;
     addHTTPHandler(status: number, handler: (res: Response) => void): void;
     handleHttpError(response: Response): number;
@@ -23,18 +30,21 @@ export declare class SoFetchConfig {
     }): void;
     beforeSend(handler: (request: SoFetchRequest) => SoFetchRequest | void): void;
     transformRequest(request: SoFetchRequest): SoFetchRequest;
-    onRequestComplete(handler: (r: Response) => void): void;
+    onRequestComplete(handler: (r: Response, metaData: {
+        duration: number;
+        method: string;
+    }) => void): void;
 }
 
 export declare interface SoFetchLike<TResponse = unknown> {
     verbose: boolean;
     config: SoFetchConfig;
-    get<T>(url: string, body?: object): SoFetchPromise<T>;
-    post<T>(url: string, body?: object): SoFetchPromise<T>;
-    put<T>(url: string, body?: object): SoFetchPromise<T>;
-    patch<T>(url: string, body?: object): SoFetchPromise<T>;
-    delete<T>(url: string, body?: object): SoFetchPromise<T>;
-    <T extends TResponse = TResponse>(url: string, body?: object | File | File[], files?: File | File[]): SoFetchPromise<T>;
+    get<T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
+    post<T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
+    put<T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
+    patch<T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
+    delete<T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
+    <T extends TResponse = TResponse>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
     instance(): SoFetchLike<TResponse>;
 }
 

@@ -2,9 +2,9 @@ import {ErrorHandlerDict} from "./errorHandlerDict.ts";
 import {SoFetchRequest} from "./soFetch.ts";
 
 export class SoFetchConfig {
-    private errorHandlers:ErrorHandlerDict = {}
-    private beforeSendHandlers:((request:SoFetchRequest) => SoFetchRequest | void)[] = []
-    onRequestCompleteHandlers:((response:Response) => void)[] = []
+    errorHandlers:ErrorHandlerDict = {}
+    beforeSendHandlers:((request:SoFetchRequest) => SoFetchRequest | void)[] = []
+    onRequestCompleteHandlers:((response:Response, requestData:{duration:number, method:string}) => void)[] = []
     baseUrl: string = ""
 
     addHTTPHandler(status: number, handler: (res: Response) => void) {
@@ -62,7 +62,7 @@ export class SoFetchConfig {
         return request
     }
 
-    onRequestComplete(handler: (r: Response) => void) {
+    onRequestComplete(handler: (r: Response, metaData:{duration:number, method:string}) => void) {
         this.onRequestCompleteHandlers.push(handler)
     }
 }

@@ -15,7 +15,9 @@ describe("Reading headers using SoFetch", () => {
     })
     test("It can add a response handler to read headers on all requests", async () => {
         let onRequestSuccessFired = false
-        soFetch.config.onRequestComplete((r:Response) => {
+        soFetch.config.onRequestComplete((r:Response, {duration, method}) => {
+            expect(duration).toBeGreaterThan(0)
+            expect(method).toBe("GET")
             expect(r.headers.get('sofetch-testheader')).toBe('A string value')
             onRequestSuccessFired = true
         })
