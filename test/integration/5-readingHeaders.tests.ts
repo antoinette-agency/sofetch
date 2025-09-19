@@ -1,5 +1,5 @@
-import {BaseTestUrl} from "./baseTestUrl";
-import soFetch from "../../src/soFetch";
+import {BaseTestUrl} from "./baseTestUrl.ts";
+import soFetch from "../../src/soFetch.ts";
 
 describe("Reading headers using SoFetch", () => {
     test("It can retrieve the HTTP response headers", (done) => {

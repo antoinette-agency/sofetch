@@ -1,5 +1,5 @@
-import {BaseTestUrl} from "./baseTestUrl";
-import soFetch from "../../src/soFetch";
+import {BaseTestUrl} from "./baseTestUrl.ts";
+import soFetch from "../../src/soFetch.ts";
 
 describe("SoFetch timeout handling", () => {
     it("Times out gracefully for a request that never returns", async() => {
