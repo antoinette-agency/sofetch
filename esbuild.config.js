@@ -13,7 +13,7 @@ async function runBuilds() {
         platform: "node",
         target: ["node18"],
         format: "cjs",              // CommonJS
-        outfile: "dist/index.cjs",
+        outfile: "/index.cjs",
         minify: true,
         sourcemap: true,
     });
@@ -25,7 +25,7 @@ async function runBuilds() {
         platform: "node",
         target: ["node18"],
         format: "esm",              // ES Modules
-        outfile: "dist/index.mjs",
+        outfile: "/index.mjs",
         minify: true,
         sourcemap: true,
     });
@@ -37,7 +37,7 @@ async function runBuilds() {
         platform: "browser",
         target: ["es2017"],
         format: "esm",              // Browsers prefer ESM
-        outfile: "dist/index.browser.js",
+        outfile: "/index.browser.js",
         minify: true,
         sourcemap: true,
     });

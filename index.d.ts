@@ -56,7 +56,7 @@ export declare class SoFetchPromise<T> extends EventTarget {
     setTimeout(ms: number): Promise<this>;
 }
 
-declare interface SoFetchRequest {
+export declare interface SoFetchRequest {
     url: string;
     method: string;
     body: object | undefined;
