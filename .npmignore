@@ -12,8 +12,8 @@ types
 api-extractor.json
 esbuild.config.js
 jest.config.ts
-jest.setup.ts
-jest.teardown.ts
+jest.setup.js
+jest.teardown.js
 tsConfig.json
 tsConfig.build.json
 tsdoc-metadata.json
