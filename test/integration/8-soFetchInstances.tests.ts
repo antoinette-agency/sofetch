@@ -1,5 +1,6 @@
 import soFetch from "../../src/soFetch.ts";
 import SoFetchLike from "../../src/soFetch.ts";
+import {BaseTestUrl} from "./baseTestUrl";
 describe("Running multiple instances of SoFetch with different configs", () => {
     it('Can create an independent SoFetch instance', () => {
         soFetch.config.baseUrl = "https://my-initial-config.com"
@@ -21,5 +22,16 @@ describe("Running multiple instances of SoFetch with different configs", () => {
         
         expect(separateInstance.config.onRequestComplete).toBeDefined()
         expect(separateInstance.config.onRequestCompleteHandlers[0]).toBe(soFetch.config.onRequestCompleteHandlers[0])
+    })
+    it('Can fire onRequestCompleteHandlers on new instances', async () => {
+        const instance = soFetch.instance()
+        expect(instance.config).not.toBe(soFetch.config)
+        let onRequestCompleteFired = false
+        instance.config.onRequestComplete(r => {
+            onRequestCompleteFired = true
+        })
+        expect(instance.config.onRequestCompleteHandlers.length).toBeGreaterThan(0)
+        await instance(`${BaseTestUrl}/ping`)
+        expect(onRequestCompleteFired).toBeTruthy()
     })
 })
