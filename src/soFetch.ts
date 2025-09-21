@@ -6,15 +6,15 @@ import {normalisePayload} from "./getPayloadType.ts";
 import {FileWithFieldName} from "./fileWithFieldName.ts";
 import {SoFetchLike} from "./soFetchLike.ts";
 
-const makeRequestWrapper = <TResponse>(method:string, url:string, body?:UploadPayload) => {
+const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url:string, body?:UploadPayload) => {
     const promise = new SoFetchPromise<TResponse>((resolve, reject) => {
         (async () => {
             const headers = {}
             let request = {url, method, body, headers}
-            request.url = !soFetch.config.baseUrl || request.url.startsWith("http") ? request.url : `${soFetch.config.baseUrl}${request.url}`
+            request.url = !config.baseUrl || request.url.startsWith("http") ? request.url : `${config.baseUrl}${request.url}`
             await sleep(0) //Allows the promise to be initialised
             request = promise.transformRequest(request)
-            request = soFetch.config.transformRequest(request)
+            request = config.transformRequest(request)
             const {files, jsonPayload} = normalisePayload(request.body)
             let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request)
             init = promise.transformInit(init)
@@ -31,12 +31,12 @@ const makeRequestWrapper = <TResponse>(method:string, url:string, body?:UploadPa
                 console.info(`SoFetch: ${init.method} ${response.status} ${request.url}`)
             }
             promise.dispatchEvent(new CustomEvent("onRequestSuccess", {detail:response}))
-            soFetch.config.onRequestCompleteHandlers.forEach(h => {
+            config.onRequestCompleteHandlers.forEach(h => {
                 h(response, {duration, method:request.method})
             })
             if (!response.ok) {
                 const requestHandled = promise.handleHttpError(response)
-                const configHandled = soFetch.config.handleHttpError(response)
+                const configHandled = config.handleHttpError(response)
                 if (!requestHandled && !configHandled) {
                     throw new Error(`Received response ${response.status} from URL ${response.url}`, {cause: response})
                 }
@@ -104,56 +104,59 @@ const handleResponse = async (response:Response) => {
 }
 
 const soFetch = (<TResponse>(url: string, body?: object | File | File[]): SoFetchPromise<TResponse> => {
-    return makeRequestWrapper<TResponse>(body ? "POST" : "GET", url,  body)
+    return makeRequestWrapper<TResponse>(soFetch.config || new SoFetchConfig(), body ? "POST" : "GET", url,  body)
 }) as SoFetchLike;
 
 soFetch.verbose = false;
 soFetch.config = soFetch.config || new SoFetchConfig()
 
 soFetch.get = (url: string, body?: object) => {
-    return makeRequestWrapper("GET", url, body)
+    return makeRequestWrapper( soFetch.config,"GET", url, body)
 }
 
 soFetch.post = (url: string, body?: object) => {
-    return makeRequestWrapper("POST", url, body)
+    return makeRequestWrapper(soFetch.config,"POST", url, body)
 }
 
 soFetch.put = (url: string, body?: object) => {
-    return makeRequestWrapper("PUT", url, body)
+    return makeRequestWrapper(soFetch.config,"PUT", url, body)
 }
 
 soFetch.patch = (url: string, body?: object) => {
-    return makeRequestWrapper("PATCH", url, body)
+    return makeRequestWrapper(soFetch.config,"PATCH", url, body)
 }
 
 soFetch.delete = (url: string, body?: object) => {
-    return makeRequestWrapper("DELETE", url, body)
+    return makeRequestWrapper(soFetch.config,"DELETE", url, body)
 }
 
 soFetch.instance = () => {
+    
+    const config = new SoFetchConfig()
+    config.baseUrl = soFetch.config.baseUrl
+    config.beforeSendHandlers = [...soFetch.config.beforeSendHandlers]
+    config.onRequestCompleteHandlers = [...soFetch.config.onRequestCompleteHandlers]
+    
     const soFetchInstance = (<TResponse>(url: string, body?: object | File | File[]): SoFetchPromise<TResponse> => {
-        return makeRequestWrapper<TResponse>(body ? "POST" : "GET", url,  body)
+        return makeRequestWrapper<TResponse>(config,body ? "POST" : "GET", url,  body)
     }) as SoFetchLike;
     soFetchInstance.get = (url: string, body?: object | File | File[]) => {
-        return makeRequestWrapper("GET", url, body)
+        return makeRequestWrapper(config, "GET", url, body)
     }
     soFetchInstance.post = (url: string, body?: object | File | File[]) => {
-        return makeRequestWrapper("POST", url, body)
+        return makeRequestWrapper(config,"POST", url, body)
     }
     soFetchInstance.put = (url: string, body?: object | File | File[]) => {
-        return makeRequestWrapper("PUT", url, body)
+        return makeRequestWrapper(config,"PUT", url, body)
     }
     soFetchInstance.patch = (url: string, body?: object | File | File[]) => {
-        return makeRequestWrapper("PATCH", url, body)
+        return makeRequestWrapper(config,"PATCH", url, body)
     }
     soFetchInstance.delete = (url: string, body?: object | File | File[]) => {
-        return makeRequestWrapper("DELETE", url, body)
+        return makeRequestWrapper(config,"DELETE", url, body)
     }
     soFetchInstance.verbose = soFetch.verbose
-    soFetchInstance.config = new SoFetchConfig()
-    soFetchInstance.config.baseUrl = soFetch.config.baseUrl
-    soFetchInstance.config.beforeSendHandlers = [...soFetch.config.beforeSendHandlers]
-    soFetchInstance.config.onRequestCompleteHandlers = [...soFetch.config.onRequestCompleteHandlers]
+    soFetchInstance.config = config
     return soFetchInstance
 }
 
