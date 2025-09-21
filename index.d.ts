@@ -44,7 +44,7 @@ export declare interface SoFetchLike<TResponse = unknown> {
     put<T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
     patch<T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
     delete<T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
-    <T extends TResponse = TResponse>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
+    <T>(url: string, body?: object | File | File[]): SoFetchPromise<T>;
     instance(): SoFetchLike<TResponse>;
 }
 
