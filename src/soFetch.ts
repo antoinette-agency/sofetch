@@ -108,7 +108,7 @@ const soFetch = (<TResponse>(url: string, body?: object | File | File[]): SoFetc
 }) as SoFetchLike;
 
 soFetch.verbose = false;
-soFetch.config = soFetch.config || new SoFetchConfig()
+soFetch.config = new SoFetchConfig()
 
 soFetch.get = (url: string, body?: object) => {
     return makeRequestWrapper( soFetch.config,"GET", url, body)
