@@ -38,6 +38,7 @@ const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url
                 const requestHandled = promise.handleHttpError(response)
                 const configHandled = config.handleHttpError(response)
                 if (!requestHandled && !configHandled) {
+                    // @ts-ignore
                     throw new Error(`Received response ${response.status} from URL ${response.url}`, {cause: response})
                 }
             }

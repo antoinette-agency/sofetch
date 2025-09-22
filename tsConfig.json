@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ESNext",               
-    "lib": ["ES2022", "DOM"],    
-    "module": "ESNext",
+    "target": "ES2019",
+    "declaration": true,
+    "module": "CommonJS",
     "outDir": "dist",
     "moduleResolution": "node",
     "allowImportingTsExtensions": true,
