@@ -4,22 +4,24 @@
 
 ## Quickstart
 
+### GET Request:
+
 ```typescript
-
-//A GET request:
 const products = await soFetch<Product[]>("/api/products")
-
-//A POST request:
+```
+### POST Request:
+```typescript
 const newUser = {
     name:"Regina George", 
     email:"regina@massive-deal.com"
 }
 const successResponse = await soFetch<Success>("/api/users", newUser)
+```
 
-//Handling errors:
+### Handling errors:
+```typescript
 const unicorn = await soFetch<Unicorn>("/api/unicorns/1234")
     .catchHttp(404, (res:Response) => {
         alert("This unicorn can't be found")
     })
-
 ```
