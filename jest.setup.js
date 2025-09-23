@@ -22,7 +22,7 @@ async function waitForServer(url, timeout) {
 }
 async function globalSetup() {
     console.log("Starting test server...");
-    server = (0, child_process_1.spawn)("npx", ["tsx", "testServer\\testServer.ts"], {
+    server = (0, child_process_1.spawn)("npx", ["tsx", "testServer/testServer.ts"], {
         stdio: "inherit",
         shell: true,
     });

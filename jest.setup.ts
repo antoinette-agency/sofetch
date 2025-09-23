@@ -23,7 +23,7 @@ async function waitForServer(url: string, timeout: number) {
 export default async function globalSetup() {
     console.log("Starting test server...");
     server = spawn( "npx", 
-        ["tsx","testServer\\testServer.ts"], 
+        ["tsx","testServer/testServer.ts"], 
         { 
             stdio: "inherit",
             shell: true,
