@@ -5,14 +5,14 @@
 ### 🌱 Install
 
 ```
-npm i @antoinette-agency/so-fetch
+npm i @antoinette-agency/sofetch
 ```
 
 ### ⏩ Quickstart
 
 ```typescript
 
-import soFetch from "so-fetch";
+import soFetch from "@antoinette-agency/sofetch";
 
 //GET Request:
 const products = await soFetch<Product[]>("/api/products")
