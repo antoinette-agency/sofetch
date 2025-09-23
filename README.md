@@ -1,11 +1,11 @@
 <img alt="So Fetch Meme" src="https://github.com/user-attachments/assets/5a1968a0-d72a-42a3-8fb3-8a1de9b467c1" />
 
-## `soFetch` is a concise, elegant wrapper around the Fetch API
+## `soFetch` is a concise wrapper around the Fetch API
 
 ### 🌱 Install
 
 ```
-npm i ludd-industries/so-fetch
+npm i @antoinette-agency/so-fetch
 ```
 
 ### ⏩ Quickstart
