@@ -1,6 +1,6 @@
 {
   "name": "so-fetch",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "An opinionated Fetch wrapper for JSON APIs",
   "main": "./index.cjs",
   "module": "./index.mjs",
