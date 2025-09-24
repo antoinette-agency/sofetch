@@ -1,6 +1,6 @@
 {
   "name": "@antoinette-agency/sofetch",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An opinionated Fetch wrapper for JSON APIs",
   "main": "./index.cjs",
   "module": "./index.mjs",
