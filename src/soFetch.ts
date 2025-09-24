@@ -104,6 +104,12 @@ const handleResponse = async (response:Response) => {
     return responseObject
 }
 
+/**
+ * Makes an HTTP request to the specified URL. If no body is passed this will be a GET request.
+ * If a body is passed this will be a POST request.
+ * 
+ * To make PUT, PATCH and DELETE requests use soFetch.put(), soFetch.patch() and soFetch.delete() respectively.
+ */
 const soFetch = (<TResponse>(url: string, body?: object | File | File[]): SoFetchPromise<TResponse> => {
     return makeRequestWrapper<TResponse>(soFetch.config || new SoFetchConfig(), body ? "POST" : "GET", url,  body)
 }) as SoFetchLike;
