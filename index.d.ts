@@ -2,6 +2,12 @@ declare type ErrorHandlerDict = {
     [key: number]: Array<(r: Response) => void>;
 };
 
+/**
+ * Makes an HTTP request to the specified URL. If no body is passed this will be a GET request.
+ * If a body is passed this will be a POST request.
+ *
+ * To make PUT, PATCH and DELETE requests use soFetch.put(), soFetch.patch() and soFetch.delete() respectively.
+ */
 declare const soFetch: SoFetchLike;
 export default soFetch;
 
