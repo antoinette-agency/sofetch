@@ -38,8 +38,9 @@ export class SoFetchConfig {
 
     /**
      * Causes a basic authorization header to be sent with each request in this soFetch instance.
-     * @param username
-     * @param password
+     * @param auth - The authentication object containing the username and password.
+     * @param auth.username The username for basic authentication
+     * @param auth.password The password for basic authentication
      * @example
      *
      *    soFetch.config.setBasicAuthentication({username:"Chris Hodges", password:"Antoinette"})
@@ -71,8 +72,9 @@ export class SoFetchConfig {
 
     /**
      * Causes a header with the specified key and value to be sent with each request in this sofetch instance
-     * @param headerName
-     * @param value
+     * @param auth - The authentication object containing the header key and value.
+     * @param auth.headerName The header key
+     * @param auth.value The header value
      * @example
      * 
      *    soFetch.config.setHeaderApiKey({headerName:"some-api-key", value:"HEADER_ACCESS_TOKEN"})
@@ -87,8 +89,9 @@ export class SoFetchConfig {
 
     /**
      * Causes a query string entry with the specified key and value to be sent with each request in this sofetch instance
-     * @param paramName
-     * @param value
+     * @param auth - The authentication object containing the header key and value.
+     * @param auth.paramName The query string key
+     * @param auth.value The query string value
      * @example
      *    soFetch.config.setQueryStringApiKey({paramName:"api-key", value:"QUERY_STRING_ACCESS_TOKEN"})
      * @see For more examples see https://sofetch.antoinette.agency

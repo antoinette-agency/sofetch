@@ -1,8 +1,11 @@
-declare type ErrorHandlerDict = {
+/**
+ * A integer-keyed dictionary of arrays of response handlers.
+ */
+export declare type ErrorHandlerDict = {
     [key: number]: Array<(r: Response) => void>;
 };
 
-declare type FileWithFieldName = {
+export declare type FileWithFieldName = {
     file: File;
     fieldName: string;
 };
@@ -54,8 +57,9 @@ export declare class SoFetchConfig {
     catchHTTP(status: number, handler: (res: Response) => void): void;
     /**
      * Causes a basic authorization header to be sent with each request in this soFetch instance.
-     * @param username
-     * @param password
+     * @param auth - The authentication object containing the username and password.
+     * @param auth.username The username for basic authentication
+     * @param auth.password The password for basic authentication
      * @example
      *
      *    soFetch.config.setBasicAuthentication({username:"Chris Hodges", password:"Antoinette"})
@@ -78,8 +82,9 @@ export declare class SoFetchConfig {
     setBearerToken(token: string): void;
     /**
      * Causes a header with the specified key and value to be sent with each request in this sofetch instance
-     * @param headerName
-     * @param value
+     * @param auth - The authentication object containing the header key and value.
+     * @param auth.headerName The header key
+     * @param auth.value The header value
      * @example
      *
      *    soFetch.config.setHeaderApiKey({headerName:"some-api-key", value:"HEADER_ACCESS_TOKEN"})
@@ -92,8 +97,9 @@ export declare class SoFetchConfig {
     }): void;
     /**
      * Causes a query string entry with the specified key and value to be sent with each request in this sofetch instance
-     * @param paramName
-     * @param value
+     * @param auth - The authentication object containing the header key and value.
+     * @param auth.paramName The query string key
+     * @param auth.value The query string value
      * @example
      *    soFetch.config.setQueryStringApiKey({paramName:"api-key", value:"QUERY_STRING_ACCESS_TOKEN"})
      * @see For more examples see https://sofetch.antoinette.agency
@@ -146,7 +152,7 @@ export declare interface SoFetchLike<TResponse = unknown> {
 }
 
 /**
- * An awaitable promise-like class which additionally allows event and error handlers to be attached to the HTTP request
+ * An awaitable promise-like class that additionally allows event and error handlers to be attached to the HTTP request
  * @example
  *
  *    const unicorn = await soFetch("https://unicorns.com/1234")
@@ -155,7 +161,7 @@ export declare interface SoFetchLike<TResponse = unknown> {
  *       })
  *      .catchHttp(404, (res:Response) => {
  *         console.error("This unicorn can't be found")
- *     })
+ *       })
  */
 export declare class SoFetchPromise<T> {
     private readonly inner;
@@ -248,6 +254,11 @@ export declare interface SoFetchRequest {
     headers: Record<string, string>;
 }
 
-declare type UploadPayload = object | File | File[] | FileWithFieldName | FileWithFieldName[] | undefined;
+/**
+ * The payload supplied to a soFetch request. This can be undefined, or a plain serialisable object
+ * (for JSON requests) of a file, or array of files, or a FileWithFieldName or array of type FileWithFieldName
+ * (if your endpoint requires the files to have specified field names)
+ */
+export declare type UploadPayload = object | File | File[] | FileWithFieldName | FileWithFieldName[] | undefined;
 
 export { }
