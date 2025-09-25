@@ -28,10 +28,7 @@ describe("SoFetch explicit GET, POST, PUT, PATCH and DELETE methods",() => {
         expect(result).toStrictEqual({method:"PATCH", body})
     })
     it('Can send a DELETE request', async () => {
-        const body = {
-            key:"value"
-        }
-        const result = await soFetch.delete(`${BaseTestUrl}/return-method-and-body`, body)
-        expect(result).toStrictEqual({method:"DELETE", body})
+        const result = await soFetch.delete(`${BaseTestUrl}/return-method-and-body`)
+        expect(result).toStrictEqual({method:"DELETE"})
     })
 })

@@ -16,22 +16,22 @@ describe("SoFetch can handle bad requests", ()=>{
         })
     })
     it('Will catch errors if specified in the config', (done) => {
-        soFetch.config.addHTTPHandler(400, (res:Response) => {
+        soFetch.config.catchHTTP(400, (res:Response) => {
             expect(res.url).toBe("http://localhost:3000/handling-errors")
             done()
         })
         soFetch("http://localhost:3000/handling-errors")
     })
-    it ('Passes error response to handlers in the request before those in the config', (done) => {
+    it('Will not execute a config handler if superseded by a request handler', async () => {
         let requestHandlerFired = false
-        soFetch.config.addHTTPHandler(400, (res:Response) => {
-            expect(requestHandlerFired).toBeTruthy()
-            expect(res.url).toBe("http://localhost:3000/handling-errors")
-            done()
+        let configHandlerFired = false
+        soFetch.config.catchHTTP(400, (res:Response) => {
+            configHandlerFired = true
         })
-        soFetch("http://localhost:3000/handling-errors").catchHTTP(400, (res:Response) => {
+        await soFetch("http://localhost:3000/handling-errors").catchHTTP(400, (res:Response) => {
             requestHandlerFired = true
-            expect(res.url).toBe("http://localhost:3000/handling-errors")
         })
+        expect(requestHandlerFired).toBeTruthy()
+        expect(configHandlerFired).toBeFalsy()
     })
 })
