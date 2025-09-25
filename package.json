@@ -18,7 +18,7 @@
   "scripts": {
     "test-server": "npx tsx testServer/testServer.ts",
     "build": "node esbuild.config.js",
-    "test": "npm run build && tsc && jest",
+    "test": "npx typedoc src/index.ts && npm run build && tsc && jest",
     "build:node": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js",
     "build:browser": "esbuild src/index.ts --bundle --platform=browser --target=es2017 --outfile=dist/index.browser.js"
   },
@@ -41,6 +41,7 @@
     "tree-kill": "^1.2.2",
     "ts-jest": "^29.4.1",
     "tsx": "^4.20.5",
+    "typedoc": "^0.28.13",
     "typescript": "^5.9.2"
   }
 }
