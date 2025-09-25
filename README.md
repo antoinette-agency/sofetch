@@ -17,7 +17,7 @@ import soFetch from "@antoinette-agency/sofetch";
 //GET Request:
 const products = await soFetch<Product[]>("/api/products")
 
-//POST Rquest:
+//POST Request:
 const newUser = {
     name:"Regina George", 
     email:"regina@massive-deal.com"

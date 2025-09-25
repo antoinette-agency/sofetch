@@ -5,38 +5,54 @@ import {UploadPayload} from "./uploadPayload.ts";
 import {normalisePayload} from "./getPayloadType.ts";
 import {FileWithFieldName} from "./fileWithFieldName.ts";
 import {SoFetchLike} from "./soFetchLike.ts";
+import {handleHttpErrors} from "./handleHttpErrors.ts";
+import {transformRequest} from "./transformRequest.ts";
+import {handleBeforeFetchSend} from "./handleBeforeFetchSend.ts";
+
+/** @import { UploadPayload } from "./uploadPayload.ts" */
+
+const convertArgsToFetchInit = async <T>({url, method, body, config, promise}: { url: string, method:string, body?:UploadPayload, config:SoFetchConfig, promise:SoFetchPromise<T> }) => {
+    const headers = {}
+    let request = {url, method, body, headers}
+    request.url = !config.baseUrl || request.url.startsWith("http") ? request.url : `${config.baseUrl}${request.url}`
+    request = transformRequest(request, promise.beforeSendHandlers)
+    request = transformRequest(request, config.beforeSendHandlers)
+    const {files, jsonPayload} = normalisePayload(request.body)
+    let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request)
+    init = handleBeforeFetchSend(init, promise.beforeFetchSendHandlers)
+    return {init, finalUrl:request.url}
+}
 
 const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url:string, body?:UploadPayload) => {
     const promise = new SoFetchPromise<TResponse>((resolve, reject) => {
         (async () => {
-            const headers = {}
-            let request = {url, method, body, headers}
-            request.url = !config.baseUrl || request.url.startsWith("http") ? request.url : `${config.baseUrl}${request.url}`
             await sleep(0) //Allows the promise to be initialised
-            request = promise.transformRequest(request)
-            request = config.transformRequest(request)
-            const {files, jsonPayload} = normalisePayload(request.body)
-            let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request)
-            init = promise.transformInit(init)
+            const {finalUrl, init} = await convertArgsToFetchInit({url, method, body, config, promise})
             
             const startTime = new Date().getTime()
             const response = await Promise.race([
-                fetch(request.url, init),
+                fetch(finalUrl, init),
                 new Promise<Response>((_, reject) =>
                     setTimeout(() => reject(new Error("SoFetch timed out")), promise.timeout)
                 )
             ]);
             const duration = new Date().getTime() - startTime
+            
             if (soFetch.verbose) {
-                console.info(`SoFetch: ${init.method} ${response.status} ${request.url}`)
+                console.info(`SoFetch: ${method} ${response.status} ${finalUrl}`)
             }
-            promise.dispatchEvent(new CustomEvent("onRequestSuccess", {detail:response}))
+            promise.onRequestCompleteHandlers.forEach(h => {
+                h(response, {duration, method:init.method || ""})
+            })
             config.onRequestCompleteHandlers.forEach(h => {
-                h(response, {duration, method:request.method})
+                h(response, {duration, method:init.method || ""})
             })
             if (!response.ok) {
-                const requestHandled = promise.handleHttpError(response)
-                const configHandled = config.handleHttpError(response)
+                const requestHandled = handleHttpErrors(response, promise.errorHandlers)
+                let configHandled = false
+                if (!requestHandled) {
+                    configHandled = handleHttpErrors(response, config.errorHandlers)
+                }
                 if (!requestHandled && !configHandled) {
                     // @ts-ignore
                     throw new Error(`Received response ${response.status} from URL ${response.url}`, {cause: response})
@@ -105,38 +121,121 @@ const handleResponse = async (response:Response) => {
 }
 
 /**
- * Makes an HTTP request to the specified URL. If no body is passed this will be a GET request.
- * If a body is passed this will be a POST request.
+ * Makes an HTTP request to the specified URL.
+ * @template TResponse The primitive or object type you're expecting from the server
+ * @param {string} url An absolute or relative URL
+ * @param {UploadPayload} [body] If absent soFetch will make a GET request. If present soFetch will make a POST request. To make PUT, PATCH, DELETE requests see soFetch.put, soFetch.patch, soFetch.delete
+ * @returns An awaitable SoFetchPromise which resolves to type TResponse
+ * @example
  * 
- * To make PUT, PATCH and DELETE requests use soFetch.put(), soFetch.patch() and soFetch.delete() respectively.
+ *    const products = await soFetch<Product[]>("/api/products")
+ *    
+ * @see For more examples see https://sofetch.antoinette.agency
  */
-const soFetch = (<TResponse>(url: string, body?: object | File | File[]): SoFetchPromise<TResponse> => {
+const soFetch = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
     return makeRequestWrapper<TResponse>(soFetch.config || new SoFetchConfig(), body ? "POST" : "GET", url,  body)
 }) as SoFetchLike;
 
 soFetch.verbose = false;
+
+
 soFetch.config = new SoFetchConfig()
 
-soFetch.get = (url: string, body?: object) => {
-    return makeRequestWrapper( soFetch.config,"GET", url, body)
+/**
+ * Makes a GET request to the specified URL
+ * @template TResponse The primitive or object type you're expecting from the server
+ * @param url An absolute or relative URL
+ * @returns An awaitable SoFetchPromise which resolves to type TResponse
+ * @example
+ *
+ *    const products = await soFetch.get<Product[]>("/api/products")
+ *
+ * @see For more examples see https://sofetch.antoinette.agency
+ */
+soFetch.get = (url: string) => {
+    return makeRequestWrapper( soFetch.config,"GET", url)
 }
 
+/**
+ * Makes a POST request to the specified URL
+ * @template TResponse The primitive or object type you're expecting from the server
+ * @param url An absolute or relative URL
+ * @param {UploadPayload} [body] The body of the request
+ * @returns An awaitable SoFetchPromise which resolves to type TResponse
+ * @example
+ *
+ *    const newUser = {
+ *        name:"Regina George",
+ *        email:"regina@massive-deal.com"
+ *    }
+ *    const successResponse = await soFetch.post<Success>("/api/users", newUser)
+ *
+ * @see For more examples see https://sofetch.antoinette.agency
+ */
 soFetch.post = (url: string, body?: object) => {
     return makeRequestWrapper(soFetch.config,"POST", url, body)
 }
 
+/**
+ * Makes a PUT request to the specified URL
+ * @template TResponse The primitive or object type you're expecting from the server
+ * @param url An absolute or relative URL
+ * @param {UploadPayload} [body] The body of the request
+ * @returns An awaitable SoFetchPromise which resolves to type TResponse
+ * @example
+ *
+ *    const upsertUser = {
+ *        name:"Regina George",
+ *        email:"regina@massive-deal.com"
+ *    }
+ *    const successResponse = await soFetch.put<Success>("/api/users/1234", upsertUser)
+ *
+ * @see For more examples see https://sofetch.antoinette.agency
+ */
 soFetch.put = (url: string, body?: object) => {
     return makeRequestWrapper(soFetch.config,"PUT", url, body)
 }
 
+/**
+ * Makes a PATCH request to the specified URL
+ * @template TResponse The primitive or object type you're expecting from the server
+ * @param url An absolute or relative URL
+ * @param {UploadPayload} [body] The body of the request
+ * @returns An awaitable SoFetchPromise which resolves to type TResponse
+ * @example
+ *
+ *    const updateUserEmail = {
+ *        email:"regina@massive-deal.com"
+ *    }
+ *    const successResponse = await soFetch.patch<Success>("/api/users/1234", updateUserEmail)
+ *
+ * @see For more examples see https://sofetch.antoinette.agency
+ */
 soFetch.patch = (url: string, body?: object) => {
     return makeRequestWrapper(soFetch.config,"PATCH", url, body)
 }
 
-soFetch.delete = (url: string, body?: object) => {
-    return makeRequestWrapper(soFetch.config,"DELETE", url, body)
+/**
+ * Makes a DELETE request to the specified URL
+ * @template TResponse The primitive or object type you're expecting from the server
+ * @param url An absolute or relative URL
+ * @returns An awaitable SoFetchPromise which resolves to type TResponse
+ * @example
+ *
+ *    await soFetch.delete("/api/users/1234")
+ *
+ * @see For more examples see https://sofetch.antoinette.agency
+ */
+soFetch.delete = (url: string) => {
+    return makeRequestWrapper(soFetch.config,"DELETE", url)
 }
 
+/**
+ * Returns an independent instance of soFetch configured as per the original. The baseUrl and event handlers
+ * will be copied over.
+ * 
+ * @see For examples see https://sofetch.antoinette.agency
+ */
 soFetch.instance = () => {
     
     const config = new SoFetchConfig()
@@ -144,22 +243,22 @@ soFetch.instance = () => {
     config.beforeSendHandlers = [...soFetch.config.beforeSendHandlers]
     config.onRequestCompleteHandlers = [...soFetch.config.onRequestCompleteHandlers]
     
-    const soFetchInstance = (<TResponse>(url: string, body?: object | File | File[]): SoFetchPromise<TResponse> => {
+    const soFetchInstance = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
         return makeRequestWrapper<TResponse>(config,body ? "POST" : "GET", url,  body)
     }) as SoFetchLike;
-    soFetchInstance.get = (url: string, body?: object | File | File[]) => {
+    soFetchInstance.get = (url: string, body?: UploadPayload) => {
         return makeRequestWrapper(config, "GET", url, body)
     }
-    soFetchInstance.post = (url: string, body?: object | File | File[]) => {
+    soFetchInstance.post = (url: string, body?: UploadPayload) => {
         return makeRequestWrapper(config,"POST", url, body)
     }
-    soFetchInstance.put = (url: string, body?: object | File | File[]) => {
+    soFetchInstance.put = (url: string, body?: UploadPayload) => {
         return makeRequestWrapper(config,"PUT", url, body)
     }
-    soFetchInstance.patch = (url: string, body?: object | File | File[]) => {
+    soFetchInstance.patch = (url: string, body?: UploadPayload) => {
         return makeRequestWrapper(config,"PATCH", url, body)
     }
-    soFetchInstance.delete = (url: string, body?: object | File | File[]) => {
+    soFetchInstance.delete = (url: string, body?: UploadPayload) => {
         return makeRequestWrapper(config,"DELETE", url, body)
     }
     soFetchInstance.verbose = soFetch.verbose
