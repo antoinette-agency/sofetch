@@ -18,7 +18,7 @@
   "scripts": {
     "test-server": "npx tsx testServer/testServer.ts",
     "build": "node esbuild.config.js",
-    "test": "npx typedoc src/index.ts --router kind-dir && npm run build && tsc && jest",
+    "test": "npx typedoc src/index.ts --router kind-dir --json docs.json && npm run build && tsc && jest",
     "build:node": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js",
     "build:browser": "esbuild src/index.ts --bundle --platform=browser --target=es2017 --outfile=dist/index.browser.js"
   },

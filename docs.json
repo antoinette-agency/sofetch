@@ -1,0 +1,5743 @@
+{
+	"schemaVersion": "2.0",
+	"id": 0,
+	"name": "@antoinette-agency/sofetch",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 91,
+			"name": "SoFetchConfig",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Configures all requests for a specific soFetch instance"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 92,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"signatures": [
+						{
+							"id": 93,
+							"name": "SoFetchConfig",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 91,
+								"name": "SoFetchConfig",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 107,
+					"name": "baseUrl",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The base URL for all HTTP requests in the instance. If absent this is assumed to be the current base url.\r\nIf running in Node relative requests without a baseUrl will throw an error."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 16,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L16"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 95,
+					"name": "beforeSendHandlers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 9,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L9"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 96,
+								"name": "__type",
+								"variant": "declaration",
+								"kind": 65536,
+								"flags": {},
+								"sources": [
+									{
+										"fileName": "src/soFetchConfig.ts",
+										"line": 9,
+										"character": 25,
+										"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L9"
+									}
+								],
+								"signatures": [
+									{
+										"id": 97,
+										"name": "__type",
+										"variant": "signature",
+										"kind": 4096,
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "src/soFetchConfig.ts",
+												"line": 9,
+												"character": 25,
+												"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L9"
+											}
+										],
+										"parameters": [
+											{
+												"id": 98,
+												"name": "request",
+												"variant": "param",
+												"kind": 32768,
+												"flags": {},
+												"type": {
+													"type": "reference",
+													"target": 187,
+													"name": "SoFetchRequest",
+													"package": "@antoinette-agency/sofetch"
+												}
+											}
+										],
+										"type": {
+											"type": "union",
+											"types": [
+												{
+													"type": "intrinsic",
+													"name": "void"
+												},
+												{
+													"type": "reference",
+													"target": 187,
+													"name": "SoFetchRequest",
+													"package": "@antoinette-agency/sofetch"
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"id": 94,
+					"name": "errorHandlers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 8,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L8"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 193,
+						"name": "ErrorHandlerDict",
+						"package": "@antoinette-agency/sofetch"
+					},
+					"defaultValue": "{}"
+				},
+				{
+					"id": 99,
+					"name": "onRequestCompleteHandlers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 10,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L10"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 100,
+								"name": "__type",
+								"variant": "declaration",
+								"kind": 65536,
+								"flags": {},
+								"sources": [
+									{
+										"fileName": "src/soFetchConfig.ts",
+										"line": 10,
+										"character": 32,
+										"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L10"
+									}
+								],
+								"signatures": [
+									{
+										"id": 101,
+										"name": "__type",
+										"variant": "signature",
+										"kind": 4096,
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "src/soFetchConfig.ts",
+												"line": 10,
+												"character": 32,
+												"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L10"
+											}
+										],
+										"parameters": [
+											{
+												"id": 102,
+												"name": "response",
+												"variant": "param",
+												"kind": 32768,
+												"flags": {},
+												"type": {
+													"type": "reference",
+													"target": {
+														"packageName": "typescript",
+														"packagePath": "lib/lib.dom.d.ts",
+														"qualifiedName": "Response"
+													},
+													"name": "Response",
+													"package": "typescript"
+												}
+											},
+											{
+												"id": 103,
+												"name": "requestData",
+												"variant": "param",
+												"kind": 32768,
+												"flags": {},
+												"type": {
+													"type": "reflection",
+													"declaration": {
+														"id": 104,
+														"name": "__type",
+														"variant": "declaration",
+														"kind": 65536,
+														"flags": {},
+														"children": [
+															{
+																"id": 105,
+																"name": "duration",
+																"variant": "declaration",
+																"kind": 1024,
+																"flags": {},
+																"sources": [
+																	{
+																		"fileName": "src/soFetchConfig.ts",
+																		"line": 10,
+																		"character": 68,
+																		"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L10"
+																	}
+																],
+																"type": {
+																	"type": "intrinsic",
+																	"name": "number"
+																}
+															},
+															{
+																"id": 106,
+																"name": "method",
+																"variant": "declaration",
+																"kind": 1024,
+																"flags": {},
+																"sources": [
+																	{
+																		"fileName": "src/soFetchConfig.ts",
+																		"line": 10,
+																		"character": 86,
+																		"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L10"
+																	}
+																],
+																"type": {
+																	"type": "intrinsic",
+																	"name": "string"
+																}
+															}
+														],
+														"groups": [
+															{
+																"title": "Properties",
+																"children": [
+																	105,
+																	106
+																]
+															}
+														],
+														"sources": [
+															{
+																"fileName": "src/soFetchConfig.ts",
+																"line": 10,
+																"character": 66,
+																"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L10"
+															}
+														]
+													}
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "void"
+										}
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"id": 136,
+					"name": "beforeSend",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 119,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L119"
+						}
+					],
+					"signatures": [
+						{
+							"id": 137,
+							"name": "beforeSend",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a handler which will be executed before every request. beforeSend handlers on the config\r\nwill be executed before request-specific handlers"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nsoFetch.config.beforeSend((req:SoFetchRequest) => {\r\n      console.info(`Sending ${req.method} request to URL ${req.url}`\r\n   })\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 119,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L119"
+								}
+							],
+							"parameters": [
+								{
+									"id": 138,
+									"name": "handler",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 139,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchConfig.ts",
+													"line": 119,
+													"character": 24,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L119"
+												}
+											],
+											"signatures": [
+												{
+													"id": 140,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 119,
+															"character": 24,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L119"
+														}
+													],
+													"parameters": [
+														{
+															"id": 141,
+															"name": "request",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": 187,
+																"name": "SoFetchRequest",
+																"package": "@antoinette-agency/sofetch"
+															}
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "void"
+															},
+															{
+																"type": "reference",
+																"target": 187,
+																"name": "SoFetchRequest",
+																"package": "@antoinette-agency/sofetch"
+															}
+														]
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 108,
+					"name": "catchHTTP",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 32,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L32"
+						}
+					],
+					"signatures": [
+						{
+							"id": 109,
+							"name": "catchHTTP",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a handler which will be executed on receipt from the server of the specified status code.\r\nMultiple handlers will be executed in the order in which they are added. If a request has it's\r\nown handler(s) for a given status code the corresponding handlers in the config will not be executed."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nsoFetchConfig.catchHttp(404, (res:Response) => {\r\n        alert(\"This object can't be found\")\r\n    })\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 32,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L32"
+								}
+							],
+							"parameters": [
+								{
+									"id": 110,
+									"name": "status",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "An HTTP status code"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 111,
+									"name": "handler",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "A function which accepts a Fetch Response as an argument"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 112,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchConfig.ts",
+													"line": 32,
+													"character": 39,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L32"
+												}
+											],
+											"signatures": [
+												{
+													"id": 113,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 32,
+															"character": 39,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L32"
+														}
+													],
+													"parameters": [
+														{
+															"id": 114,
+															"name": "res",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"packageName": "typescript",
+																	"packagePath": "lib/lib.dom.d.ts",
+																	"qualifiedName": "Response"
+																},
+																"name": "Response",
+																"package": "typescript"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 142,
+					"name": "onRequestComplete",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 135,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L135"
+						}
+					],
+					"signatures": [
+						{
+							"id": 143,
+							"name": "onRequestComplete",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a handler which will be executed after every request. Handlers will fire regardless of whether\r\nthe response status code indicated an error"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nsoFetch.config.onRequestComplete((r: Response) => {\r\n      console.info(`Response received from ${r.url} with status ${r.status}`\r\n   })\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 135,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L135"
+								}
+							],
+							"parameters": [
+								{
+									"id": 144,
+									"name": "handler",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 145,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchConfig.ts",
+													"line": 135,
+													"character": 31,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L135"
+												}
+											],
+											"signatures": [
+												{
+													"id": 146,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 135,
+															"character": 31,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L135"
+														}
+													],
+													"parameters": [
+														{
+															"id": 147,
+															"name": "r",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"packageName": "typescript",
+																	"packagePath": "lib/lib.dom.d.ts",
+																	"qualifiedName": "Response"
+																},
+																"name": "Response",
+																"package": "typescript"
+															}
+														},
+														{
+															"id": 148,
+															"name": "metaData",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 149,
+																	"name": "__type",
+																	"variant": "declaration",
+																	"kind": 65536,
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 150,
+																			"name": "duration",
+																			"variant": "declaration",
+																			"kind": 1024,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/soFetchConfig.ts",
+																					"line": 135,
+																					"character": 57,
+																					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L135"
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "number"
+																			}
+																		},
+																		{
+																			"id": 151,
+																			"name": "method",
+																			"variant": "declaration",
+																			"kind": 1024,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/soFetchConfig.ts",
+																					"line": 135,
+																					"character": 75,
+																					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L135"
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			}
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Properties",
+																			"children": [
+																				150,
+																				151
+																			]
+																		}
+																	],
+																	"sources": [
+																		{
+																			"fileName": "src/soFetchConfig.ts",
+																			"line": 135,
+																			"character": 55,
+																			"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L135"
+																		}
+																	]
+																}
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 115,
+					"name": "setBasicAuthentication",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 50,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L50"
+						}
+					],
+					"signatures": [
+						{
+							"id": 116,
+							"name": "setBasicAuthentication",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Causes a basic authorization header to be sent with each request in this soFetch instance."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nsoFetch.config.setBasicAuthentication({username:\"Chris Hodges\", password:\"Antoinette\"})\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 50,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L50"
+								}
+							],
+							"parameters": [
+								{
+									"id": 117,
+									"name": "auth",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The authentication object containing the username and password."
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 118,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 119,
+													"name": "password",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The password for basic authentication"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 50,
+															"character": 51,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L50"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 120,
+													"name": "username",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The username for basic authentication"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 50,
+															"character": 69,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L50"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														119,
+														120
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/soFetchConfig.ts",
+													"line": 50,
+													"character": 49,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L50"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 121,
+					"name": "setBearerToken",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 67,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L67"
+						}
+					],
+					"signatures": [
+						{
+							"id": 122,
+							"name": "setBearerToken",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Causes a bearer token authorization token to be sent with each request in this sofetch instance"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nsoFetch.config.setBearerToken(\"SOME_ACCESS_TOKEN\")\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 67,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L67"
+								}
+							],
+							"parameters": [
+								{
+									"id": 123,
+									"name": "token",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 124,
+					"name": "setHeaderApiKey",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 84,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L84"
+						}
+					],
+					"signatures": [
+						{
+							"id": 125,
+							"name": "setHeaderApiKey",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Causes a header with the specified key and value to be sent with each request in this sofetch instance"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nsoFetch.config.setHeaderApiKey({headerName:\"some-api-key\", value:\"HEADER_ACCESS_TOKEN\"})\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 84,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L84"
+								}
+							],
+							"parameters": [
+								{
+									"id": 126,
+									"name": "auth",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The authentication object containing the header key and value."
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 127,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 128,
+													"name": "headerName",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The header key"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 84,
+															"character": 43,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L84"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 129,
+													"name": "value",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The header value"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 84,
+															"character": 63,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L84"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														128,
+														129
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/soFetchConfig.ts",
+													"line": 84,
+													"character": 41,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L84"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 130,
+					"name": "setQueryStringApiKey",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 99,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L99"
+						}
+					],
+					"signatures": [
+						{
+							"id": 131,
+							"name": "setQueryStringApiKey",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Causes a query string entry with the specified key and value to be sent with each request in this sofetch instance"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nsoFetch.config.setQueryStringApiKey({paramName:\"api-key\", value:\"QUERY_STRING_ACCESS_TOKEN\"})\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 99,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L99"
+								}
+							],
+							"parameters": [
+								{
+									"id": 132,
+									"name": "auth",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The authentication object containing the header key and value."
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 133,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 134,
+													"name": "paramName",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The query string key"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 99,
+															"character": 47,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L99"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 135,
+													"name": "value",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The query string value"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 99,
+															"character": 66,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L99"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														134,
+														135
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/soFetchConfig.ts",
+													"line": 99,
+													"character": 45,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L99"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						92
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						107,
+						95,
+						94,
+						99
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						136,
+						108,
+						142,
+						115,
+						121,
+						124,
+						130
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/soFetchConfig.ts",
+					"line": 7,
+					"character": 13,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchConfig.ts#L7"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "SoFetchPromise",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "An awaitable promise-like class that additionally allows event and error handlers to be attached to the HTTP request"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```ts\nconst unicorn = await soFetch(\"https://unicorns.com/1234\")\r\n     .beforeSend(req:SoFetchRequest) => {\r\n         console.info(`Finding my unicorn at ${req.url}`)\r\n      })\r\n     .catchHttp(404, (res:Response) => {\r\n        console.error(\"This unicorn can't be found\")\r\n      })\n```"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 2,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 27,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L27"
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "SoFetchPromise",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchPromise.ts",
+									"line": 27,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L27"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 4,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 5,
+									"name": "executor",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 6,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchPromise.ts",
+													"line": 27,
+													"character": 26,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L27"
+												}
+											],
+											"signatures": [
+												{
+													"id": 7,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchPromise.ts",
+															"line": 27,
+															"character": 26,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L27"
+														}
+													],
+													"parameters": [
+														{
+															"id": 8,
+															"name": "resolve",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 9,
+																	"name": "__type",
+																	"variant": "declaration",
+																	"kind": 65536,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/soFetchPromise.ts",
+																			"line": 28,
+																			"character": 17,
+																			"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L28"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 10,
+																			"name": "__type",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/soFetchPromise.ts",
+																					"line": 28,
+																					"character": 17,
+																					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L28"
+																				}
+																			],
+																			"parameters": [
+																				{
+																					"id": 11,
+																					"name": "value",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "union",
+																						"types": [
+																							{
+																								"type": "reference",
+																								"target": 4,
+																								"name": "T",
+																								"package": "@antoinette-agency/sofetch",
+																								"qualifiedName": "SoFetchPromise.T",
+																								"refersToTypeParameter": true
+																							},
+																							{
+																								"type": "reference",
+																								"target": {
+																									"packageName": "typescript",
+																									"packagePath": "lib/lib.es5.d.ts",
+																									"qualifiedName": "PromiseLike"
+																								},
+																								"typeArguments": [
+																									{
+																										"type": "reference",
+																										"target": 4,
+																										"name": "T",
+																										"package": "@antoinette-agency/sofetch",
+																										"qualifiedName": "SoFetchPromise.T",
+																										"refersToTypeParameter": true
+																									}
+																								],
+																								"name": "PromiseLike",
+																								"package": "typescript"
+																							}
+																						]
+																					}
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																}
+															}
+														},
+														{
+															"id": 12,
+															"name": "reject",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 13,
+																	"name": "__type",
+																	"variant": "declaration",
+																	"kind": 65536,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/soFetchPromise.ts",
+																			"line": 29,
+																			"character": 16,
+																			"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L29"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 14,
+																			"name": "__type",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/soFetchPromise.ts",
+																					"line": 29,
+																					"character": 16,
+																					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L29"
+																				}
+																			],
+																			"parameters": [
+																				{
+																					"id": 15,
+																					"name": "reason",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {
+																						"isOptional": true
+																					},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "any"
+																					}
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																}
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 4,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"qualifiedName": "SoFetchPromise.T",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 22,
+					"name": "beforeFetchSendHandlers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 20,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L20"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 23,
+								"name": "__type",
+								"variant": "declaration",
+								"kind": 65536,
+								"flags": {},
+								"sources": [
+									{
+										"fileName": "src/soFetchPromise.ts",
+										"line": 20,
+										"character": 29,
+										"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L20"
+									}
+								],
+								"signatures": [
+									{
+										"id": 24,
+										"name": "__type",
+										"variant": "signature",
+										"kind": 4096,
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "src/soFetchPromise.ts",
+												"line": 20,
+												"character": 29,
+												"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L20"
+											}
+										],
+										"parameters": [
+											{
+												"id": 25,
+												"name": "init",
+												"variant": "param",
+												"kind": 32768,
+												"flags": {},
+												"type": {
+													"type": "reference",
+													"target": {
+														"packageName": "typescript",
+														"packagePath": "lib/lib.dom.d.ts",
+														"qualifiedName": "RequestInit"
+													},
+													"name": "RequestInit",
+													"package": "typescript"
+												}
+											}
+										],
+										"type": {
+											"type": "union",
+											"types": [
+												{
+													"type": "intrinsic",
+													"name": "void"
+												},
+												{
+													"type": "reference",
+													"target": {
+														"packageName": "typescript",
+														"packagePath": "lib/lib.dom.d.ts",
+														"qualifiedName": "RequestInit"
+													},
+													"name": "RequestInit",
+													"package": "typescript"
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"id": 18,
+					"name": "beforeSendHandlers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 19,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L19"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 19,
+								"name": "__type",
+								"variant": "declaration",
+								"kind": 65536,
+								"flags": {},
+								"sources": [
+									{
+										"fileName": "src/soFetchPromise.ts",
+										"line": 19,
+										"character": 24,
+										"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L19"
+									}
+								],
+								"signatures": [
+									{
+										"id": 20,
+										"name": "__type",
+										"variant": "signature",
+										"kind": 4096,
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "src/soFetchPromise.ts",
+												"line": 19,
+												"character": 24,
+												"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L19"
+											}
+										],
+										"parameters": [
+											{
+												"id": 21,
+												"name": "request",
+												"variant": "param",
+												"kind": 32768,
+												"flags": {},
+												"type": {
+													"type": "reference",
+													"target": 187,
+													"name": "SoFetchRequest",
+													"package": "@antoinette-agency/sofetch"
+												}
+											}
+										],
+										"type": {
+											"type": "union",
+											"types": [
+												{
+													"type": "intrinsic",
+													"name": "void"
+												},
+												{
+													"type": "reference",
+													"target": 187,
+													"name": "SoFetchRequest",
+													"package": "@antoinette-agency/sofetch"
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"id": 48,
+					"name": "catch",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 24,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L24"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 49,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 1564,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 50,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Attaches a callback for only the rejection of the Promise."
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "A Promise for the completion of the callback."
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"line": 1564,
+											"character": 4
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 51,
+											"name": "TResult",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"default": {
+												"type": "intrinsic",
+												"name": "never"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 52,
+											"name": "onrejected",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The callback to execute when the Promise is rejected."
+													}
+												]
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": null
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 53,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																	"line": 1564,
+																	"character": 41
+																}
+															],
+															"signatures": [
+																{
+																	"id": 54,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																			"line": 1564,
+																			"character": 41
+																		}
+																	],
+																	"parameters": [
+																		{
+																			"id": 55,
+																			"name": "reason",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "any"
+																			}
+																		}
+																	],
+																	"type": {
+																		"type": "union",
+																		"types": [
+																			{
+																				"type": "reference",
+																				"target": 51,
+																				"name": "TResult",
+																				"package": "typescript",
+																				"refersToTypeParameter": true
+																			},
+																			{
+																				"type": "reference",
+																				"target": {
+																					"packageName": "typescript",
+																					"packagePath": "lib/lib.es5.d.ts",
+																					"qualifiedName": "PromiseLike"
+																				},
+																				"typeArguments": [
+																					{
+																						"type": "reference",
+																						"target": 51,
+																						"name": "TResult",
+																						"package": "typescript",
+																						"refersToTypeParameter": true
+																					}
+																				],
+																				"name": "PromiseLike",
+																				"package": "typescript"
+																			}
+																		]
+																	}
+																}
+															]
+														}
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "reference",
+														"target": 4,
+														"name": "T",
+														"package": "@antoinette-agency/sofetch",
+														"qualifiedName": "SoFetchPromise.T",
+														"refersToTypeParameter": true
+													},
+													{
+														"type": "reference",
+														"target": 51,
+														"name": "TResult",
+														"package": "typescript",
+														"refersToTypeParameter": true
+													}
+												]
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 17,
+					"name": "errorHandlers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 18,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L18"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 193,
+						"name": "ErrorHandlerDict",
+						"package": "@antoinette-agency/sofetch"
+					},
+					"defaultValue": "{}"
+				},
+				{
+					"id": 56,
+					"name": "finally",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 25,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L25"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 57,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.es2018.promise.d.ts",
+									"line": 29,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 58,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The\nresolved value cannot be modified from the callback."
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "A Promise for the completion of the callback."
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/typescript/lib/lib.es2018.promise.d.ts",
+											"line": 29,
+											"character": 4
+										}
+									],
+									"parameters": [
+										{
+											"id": 59,
+											"name": "onfinally",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The callback to execute when the Promise is settled (fulfilled or rejected)."
+													}
+												]
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": null
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 60,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "node_modules/typescript/lib/lib.es2018.promise.d.ts",
+																	"line": 29,
+																	"character": 25
+																}
+															],
+															"signatures": [
+																{
+																	"id": 61,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "node_modules/typescript/lib/lib.es2018.promise.d.ts",
+																			"line": 29,
+																			"character": 25
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "void"
+																	}
+																}
+															]
+														}
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 4,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"qualifiedName": "SoFetchPromise.T",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 26,
+					"name": "onRequestCompleteHandlers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 21,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L21"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 27,
+								"name": "__type",
+								"variant": "declaration",
+								"kind": 65536,
+								"flags": {},
+								"sources": [
+									{
+										"fileName": "src/soFetchPromise.ts",
+										"line": 21,
+										"character": 32,
+										"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L21"
+									}
+								],
+								"signatures": [
+									{
+										"id": 28,
+										"name": "__type",
+										"variant": "signature",
+										"kind": 4096,
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "src/soFetchPromise.ts",
+												"line": 21,
+												"character": 32,
+												"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L21"
+											}
+										],
+										"parameters": [
+											{
+												"id": 29,
+												"name": "response",
+												"variant": "param",
+												"kind": 32768,
+												"flags": {},
+												"type": {
+													"type": "reference",
+													"target": {
+														"packageName": "typescript",
+														"packagePath": "lib/lib.dom.d.ts",
+														"qualifiedName": "Response"
+													},
+													"name": "Response",
+													"package": "typescript"
+												}
+											},
+											{
+												"id": 30,
+												"name": "requestData",
+												"variant": "param",
+												"kind": 32768,
+												"flags": {},
+												"type": {
+													"type": "reflection",
+													"declaration": {
+														"id": 31,
+														"name": "__type",
+														"variant": "declaration",
+														"kind": 65536,
+														"flags": {},
+														"children": [
+															{
+																"id": 32,
+																"name": "duration",
+																"variant": "declaration",
+																"kind": 1024,
+																"flags": {},
+																"sources": [
+																	{
+																		"fileName": "src/soFetchPromise.ts",
+																		"line": 21,
+																		"character": 68,
+																		"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L21"
+																	}
+																],
+																"type": {
+																	"type": "intrinsic",
+																	"name": "number"
+																}
+															},
+															{
+																"id": 33,
+																"name": "method",
+																"variant": "declaration",
+																"kind": 1024,
+																"flags": {},
+																"sources": [
+																	{
+																		"fileName": "src/soFetchPromise.ts",
+																		"line": 21,
+																		"character": 86,
+																		"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L21"
+																	}
+																],
+																"type": {
+																	"type": "intrinsic",
+																	"name": "string"
+																}
+															}
+														],
+														"groups": [
+															{
+																"title": "Properties",
+																"children": [
+																	32,
+																	33
+																]
+															}
+														],
+														"sources": [
+															{
+																"fileName": "src/soFetchPromise.ts",
+																"line": 21,
+																"character": 66,
+																"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L21"
+															}
+														]
+													}
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "void"
+										}
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"id": 35,
+					"name": "then",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 23,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L23"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 36,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 1557,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 37,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Attaches callbacks for the resolution and/or rejection of the Promise."
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "A Promise for the completion of which ever callback is executed."
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"line": 1557,
+											"character": 4
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 38,
+											"name": "TResult1",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"default": {
+												"type": "reference",
+												"target": 4,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"qualifiedName": "SoFetchPromise.T",
+												"refersToTypeParameter": true
+											}
+										},
+										{
+											"id": 39,
+											"name": "TResult2",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"default": {
+												"type": "intrinsic",
+												"name": "never"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 40,
+											"name": "onfulfilled",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The callback to execute when the Promise is resolved."
+													}
+												]
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": null
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 41,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																	"line": 1557,
+																	"character": 56
+																}
+															],
+															"signatures": [
+																{
+																	"id": 42,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																			"line": 1557,
+																			"character": 56
+																		}
+																	],
+																	"parameters": [
+																		{
+																			"id": 43,
+																			"name": "value",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {},
+																			"type": {
+																				"type": "reference",
+																				"target": 4,
+																				"name": "T",
+																				"package": "@antoinette-agency/sofetch",
+																				"qualifiedName": "SoFetchPromise.T",
+																				"refersToTypeParameter": true
+																			}
+																		}
+																	],
+																	"type": {
+																		"type": "union",
+																		"types": [
+																			{
+																				"type": "reference",
+																				"target": 38,
+																				"name": "TResult1",
+																				"package": "typescript",
+																				"refersToTypeParameter": true
+																			},
+																			{
+																				"type": "reference",
+																				"target": {
+																					"packageName": "typescript",
+																					"packagePath": "lib/lib.es5.d.ts",
+																					"qualifiedName": "PromiseLike"
+																				},
+																				"typeArguments": [
+																					{
+																						"type": "reference",
+																						"target": 38,
+																						"name": "TResult1",
+																						"package": "typescript",
+																						"refersToTypeParameter": true
+																					}
+																				],
+																				"name": "PromiseLike",
+																				"package": "typescript"
+																			}
+																		]
+																	}
+																}
+															]
+														}
+													}
+												]
+											}
+										},
+										{
+											"id": 44,
+											"name": "onrejected",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The callback to execute when the Promise is rejected."
+													}
+												]
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": null
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 45,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																	"line": 1557,
+																	"character": 138
+																}
+															],
+															"signatures": [
+																{
+																	"id": 46,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																			"line": 1557,
+																			"character": 138
+																		}
+																	],
+																	"parameters": [
+																		{
+																			"id": 47,
+																			"name": "reason",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "any"
+																			}
+																		}
+																	],
+																	"type": {
+																		"type": "union",
+																		"types": [
+																			{
+																				"type": "reference",
+																				"target": 39,
+																				"name": "TResult2",
+																				"package": "typescript",
+																				"refersToTypeParameter": true
+																			},
+																			{
+																				"type": "reference",
+																				"target": {
+																					"packageName": "typescript",
+																					"packagePath": "lib/lib.es5.d.ts",
+																					"qualifiedName": "PromiseLike"
+																				},
+																				"typeArguments": [
+																					{
+																						"type": "reference",
+																						"target": 39,
+																						"name": "TResult2",
+																						"package": "typescript",
+																						"refersToTypeParameter": true
+																					}
+																				],
+																				"name": "PromiseLike",
+																				"package": "typescript"
+																			}
+																		]
+																	}
+																}
+															]
+														}
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "reference",
+														"target": 38,
+														"name": "TResult1",
+														"package": "typescript",
+														"refersToTypeParameter": true
+													},
+													{
+														"type": "reference",
+														"target": 39,
+														"name": "TResult2",
+														"package": "typescript",
+														"refersToTypeParameter": true
+													}
+												]
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 34,
+					"name": "timeout",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 22,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L22"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": "30000"
+				},
+				{
+					"id": 74,
+					"name": "beforeFetchSend",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 96,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L96"
+						}
+					],
+					"signatures": [
+						{
+							"id": 75,
+							"name": "beforeFetchSend",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a handler which allows developers to modify the low-level fetch RequestInit object before the HTTP\r\nrequest is made. These handlers execute after beforeSend handlers. This is useful for one-off\r\noccasions when you need to access some aspect of the low-level Fetch API. If you're using this a lot\r\nit might make more sense for you to use the Fetch API directly."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n//An example of how you might send both files and data in a single request.\r\n   const postFilesAndDataResponse = await soFetch.put<PostFilesAndDataResponse>(\"https://example.com/files-and-data\").beforeFetchSend((init:RequestInit) => {\r\n      const formData = new FormData()\r\n      formData.append(\"company\", \"Antoinette\");\r\n      formData.append(\"file1\", myFile)\r\n      const headers = {...init.headers} as Record<string,string>\r\n      if (headers[\"content-type\"]) {\r\n          delete headers[\"content-type\"]\r\n      }\r\n      init.body = formData\r\n      init.headers = headers\r\n      return init\r\n   })\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchPromise.ts",
+									"line": 96,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L96"
+								}
+							],
+							"parameters": [
+								{
+									"id": 76,
+									"name": "handler",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 77,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchPromise.ts",
+													"line": 96,
+													"character": 29,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L96"
+												}
+											],
+											"signatures": [
+												{
+													"id": 78,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchPromise.ts",
+															"line": 96,
+															"character": 29,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L96"
+														}
+													],
+													"parameters": [
+														{
+															"id": 79,
+															"name": "request",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"packageName": "typescript",
+																	"packagePath": "lib/lib.dom.d.ts",
+																	"qualifiedName": "RequestInit"
+																},
+																"name": "RequestInit",
+																"package": "typescript"
+															}
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "void"
+															},
+															{
+																"type": "reference",
+																"target": {
+																	"packageName": "typescript",
+																	"packagePath": "lib/lib.dom.d.ts",
+																	"qualifiedName": "RequestInit"
+																},
+																"name": "RequestInit",
+																"package": "typescript"
+															}
+														]
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 4,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"qualifiedName": "SoFetchPromise.T",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 68,
+					"name": "beforeSend",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 67,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L67"
+						}
+					],
+					"signatures": [
+						{
+							"id": 69,
+							"name": "beforeSend",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a handler which will be executed before this HTTP request is sent. BeforeSend handlers added here will\r\nwill be executed after those added on the config."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nawait soFetch(\"https://example.com/users\",{name:\"Sarah\", id:1234}).beforeSend((req:SoFetchRequest) => {\r\n      console.info(`Sending ${req.method} request to URL ${req.url}`\r\n   })\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchPromise.ts",
+									"line": 67,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L67"
+								}
+							],
+							"parameters": [
+								{
+									"id": 70,
+									"name": "handler",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 71,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchPromise.ts",
+													"line": 67,
+													"character": 24,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L67"
+												}
+											],
+											"signatures": [
+												{
+													"id": 72,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchPromise.ts",
+															"line": 67,
+															"character": 24,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L67"
+														}
+													],
+													"parameters": [
+														{
+															"id": 73,
+															"name": "request",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": 187,
+																"name": "SoFetchRequest",
+																"package": "@antoinette-agency/sofetch"
+															}
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "void"
+															},
+															{
+																"type": "reference",
+																"target": 187,
+																"name": "SoFetchRequest",
+																"package": "@antoinette-agency/sofetch"
+															}
+														]
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 4,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"qualifiedName": "SoFetchPromise.T",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 80,
+					"name": "catchHTTP",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 116,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L116"
+						}
+					],
+					"signatures": [
+						{
+							"id": 81,
+							"name": "catchHTTP",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a handler which will be executed on receipt from the server of the specified status code.\r\nMultiple handlers will be executed in the order in which they are added. If you add an error handler\r\nfor a specific status code here any corresponding handlers in the config will not be executed."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nconst unicorn = await soFetch(\"https://unicorns.com/1234\")\r\n     .catchHttp(404, (res:Response) => {\r\n        console.error(\"This unicorn can't be found\")\r\n    })\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchPromise.ts",
+									"line": 116,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L116"
+								}
+							],
+							"parameters": [
+								{
+									"id": 82,
+									"name": "status",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "An HTTP status code"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 83,
+									"name": "handler",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "A function which accepts a Fetch Response as an argument"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 84,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchPromise.ts",
+													"line": 116,
+													"character": 39,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L116"
+												}
+											],
+											"signatures": [
+												{
+													"id": 85,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchPromise.ts",
+															"line": 116,
+															"character": 39,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L116"
+														}
+													],
+													"parameters": [
+														{
+															"id": 86,
+															"name": "response",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"packageName": "typescript",
+																	"packagePath": "lib/lib.dom.d.ts",
+																	"qualifiedName": "Response"
+																},
+																"name": "Response",
+																"package": "typescript"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 4,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"qualifiedName": "SoFetchPromise.T",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 62,
+					"name": "onRequestComplete",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 50,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L50"
+						}
+					],
+					"signatures": [
+						{
+							"id": 63,
+							"name": "onRequestComplete",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a handler which will be executed after this HTTP request is completed. Handlers will fire regardless of whether\r\nthe response status code indicated an error"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\nawait soFetch(\"https://example.com/users\",{name:\"Sarah\", id:1234}).onRequestComplete((r: Response) => {\r\n      console.info(`Response received from ${r.url} with status ${r.status}`\r\n   })\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": "For more examples see https://sofetch.antoinette.agency"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchPromise.ts",
+									"line": 50,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L50"
+								}
+							],
+							"parameters": [
+								{
+									"id": 64,
+									"name": "handler",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 65,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchPromise.ts",
+													"line": 50,
+													"character": 31,
+													"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L50"
+												}
+											],
+											"signatures": [
+												{
+													"id": 66,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchPromise.ts",
+															"line": 50,
+															"character": 31,
+															"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L50"
+														}
+													],
+													"parameters": [
+														{
+															"id": 67,
+															"name": "response",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"packageName": "typescript",
+																	"packagePath": "lib/lib.dom.d.ts",
+																	"qualifiedName": "Response"
+																},
+																"name": "Response",
+																"package": "typescript"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 4,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"qualifiedName": "SoFetchPromise.T",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 87,
+					"name": "setTimeout",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchPromise.ts",
+							"line": 124,
+							"character": 10,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L124"
+						}
+					],
+					"signatures": [
+						{
+							"id": 88,
+							"name": "setTimeout",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchPromise.ts",
+									"line": 124,
+									"character": 10,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L124"
+								}
+							],
+							"parameters": [
+								{
+									"id": 89,
+									"name": "ms",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 1,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 4,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"qualifiedName": "SoFetchPromise.T",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "SoFetchPromise",
+										"package": "@antoinette-agency/sofetch"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						2
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						22,
+						18,
+						48,
+						17,
+						56,
+						26,
+						35,
+						34
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						74,
+						68,
+						80,
+						62,
+						87
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/soFetchPromise.ts",
+					"line": 16,
+					"character": 13,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchPromise.ts#L16"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 90,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				}
+			]
+		},
+		{
+			"id": 152,
+			"name": "SoFetchLike",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 154,
+					"name": "config",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 8,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L8"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 91,
+						"name": "SoFetchConfig",
+						"package": "@antoinette-agency/sofetch"
+					}
+				},
+				{
+					"id": 153,
+					"name": "verbose",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 7,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L7"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 175,
+					"name": "delete",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 18,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L18"
+						}
+					],
+					"signatures": [
+						{
+							"id": 176,
+							"name": "delete",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 18,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L18"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 177,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 178,
+									"name": "url",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 179,
+									"name": "body",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 192,
+										"name": "UploadPayload",
+										"package": "@antoinette-agency/sofetch"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 177,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 155,
+					"name": "get",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 10,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L10"
+						}
+					],
+					"signatures": [
+						{
+							"id": 156,
+							"name": "get",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 10,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L10"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 157,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 158,
+									"name": "url",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 159,
+									"name": "body",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 192,
+										"name": "UploadPayload",
+										"package": "@antoinette-agency/sofetch"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 157,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 180,
+					"name": "instance",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 22,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L22"
+						}
+					],
+					"signatures": [
+						{
+							"id": 181,
+							"name": "instance",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 22,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L22"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 152,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 182,
+										"name": "TResponse",
+										"package": "@antoinette-agency/sofetch",
+										"qualifiedName": "SoFetchLike.TResponse",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchLike",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 170,
+					"name": "patch",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 16,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L16"
+						}
+					],
+					"signatures": [
+						{
+							"id": 171,
+							"name": "patch",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 16,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L16"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 172,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 173,
+									"name": "url",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 174,
+									"name": "body",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 192,
+										"name": "UploadPayload",
+										"package": "@antoinette-agency/sofetch"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 172,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 160,
+					"name": "post",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 12,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L12"
+						}
+					],
+					"signatures": [
+						{
+							"id": 161,
+							"name": "post",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 12,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L12"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 162,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 163,
+									"name": "url",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 164,
+									"name": "body",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 192,
+										"name": "UploadPayload",
+										"package": "@antoinette-agency/sofetch"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 162,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 165,
+					"name": "put",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 14,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L14"
+						}
+					],
+					"signatures": [
+						{
+							"id": 166,
+							"name": "put",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 14,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L14"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 167,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 168,
+									"name": "url",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 169,
+									"name": "body",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 192,
+										"name": "UploadPayload",
+										"package": "@antoinette-agency/sofetch"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 167,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						154,
+						153
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						175,
+						155,
+						180,
+						170,
+						160,
+						165
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/soFetchLike.ts",
+					"line": 6,
+					"character": 17,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L6"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 182,
+					"name": "TResponse",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"signatures": [
+				{
+					"id": 183,
+					"name": "SoFetchLike",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 20,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetchLike.ts#L20"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 184,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 185,
+							"name": "url",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 186,
+							"name": "body",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"type": {
+								"type": "reference",
+								"target": 192,
+								"name": "UploadPayload",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 1,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 184,
+								"name": "T",
+								"package": "@antoinette-agency/sofetch",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "SoFetchPromise",
+						"package": "@antoinette-agency/sofetch"
+					}
+				}
+			]
+		},
+		{
+			"id": 187,
+			"name": "SoFetchRequest",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 190,
+					"name": "body",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetch.ts",
+							"line": 73,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetch.ts#L73"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "object"
+							}
+						]
+					}
+				},
+				{
+					"id": 191,
+					"name": "headers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetch.ts",
+							"line": 74,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetch.ts#L74"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.es5.d.ts",
+							"qualifiedName": "Record"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						],
+						"name": "Record",
+						"package": "typescript"
+					}
+				},
+				{
+					"id": 189,
+					"name": "method",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetch.ts",
+							"line": 72,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetch.ts#L72"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 188,
+					"name": "url",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetch.ts",
+							"line": 71,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetch.ts#L71"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						190,
+						191,
+						189,
+						188
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/soFetch.ts",
+					"line": 70,
+					"character": 17,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetch.ts#L70"
+				}
+			]
+		},
+		{
+			"id": 193,
+			"name": "ErrorHandlerDict",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A integer-keyed dictionary of arrays of response handlers."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/errorHandlerDict.ts",
+					"line": 4,
+					"character": 12,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/errorHandlerDict.ts#L4"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 194,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/errorHandlerDict.ts",
+							"line": 4,
+							"character": 31,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/errorHandlerDict.ts#L4"
+						}
+					],
+					"indexSignatures": [
+						{
+							"id": 195,
+							"name": "__index",
+							"variant": "signature",
+							"kind": 8192,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/errorHandlerDict.ts",
+									"line": 5,
+									"character": 4,
+									"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/errorHandlerDict.ts#L5"
+								}
+							],
+							"parameters": [
+								{
+									"id": 196,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reflection",
+									"declaration": {
+										"id": 197,
+										"name": "__type",
+										"variant": "declaration",
+										"kind": 65536,
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "src/errorHandlerDict.ts",
+												"line": 5,
+												"character": 25,
+												"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/errorHandlerDict.ts#L5"
+											}
+										],
+										"signatures": [
+											{
+												"id": 198,
+												"name": "__type",
+												"variant": "signature",
+												"kind": 4096,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "src/errorHandlerDict.ts",
+														"line": 5,
+														"character": 25,
+														"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/errorHandlerDict.ts#L5"
+													}
+												],
+												"parameters": [
+													{
+														"id": 199,
+														"name": "r",
+														"variant": "param",
+														"kind": 32768,
+														"flags": {},
+														"type": {
+															"type": "reference",
+															"target": {
+																"packageName": "typescript",
+																"packagePath": "lib/lib.dom.d.ts",
+																"qualifiedName": "Response"
+															},
+															"name": "Response",
+															"package": "typescript"
+														}
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "void"
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 200,
+			"name": "FileWithFieldName",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"children": [
+				{
+					"id": 203,
+					"name": "fieldName",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/fileWithFieldName.ts",
+							"line": 3,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/fileWithFieldName.ts#L3"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 202,
+					"name": "file",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/fileWithFieldName.ts",
+							"line": 2,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/fileWithFieldName.ts#L2"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.dom.d.ts",
+							"qualifiedName": "File"
+						},
+						"name": "File",
+						"package": "typescript"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						203,
+						202
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/fileWithFieldName.ts",
+					"line": 1,
+					"character": 12,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/fileWithFieldName.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 192,
+			"name": "UploadPayload",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "The payload supplied to a soFetch request. This can be undefined, or a plain serialisable object\r\n(for JSON requests) of a file, or array of files, or a FileWithFieldName or array of type FileWithFieldName\r\n(if your endpoint requires the files to have specified field names)"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/uploadPayload.ts",
+					"line": 8,
+					"character": 12,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/uploadPayload.ts#L8"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "intrinsic",
+						"name": "object"
+					},
+					{
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.dom.d.ts",
+							"qualifiedName": "File"
+						},
+						"name": "File",
+						"package": "typescript"
+					},
+					{
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.dom.d.ts",
+								"qualifiedName": "File"
+							},
+							"name": "File",
+							"package": "typescript"
+						}
+					},
+					{
+						"type": "reference",
+						"target": 200,
+						"name": "FileWithFieldName",
+						"package": "@antoinette-agency/sofetch"
+					},
+					{
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"target": 200,
+							"name": "FileWithFieldName",
+							"package": "@antoinette-agency/sofetch"
+						}
+					},
+					{
+						"type": "intrinsic",
+						"name": "undefined"
+					}
+				]
+			}
+		},
+		{
+			"id": 204,
+			"name": "default",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Makes an HTTP request to the specified URL."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@template",
+						"name": "TResponse",
+						"content": [
+							{
+								"kind": "text",
+								"text": "The primitive or object type you're expecting from the server"
+							}
+						]
+					},
+					{
+						"tag": "@param",
+						"name": "url",
+						"content": [
+							{
+								"kind": "text",
+								"text": "An absolute or relative URL"
+							}
+						]
+					},
+					{
+						"tag": "@param",
+						"name": "body",
+						"content": [
+							{
+								"kind": "text",
+								"text": "If absent soFetch will make a GET request. If present soFetch will make a POST request. To make PUT, PATCH, DELETE requests see soFetch.put, soFetch.patch, soFetch.delete"
+							}
+						]
+					},
+					{
+						"tag": "@returns",
+						"content": [
+							{
+								"kind": "text",
+								"text": "An awaitable SoFetchPromise which resolves to type TResponse"
+							}
+						]
+					},
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```ts\nconst products = await soFetch<Product[]>(\"/api/products\")\n```"
+							}
+						]
+					},
+					{
+						"tag": "@see",
+						"content": [
+							{
+								"kind": "text",
+								"text": "For more examples see https://sofetch.antoinette.agency"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/soFetch.ts",
+					"line": 135,
+					"character": 6,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/82124c57dc92d8fa3e1041daba05ad2a1657c57a/src/soFetch.ts#L135"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": 152,
+				"typeArguments": [
+					{
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				],
+				"name": "SoFetchLike",
+				"package": "@antoinette-agency/sofetch"
+			},
+			"defaultValue": "..."
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				91,
+				1
+			]
+		},
+		{
+			"title": "Interfaces",
+			"children": [
+				152,
+				187
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				193,
+				200,
+				192
+			]
+		},
+		{
+			"title": "Variables",
+			"children": [
+				204
+			]
+		}
+	],
+	"packageName": "@antoinette-agency/sofetch",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "<img alt=\"So Fetch Meme\" src=\"https://github.com/user-attachments/assets/5a1968a0-d72a-42a3-8fb3-8a1de9b467c1\" />\n\n## "
+		},
+		{
+			"kind": "code",
+			"text": "`soFetch`"
+		},
+		{
+			"kind": "text",
+			"text": " is a concise wrapper around the Fetch API\n\n### 🌱 Install\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```\nnpm i @antoinette-agency/sofetch\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### ⏩ Quickstart\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```typescript\n\nimport soFetch from \"@antoinette-agency/sofetch\";\n\n//GET Request:\nconst products = await soFetch<Product[]>(\"/api/products\")\n\n//POST Request:\nconst newUser = {\n    name:\"Regina George\", \n    email:\"regina@massive-deal.com\"\n}\nconst successResponse = await soFetch<Success>(\"/api/users\", newUser)\n\n//Handling errors\nconst unicorn = await soFetch<Unicorn>(\"/api/unicorns/1234\")\n    .catchHttp(404, (res:Response) => {\n        alert(\"This unicorn can't be found\")\n    })\n```"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise"
+		},
+		"2": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.__constructor"
+		},
+		"3": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise"
+		},
+		"4": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.T"
+		},
+		"5": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "executor"
+		},
+		"6": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"7": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"8": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "resolve"
+		},
+		"9": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"10": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"11": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "value"
+		},
+		"12": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "reject"
+		},
+		"13": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"15": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "reason"
+		},
+		"17": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.errorHandlers"
+		},
+		"18": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.beforeSendHandlers"
+		},
+		"19": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"20": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"21": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "request"
+		},
+		"22": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.beforeFetchSendHandlers"
+		},
+		"23": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"24": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"25": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "init"
+		},
+		"26": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.onRequestCompleteHandlers"
+		},
+		"27": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"28": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"29": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "response"
+		},
+		"30": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "requestData"
+		},
+		"31": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"32": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type.duration"
+		},
+		"33": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type.method"
+		},
+		"34": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.timeout"
+		},
+		"35": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.then"
+		},
+		"36": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "Promise.then"
+		},
+		"37": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "Promise.then"
+		},
+		"38": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "TResult1"
+		},
+		"39": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "TResult2"
+		},
+		"40": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "onfulfilled"
+		},
+		"41": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "__type"
+		},
+		"42": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "__type"
+		},
+		"43": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "value"
+		},
+		"44": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "onrejected"
+		},
+		"45": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "__type"
+		},
+		"46": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "__type"
+		},
+		"47": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "reason"
+		},
+		"48": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.catch"
+		},
+		"49": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "Promise.catch"
+		},
+		"50": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "Promise.catch"
+		},
+		"51": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "TResult"
+		},
+		"52": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "onrejected"
+		},
+		"53": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "__type"
+		},
+		"54": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "__type"
+		},
+		"55": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
+			"qualifiedName": "reason"
+		},
+		"56": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.finally"
+		},
+		"57": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es2018.promise.d.ts",
+			"qualifiedName": "Promise.finally"
+		},
+		"58": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es2018.promise.d.ts",
+			"qualifiedName": "Promise.finally"
+		},
+		"59": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es2018.promise.d.ts",
+			"qualifiedName": "onfinally"
+		},
+		"60": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es2018.promise.d.ts",
+			"qualifiedName": "__type"
+		},
+		"61": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es2018.promise.d.ts",
+			"qualifiedName": "__type"
+		},
+		"62": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.onRequestComplete"
+		},
+		"63": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.onRequestComplete"
+		},
+		"64": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "handler"
+		},
+		"65": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"66": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"67": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "response"
+		},
+		"68": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.beforeSend"
+		},
+		"69": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.beforeSend"
+		},
+		"70": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "handler"
+		},
+		"71": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"72": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"73": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "request"
+		},
+		"74": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.beforeFetchSend"
+		},
+		"75": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.beforeFetchSend"
+		},
+		"76": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "handler"
+		},
+		"77": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"78": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"79": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "request"
+		},
+		"80": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.catchHTTP"
+		},
+		"81": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.catchHTTP"
+		},
+		"82": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "status"
+		},
+		"83": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "handler"
+		},
+		"84": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"85": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "__type"
+		},
+		"86": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "response"
+		},
+		"87": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.setTimeout"
+		},
+		"88": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.setTimeout"
+		},
+		"89": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "ms"
+		},
+		"90": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchPromise.ts",
+			"qualifiedName": "SoFetchPromise.T"
+		},
+		"91": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig"
+		},
+		"94": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.errorHandlers"
+		},
+		"95": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.beforeSendHandlers"
+		},
+		"96": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"97": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"98": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "request"
+		},
+		"99": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.onRequestCompleteHandlers"
+		},
+		"100": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"101": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"102": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "response"
+		},
+		"103": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "requestData"
+		},
+		"104": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"105": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.duration"
+		},
+		"106": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.method"
+		},
+		"107": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.baseUrl"
+		},
+		"108": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.catchHTTP"
+		},
+		"109": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.catchHTTP"
+		},
+		"110": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "status"
+		},
+		"111": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "handler"
+		},
+		"112": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"113": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"114": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "res"
+		},
+		"115": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setBasicAuthentication"
+		},
+		"116": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setBasicAuthentication"
+		},
+		"117": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__0"
+		},
+		"118": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"119": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.password"
+		},
+		"120": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.username"
+		},
+		"121": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setBearerToken"
+		},
+		"122": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setBearerToken"
+		},
+		"123": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "token"
+		},
+		"124": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setHeaderApiKey"
+		},
+		"125": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setHeaderApiKey"
+		},
+		"126": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__0"
+		},
+		"127": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"128": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.headerName"
+		},
+		"129": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.value"
+		},
+		"130": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setQueryStringApiKey"
+		},
+		"131": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setQueryStringApiKey"
+		},
+		"132": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__0"
+		},
+		"133": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"134": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.paramName"
+		},
+		"135": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.value"
+		},
+		"136": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.beforeSend"
+		},
+		"137": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.beforeSend"
+		},
+		"138": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "handler"
+		},
+		"139": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"140": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"141": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "request"
+		},
+		"142": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.onRequestComplete"
+		},
+		"143": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.onRequestComplete"
+		},
+		"144": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "handler"
+		},
+		"145": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"146": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"147": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "r"
+		},
+		"148": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "metaData"
+		},
+		"149": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"150": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.duration"
+		},
+		"151": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.method"
+		},
+		"152": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike"
+		},
+		"153": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.verbose"
+		},
+		"154": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.config"
+		},
+		"155": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.get"
+		},
+		"156": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.get"
+		},
+		"157": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"158": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"159": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"160": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.post"
+		},
+		"161": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.post"
+		},
+		"162": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"163": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"164": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"165": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.put"
+		},
+		"166": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.put"
+		},
+		"167": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"168": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"169": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"170": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.patch"
+		},
+		"171": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.patch"
+		},
+		"172": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"173": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"174": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"175": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.delete"
+		},
+		"176": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.delete"
+		},
+		"177": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"178": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"179": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"180": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.instance"
+		},
+		"181": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.instance"
+		},
+		"182": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.TResponse"
+		},
+		"183": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike"
+		},
+		"184": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"185": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"186": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"187": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetch.ts",
+			"qualifiedName": "SoFetchRequest"
+		},
+		"188": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetch.ts",
+			"qualifiedName": "SoFetchRequest.url"
+		},
+		"189": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetch.ts",
+			"qualifiedName": "SoFetchRequest.method"
+		},
+		"190": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetch.ts",
+			"qualifiedName": "SoFetchRequest.body"
+		},
+		"191": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetch.ts",
+			"qualifiedName": "SoFetchRequest.headers"
+		},
+		"192": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/uploadPayload.ts",
+			"qualifiedName": "UploadPayload"
+		},
+		"193": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/errorHandlerDict.ts",
+			"qualifiedName": "ErrorHandlerDict"
+		},
+		"194": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/errorHandlerDict.ts",
+			"qualifiedName": "__type"
+		},
+		"195": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/errorHandlerDict.ts",
+			"qualifiedName": "__type.__index"
+		},
+		"197": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/errorHandlerDict.ts",
+			"qualifiedName": "__type"
+		},
+		"198": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/errorHandlerDict.ts",
+			"qualifiedName": "__type"
+		},
+		"199": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/errorHandlerDict.ts",
+			"qualifiedName": "r"
+		},
+		"200": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/fileWithFieldName.ts",
+			"qualifiedName": "FileWithFieldName"
+		},
+		"202": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/fileWithFieldName.ts",
+			"qualifiedName": "__type.file"
+		},
+		"203": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/fileWithFieldName.ts",
+			"qualifiedName": "__type.fieldName"
+		},
+		"204": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetch.ts",
+			"qualifiedName": "soFetch"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "README.md",
+			"3": ""
+		},
+		"reflections": {
+			"1": 0,
+			"2": 0,
+			"3": 0
+		}
+	}
+}
