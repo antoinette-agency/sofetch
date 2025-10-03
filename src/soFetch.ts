@@ -80,8 +80,7 @@ const makeJsonRequest = (request:SoFetchRequest):RequestInit => {
     const init = {
         body: body ? JSON.stringify(body) : undefined,
         headers: request.headers,
-        method,
-        credentials: "include" as RequestCredentials
+        method
     }
     return init
 }
@@ -95,8 +94,7 @@ const makeFilesRequest = (request:SoFetchRequest, files:FileWithFieldName[]):Req
     const init = {
         body: formData,
         headers,
-        method,
-        credentials: "include" as RequestCredentials
+        method
     }
     return init
 }
