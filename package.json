@@ -2,6 +2,8 @@
   "name": "@antoinette-agency/sofetch",
   "version": "0.1.9",
   "description": "An opinionated Fetch wrapper for JSON APIs",
+  "repository": "https://github.com/antoinette-agency/sofetch",
+  "homepage": "https://sofetch.antoinette.agency/",
   "main": "./index.cjs",
   "module": "./index.mjs",
   "types": "./index.d.ts",
