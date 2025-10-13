@@ -15,11 +15,12 @@ const convertArgsToFetchInit = async <T>({url, method, body, config, promise}: {
     const headers = {}
     let request = {url, method, body, headers}
     request.url = !config.baseUrl || request.url.startsWith("http") ? request.url : `${config.baseUrl}${request.url}`
-    request = transformRequest(request, promise.beforeSendHandlers)
-    request = transformRequest(request, config.beforeSendHandlers)
+    request = await transformRequest(request, promise.beforeSendHandlers)
+    request = await transformRequest(request, config["beforeSendHandlers"])
     const {files, jsonPayload} = normalisePayload(request.body)
     let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request)
-    init = handleBeforeFetchSend(init, promise.beforeFetchSendHandlers)
+    init = await handleBeforeFetchSend(init, promise.beforeFetchSendHandlers)
+    init = await handleBeforeFetchSend(init, config["beforeFetchSendHandlers"])
     return {init, finalUrl:request.url}
 }
 
@@ -41,17 +42,17 @@ const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url
             if (soFetch.verbose) {
                 console.info(`SoFetch: ${method} ${response.status} ${finalUrl}`)
             }
-            promise.onRequestCompleteHandlers.forEach(h => {
-                h(response, {duration, method:init.method || ""})
-            })
-            config.onRequestCompleteHandlers.forEach(h => {
-                h(response, {duration, method:init.method || ""})
-            })
+            for(const h of promise["onRequestCompleteHandlers"]) {
+                await h(response, {duration, method:init.method || ""})
+            }
+            for(const h of config["onRequestCompleteHandlers"]) {
+                await h(response, {duration, method:init.method || ""})
+            }
             if (!response.ok) {
                 const requestHandled = handleHttpErrors(response, promise.errorHandlers)
                 let configHandled = false
                 if (!requestHandled) {
-                    configHandled = handleHttpErrors(response, config.errorHandlers)
+                    configHandled = handleHttpErrors(response, config["errorHandlers"])
                 }
                 if (!requestHandled && !configHandled) {
                     // @ts-ignore
@@ -238,8 +239,9 @@ soFetch.instance = () => {
     
     const config = new SoFetchConfig()
     config.baseUrl = soFetch.config.baseUrl
-    config.beforeSendHandlers = [...soFetch.config.beforeSendHandlers]
-    config.onRequestCompleteHandlers = [...soFetch.config.onRequestCompleteHandlers]
+    config["beforeSendHandlers"] = [...soFetch.config["beforeSendHandlers"]]
+    config["beforeFetchSendHandlers"] = [...soFetch.config["beforeFetchSendHandlers"]]
+    config["onRequestCompleteHandlers"] = [...soFetch.config["onRequestCompleteHandlers"]]
     
     const soFetchInstance = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
         return makeRequestWrapper<TResponse>(config,body ? "POST" : "GET", url,  body)

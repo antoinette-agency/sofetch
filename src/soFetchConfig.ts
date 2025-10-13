@@ -5,15 +5,17 @@ import {SoFetchRequest} from "./soFetch.ts";
  * Configures all requests for a specific soFetch instance
  */
 export class SoFetchConfig {
-    errorHandlers: ErrorHandlerDict = {}
-    beforeSendHandlers: ((request: SoFetchRequest) => SoFetchRequest | void)[] = []
-    onRequestCompleteHandlers: ((response: Response, requestData: { duration: number, method: string }) => void)[] = []
+    private errorHandlers: ErrorHandlerDict = {}
+    private beforeSendHandlers: ((request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[] = []
+    private beforeFetchSendHandlers: ((request: RequestInit) => Promise<RequestInit | void> | RequestInit | void)[] = []
+    private onRequestCompleteHandlers: ((response: Response, requestData: { duration: number, method: string }) => Promise<void> | void)[] = []
 
     /**
      * The base URL for all HTTP requests in the instance. If absent this is assumed to be the current base url.
      * If running in Node relative requests without a baseUrl will throw an error.
      */
     baseUrl: string = ""
+    private authenticationKey: string = "SOFETCH_AUTHENTICATION"
 
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
@@ -35,6 +37,34 @@ export class SoFetchConfig {
         }
         this.errorHandlers[status].push(handler)
     }
+    
+    /*setAuthenticationMethod({key, persistence, method}:{
+        key?:string,
+        persistence?:"cookies"|"localstorage"|PromiseLike<string>,
+        method?:"bearer"|"basic"|"cookies"|{header:string}|{qsKey:string}
+    }) {
+        if (key) {
+            this.authenticationKey = key
+        }
+        method = method || "bearer"
+        persistence = persistence || "cookies"
+        
+        let getTokenFunction:() => Awaitable<string>
+        switch (persistence) {
+            case "cookies":
+                getTokenFunction = () => (getCookie(this.authenticationKey) || "")
+                break
+            case "localstorage":
+                getTokenFunction = () => (localStorage.getItem(this.authenticationKey) || "")
+                break
+            default:
+                getTokenFunction =  () => persistence
+        }
+        
+        const authenticationType= typeof method === "string" ? method : "header" in method ? "header" : "querystring"
+    }*/
+    
+    private setAuthenticationKey = (key?:string) => this.authenticationKey = key || this.authenticationKey
 
     /**
      * Causes a basic authorization header to be sent with each request in this soFetch instance.
@@ -47,9 +77,16 @@ export class SoFetchConfig {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    setBasicAuthentication({username, password}: { password: string; username: string }) {
+    setBasicAuthentication({username, password, key, persistence}: { 
+        username: string, 
+        password: string,
+        key?:string,
+        persistence?:"cookies"|"localstorage"|Promise<string | null> | string |null
+    }) {
         const token = btoa(`${username}:${password}`);
         const headerValue = `Basic ${token}`
+        this.setAuthenticationKey(key)
+        
         this.beforeSend((request: SoFetchRequest) => {
             request.headers["Authorization"] = headerValue
         })
@@ -116,8 +153,24 @@ export class SoFetchConfig {
      *    
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    beforeSend(handler: (request: SoFetchRequest) => SoFetchRequest | void) {
+    beforeSend(handler: (request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void) {
         this.beforeSendHandlers.push(handler)
+    }
+
+    /**
+     * Adds a handler which will be executed before every request. beforeSend handlers on the config
+     * will be executed before request-specific handlers
+     * @param handler
+     * @example
+     *
+     *    soFetch.config.beforeSend((req:SoFetchRequest) => {
+     *       console.info(`Sending ${req.method} request to URL ${req.url}`
+     *    })
+     *
+     * @see For more examples see https://sofetch.antoinette.agency
+     */
+    beforeFetchSend(handler: (request: RequestInit) => Promise<RequestInit | void> | RequestInit | void) {
+        this.beforeFetchSendHandlers.push(handler)
     }
 
     /**
@@ -132,7 +185,7 @@ export class SoFetchConfig {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    onRequestComplete(handler: (r: Response, metaData: { duration: number, method: string }) => void) {
+    onRequestComplete(handler: (r: Response, metaData: { duration: number, method: string }) => void | Promise<void>) {
         this.onRequestCompleteHandlers.push(handler)
     }
 }

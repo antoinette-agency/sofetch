@@ -29,17 +29,16 @@ export default soFetch;
  * Configures all requests for a specific soFetch instance
  */
 export declare class SoFetchConfig {
-    errorHandlers: ErrorHandlerDict;
-    beforeSendHandlers: ((request: SoFetchRequest) => SoFetchRequest | void)[];
-    onRequestCompleteHandlers: ((response: Response, requestData: {
-        duration: number;
-        method: string;
-    }) => void)[];
+    private errorHandlers;
+    private beforeSendHandlers;
+    private beforeFetchSendHandlers;
+    private onRequestCompleteHandlers;
     /**
      * The base URL for all HTTP requests in the instance. If absent this is assumed to be the current base url.
      * If running in Node relative requests without a baseUrl will throw an error.
      */
     baseUrl: string;
+    private authenticationKey;
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
      * Multiple handlers will be executed in the order in which they are added. If a request has it's
@@ -55,6 +54,7 @@ export declare class SoFetchConfig {
      * @see For more examples see https://sofetch.antoinette.agency
      */
     catchHTTP(status: number, handler: (res: Response) => void): void;
+    private setAuthenticationKey;
     /**
      * Causes a basic authorization header to be sent with each request in this soFetch instance.
      * @param auth - The authentication object containing the username and password.
@@ -66,9 +66,11 @@ export declare class SoFetchConfig {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    setBasicAuthentication({ username, password }: {
-        password: string;
+    setBasicAuthentication({ username, password, key, persistence }: {
         username: string;
+        password: string;
+        key?: string;
+        persistence?: "cookies" | "localstorage" | Promise<string | null> | string | null;
     }): void;
     /**
      * Causes a bearer token authorization token to be sent with each request in this sofetch instance
@@ -120,7 +122,20 @@ export declare class SoFetchConfig {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    beforeSend(handler: (request: SoFetchRequest) => SoFetchRequest | void): void;
+    beforeSend(handler: (request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void): void;
+    /**
+     * Adds a handler which will be executed before every request. beforeSend handlers on the config
+     * will be executed before request-specific handlers
+     * @param handler
+     * @example
+     *
+     *    soFetch.config.beforeSend((req:SoFetchRequest) => {
+     *       console.info(`Sending ${req.method} request to URL ${req.url}`
+     *    })
+     *
+     * @see For more examples see https://sofetch.antoinette.agency
+     */
+    beforeFetchSend(handler: (request: RequestInit) => Promise<RequestInit | void> | RequestInit | void): void;
     /**
      * Adds a handler which will be executed after every request. Handlers will fire regardless of whether
      * the response status code indicated an error
@@ -136,7 +151,7 @@ export declare class SoFetchConfig {
     onRequestComplete(handler: (r: Response, metaData: {
         duration: number;
         method: string;
-    }) => void): void;
+    }) => void | Promise<void>): void;
 }
 
 export declare interface SoFetchLike<TResponse = unknown> {
@@ -166,12 +181,12 @@ export declare interface SoFetchLike<TResponse = unknown> {
 export declare class SoFetchPromise<T> {
     private readonly inner;
     errorHandlers: ErrorHandlerDict;
-    beforeSendHandlers: ((request: SoFetchRequest) => SoFetchRequest | void)[];
-    beforeFetchSendHandlers: ((init: RequestInit) => RequestInit | void)[];
+    beforeSendHandlers: ((request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[];
+    beforeFetchSendHandlers: ((init: RequestInit) => Promise<RequestInit | void> | RequestInit | void)[];
     onRequestCompleteHandlers: ((response: Response, requestData: {
         duration: number;
         method: string;
-    }) => void)[];
+    }) => void | Promise<void>)[];
     timeout: number;
     then: Promise<T>["then"];
     catch: Promise<T>["catch"];
@@ -189,7 +204,7 @@ export declare class SoFetchPromise<T> {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    onRequestComplete(handler: (response: Response) => void): SoFetchPromise<T>;
+    onRequestComplete(handler: (response: Response) => void | Promise<void>): SoFetchPromise<T>;
     /**
      * Adds a handler which will be executed before this HTTP request is sent. BeforeSend handlers added here will
      * will be executed after those added on the config.
@@ -202,7 +217,7 @@ export declare class SoFetchPromise<T> {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    beforeSend(handler: (request: SoFetchRequest) => SoFetchRequest | void): SoFetchPromise<T>;
+    beforeSend(handler: (request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void): SoFetchPromise<T>;
     /**
      * Adds a handler which allows developers to modify the low-level fetch RequestInit object before the HTTP
      * request is made. These handlers execute after beforeSend handlers. This is useful for one-off
@@ -227,7 +242,7 @@ export declare class SoFetchPromise<T> {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    beforeFetchSend(handler: (request: RequestInit) => RequestInit | void): SoFetchPromise<T>;
+    beforeFetchSend(handler: (request: RequestInit) => Promise<RequestInit | void> | RequestInit | void): SoFetchPromise<T>;
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
      * Multiple handlers will be executed in the order in which they are added. If you add an error handler

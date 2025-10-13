@@ -1,8 +1,8 @@
 import {SoFetchRequest} from "./soFetch.ts";
 
-export const transformRequest = (request: SoFetchRequest, beforeSendHandlers: ((request: SoFetchRequest) => SoFetchRequest | void)[]) => {
-    beforeSendHandlers.forEach(h => {
-        request = h(request) || request
-    })
+export const transformRequest = async (request: SoFetchRequest, beforeSendHandlers: ((request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[]) => {
+    for(const h of beforeSendHandlers) {
+        request = (await h(request)) || request
+    }
     return request
 }

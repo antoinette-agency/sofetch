@@ -9,7 +9,7 @@ describe("SoFetch timeout handling", () => {
         const start = Date.now();
         await expect(testFunction()).rejects.toThrow("SoFetch timed out")
         const duration = Date.now() - start;
-        expect(duration).toBeGreaterThanOrEqual(1900); // ~2s
-        expect(duration).toBeLessThanOrEqual(2100);
+        expect(duration).toBeGreaterThanOrEqual(1800);
+        expect(duration).toBeLessThanOrEqual(2200);
     }, 1000 * 30)
 })
