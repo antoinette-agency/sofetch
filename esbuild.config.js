@@ -24,7 +24,7 @@ async function runBuilds() {
         bundle: true,
         platform: "node",
         target: ["node18"],
-        format: "esm",              // ES Modules
+        format: "esm",
         outfile: "/index.mjs",
         minify: true,
         sourcemap: true,
@@ -37,7 +37,7 @@ async function runBuilds() {
         platform: "browser",
         target: ["es2017"],
         format: "esm",
-        outfile: "dist/index.browser.js",
+        outfile: "index.browser.js",
         minify: true,
         sourcemap: true,
     });
