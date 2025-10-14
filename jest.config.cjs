@@ -1,8 +1,18 @@
 /** @type {import("jest").Config} **/
 module.exports = {
-  testMatch: "<rootDir>/test/**/*.tests.ts",
-  testEnvironment: "node",
-  preset: 'ts-jest',
-  globalSetup: '<rootDir>/jest.setup.ts',
-  globalTeardown: '<rootDir>/jest.teardown.ts',
+  projects:[
+    {
+      displayName: 'ts-tests',
+      testMatch: ["<rootDir>/test/integration/**/*.tests.ts"],
+      testEnvironment: "node",
+      preset: 'ts-jest',
+      globalSetup: '<rootDir>/jest.setup.ts',
+      globalTeardown: '<rootDir>/jest.teardown.ts',
+    },
+    {
+      displayName: 'puppeteer-tests',
+      testMatch: ["<rootDir>/test/browser/**/*.tests.js"],
+      preset: 'jest-puppeteer',
+    }
+  ],
 };

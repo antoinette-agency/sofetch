@@ -1,6 +1,5 @@
 import kill from "tree-kill";
-
-export default async function globalTeardown() {
+export default async function globalTeardown(globalConfig:any) {
     const server = (globalThis as any).__TEST_SERVER__;
     if (server && server.pid) {
         console.log("Shutting down test server...");

@@ -9,17 +9,53 @@ import {handleHttpErrors} from "./handleHttpErrors.ts";
 import {transformRequest} from "./transformRequest.ts";
 import {handleBeforeFetchSend} from "./handleBeforeFetchSend.ts";
 
+async function addAuthentication(request: SoFetchRequest, config: SoFetchConfig) {
+    
+    const token = config.authenticationType === null ? "" : await config["getAuthToken"]()
+    
+    if (!token) {
+        return request
+    }
+    
+    switch(config.authenticationType) {
+        case null:
+            return request;
+        case "basic":
+            request.headers["Authorization"] = `Basic ${token}`
+            return request;
+        case "bearer":
+            request.headers["Authorization"] = `Bearer ${token}`
+            return request;
+        case "header":
+            request.headers[config.authHeaderKey] = token
+            return request;
+        case "queryString":
+            const url = new URL(request.url)
+            url.searchParams.append(config.authQueryStringKey, token)
+            request.url = url.toString()
+            return request;
+        case "cookies":
+            if (typeof document === "undefined") {
+                request.headers['Cookie'] = `${config.authenticationKey}=${token}`
+            }
+            return request
+    }
+}
+
 /** @import { UploadPayload } from "./uploadPayload.ts" */
 
 const convertArgsToFetchInit = async <T>({url, method, body, config, promise}: { url: string, method:string, body?:UploadPayload, config:SoFetchConfig, promise:SoFetchPromise<T> }) => {
     const headers = {}
     let request = {url, method, body, headers}
     request.url = !config.baseUrl || request.url.startsWith("http") ? request.url : `${config.baseUrl}${request.url}`
-    request = transformRequest(request, promise.beforeSendHandlers)
-    request = transformRequest(request, config.beforeSendHandlers)
-    const {files, jsonPayload} = normalisePayload(request.body)
-    let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request)
-    init = handleBeforeFetchSend(init, promise.beforeFetchSendHandlers)
+    request = await addAuthentication(request, config)
+    request = await transformRequest(request, promise.beforeSendHandlers)
+    request = await transformRequest(request, config["beforeSendHandlers"])
+    const {files} = normalisePayload(request.body)
+    const sendCookies = config.authenticationType === "cookies"
+    let init = files ? makeFilesRequest(request, files, sendCookies) : makeJsonRequest(request, sendCookies)
+    init = await handleBeforeFetchSend(init, promise.beforeFetchSendHandlers)
+    init = await handleBeforeFetchSend(init, config["beforeFetchSendHandlers"])
     return {init, finalUrl:request.url}
 }
 
@@ -41,17 +77,17 @@ const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url
             if (soFetch.verbose) {
                 console.info(`SoFetch: ${method} ${response.status} ${finalUrl}`)
             }
-            promise.onRequestCompleteHandlers.forEach(h => {
-                h(response, {duration, method:init.method || ""})
-            })
-            config.onRequestCompleteHandlers.forEach(h => {
-                h(response, {duration, method:init.method || ""})
-            })
+            for(const h of promise["onRequestCompleteHandlers"]) {
+                await h(response, {duration, method:init.method || ""})
+            }
+            for(const h of config["onRequestCompleteHandlers"]) {
+                await h(response, {duration, method:init.method || ""})
+            }
             if (!response.ok) {
                 const requestHandled = handleHttpErrors(response, promise.errorHandlers)
                 let configHandled = false
                 if (!requestHandled) {
-                    configHandled = handleHttpErrors(response, config.errorHandlers)
+                    configHandled = handleHttpErrors(response, config["errorHandlers"])
                 }
                 if (!requestHandled && !configHandled) {
                     // @ts-ignore
@@ -74,27 +110,29 @@ export interface SoFetchRequest {
     headers:Record<string,string>
 }
 
-const makeJsonRequest = (request:SoFetchRequest):RequestInit => {
-    const {url, method, body} = request
+const makeJsonRequest = (request: SoFetchRequest, sendCookies: boolean):RequestInit => {
+    const { method, body} = request
     request.headers['content-type'] = 'application/json'
-    const init = {
+    const init:RequestInit = {
         body: body ? JSON.stringify(body) : undefined,
         headers: request.headers,
-        method
+        method,
+        credentials:sendCookies ? "include" : undefined
     }
     return init
 }
 
-const makeFilesRequest = (request:SoFetchRequest, files:FileWithFieldName[]):RequestInit => {
+const makeFilesRequest = (request: SoFetchRequest, files: FileWithFieldName[], sendCookies: boolean):RequestInit => {
     const {method, headers} = request
     const formData = new FormData()
     files.forEach(f => {
         formData.append(f.fieldName, f.file, f.file.name)
     })
-    const init = {
+    const init:RequestInit = {
         body: formData,
         headers,
-        method
+        method,
+        credentials:sendCookies ? "include" : undefined
     }
     return init
 }
@@ -228,39 +266,61 @@ soFetch.delete = (url: string) => {
     return makeRequestWrapper(soFetch.config,"DELETE", url)
 }
 
+function generateNewAuthenticationKey(authenticationKey: string) {
+    const regex = /^(.*?)([0-9]+)?$/;
+    const match = authenticationKey.match(regex);
+    const match1 = match ? match[1] : null
+    const match2 = match ? match[2] : null
+    if (!match1) {
+        return authenticationKey
+    }
+    let next = match2 ? (parseInt(match2) + 1) : 1
+    return `${match1}${next}`;
+}
+
 /**
  * Returns an independent instance of soFetch configured as per the original. The baseUrl and event handlers
  * will be copied over.
  * 
  * @see For examples see https://sofetch.antoinette.agency
  */
-soFetch.instance = () => {
-    
-    const config = new SoFetchConfig()
-    config.baseUrl = soFetch.config.baseUrl
-    config.beforeSendHandlers = [...soFetch.config.beforeSendHandlers]
-    config.onRequestCompleteHandlers = [...soFetch.config.onRequestCompleteHandlers]
+soFetch.instance = (config?:SoFetchConfig) => {
+    const configWasPassed = !!config
+    const newConfig = new SoFetchConfig()
+    const oldConfig = config || soFetch.config
+    if (!configWasPassed) {
+        newConfig.baseUrl = oldConfig.baseUrl
+        newConfig["beforeSendHandlers"] = [...oldConfig["beforeSendHandlers"]]
+        newConfig["beforeFetchSendHandlers"] = [...oldConfig["beforeFetchSendHandlers"]]
+        newConfig["onRequestCompleteHandlers"] = [...oldConfig["onRequestCompleteHandlers"]]
+        newConfig.authTokenStorage = oldConfig.authTokenStorage
+        newConfig["inMemoryAuthToken"] = oldConfig["inMemoryAuthToken"]
+    }
+    newConfig.authenticationKey = generateNewAuthenticationKey(oldConfig.authenticationKey)
     
     const soFetchInstance = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
-        return makeRequestWrapper<TResponse>(config,body ? "POST" : "GET", url,  body)
+        return makeRequestWrapper<TResponse>(newConfig,body ? "POST" : "GET", url,  body)
     }) as SoFetchLike;
     soFetchInstance.get = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config, "GET", url, body)
+        return makeRequestWrapper(newConfig, "GET", url, body)
     }
     soFetchInstance.post = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config,"POST", url, body)
+        return makeRequestWrapper(newConfig,"POST", url, body)
     }
     soFetchInstance.put = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config,"PUT", url, body)
+        return makeRequestWrapper(newConfig,"PUT", url, body)
     }
     soFetchInstance.patch = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config,"PATCH", url, body)
+        return makeRequestWrapper(newConfig,"PATCH", url, body)
     }
     soFetchInstance.delete = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config,"DELETE", url, body)
+        return makeRequestWrapper(newConfig,"DELETE", url, body)
     }
     soFetchInstance.verbose = soFetch.verbose
-    soFetchInstance.config = config
+    soFetchInstance.config = newConfig
+    soFetchInstance.instance = (c?:SoFetchConfig) => {
+        return soFetch.instance(c || newConfig)
+    }
     return soFetchInstance
 }
 

@@ -16,9 +16,9 @@ import {SoFetchRequest} from "./soFetch.ts";
 export class SoFetchPromise<T> {
     private readonly inner: Promise<T>;
     errorHandlers:ErrorHandlerDict = {}
-    beforeSendHandlers:((request:SoFetchRequest) => SoFetchRequest | void)[] = []
-    beforeFetchSendHandlers:((init:RequestInit) => RequestInit | void)[] = []
-    onRequestCompleteHandlers: ((response: Response, requestData: { duration: number, method: string }) => void)[] = []
+    beforeSendHandlers:((request:SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[] = []
+    beforeFetchSendHandlers:((init:RequestInit) => Promise<RequestInit | void> | RequestInit | void)[] = []
+    onRequestCompleteHandlers: ((response: Response, requestData: { duration: number, method: string }) => void | Promise<void>)[] = []
     timeout: number = 30000
     then: Promise<T>["then"];
     catch: Promise<T>["catch"];
@@ -47,7 +47,7 @@ export class SoFetchPromise<T> {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    onRequestComplete(handler: (response: Response) => void): SoFetchPromise<T> {
+    onRequestComplete(handler: (response: Response) => void | Promise<void>): SoFetchPromise<T> {
         this.onRequestCompleteHandlers.push(handler)
         return this
     }
@@ -64,7 +64,7 @@ export class SoFetchPromise<T> {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    beforeSend(handler: (request: SoFetchRequest) => SoFetchRequest | void): SoFetchPromise<T> {
+    beforeSend(handler: (request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void): SoFetchPromise<T> {
         this.beforeSendHandlers.push(handler)
         return this
     }
@@ -93,7 +93,7 @@ export class SoFetchPromise<T> {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    beforeFetchSend(handler: (request: RequestInit) => RequestInit | void): SoFetchPromise<T> {
+    beforeFetchSend(handler: (request: RequestInit) => Promise<RequestInit | void> | RequestInit | void): SoFetchPromise<T> {
         this.beforeFetchSendHandlers.push(handler)
         return this
     }

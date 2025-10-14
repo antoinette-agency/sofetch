@@ -1,6 +1,5 @@
 import {SoFetchConfig} from "./soFetchConfig.ts";
 import {SoFetchPromise} from "./soFetchPromise.ts";
-import {FileWithFieldName} from "./fileWithFieldName.ts";
 import {UploadPayload} from "./uploadPayload.ts";
 
 export interface SoFetchLike<TResponse = unknown> {
@@ -19,5 +18,5 @@ export interface SoFetchLike<TResponse = unknown> {
 
     <T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
 
-    instance(): SoFetchLike<TResponse>;
+    instance(config?:SoFetchConfig): SoFetchLike<TResponse>;
 }

@@ -1,7 +1,5 @@
 import { createServer } from "http";
 import {IncomingMessage} from "node:http";
-import Busboy from "busboy";
-import {readUploadedFiles} from "./readUploadedFiles";
 import {readFormData} from "./readFormData";
 import {sleep} from "../src/sleep";
 
@@ -124,6 +122,13 @@ const routes:Route[] = [
             const url = new URL(`http://localhost:3000${req.url}`)
             const value = url.searchParams.get("api-key")
             return {paramName:"api-key", value}
+        }
+    },
+    {
+        url:"/authentication/cookies",
+        handler:async req => {
+            const cookies = req.headers.cookie
+            return {cookies}
         }
     },
     {
