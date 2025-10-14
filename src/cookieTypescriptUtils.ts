@@ -7,8 +7,7 @@ export function setCookie(name: string, val: string) {
     }
     const date = new Date();
     const value = val;
-
-    // Set it expire in 7 days
+    
     date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
 
     // Set it

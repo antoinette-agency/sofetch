@@ -1,3 +1,7 @@
+declare type AuthenticationType = "basic" | "bearer" | "header" | "queryString" | "cookies" | null;
+
+declare type AuthTokenStorageType = "memory" | "sessionStorage" | "localStorage" | "cookie" | (() => (string | Promise<string>)) | null;
+
 /**
  * A integer-keyed dictionary of arrays of response handlers.
  */
@@ -30,15 +34,25 @@ export default soFetch;
  */
 export declare class SoFetchConfig {
     private errorHandlers;
-    private beforeSendHandlers;
-    private beforeFetchSendHandlers;
-    private onRequestCompleteHandlers;
+    protected beforeSendHandlers: ((request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[];
+    protected beforeFetchSendHandlers: ((request: RequestInit) => Promise<RequestInit | void> | RequestInit | void)[];
+    protected onRequestCompleteHandlers: ((response: Response, requestData: {
+        duration: number;
+        method: string;
+    }) => Promise<void> | void)[];
+    authTokenStorage: AuthTokenStorageType;
+    private inMemoryAuthToken;
+    authenticationType: AuthenticationType;
+    protected getAuthToken: () => Promise<string>;
+    setAuthToken: (authToken: string) => void;
     /**
      * The base URL for all HTTP requests in the instance. If absent this is assumed to be the current base url.
      * If running in Node relative requests without a baseUrl will throw an error.
      */
     baseUrl: string;
-    private authenticationKey;
+    authenticationKey: string;
+    authHeaderKey: string;
+    authQueryStringKey: string;
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
      * Multiple handlers will be executed in the order in which they are added. If a request has it's
@@ -54,62 +68,6 @@ export declare class SoFetchConfig {
      * @see For more examples see https://sofetch.antoinette.agency
      */
     catchHTTP(status: number, handler: (res: Response) => void): void;
-    private setAuthenticationKey;
-    /**
-     * Causes a basic authorization header to be sent with each request in this soFetch instance.
-     * @param auth - The authentication object containing the username and password.
-     * @param auth.username The username for basic authentication
-     * @param auth.password The password for basic authentication
-     * @example
-     *
-     *    soFetch.config.setBasicAuthentication({username:"Chris Hodges", password:"Antoinette"})
-     *
-     * @see For more examples see https://sofetch.antoinette.agency
-     */
-    setBasicAuthentication({ username, password, key, persistence }: {
-        username: string;
-        password: string;
-        key?: string;
-        persistence?: "cookies" | "localstorage" | Promise<string | null> | string | null;
-    }): void;
-    /**
-     * Causes a bearer token authorization token to be sent with each request in this sofetch instance
-     * @param token
-     * @example
-     *
-     *    soFetch.config.setBearerToken("SOME_ACCESS_TOKEN")
-     *
-     * @see For more examples see https://sofetch.antoinette.agency
-     */
-    setBearerToken(token: string): void;
-    /**
-     * Causes a header with the specified key and value to be sent with each request in this sofetch instance
-     * @param auth - The authentication object containing the header key and value.
-     * @param auth.headerName The header key
-     * @param auth.value The header value
-     * @example
-     *
-     *    soFetch.config.setHeaderApiKey({headerName:"some-api-key", value:"HEADER_ACCESS_TOKEN"})
-     *
-     * @see For more examples see https://sofetch.antoinette.agency
-     */
-    setHeaderApiKey({ headerName, value }: {
-        headerName: string;
-        value: string;
-    }): void;
-    /**
-     * Causes a query string entry with the specified key and value to be sent with each request in this sofetch instance
-     * @param auth - The authentication object containing the header key and value.
-     * @param auth.paramName The query string key
-     * @param auth.value The query string value
-     * @example
-     *    soFetch.config.setQueryStringApiKey({paramName:"api-key", value:"QUERY_STRING_ACCESS_TOKEN"})
-     * @see For more examples see https://sofetch.antoinette.agency
-     */
-    setQueryStringApiKey({ paramName, value }: {
-        paramName: string;
-        value: string;
-    }): void;
     /**
      * Adds a handler which will be executed before every request. beforeSend handlers on the config
      * will be executed before request-specific handlers
@@ -152,6 +110,37 @@ export declare class SoFetchConfig {
         duration: number;
         method: string;
     }) => void | Promise<void>): void;
+    useBearerAuthentication({ authToken, authenticationKey, authTokenStorage }: {
+        authenticationKey?: string;
+        authTokenStorage?: AuthTokenStorageType;
+        authToken?: string;
+    }): void;
+    useCookieAuthentication(props?: {
+        authenticationKey?: string;
+        authToken?: string;
+    } | undefined): void;
+    useHeaderAuthentication({ headerKey, authToken, authenticationKey, authTokenStorage }: {
+        headerKey: string;
+        authenticationKey?: string;
+        authToken?: string;
+        authTokenStorage?: AuthTokenStorageType;
+    }): void;
+    useQueryStringAuthentication({ queryStringKey, authToken, authenticationKey, authTokenStorage }: {
+        queryStringKey: string;
+        authenticationKey?: string;
+        authToken?: string;
+        authTokenStorage?: AuthTokenStorageType;
+    }): void;
+    useBasicAuthentication(props: {
+        username?: string;
+        password?: string;
+        authenticationKey?: string;
+        authTokenStorage?: AuthTokenStorageType;
+    }): void;
+    setBasicAuthCredentials({ username, password }: {
+        password: string;
+        username: string;
+    }): void;
 }
 
 export declare interface SoFetchLike<TResponse = unknown> {

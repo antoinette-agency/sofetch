@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node", "jest", "expect-puppeteer"],
     "target": "ES2019",
     "declaration": true,
     "module": "CommonJS",
@@ -13,5 +14,5 @@
     "esModuleInterop": true,
     "isolatedModules": true
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "test/global.d.ts"]
 }

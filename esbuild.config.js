@@ -36,8 +36,9 @@ async function runBuilds() {
         bundle: true,
         platform: "browser",
         target: ["es2017"],
-        format: "esm",              // Browsers prefer ESM
-        outfile: "/index.browser.js",
+        format: "iife",
+        globalName: "soFetch",
+        outfile: "dist/index.browser.js",
         minify: true,
         sourcemap: true,
     });

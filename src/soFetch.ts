@@ -9,16 +9,51 @@ import {handleHttpErrors} from "./handleHttpErrors.ts";
 import {transformRequest} from "./transformRequest.ts";
 import {handleBeforeFetchSend} from "./handleBeforeFetchSend.ts";
 
+async function addAuthentication(request: SoFetchRequest, config: SoFetchConfig) {
+    
+    const token = config.authenticationType === null ? "" : await config["getAuthToken"]()
+    
+    if (!token) {
+        return request
+    }
+    
+    switch(config.authenticationType) {
+        case null:
+            return request;
+        case "basic":
+            request.headers["Authorization"] = `Basic ${token}`
+            return request;
+        case "bearer":
+            request.headers["Authorization"] = `Bearer ${token}`
+            return request;
+        case "header":
+            request.headers[config.authHeaderKey] = token
+            return request;
+        case "queryString":
+            const url = new URL(request.url)
+            url.searchParams.append(config.authQueryStringKey, token)
+            request.url = url.toString()
+            return request;
+        case "cookies":
+            if (typeof document === "undefined") {
+                request.headers['Cookie'] = `${config.authenticationKey}=${token}`
+            }
+            return request
+    }
+}
+
 /** @import { UploadPayload } from "./uploadPayload.ts" */
 
 const convertArgsToFetchInit = async <T>({url, method, body, config, promise}: { url: string, method:string, body?:UploadPayload, config:SoFetchConfig, promise:SoFetchPromise<T> }) => {
     const headers = {}
     let request = {url, method, body, headers}
     request.url = !config.baseUrl || request.url.startsWith("http") ? request.url : `${config.baseUrl}${request.url}`
+    request = await addAuthentication(request, config)
     request = await transformRequest(request, promise.beforeSendHandlers)
     request = await transformRequest(request, config["beforeSendHandlers"])
-    const {files, jsonPayload} = normalisePayload(request.body)
-    let init = files ? makeFilesRequest(request, files) : makeJsonRequest(request)
+    const {files} = normalisePayload(request.body)
+    const sendCookies = config.authenticationType === "cookies"
+    let init = files ? makeFilesRequest(request, files, sendCookies) : makeJsonRequest(request, sendCookies)
     init = await handleBeforeFetchSend(init, promise.beforeFetchSendHandlers)
     init = await handleBeforeFetchSend(init, config["beforeFetchSendHandlers"])
     return {init, finalUrl:request.url}
@@ -75,27 +110,29 @@ export interface SoFetchRequest {
     headers:Record<string,string>
 }
 
-const makeJsonRequest = (request:SoFetchRequest):RequestInit => {
-    const {url, method, body} = request
+const makeJsonRequest = (request: SoFetchRequest, sendCookies: boolean):RequestInit => {
+    const { method, body} = request
     request.headers['content-type'] = 'application/json'
-    const init = {
+    const init:RequestInit = {
         body: body ? JSON.stringify(body) : undefined,
         headers: request.headers,
-        method
+        method,
+        credentials:sendCookies ? "include" : undefined
     }
     return init
 }
 
-const makeFilesRequest = (request:SoFetchRequest, files:FileWithFieldName[]):RequestInit => {
+const makeFilesRequest = (request: SoFetchRequest, files: FileWithFieldName[], sendCookies: boolean):RequestInit => {
     const {method, headers} = request
     const formData = new FormData()
     files.forEach(f => {
         formData.append(f.fieldName, f.file, f.file.name)
     })
-    const init = {
+    const init:RequestInit = {
         body: formData,
         headers,
-        method
+        method,
+        credentials:sendCookies ? "include" : undefined
     }
     return init
 }
@@ -242,6 +279,9 @@ soFetch.instance = () => {
     config["beforeSendHandlers"] = [...soFetch.config["beforeSendHandlers"]]
     config["beforeFetchSendHandlers"] = [...soFetch.config["beforeFetchSendHandlers"]]
     config["onRequestCompleteHandlers"] = [...soFetch.config["onRequestCompleteHandlers"]]
+    config.authTokenStorage = soFetch.config.authTokenStorage
+    config["inMemoryAuthToken"] = soFetch.config["inMemoryAuthToken"]
+    config.authenticationKey = soFetch.config.authenticationKey
     
     const soFetchInstance = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
         return makeRequestWrapper<TResponse>(config,body ? "POST" : "GET", url,  body)

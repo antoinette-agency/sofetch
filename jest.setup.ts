@@ -1,8 +1,7 @@
 import { spawn, ChildProcess } from "child_process";
-import * as path from "node:path";
 
 const SERVER_URL = "http://localhost:3000/ping";
-const SERVER_START_TIMEOUT = 10000; // 10 seconds
+const SERVER_START_TIMEOUT = 10000;
 
 let server: ChildProcess;
 
@@ -20,7 +19,8 @@ async function waitForServer(url: string, timeout: number) {
     throw new Error(`Server did not start within ${timeout}ms`);
 }
 
-export default async function globalSetup() {
+export default async function globalSetup(globalConfig: any) {
+
     console.log("Starting test server...");
     server = spawn( "npx", 
         ["tsx","testServer/testServer.ts"], 

@@ -1,21 +1,68 @@
 import {ErrorHandlerDict} from "./errorHandlerDict.ts";
 import {SoFetchRequest} from "./soFetch.ts";
+import {getCookie, setCookie} from "./cookieTypescriptUtils.ts";
+
+type AuthTokenStorageType = "memory" | "sessionStorage" | "localStorage" | "cookie" | (() => (string | Promise<string>)) | null
+type AuthenticationType = "basic" | "bearer" | "header" | "queryString" | "cookies" | null
 
 /**
  * Configures all requests for a specific soFetch instance
  */
 export class SoFetchConfig {
     private errorHandlers: ErrorHandlerDict = {}
-    private beforeSendHandlers: ((request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[] = []
-    private beforeFetchSendHandlers: ((request: RequestInit) => Promise<RequestInit | void> | RequestInit | void)[] = []
-    private onRequestCompleteHandlers: ((response: Response, requestData: { duration: number, method: string }) => Promise<void> | void)[] = []
-
+    protected beforeSendHandlers: ((request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[] = []
+    protected beforeFetchSendHandlers: ((request: RequestInit) => Promise<RequestInit | void> | RequestInit | void)[] = []
+    protected onRequestCompleteHandlers: ((response: Response, requestData: { duration: number, method: string }) => Promise<void> | void)[] = []
+    public authTokenStorage:AuthTokenStorageType = null
+    private inMemoryAuthToken: string = ""
+    public authenticationType:AuthenticationType = null
+    
+    protected getAuthToken = async () => {
+        switch (this.authTokenStorage) {
+            case null:
+                return ""
+            case "memory":
+                return this.inMemoryAuthToken
+            case "localStorage":
+                return localStorage?.getItem(this.authenticationKey) || ""
+            case "sessionStorage":
+                return sessionStorage?.getItem(this.authenticationKey) || ""
+            case "cookie":
+                return getCookie(this.authenticationKey) || ""
+            default:
+                return this.authTokenStorage();
+        }
+    }
+    
+    public setAuthToken = (authToken:string) => {
+        switch (this.authTokenStorage) {
+            case "memory":
+                this.inMemoryAuthToken = authToken
+                break
+            case "localStorage":
+                localStorage.setItem(this.authenticationKey, authToken)
+                break
+            case "sessionStorage":
+                sessionStorage.setItem(this.authenticationKey, authToken)
+                break
+            case "cookie":
+                setCookie(this.authenticationKey, authToken)
+                break
+            /*If we're here there's authTokenStorage is either null or a custom function so
+                there's nothing to do*/
+            default:
+                break
+        }
+    }
+    
     /**
      * The base URL for all HTTP requests in the instance. If absent this is assumed to be the current base url.
      * If running in Node relative requests without a baseUrl will throw an error.
      */
     baseUrl: string = ""
-    private authenticationKey: string = "SOFETCH_AUTHENTICATION"
+    authenticationKey: string = "SOFETCH_AUTHENTICATION"
+    authHeaderKey: string = ""
+    authQueryStringKey: string = ""
 
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
@@ -38,108 +85,6 @@ export class SoFetchConfig {
         this.errorHandlers[status].push(handler)
     }
     
-    /*setAuthenticationMethod({key, persistence, method}:{
-        key?:string,
-        persistence?:"cookies"|"localstorage"|PromiseLike<string>,
-        method?:"bearer"|"basic"|"cookies"|{header:string}|{qsKey:string}
-    }) {
-        if (key) {
-            this.authenticationKey = key
-        }
-        method = method || "bearer"
-        persistence = persistence || "cookies"
-        
-        let getTokenFunction:() => Awaitable<string>
-        switch (persistence) {
-            case "cookies":
-                getTokenFunction = () => (getCookie(this.authenticationKey) || "")
-                break
-            case "localstorage":
-                getTokenFunction = () => (localStorage.getItem(this.authenticationKey) || "")
-                break
-            default:
-                getTokenFunction =  () => persistence
-        }
-        
-        const authenticationType= typeof method === "string" ? method : "header" in method ? "header" : "querystring"
-    }*/
-    
-    private setAuthenticationKey = (key?:string) => this.authenticationKey = key || this.authenticationKey
-
-    /**
-     * Causes a basic authorization header to be sent with each request in this soFetch instance.
-     * @param auth - The authentication object containing the username and password.
-     * @param auth.username The username for basic authentication
-     * @param auth.password The password for basic authentication
-     * @example
-     *
-     *    soFetch.config.setBasicAuthentication({username:"Chris Hodges", password:"Antoinette"})
-     *
-     * @see For more examples see https://sofetch.antoinette.agency
-     */
-    setBasicAuthentication({username, password, key, persistence}: { 
-        username: string, 
-        password: string,
-        key?:string,
-        persistence?:"cookies"|"localstorage"|Promise<string | null> | string |null
-    }) {
-        const token = btoa(`${username}:${password}`);
-        const headerValue = `Basic ${token}`
-        this.setAuthenticationKey(key)
-        
-        this.beforeSend((request: SoFetchRequest) => {
-            request.headers["Authorization"] = headerValue
-        })
-    }
-
-    /**
-     * Causes a bearer token authorization token to be sent with each request in this sofetch instance
-     * @param token
-     * @example
-     *
-     *    soFetch.config.setBearerToken("SOME_ACCESS_TOKEN")
-     *
-     * @see For more examples see https://sofetch.antoinette.agency
-     */
-    setBearerToken(token: string) {
-        this.beforeSend((request: SoFetchRequest) => {
-            request.headers["Authorization"] = `Bearer ${token}`
-        })
-    }
-
-    /**
-     * Causes a header with the specified key and value to be sent with each request in this sofetch instance
-     * @param auth - The authentication object containing the header key and value.
-     * @param auth.headerName The header key
-     * @param auth.value The header value
-     * @example
-     * 
-     *    soFetch.config.setHeaderApiKey({headerName:"some-api-key", value:"HEADER_ACCESS_TOKEN"})
-     *    
-     * @see For more examples see https://sofetch.antoinette.agency
-     */
-    setHeaderApiKey({headerName, value}: { headerName: string; value: string }) {
-        this.beforeSend((request: SoFetchRequest) => {
-            request.headers[headerName] = value
-        })
-    }
-
-    /**
-     * Causes a query string entry with the specified key and value to be sent with each request in this sofetch instance
-     * @param auth - The authentication object containing the header key and value.
-     * @param auth.paramName The query string key
-     * @param auth.value The query string value
-     * @example
-     *    soFetch.config.setQueryStringApiKey({paramName:"api-key", value:"QUERY_STRING_ACCESS_TOKEN"})
-     * @see For more examples see https://sofetch.antoinette.agency
-     */
-    setQueryStringApiKey({paramName, value}: { paramName: string; value: string }) {
-        this.beforeSend((request: SoFetchRequest) => {
-            const url = new URL(request.url)
-            url.searchParams.append(paramName, value)
-            request.url = url.toString()
-        })
-    }
 
     /**
      * Adds a handler which will be executed before every request. beforeSend handlers on the config
@@ -187,5 +132,100 @@ export class SoFetchConfig {
      */
     onRequestComplete(handler: (r: Response, metaData: { duration: number, method: string }) => void | Promise<void>) {
         this.onRequestCompleteHandlers.push(handler)
+    }
+
+    useBearerAuthentication({authToken, authenticationKey, authTokenStorage}:{
+        authenticationKey?:string,
+        authTokenStorage?:AuthTokenStorageType,
+        authToken?:string,
+    }) {
+        this.authenticationType = "bearer"
+        if (authenticationKey) {
+            this.authenticationKey = authenticationKey
+        }
+        this.authTokenStorage = authTokenStorage === null ? null : (authTokenStorage || "localStorage")
+        if (authToken) {
+            this.setAuthToken(authToken)
+        }
+    }
+
+    useCookieAuthentication(props?:{
+        authenticationKey?:string,
+        authToken?:string,
+    }|undefined) {
+        this.authenticationType = "cookies"
+        let authenticationKey, authToken
+        if (props) {
+            authenticationKey = props.authenticationKey
+            authToken = props.authToken
+        }
+        if (authenticationKey) {
+            this.authenticationKey = authenticationKey
+        }
+        
+        //If we're in Node we'll simulate memories in cookies.
+        this.authTokenStorage =  typeof(document) === "undefined" ? "memory" : "cookie"
+        if (authToken) {
+            this.setAuthToken(authToken)
+        }
+    }
+
+    useHeaderAuthentication({headerKey, authToken, authenticationKey, authTokenStorage}:{
+        headerKey:string,
+        authenticationKey?:string,
+        authToken?:string,
+        authTokenStorage?:AuthTokenStorageType
+    }) {
+        this.authenticationType = "header"
+        this.authHeaderKey = headerKey
+        if (authenticationKey) {
+            this.authenticationKey = authenticationKey
+        }
+        this.authTokenStorage = authTokenStorage === null ? null : (authTokenStorage || "localStorage")
+        if (authToken) {
+            this.setAuthToken(authToken)
+        }
+    }
+
+    useQueryStringAuthentication({queryStringKey, authToken, authenticationKey, authTokenStorage}:{
+        queryStringKey:string,
+        authenticationKey?:string,
+        authToken?:string,
+        authTokenStorage?:AuthTokenStorageType
+    }) {
+        this.authenticationType = "queryString"
+        this.authQueryStringKey = queryStringKey
+        if (authenticationKey) {
+            this.authenticationKey = authenticationKey
+        }
+        this.authTokenStorage = authTokenStorage === null ? null : (authTokenStorage || "localStorage")
+        if (authToken) {
+            this.setAuthToken(authToken)
+        }
+    }
+    
+    useBasicAuthentication(props:{
+        username?:string, 
+        password?:string,
+        authenticationKey?:string,
+        authTokenStorage?:AuthTokenStorageType
+    }) {
+        this.authenticationType = "basic"
+        const {username, password, authenticationKey, authTokenStorage} = props
+        if ((username && !password) || (password && !username)) {
+            console.warn("Was expecting both username and password to be set for soFetch.config.useBasicAuthentication. Continuing but authentication may not behave as expected")
+        }
+        if (authenticationKey) {
+            this.authenticationKey = authenticationKey
+        }
+        this.authTokenStorage = authTokenStorage === null ? null : (authTokenStorage || "localStorage")
+        if (username && password) {
+            this.setBasicAuthCredentials({username, password})
+        }
+    }
+
+    setBasicAuthCredentials({username, password}: {password: string; username: string}) {
+        const token = btoa(`${username}:${password}`);
+        this.setAuthToken(token)
     }
 }
