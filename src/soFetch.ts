@@ -266,43 +266,61 @@ soFetch.delete = (url: string) => {
     return makeRequestWrapper(soFetch.config,"DELETE", url)
 }
 
+function generateNewAuthenticationKey(authenticationKey: string) {
+    const regex = /^(.*?)([0-9]+)?$/;
+    const match = authenticationKey.match(regex);
+    const match1 = match ? match[1] : null
+    const match2 = match ? match[2] : null
+    if (!match1) {
+        return authenticationKey
+    }
+    let next = match2 ? (parseInt(match2) + 1) : 1
+    return `${match1}${next}`;
+}
+
 /**
  * Returns an independent instance of soFetch configured as per the original. The baseUrl and event handlers
  * will be copied over.
  * 
  * @see For examples see https://sofetch.antoinette.agency
  */
-soFetch.instance = () => {
-    
-    const config = new SoFetchConfig()
-    config.baseUrl = soFetch.config.baseUrl
-    config["beforeSendHandlers"] = [...soFetch.config["beforeSendHandlers"]]
-    config["beforeFetchSendHandlers"] = [...soFetch.config["beforeFetchSendHandlers"]]
-    config["onRequestCompleteHandlers"] = [...soFetch.config["onRequestCompleteHandlers"]]
-    config.authTokenStorage = soFetch.config.authTokenStorage
-    config["inMemoryAuthToken"] = soFetch.config["inMemoryAuthToken"]
-    config.authenticationKey = soFetch.config.authenticationKey
+soFetch.instance = (config?:SoFetchConfig) => {
+    const configWasPassed = !!config
+    const newConfig = new SoFetchConfig()
+    const oldConfig = config || soFetch.config
+    if (!configWasPassed) {
+        newConfig.baseUrl = oldConfig.baseUrl
+        newConfig["beforeSendHandlers"] = [...oldConfig["beforeSendHandlers"]]
+        newConfig["beforeFetchSendHandlers"] = [...oldConfig["beforeFetchSendHandlers"]]
+        newConfig["onRequestCompleteHandlers"] = [...oldConfig["onRequestCompleteHandlers"]]
+        newConfig.authTokenStorage = oldConfig.authTokenStorage
+        newConfig["inMemoryAuthToken"] = oldConfig["inMemoryAuthToken"]
+    }
+    newConfig.authenticationKey = generateNewAuthenticationKey(oldConfig.authenticationKey)
     
     const soFetchInstance = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
-        return makeRequestWrapper<TResponse>(config,body ? "POST" : "GET", url,  body)
+        return makeRequestWrapper<TResponse>(newConfig,body ? "POST" : "GET", url,  body)
     }) as SoFetchLike;
     soFetchInstance.get = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config, "GET", url, body)
+        return makeRequestWrapper(newConfig, "GET", url, body)
     }
     soFetchInstance.post = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config,"POST", url, body)
+        return makeRequestWrapper(newConfig,"POST", url, body)
     }
     soFetchInstance.put = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config,"PUT", url, body)
+        return makeRequestWrapper(newConfig,"PUT", url, body)
     }
     soFetchInstance.patch = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config,"PATCH", url, body)
+        return makeRequestWrapper(newConfig,"PATCH", url, body)
     }
     soFetchInstance.delete = (url: string, body?: UploadPayload) => {
-        return makeRequestWrapper(config,"DELETE", url, body)
+        return makeRequestWrapper(newConfig,"DELETE", url, body)
     }
     soFetchInstance.verbose = soFetch.verbose
-    soFetchInstance.config = config
+    soFetchInstance.config = newConfig
+    soFetchInstance.instance = (c?:SoFetchConfig) => {
+        return soFetch.instance(c || newConfig)
+    }
     return soFetchInstance
 }
 

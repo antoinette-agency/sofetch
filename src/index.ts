@@ -5,9 +5,19 @@ import {SoFetchLike} from "./soFetchLike.ts";
 import { UploadPayload } from "./uploadPayload.ts";
 import { ErrorHandlerDict } from "./errorHandlerDict.ts";
 import { FileWithFieldName } from "./fileWithFieldName.ts";
+import { AuthenticationType } from "./authenticationType.ts";
+import { AuthTokenStorageType } from "./authTokenStorageType.ts";
 
 export default soFetch
 
 export {SoFetchPromise, SoFetchConfig}
 
-export type {SoFetchLike, SoFetchRequest, UploadPayload, ErrorHandlerDict, FileWithFieldName}
+export type {
+    AuthenticationType,
+    AuthTokenStorageType,
+    ErrorHandlerDict,
+    FileWithFieldName,
+    SoFetchLike, 
+    SoFetchRequest, 
+    UploadPayload
+}

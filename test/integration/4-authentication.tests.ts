@@ -15,7 +15,7 @@ describe("The SoFetch authentication helpers", () => {
         expect(soFetchInstance.config.authTokenStorage).toBe("memory")
         expect(await soFetchInstance.config["getAuthToken"]()).toBe("Q2hyaXMgSG9kZ2VzOkFudG9pbmV0dGU=")
 
-        soFetchInstance.config.setBasicAuthCredentials({username:"Matt Brewerton", password:"Is Great"})
+        soFetchInstance.config.useBasicAuthentication({username:"Matt Brewerton", password:"Is Great"})
         expect(await soFetchInstance.config["getAuthToken"]()).toBe("TWF0dCBCcmV3ZXJ0b246SXMgR3JlYXQ=")
         
         const result = await soFetchInstance<{username:string, password:string}>(`${BaseTestUrl}/authentication/basic`)
@@ -58,6 +58,6 @@ describe("The SoFetch authentication helpers", () => {
         soFetchInstance.config.useCookieAuthentication()
         soFetchInstance.config.setAuthToken("COOKIES_AUTH_TOKEN")
         const {cookies} = await soFetchInstance<{cookies:string}>(`${BaseTestUrl}/authentication/cookies`)
-        expect(cookies).toEqual('SOFETCH_AUTHENTICATION=COOKIES_AUTH_TOKEN')
+        expect(cookies).toEqual('SOFETCH_AUTHENTICATION1=COOKIES_AUTH_TOKEN')
     })
 })

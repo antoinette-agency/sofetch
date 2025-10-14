@@ -21,7 +21,7 @@ describe("Running multiple instances of SoFetch with different configs", () => {
         expect(soFetch.config.baseUrl).toBe("https://changed-on-initial-config.com")
         
         expect(separateInstance.config.onRequestComplete).toBeDefined()
-        expect(separateInstance.config.onRequestCompleteHandlers[0]).toBe(soFetch.config.onRequestCompleteHandlers[0])
+        expect(separateInstance.config["onRequestCompleteHandlers"][0]).toBe(soFetch.config["onRequestCompleteHandlers"][0])
     })
     it('Can fire onRequestCompleteHandlers on new instances', async () => {
         const instance = soFetch.instance()
@@ -30,8 +30,20 @@ describe("Running multiple instances of SoFetch with different configs", () => {
         instance.config.onRequestComplete(r => {
             onRequestCompleteFired = true
         })
-        expect(instance.config.onRequestCompleteHandlers.length).toBeGreaterThan(0)
+        expect(instance.config["onRequestCompleteHandlers"].length).toBeGreaterThan(0)
         await instance(`${BaseTestUrl}/ping`)
         expect(onRequestCompleteFired).toBeTruthy()
+    })
+    it('Creates a distinct authenticationKey for new instances', async () => {
+        soFetch.config.authenticationKey = "SOFETCH_AUTHENTICATION99"
+        const instance = soFetch.instance()
+        expect(instance.config.authenticationKey).toBe("SOFETCH_AUTHENTICATION100")
+    })
+    it('Creates a distinct authenticationKey for instances of instances', async () => {
+        const instance1 = soFetch.instance()
+        instance1.config.authenticationKey = "SOFETCH_AUTHENTICATION999"
+        expect(instance1.config.authenticationKey).toBe("SOFETCH_AUTHENTICATION999")
+        const instance2 = instance1.instance()
+        expect(instance2.config.authenticationKey).toBe("SOFETCH_AUTHENTICATION1000")
     })
 })

@@ -18,5 +18,5 @@ export interface SoFetchLike<TResponse = unknown> {
 
     <T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
 
-    instance(): SoFetchLike<TResponse>;
+    instance(config?:SoFetchConfig): SoFetchLike<TResponse>;
 }
