@@ -37,7 +37,7 @@ async function runBuilds() {
         platform: "browser",
         target: ["es2017"],
         format: "esm",
-        outfile: "index.browser.js",
+        outfile: "/index.browser.js",
         minify: true,
         sourcemap: true,
     });

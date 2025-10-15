@@ -1,6 +1,6 @@
 import {ErrorHandlerDict} from "./errorHandlerDict.ts";
 import {SoFetchRequest} from "./soFetch.ts";
-import {getCookie, setCookie} from "./cookieTypescriptUtils.ts";
+import {getCookie} from "./cookieTypescriptUtils.ts";
 import {AuthTokenStorageType} from "./authTokenStorageType.ts";
 import {AuthenticationType} from "./authenticationType.ts";
 
@@ -58,9 +58,9 @@ export class SoFetchConfig {
                 sessionStorage.setItem(this.authenticationKey, authToken)
                 break
             case "cookie":
-                setCookie(this.authenticationKey, authToken)
+                document.cookie = `${this.authenticationKey}=${authToken};`
                 break
-            /*If we're here there's authTokenStorage is either null or a custom function so
+            /*If we're here then authTokenStorage is either null or a custom function so
                 there's nothing to do*/
             default:
                 break
@@ -159,7 +159,11 @@ export class SoFetchConfig {
     }
     
     private setAuthTokenStorage = (authTokenStorage?:AuthTokenStorageType) => {
-        this.authTokenStorage = authTokenStorage === null ? null : (authTokenStorage || typeof(document) === "undefined" ? "memory" : "cookie")
+        if (authTokenStorage) {
+            this.authTokenStorage = authTokenStorage
+            return
+        }
+        this.authTokenStorage = typeof(document) === "undefined" ? "memory" : "localStorage"
     }
 
     /**

@@ -112,7 +112,9 @@ export interface SoFetchRequest {
 
 const makeJsonRequest = (request: SoFetchRequest, sendCookies: boolean):RequestInit => {
     const { method, body} = request
-    request.headers['content-type'] = 'application/json'
+    if (body) {
+        request.headers['Content-Type'] = 'application/json'
+    }
     const init:RequestInit = {
         body: body ? JSON.stringify(body) : undefined,
         headers: request.headers,

@@ -1,40 +1,20 @@
 /*
  * General utils for managing cookies in Typescript.
  */
-export function setCookie(name: string, val: string) {
-    if (typeof(document) === "undefined") {
-        return;
-    }
-    const date = new Date();
-    const value = val;
-    
-    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
-
-    // Set it
-    document.cookie = name+"="+value+"; expires="+date.toUTCString()+"; path=/";
-}
 
 export function getCookie(name: string) {
     if (typeof(document) === "undefined") {
         return;
     }
-    const value = "; " + document.cookie;
-    const parts = value.split("; " + name + "=");
-
-    if (parts.length == 2) {
-        return parts.pop()?.split(";").shift();
-    }
-}
-
-export function deleteCookie(name: string) {
-    if (!document) {
-        return;
-    }
-    const date = new Date();
-
-    // Set it expire in -1 days
-    date.setTime(date.getTime() + (-1 * 24 * 60 * 60 * 1000));
-
-    // Set it
-    document.cookie = name+"=; expires="+date.toUTCString()+"; path=/";
+    const value = document.cookie;
+    const cookies = value.split("; ");
+    const cookieEntries = cookies.map(c => {
+        const parts = c.split("=")
+        return {
+            key:parts[0],
+            value:parts[1]
+        }
+    })
+    const cookie = cookieEntries.find(x => x.key === name)
+    return cookie?.value
 }
