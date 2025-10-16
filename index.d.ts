@@ -155,7 +155,7 @@ export declare class SoFetchConfig {
      * @param authenticationKey - optional. Specify an authentication key if you don't want to use the default: 'SOFETCH_AUTHENTICATION'
      * @param authTokenStorage - optional, defaults to 'localStorage' on the browser and 'memory' in Node
      */
-    useBearerAuthentication({ authToken, authenticationKey, authTokenStorage }: {
+    useBearerAuthentication(props?: {
         authenticationKey?: string;
         authTokenStorage?: AuthTokenStorageType;
         authToken?: string;

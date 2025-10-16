@@ -1,27 +1,4 @@
 const fs = require('fs')
-
-function getCookie(name) {
-    if (typeof(document) === "undefined") {
-        return;
-    }
-    const value = "; " + document.cookie;
-    const parts = value.split("; " + name + "=");
-
-    if (parts.length === 2) {
-        return parts.pop()?.split(";").shift();
-    }
-}
-
-function setCookie(name,value,days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-}
-
 const scriptPath = 'C:\\Users\\chris\\soFetch\\index.browser.js'
 
 beforeEach(async () => {
@@ -60,11 +37,12 @@ describe("The SoFetch authentication helpers", () => {
             soFetchInstance.config.useBearerAuthentication()
             soFetchInstance.config.setAuthToken("SOME_ACCESS_TOKEN")
             const {token} = await soFetchInstance(`${BaseTestUrl}/authentication/bearerToken`)
-            const storedToken = sessionStorage.getItem("SOFETCH_AUTHENTICATION1")
-            return {token, storedToken}
+            const storedToken = localStorage.getItem("SOFETCH_AUTHENTICATION1")
+            return {token, storedToken, config:soFetchInstance.config}
         })
-        expect(result.token).toBe("SOME_ACCESS_TOKEN")
+        console.log('config', result.config)
         expect(result.storedToken).toBe("SOME_ACCESS_TOKEN")
+        expect(result.token).toBe("SOME_ACCESS_TOKEN")
     })
     it('can use header authentication', async () => {
         const result = await page.evaluate(async () => {
@@ -112,5 +90,21 @@ describe("The SoFetch authentication helpers", () => {
         })
         expect(result.documentCookie).toEqual('SOFETCH_AUTHENTICATION1=COOKIES_AUTH_TOKEN')
         expect(result.responseCookies).toEqual('SOFETCH_AUTHENTICATION1=COOKIES_AUTH_TOKEN')
+    })
+    it('can use cookies for storage and bearer for authentication', async () => {
+        const result = await page.evaluate(async () => {
+            const soFetchInstance = soFetch.instance()
+            soFetchInstance.config.useBearerAuthentication(
+                {
+                    authenticationKey: "JWT_TOKEN",
+                    authTokenStorage: "cookie"
+                }
+            )
+            soFetchInstance.config.setAuthToken("SOME_AUTH_TOKEN")
+            const {token} = await soFetchInstance(`${BaseTestUrl}/authentication/bearerToken`)
+            return {token, documentCookie:document.cookie}
+        })
+        expect(result.documentCookie).toContain("JWT_TOKEN=SOME_AUTH_TOKEN")
+        expect(result.token).toBe("SOME_AUTH_TOKEN")
     })
 })
