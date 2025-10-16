@@ -2,6 +2,7 @@ import { createServer } from "http";
 import {IncomingMessage} from "node:http";
 import {readFormData} from "./readFormData";
 import {sleep} from "../src/sleep";
+import {createTrustedHttpsServer} from "../scripts/httpsServer";
 
 function getRequestBody(req:IncomingMessage):Promise<string> {
     return new Promise<string>((resolve, reject) => {
@@ -33,7 +34,8 @@ interface Route {
 
 const routes:Route[] = [
     {
-        url:"/ping"
+        url:"/ping",
+        staticResponse:"pong"
     },
     {
         url:"/getting-started/get-string",
@@ -153,32 +155,50 @@ const routes:Route[] = [
     }
 ]
 
-const server = createServer(async (req, res) => {
-    const route = routes.find(x => x.url === req.url) 
-    if (route) {
-        const status = route.status || 200
-        res.writeHead(status, { 
-            "Content-Type": "application/json",
-            ...route.headers
-        })
-        if (route.staticResponse) {
-            res.end(JSON.stringify(route.staticResponse))
-        } else if (route.handler) {
-            const response = await route.handler(req)
-            res.end(JSON.stringify(response))
-        } else {
-            res.end()
-        }
-    } else {
-        const responseBody = {
-            url:req.url,
-            method:req.method
-        }
-        res.writeHead(404, { "Content-Type": "application/json" })
-        res.end(JSON.stringify(responseBody));
-    }
-});
+export async function startServer() {
+    const server = await createTrustedHttpsServer( (req, res) => {
+        const route = routes.find(x => x.url === req.url)
+        if (route) {
+            const status = route.status || 200
+            res.writeHead(status, {
+                "Content-Type": "application/json",
+                ...route.headers
+            })
+            if (route.staticResponse) {
+                res.end(JSON.stringify(route.staticResponse))
+            } else if (route.handler) {
 
-server.listen(3000, () => {
-    console.log("Server running on http://localhost:3000");
+                route.handler(req).then(response => {
+                    res.end(JSON.stringify(response))
+                })
+            } else {
+                res.end()
+            }
+        } else {
+            const responseBody = {
+                url:req.url,
+                method:req.method
+            }
+            res.writeHead(404, { "Content-Type": "application/json" })
+            res.end(JSON.stringify(responseBody));
+        }
+    }, {
+        port: 3000
+    });
+
+    // Graceful shutdown
+    process.on('SIGINT', () => {
+        console.log('\nShutting down server...');
+        server.close(() => {
+            console.log('Server closed');
+            process.exit(0);
+        });
+    });
+
+    return server;
+}
+
+startServer().catch((error) => {
+    console.error('Failed to start server:', error.message);
+    process.exit(1);
 });

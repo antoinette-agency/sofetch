@@ -21,3 +21,8 @@ export type {
     SoFetchRequest, 
     UploadPayload
 }
+
+// Expose to window in browser builds
+if (typeof window !== 'undefined') {
+    (window as any).soFetch = soFetch;
+}

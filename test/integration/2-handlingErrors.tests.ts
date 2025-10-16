@@ -1,11 +1,12 @@
 import soFetch from "../../src/soFetch";
+import {BaseTestUrl} from "./baseTestUrl";
 
 describe("SoFetch can handle bad requests", () => {
     it('Will throw an error by default if it receives a >= 400 status code', async () => {
         const errorFunction = async () => {
-            await soFetch("http://localhost:3000/handling-errors")
+            await soFetch(`${BaseTestUrl}/handling-errors`)
         }
-        await expect(errorFunction()).rejects.toThrow("Received response 400 from URL http://localhost:3000/handling-errors")
+        await expect(errorFunction()).rejects.toThrow(`Received response 400 from URL ${BaseTestUrl}/handling-errors`)
     })
     it('Will throw an error by default if a URL cannot be reached', async () => {
         const errorFunction = async () => {
@@ -14,34 +15,34 @@ describe("SoFetch can handle bad requests", () => {
         await expect(errorFunction()).rejects.toThrow("fetch failed")
     })
     it('Will catch an error if handled using catchHTTP', (done) => {
-        soFetch("http://localhost:3000/handling-errors").catchHTTP(400, (res: Response) => {
-            expect(res.url).toBe("http://localhost:3000/handling-errors")
+        soFetch(`${BaseTestUrl}/handling-errors`).catchHTTP(400, (res: Response) => {
+            expect(res.url).toBe(`${BaseTestUrl}/handling-errors`)
             done()
         })
     })
     it('Can chain multiple errors together', (done) => {
-        soFetch("http://localhost:3000/handling-errors").catchHTTP(400, (res: Response) => {
-            expect(res.url).toBe("http://localhost:3000/handling-errors")
+        soFetch(`${BaseTestUrl}/handling-errors`).catchHTTP(400, (res: Response) => {
+            expect(res.url).toBe(`${BaseTestUrl}/handling-errors`)
             done()
         })
         .catchHTTP(404, (res: Response) => {
-            expect(res.url).toBe("http://localhost:3000/handling-errors")
+            expect(res.url).toBe(`${BaseTestUrl}/handling-errors`)
         })
     })
     it('Will catch errors if specified in the config', (done) => {
         soFetch.config.catchHTTP(400, (res: Response) => {
-            expect(res.url).toBe("http://localhost:3000/handling-errors")
+            expect(res.url).toBe(`${BaseTestUrl}/handling-errors`)
             done()
         })
-        soFetch("http://localhost:3000/handling-errors")
+        soFetch(`${BaseTestUrl}/handling-errors`)
     })
-    it('Will n  ot execute a config handler if superseded by a request handler', async () => {
+    it('Will not execute a config handler if superseded by a request handler', async () => {
         let requestHandlerFired = false
         let configHandlerFired = false
         soFetch.config.catchHTTP(400, (res: Response) => {
             configHandlerFired = true
         })
-        await soFetch("http://localhost:3000/handling-errors").catchHTTP(400, (res: Response) => {
+        await soFetch(`${BaseTestUrl}/handling-errors`).catchHTTP(400, (res: Response) => {
             requestHandlerFired = true
         })
         expect(requestHandlerFired).toBeTruthy()
