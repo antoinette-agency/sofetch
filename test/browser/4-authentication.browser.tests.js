@@ -1,5 +1,5 @@
 const fs = require('fs')
-const scriptPath = 'C:\\Users\\chris\\soFetch\\index.browser.js'
+const scriptPath = './index.browser.js'
 
 beforeEach(async () => {
     await page.goto('https://localhost:3000/ping');
