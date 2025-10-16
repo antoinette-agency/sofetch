@@ -163,7 +163,12 @@ export class SoFetchConfig {
             this.authTokenStorage = authTokenStorage
             return
         }
-        this.authTokenStorage = typeof(document) === "undefined" ? "memory" : "localStorage"
+        //If null is explicitly passed rather than the argument being undefined:
+        if (authTokenStorage === null) {
+            this.authTokenStorage = null
+        }
+        //Default is memory:
+        this.authTokenStorage = "memory"
     }
 
     /**
@@ -172,14 +177,18 @@ export class SoFetchConfig {
      * @param authenticationKey - optional. Specify an authentication key if you don't want to use the default: 'SOFETCH_AUTHENTICATION'
      * @param authTokenStorage - optional, defaults to 'localStorage' on the browser and 'memory' in Node
      */
-    useBearerAuthentication({authToken, authenticationKey, authTokenStorage}:{
-        authenticationKey?:string,
-        authTokenStorage?:AuthTokenStorageType,
-        authToken?:string,
-    }) {
+    useBearerAuthentication(props: {
+        authenticationKey?: string,
+        authTokenStorage?: AuthTokenStorageType,
+        authToken?: string,
+    } = {}) {
+        let { authenticationKey, authTokenStorage, authToken } = props
         this.authenticationType = "bearer"
         if (authenticationKey) {
             this.authenticationKey = authenticationKey
+        }
+        if (authTokenStorage === undefined) {
+            authTokenStorage =  typeof(document) === "undefined" ? "memory" : "localStorage"
         }
         this.setAuthTokenStorage(authTokenStorage)
         if (authToken) {
@@ -206,7 +215,7 @@ export class SoFetchConfig {
             this.authenticationKey = authenticationKey
         }
         
-        //If we're in Node we'll simulate memories in cookies.
+        //If we're in Node we'll simulate cookies in memory.
         this.authTokenStorage =  typeof(document) === "undefined" ? "memory" : "cookie"
         if (authToken) {
             this.setAuthToken(authToken)

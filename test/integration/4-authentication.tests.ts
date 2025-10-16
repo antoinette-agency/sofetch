@@ -61,3 +61,16 @@ describe("The SoFetch authentication helpers", () => {
         expect(cookies).toEqual('SOFETCH_AUTHENTICATION1=COOKIES_AUTH_TOKEN')
     })
 })
+
+describe('getCookie', () => {
+    it('can get a single cookie from a cookie string', () => {
+        const cookieString = "JWT_TOKEN=SOME_AUTH_TOKEN"
+        const result = getCookie("JWT_TOKEN", cookieString)
+        expect(result).toBe("SOME_AUTH_TOKEN")
+    })
+    it('can get a single cookie from a multiple cookie string', () => {
+        const cookieString = "SOFETCH_AUTHENTICATION1=COOKIES_AUTH_TOKEN; JWT_TOKEN=SOME_AUTH_TOKEN"
+        const result = getCookie("JWT_TOKEN", cookieString)
+        expect(result).toBe("SOME_AUTH_TOKEN")
+    })
+})

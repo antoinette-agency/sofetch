@@ -1,12 +1,8 @@
-/*
- * General utils for managing cookies in Typescript.
- */
-
-export function getCookie(name: string) {
-    if (typeof(document) === "undefined") {
+export function getCookie(name: string, documentCookie?:string) {
+    if (typeof(document) === "undefined" && !documentCookie) {
         return;
     }
-    const value = document.cookie;
+    const value = documentCookie || document.cookie;
     const cookies = value.split("; ");
     const cookieEntries = cookies.map(c => {
         const parts = c.split("=")
