@@ -30,3 +30,5 @@ const unicorn = await soFetch<Unicorn>("/api/unicorns/1234")
         alert("This unicorn can't be found")
     })
 ```
+
+<img width="2560" height="1000" alt="soFetchReadmeHeader" src="https://github.com/user-attachments/assets/04f98633-3584-4b5a-8d8a-6d470ad12285" />
