@@ -1,5 +1,4 @@
-<img alt="soFetchReadmeHeader" src="https://private-user-images.githubusercontent.com/4609705/502680503-04f98633-3584-4b5a-8d8a-6d470ad12285.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjA3MjE2NjgsIm5iZiI6MTc2MDcyMTM2OCwicGF0aCI6Ii80NjA5NzA1LzUwMjY4MDUwMy0wNGY5ODYzMy0zNTg0LTRiNWEtOGQ4YS02ZDQ3MGFkMTIyODUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTAxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEwMTdUMTcxNjA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2JhNjYwNjUwOGFhNDYyYTExMGEwZjdhMzVkZDZiMzQ4MTliMTJhMzU0OTYzMTNiNDNmMTRjMGZlZDAyYWM5ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.yZx0LCVkbZf-E67OQOc_9XSoXatTzJGSlWQfai69Ces" />
-
+<img alt="soFetchReadmeHeader" src="https://github.com/user-attachments/assets/ac1fed39-cdc4-4773-96fd-53d91f82dd81" />
 <p align="center">
   <a href="https://sofetch.antoinette.agency/#quickstart">Quick Start</a> | 
   <a href="https://sofetch.antoinette.agency/examples">Examples</a> |
