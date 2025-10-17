@@ -46,4 +46,14 @@ describe("Running multiple instances of SoFetch with different configs", () => {
         const instance2 = instance1.instance()
         expect(instance2.config.authenticationKey).toBe("SOFETCH_AUTHENTICATION1000")
     })
+    it('Creates a specified authenticationKey for new instances', async () => {
+        const instance = soFetch.instance("UNIQUE_INSTANCE_ID")
+        expect(instance.config.authenticationKey).toBe("UNIQUE_INSTANCE_ID")
+    })
+    it('Creates a specified authenticationKey for instances of instances', async () => {
+        const instance1 = soFetch.instance("UNIQUE_INSTANCE_ID_1")
+        expect(instance1.config.authenticationKey).toBe("UNIQUE_INSTANCE_ID_1")
+        const instance2 = instance1.instance("UNIQUE_INSTANCE_ID_2")
+        expect(instance2.config.authenticationKey).toBe("UNIQUE_INSTANCE_ID_2")
+    })
 })

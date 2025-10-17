@@ -283,13 +283,14 @@ function generateNewAuthenticationKey(authenticationKey: string) {
 /**
  * Returns an independent instance of soFetch configured as per the original. The baseUrl and event handlers
  * will be copied over.
- * 
  * @see For examples see https://sofetch.antoinette.agency
  */
-soFetch.instance = (config?:SoFetchConfig) => {
-    const configWasPassed = !!config
+soFetch.instance = (configOrAuthKey?:SoFetchConfig | string) => {
+    
+    const configWasPassed = !!configOrAuthKey && typeof configOrAuthKey !== "string"
+    const oldConfig = configWasPassed ? (configOrAuthKey as SoFetchConfig) : soFetch.config
     const newConfig = new SoFetchConfig()
-    const oldConfig = config || soFetch.config
+    const newAuthKey = typeof configOrAuthKey == "string" ? (configOrAuthKey as string) : undefined
     if (!configWasPassed) {
         newConfig.baseUrl = oldConfig.baseUrl
         newConfig["beforeSendHandlers"] = [...oldConfig["beforeSendHandlers"]]
@@ -298,7 +299,7 @@ soFetch.instance = (config?:SoFetchConfig) => {
         newConfig.authTokenStorage = oldConfig.authTokenStorage
         newConfig["inMemoryAuthToken"] = oldConfig["inMemoryAuthToken"]
     }
-    newConfig.authenticationKey = generateNewAuthenticationKey(oldConfig.authenticationKey)
+    newConfig.authenticationKey = newAuthKey || generateNewAuthenticationKey(oldConfig.authenticationKey)
     
     const soFetchInstance = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
         return makeRequestWrapper<TResponse>(newConfig,body ? "POST" : "GET", url,  body)
