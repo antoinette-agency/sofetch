@@ -43,6 +43,7 @@ const unicorn = await soFetch<Unicorn>("/api/unicorns/1234")
     })
 ```
 
+
 <div style="text-align: center">
     <img style="margin-top: 3rem; margin-bottom: 3rem; display: inline-block; width: 70%" alt="So Fetch Meme" src="https://github.com/user-attachments/assets/5a1968a0-d72a-42a3-8fb3-8a1de9b467c1" />
 </div>
