@@ -31,7 +31,7 @@
     "JSONAPI"
   ],
   "author": "Antoinette and Ludd Industries",
-  "license": "AGPL-3.0-or-later",
+  "license": "MIT",
   "devDependencies": {
     "@microsoft/api-extractor": "^7.52.13",
     "@types/busboy": "^1.5.4",
