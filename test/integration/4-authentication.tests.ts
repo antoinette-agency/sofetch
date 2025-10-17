@@ -55,7 +55,7 @@ describe("The SoFetch authentication helpers", () => {
     })
     it('can use cookie authentication', async () => {
         const soFetchInstance = soFetch.instance()
-        soFetchInstance.config.useCookieAuthentication()
+        soFetchInstance.config.useCookieAuthentication({})
         soFetchInstance.config.setAuthToken("COOKIES_AUTH_TOKEN")
         const {cookies} = await soFetchInstance<{cookies:string}>(`${BaseTestUrl}/authentication/cookies`)
         expect(cookies).toEqual('SOFETCH_AUTHENTICATION1=COOKIES_AUTH_TOKEN')

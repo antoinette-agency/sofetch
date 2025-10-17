@@ -40,7 +40,6 @@ describe("The SoFetch authentication helpers", () => {
             const storedToken = localStorage.getItem("SOFETCH_AUTHENTICATION1")
             return {token, storedToken, config:soFetchInstance.config}
         })
-        console.log('config', result.config)
         expect(result.storedToken).toBe("SOME_ACCESS_TOKEN")
         expect(result.token).toBe("SOME_ACCESS_TOKEN")
     })
