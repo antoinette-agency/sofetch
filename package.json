@@ -31,7 +31,18 @@
     "HttpClient",
     "JSONAPI"
   ],
-  "author": "Antoinette and Ludd Industries",
+  "author": {
+    "name": "SoFetch Team@Antoinette",
+    "email": "sofetch@antoinette.agency",
+    "url": "https://sofetch.antoinette.agency"
+  },
+  "contributors": [
+    {
+      "name": "Chris Hodges",
+      "url": "https://antoinette.agency",
+      "email": "chris.hodges@antoinette.agency"
+    }
+  ],
   "license": "MIT",
   "devDependencies": {
     "@microsoft/api-extractor": "^7.52.13",
