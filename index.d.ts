@@ -32,6 +32,65 @@ export declare type FileWithFieldName = {
     fieldName: string;
 };
 
+declare const enum HttpStatus {
+    Continue100 = 100,
+    SwitchingProtocols101 = 101,
+    OK200 = 200,
+    Created201 = 201,
+    Accepted202 = 202,
+    NoContent204 = 204,
+    ResetContent205 = 205,
+    PartialContent206 = 206,
+    MultipleChoices300 = 300,
+    MovedPermanently301 = 301,
+    Found302 = 302,
+    SeeOther303 = 303,
+    NotModified304 = 304,
+    UseProxy305 = 305,
+    TemporaryRedirect307 = 307,
+    PermanentRedirect308 = 308,
+    BadRequest400 = 400,
+    Unauthorized401 = 401,
+    PaymentRequired402 = 402,
+    Forbidden403 = 403,
+    NotFound404 = 404,
+    MethodNotAllowed405 = 405,
+    NotAcceptable406 = 406,
+    ProxyAuthenticationRequired407 = 407,
+    RequestTimeout408 = 408,
+    Conflict409 = 409,
+    Gone410 = 410,
+    LengthRequired411 = 411,
+    PreconditionFailed412 = 412,
+    PayloadTooLarge413 = 413,
+    URITooLong414 = 414,
+    UnsupportedMediaType415 = 415,
+    RangeNotSatisfiable416 = 416,
+    ExpectationFailed417 = 417,
+    ImATeapot418 = 418,
+    MisdirectedRequest421 = 421,
+    UnprocessableEntity422 = 422,
+    Locked423 = 423,
+    FailedDependency424 = 424,
+    TooEarly425 = 425,
+    UpgradeRequired426 = 426,
+    PreconditionRequired428 = 428,
+    TooManyRequests429 = 429,
+    RequestHeaderFieldsTooLarge431 = 431,
+    UnavailableForLegalReasons451 = 451,
+    InternalServerError500 = 500,
+    NotImplemented501 = 501,
+    BadGateway502 = 502,
+    ServiceUnavailable503 = 503,
+    GatewayTimeout504 = 504,
+    HTTPVersionNotSupported505 = 505,
+    VariantAlsoNegotiates506 = 506,
+    InsufficientStorage507 = 507,
+    LoopDetected508 = 508,
+    NotExtended510 = 510,
+    NetworkAuthenticationRequired511 = 511
+}
+
 /**
  * Makes an HTTP request to the specified URL.
  * @template TResponse The primitive or object type you're expecting from the server
@@ -231,7 +290,7 @@ export declare interface SoFetchLike<TResponse = unknown> {
  *      .beforeSend(req:SoFetchRequest) => {
  *          console.info(`Finding my unicorn at ${req.url}`)
  *       })
- *      .catchHttp(404, (res:Response) => {
+ *      .catchHttp(Status.NotFound404, (res:Response) => {
  *         console.error("This unicorn can't be found")
  *       })
  */
@@ -315,7 +374,7 @@ export declare class SoFetchPromise<T> {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    catchHTTP(status: number, handler: (response: Response) => void): SoFetchPromise<T>;
+    catchHTTP(status: HttpStatus, handler: (response: Response) => void): SoFetchPromise<T>;
     setTimeout(ms: number): Promise<this>;
 }
 

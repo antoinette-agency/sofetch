@@ -1,5 +1,6 @@
 import {ErrorHandlerDict} from "./errorHandlerDict.ts";
 import {SoFetchRequest} from "./soFetch.ts";
+import {HttpStatus} from "./httpStatus.ts";
 
 /**
  * An awaitable promise-like class that additionally allows event and error handlers to be attached to the HTTP request
@@ -9,7 +10,7 @@ import {SoFetchRequest} from "./soFetch.ts";
  *      .beforeSend(req:SoFetchRequest) => {
  *          console.info(`Finding my unicorn at ${req.url}`)
  *       })
- *      .catchHttp(404, (res:Response) => {
+ *      .catchHttp(Status.NotFound404, (res:Response) => {
  *         console.error("This unicorn can't be found")
  *       })
  */
@@ -113,7 +114,7 @@ export class SoFetchPromise<T> {
      *
      * @see For more examples see https://sofetch.antoinette.agency
      */
-    catchHTTP(status: number, handler: (response: Response) => void): SoFetchPromise<T> {
+    catchHTTP(status: HttpStatus, handler: (response: Response) => void): SoFetchPromise<T> {
         if (!this.errorHandlers[status]) {
             this.errorHandlers[status] = []
         }
