@@ -3,14 +3,18 @@ node_modules
 .env
 .git
 
-src
 dist
+docs
+scripts
+src
 test
 testServer
 types
 
 api-extractor.json
+docs.json
 esbuild.config.js
+jest-puppeteer.config.cjs
 jest.config.ts
 jest.setup.js
 jest.teardown.js

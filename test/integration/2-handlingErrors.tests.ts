@@ -16,7 +16,7 @@ describe("SoFetch can handle bad requests", () => {
         await expect(errorFunction()).rejects.toThrow("fetch failed")
     })
     it('Will catch an error if handled using catchHTTP', (done) => {
-        soFetch(`${BaseTestUrl}/handling-errors`).catchHTTP(HttpStatus.BadRequest400, (res: Response) => {
+        soFetch(`${BaseTestUrl}/handling-errors`).catchHTTP(400, (res: Response) => {
             expect(res.url).toBe(`${BaseTestUrl}/handling-errors`)
             done()
         })
