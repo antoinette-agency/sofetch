@@ -7,10 +7,11 @@ import { ErrorHandlerDict } from "./errorHandlerDict.ts";
 import { FileWithFieldName } from "./fileWithFieldName.ts";
 import { AuthenticationType } from "./authenticationType.ts";
 import { AuthTokenStorageType } from "./authTokenStorageType.ts";
+import { HttpStatus } from "./httpStatus.ts";
 
 export default soFetch
 
-export {SoFetchPromise, SoFetchConfig}
+export {SoFetchPromise, SoFetchConfig, HttpStatus}
 
 export type {
     AuthenticationType,

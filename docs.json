@@ -7,6 +7,2273 @@
 	"flags": {},
 	"children": [
 		{
+			"id": 198,
+			"name": "HttpStatus",
+			"variant": "declaration",
+			"kind": 8,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Status codes issued by a server in response to a client's request. \r\nAll HTTP response status codes are separated into five classes or categories. The first digit of the status code defines the class of response, while the last two digits do not have any classifying or categorization role. There are five classes defined by the standard:\r\n\r\n- 1xx informational response – the request was received, continuing process\r\n- 2xx successful – the request was successfully received, understood, and accepted\r\n- 3xx redirection – further action needs to be taken in order to complete the request\r\n- 4xx client error – the request contains bad syntax or cannot be fulfilled\r\n- 5xx server error – the server failed to fulfil an apparently valid request"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@see",
+						"content": [
+							{
+								"kind": "text",
+								"text": "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 204,
+					"name": "Accepted202",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Request has been received but not yet acted upon. It is non-committal, meaning that there is no way in HTTP to later send an asynchronous response indicating the outcome of processing the request. It is intended for cases where another process or server handles the request, or for batch processing."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/202"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 52,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L52"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 202
+					}
+				},
+				{
+					"id": 247,
+					"name": "BadGateway502",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server, while working as a gateway to get a response needed to handle the request, got an invalid response."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/502"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 311,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L311"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 502
+					}
+				},
+				{
+					"id": 216,
+					"name": "BadRequest400",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server could not understand the request due to invalid syntax."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/400"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 125,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L125"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 400
+					}
+				},
+				{
+					"id": 225,
+					"name": "Conflict409",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Sent when a request conflicts with the current state of the server."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/409"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 179,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L179"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 409
+					}
+				},
+				{
+					"id": 199,
+					"name": "Continue100",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/100"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 18,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L18"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 100
+					}
+				},
+				{
+					"id": 203,
+					"name": "Created201",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Request has succeeded and a new resource has been created as a result of it. This is typically the response sent after a PUT request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/201"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 46,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L46"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 201
+					}
+				},
+				{
+					"id": 233,
+					"name": "ExpectationFailed417",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Response code means the expectation indicated by the Expect request header field can't be met by the server."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/417"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 227,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L227"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 417
+					}
+				},
+				{
+					"id": 238,
+					"name": "FailedDependency424",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Request failed due to failure of a previous request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/424"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 257,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L257"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 424
+					}
+				},
+				{
+					"id": 219,
+					"name": "Forbidden403",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Client does not have access rights to the content, i.e. they are unauthorized, so server is rejecting to give proper response. Unlike 401, the client's identity is known to the server."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/403"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 143,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L143"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 403
+					}
+				},
+				{
+					"id": 210,
+					"name": "Found302",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Means that URI of requested resource has been changed temporarily. New changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://en.wikipedia.org/wiki/HTTP_302"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 88,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L88"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 302
+					}
+				},
+				{
+					"id": 249,
+					"name": "GatewayTimeout504",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Response is given when the server is acting as a gateway and cannot get a response in time."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/504"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 323,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L323"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 504
+					}
+				},
+				{
+					"id": 226,
+					"name": "Gone410",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Response would be sent when the requested content has been permenantly deleted from server, with no forwarding address."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/410"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 185,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L185"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 410
+					}
+				},
+				{
+					"id": 250,
+					"name": "HTTPVersionNotSupported505",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "HTTP version used in the request is not supported by the server."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/505"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 329,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L329"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 505
+					}
+				},
+				{
+					"id": 234,
+					"name": "ImATeapot418",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Any attempt to brew coffee with a teapot should result in the error code \"418 I'm a teapot\". The resulting entity body MAY be short and stout."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/418"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 233,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L233"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 418
+					}
+				},
+				{
+					"id": 252,
+					"name": "InsufficientStorage507",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates that a method could not be performed because the server cannot store the representation needed to successfully complete the request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/507"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 341,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L341"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 507
+					}
+				},
+				{
+					"id": 245,
+					"name": "InternalServerError500",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server encountered an unexpected condition that prevented it from fulfilling the request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/500"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 299,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L299"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 500
+					}
+				},
+				{
+					"id": 227,
+					"name": "LengthRequired411",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server rejected the request because the Content-Length header field is not defined and the server requires it."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/411"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 191,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L191"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 411
+					}
+				},
+				{
+					"id": 237,
+					"name": "Locked423",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The resource that is being accessed is locked."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/423"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 251,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L251"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 423
+					}
+				},
+				{
+					"id": 253,
+					"name": "LoopDetected508",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates that the server terminated an operation because it encountered an infinite loop while processing a request"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/508"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 347,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L347"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 508
+					}
+				},
+				{
+					"id": 221,
+					"name": "MethodNotAllowed405",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Request method is known by the server but has been disabled and cannot be used. For example, an API may forbid DELETE-ing a resource. The two mandatory methods, GET and HEAD, must never be disabled and should not return this error code."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/405"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 155,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L155"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 405
+					}
+				},
+				{
+					"id": 235,
+					"name": "MisdirectedRequest421",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Defined in the specification of HTTP/2 to indicate that a server is not able to produce a response for the combination of scheme and authority that are included in the request URI."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/421"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 239,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L239"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 421
+					}
+				},
+				{
+					"id": 209,
+					"name": "MovedPermanently301",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Means that URI of requested resource has been changed. Probably, new URI would be given in the response."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/301"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 82,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L82"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 301
+					}
+				},
+				{
+					"id": 208,
+					"name": "MultipleChoices300",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Request has more than one possible responses. User-agent or user should choose one of them. There is no standardized way to choose one of the responses."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/300"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 76,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L76"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 300
+					}
+				},
+				{
+					"id": 255,
+					"name": "NetworkAuthenticationRequired511",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates that the client needs to authenticate to gain network access."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/511"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 359,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L359"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 511
+					}
+				},
+				{
+					"id": 205,
+					"name": "NoContent204",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "There is no content to send for this request, but the headers may be useful. The user-agent may update its cached headers for this resource with the new ones."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/204"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 58,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L58"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 204
+					}
+				},
+				{
+					"id": 222,
+					"name": "NotAcceptable406",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Response is sent when the web server, after performing server-driven content negotiation, doesn't find any content following the criteria given by the user agent."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/406"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 161,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L161"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 406
+					}
+				},
+				{
+					"id": 254,
+					"name": "NotExtended510",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Sent in the context of the HTTP Extension Framework, defined in RFC 2774."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/510"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 353,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L353"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 510
+					}
+				},
+				{
+					"id": 220,
+					"name": "NotFound404",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server can not find requested resource. In the browser, this means the URL is not recognized. In an API, this can also mean that the endpoint is valid but the resource itself does not exist. Servers may also send this response instead of 403 to hide the existence of a resource from an unauthorized client."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/404"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 149,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L149"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 404
+					}
+				},
+				{
+					"id": 246,
+					"name": "NotImplemented501",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Request method is not supported by the server and cannot be handled"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/501"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 305,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L305"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 501
+					}
+				},
+				{
+					"id": 212,
+					"name": "NotModified304",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Used for caching purposes. It is telling to client that response has not been modified. So, client can continue to use same cached version of response."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/304"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 100,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L100"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 304
+					}
+				},
+				{
+					"id": 202,
+					"name": "OK200",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The request has succeeded. The meaning of a success varies depending on the HTTP method:\r\nGET: The resource has been fetched and is transmitted in the message body.\r\nHEAD: The entity headers are in the message body.\r\nPOST: The resource describing the result of the action is transmitted in the message body.\r\nTRACE: The message body contains the request message as received by the server"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/200"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 40,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L40"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 200
+					}
+				},
+				{
+					"id": 207,
+					"name": "PartialContent206",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Response code is used because of range header sent by the client to separate download into multiple streams."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/206"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 70,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L70"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 206
+					}
+				},
+				{
+					"id": 229,
+					"name": "PayloadTooLarge413",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "URI requested by the client is longer than the server is willing to interpret."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/413"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 203,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L203"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 413
+					}
+				},
+				{
+					"id": 218,
+					"name": "PaymentRequired402",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Reserved for future use. Initial aim for creating this code was using it for digital payment systems however this is not used currently."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/402"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 137,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L137"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 402
+					}
+				},
+				{
+					"id": 215,
+					"name": "PermanentRedirect308",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Means that the resource is now permanently located at another URI, specified by the Location: HTTP Response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/308"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 119,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L119"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 308
+					}
+				},
+				{
+					"id": 228,
+					"name": "PreconditionFailed412",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Client has indicated preconditions in its headers which the server does not meet."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/412"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 197,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L197"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 412
+					}
+				},
+				{
+					"id": 241,
+					"name": "PreconditionRequired428",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/428"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 275,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L275"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 428
+					}
+				},
+				{
+					"id": 201,
+					"name": "Processing102",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates that the server has received and is processing the request, but no response is available yet."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/102"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 30,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L30"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 102
+					}
+				},
+				{
+					"id": 223,
+					"name": "ProxyAuthenticationRequired407",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Similar to 401 but authentication is needed to be done by a proxy."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/407"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 167,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L167"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 407
+					}
+				},
+				{
+					"id": 232,
+					"name": "RangeNotSatisfiable416",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Range specified by the Range header field in the request can't be fulfilled"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/416"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 221,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L221"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 416
+					}
+				},
+				{
+					"id": 243,
+					"name": "RequestHeaderFieldsTooLarge431",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server is unwilling to process the request because its header fields are too large."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/431"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 287,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L287"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 431
+					}
+				},
+				{
+					"id": 224,
+					"name": "RequestTimeout408",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Response is sent on an idle connection by some servers, even without any previous request by the client. It means that the server would like to shut down this unused connection."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/408"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 173,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L173"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 408
+					}
+				},
+				{
+					"id": 206,
+					"name": "ResetContent205",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Response code is sent after accomplishing request to tell user agent reset document view which sent this request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/205"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 64,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L64"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 205
+					}
+				},
+				{
+					"id": 211,
+					"name": "SeeOther303",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server sent this response to directing client to get requested resource to another URI with an GET request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/303"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 94,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L94"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 303
+					}
+				},
+				{
+					"id": 248,
+					"name": "ServiceUnavailable503",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server is not ready to handle the request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/503"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 317,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L317"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 503
+					}
+				},
+				{
+					"id": 200,
+					"name": "SwitchingProtocols101",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Sent in response to an Upgrade request header by the client, and indicates the protocol the server is switching too."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/101"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 24,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L24"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 101
+					}
+				},
+				{
+					"id": 214,
+					"name": "TemporaryRedirect307",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server sent this response to directing client to get requested resource to another URI with same method that used prior request. This has the same semantic than the 302 Found HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/307"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 113,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L113"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 307
+					}
+				},
+				{
+					"id": 239,
+					"name": "TooEarly425",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/425"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 263,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L263"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 425
+					}
+				},
+				{
+					"id": 242,
+					"name": "TooManyRequests429",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "User has sent too many requests in a given amount of time"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/429"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 281,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L281"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 429
+					}
+				},
+				{
+					"id": 217,
+					"name": "Unauthorized401",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Although the HTTP standard specifies \"unauthorized\", semantically this response means \"unauthenticated\". That is, the client must authenticate itself to get the requested response."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/401"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 131,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L131"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 401
+					}
+				},
+				{
+					"id": 244,
+					"name": "UnavailableForLegalReasons451",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "User requested a resource that cannot legally be provided, such as a web page censored by a government."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://en.wikipedia.org/wiki/HTTP_451"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 293,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L293"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 451
+					}
+				},
+				{
+					"id": 236,
+					"name": "UnprocessableEntity422",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Request was well-formed but was unable to be followed due to semantic errors."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/422"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 245,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L245"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 422
+					}
+				},
+				{
+					"id": 231,
+					"name": "UnsupportedMediaType415",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Media format of the requested data is not supported by the server."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/415"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 215,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L215"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 415
+					}
+				},
+				{
+					"id": 240,
+					"name": "UpgradeRequired426",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/426"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 269,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L269"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 426
+					}
+				},
+				{
+					"id": 230,
+					"name": "URITooLong414",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Media format of the requested data is not supported by the server, so the server is rejecting the request."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/414"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 209,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L209"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 414
+					}
+				},
+				{
+					"id": 213,
+					"name": "UseProxy305",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [],
+						"blockTags": [
+							{
+								"tag": "@deprecated",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Was defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy. It has been deprecated due to security concerns regarding in-band configuration of a proxy."
+									}
+								]
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/305"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 107,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L107"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 305
+					}
+				},
+				{
+					"id": 251,
+					"name": "VariantAlsoNegotiates506",
+					"variant": "declaration",
+					"kind": 16,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://http.cat/status/506"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/httpStatus.ts",
+							"line": 335,
+							"character": 4,
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L335"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 506
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumeration Members",
+					"children": [
+						204,
+						247,
+						216,
+						225,
+						199,
+						203,
+						233,
+						238,
+						219,
+						210,
+						249,
+						226,
+						250,
+						234,
+						252,
+						245,
+						227,
+						237,
+						253,
+						221,
+						235,
+						209,
+						208,
+						255,
+						205,
+						222,
+						254,
+						220,
+						246,
+						212,
+						202,
+						207,
+						229,
+						218,
+						215,
+						228,
+						241,
+						201,
+						223,
+						232,
+						243,
+						224,
+						206,
+						211,
+						248,
+						200,
+						214,
+						239,
+						242,
+						217,
+						244,
+						236,
+						231,
+						240,
+						230,
+						213,
+						251
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/httpStatus.ts",
+					"line": 13,
+					"character": 18,
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L13"
+				}
+			]
+		},
+		{
 			"id": 91,
 			"name": "SoFetchConfig",
 			"variant": "declaration",
@@ -62,7 +2329,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 79,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L79"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L79"
 						}
 					],
 					"type": {
@@ -92,12 +2359,12 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 25,
 							"character": 11,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L25"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L25"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 198,
+						"target": 256,
 						"name": "AuthenticationType",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -122,7 +2389,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 84,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L84"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L84"
 						}
 					],
 					"type": {
@@ -150,7 +2417,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 89,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L89"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L89"
 						}
 					],
 					"type": {
@@ -180,12 +2447,12 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 19,
 							"character": 11,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L19"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L19"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 199,
+						"target": 257,
 						"name": "AuthTokenStorageType",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -201,7 +2468,7 @@
 						"summary": [
 							{
 								"kind": "text",
-								"text": "The base URL for all HTTP requests in the instance. If absent this is assumed to be the current base url.\nIf running in Node relative requests without a baseUrl will throw an error."
+								"text": "The base URL for all HTTP requests in the instance. If absent this is assumed to be the current base url.\r\nIf running in Node relative requests without a baseUrl will throw an error."
 							}
 						]
 					},
@@ -210,7 +2477,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 74,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L74"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L74"
 						}
 					],
 					"type": {
@@ -232,7 +2499,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 13,
 							"character": 14,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L13"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L13"
 						}
 					],
 					"type": {
@@ -250,7 +2517,7 @@
 										"fileName": "src/soFetchConfig.ts",
 										"line": 13,
 										"character": 40,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L13"
+										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L13"
 									}
 								],
 								"signatures": [
@@ -265,7 +2532,7 @@
 												"fileName": "src/soFetchConfig.ts",
 												"line": 13,
 												"character": 40,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L13"
+												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L13"
 											}
 										],
 										"parameters": [
@@ -357,7 +2624,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 12,
 							"character": 14,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L12"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L12"
 						}
 					],
 					"type": {
@@ -375,7 +2642,7 @@
 										"fileName": "src/soFetchConfig.ts",
 										"line": 12,
 										"character": 35,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L12"
+										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L12"
 									}
 								],
 								"signatures": [
@@ -390,7 +2657,7 @@
 												"fileName": "src/soFetchConfig.ts",
 												"line": 12,
 												"character": 35,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L12"
+												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L12"
 											}
 										],
 										"parameters": [
@@ -402,7 +2669,7 @@
 												"flags": {},
 												"type": {
 													"type": "reference",
-													"target": 249,
+													"target": 307,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												}
@@ -417,7 +2684,7 @@
 												},
 												{
 													"type": "reference",
-													"target": 249,
+													"target": 307,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												},
@@ -438,7 +2705,7 @@
 																},
 																{
 																	"type": "reference",
-																	"target": 249,
+																	"target": 307,
 																	"name": "SoFetchRequest",
 																	"package": "@antoinette-agency/sofetch"
 																}
@@ -470,7 +2737,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 14,
 							"character": 14,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L14"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
 						}
 					],
 					"type": {
@@ -488,7 +2755,7 @@
 										"fileName": "src/soFetchConfig.ts",
 										"line": 14,
 										"character": 42,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L14"
+										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
 									}
 								],
 								"signatures": [
@@ -503,7 +2770,7 @@
 												"fileName": "src/soFetchConfig.ts",
 												"line": 14,
 												"character": 42,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L14"
+												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
 											}
 										],
 										"parameters": [
@@ -550,7 +2817,7 @@
 																		"fileName": "src/soFetchConfig.ts",
 																		"line": 14,
 																		"character": 78,
-																		"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L14"
+																		"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
 																	}
 																],
 																"type": {
@@ -569,7 +2836,7 @@
 																		"fileName": "src/soFetchConfig.ts",
 																		"line": 14,
 																		"character": 96,
-																		"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L14"
+																		"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
 																	}
 																],
 																"type": {
@@ -592,7 +2859,7 @@
 																"fileName": "src/soFetchConfig.ts",
 																"line": 14,
 																"character": 76,
-																"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L14"
+																"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
 															}
 														]
 													}
@@ -642,7 +2909,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 141,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L141"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L141"
 						}
 					],
 					"signatures": [
@@ -656,7 +2923,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Adds a handler which will be executed before every request. beforeSend handlers on the config\nwill be executed before request-specific handlers"
+										"text": "Adds a handler which will be executed before every request. beforeSend handlers on the config\r\nwill be executed before request-specific handlers"
 									}
 								],
 								"blockTags": [
@@ -665,7 +2932,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\nsoFetch.config.beforeSend((req:SoFetchRequest) => {\n      console.info(`Sending ${req.method} request to URL ${req.url}`\n   })\n```"
+												"text": "```ts\nsoFetch.config.beforeSend((req:SoFetchRequest) => {\r\n      console.info(`Sending ${req.method} request to URL ${req.url}`\r\n   })\n```"
 											}
 										]
 									},
@@ -685,7 +2952,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 141,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L141"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L141"
 								}
 							],
 							"parameters": [
@@ -708,7 +2975,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 141,
 													"character": 29,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L141"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L141"
 												}
 											],
 											"signatures": [
@@ -723,7 +2990,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 141,
 															"character": 29,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L141"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L141"
 														}
 													],
 													"parameters": [
@@ -819,7 +3086,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 125,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L125"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L125"
 						}
 					],
 					"signatures": [
@@ -833,7 +3100,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Adds a handler which will be executed before every request. beforeSend handlers on the config\nwill be executed before request-specific handlers"
+										"text": "Adds a handler which will be executed before every request. beforeSend handlers on the config\r\nwill be executed before request-specific handlers"
 									}
 								],
 								"blockTags": [
@@ -842,7 +3109,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\nsoFetch.config.beforeSend((req:SoFetchRequest) => {\n      console.info(`Sending ${req.method} request to URL ${req.url}`\n   })\n```"
+												"text": "```ts\nsoFetch.config.beforeSend((req:SoFetchRequest) => {\r\n      console.info(`Sending ${req.method} request to URL ${req.url}`\r\n   })\n```"
 											}
 										]
 									},
@@ -862,7 +3129,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 125,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L125"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L125"
 								}
 							],
 							"parameters": [
@@ -885,7 +3152,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 125,
 													"character": 24,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L125"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L125"
 												}
 											],
 											"signatures": [
@@ -900,7 +3167,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 125,
 															"character": 24,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L125"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L125"
 														}
 													],
 													"parameters": [
@@ -912,7 +3179,7 @@
 															"flags": {},
 															"type": {
 																"type": "reference",
-																"target": 249,
+																"target": 307,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															}
@@ -927,7 +3194,7 @@
 															},
 															{
 																"type": "reference",
-																"target": 249,
+																"target": 307,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															},
@@ -948,7 +3215,7 @@
 																			},
 																			{
 																				"type": "reference",
-																				"target": 249,
+																				"target": 307,
 																				"name": "SoFetchRequest",
 																				"package": "@antoinette-agency/sofetch"
 																			}
@@ -984,7 +3251,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 105,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L105"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L105"
 						}
 					],
 					"signatures": [
@@ -998,7 +3265,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Adds a handler which will be executed on receipt from the server of the specified status code.\nMultiple handlers will be executed in the order in which they are added. If a request has it's\nown handler(s) for a given status code the corresponding handlers in the config will not be executed."
+										"text": "Adds a handler which will be executed on receipt from the server of the specified status code.\r\nMultiple handlers will be executed in the order in which they are added. If a request has it's\r\nown handler(s) for a given status code the corresponding handlers in the config will not be executed."
 									}
 								],
 								"blockTags": [
@@ -1007,7 +3274,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\nsoFetchConfig.catchHttp(404, (res:Response) => {\n        alert(\"This object can't be found\")\n    })\n```"
+												"text": "```ts\nsoFetchConfig.catchHttp(404, (res:Response) => {\r\n        alert(\"This object can't be found\")\r\n    })\n```"
 											}
 										]
 									},
@@ -1027,7 +3294,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 105,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L105"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L105"
 								}
 							],
 							"parameters": [
@@ -1077,7 +3344,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 105,
 													"character": 39,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L105"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L105"
 												}
 											],
 											"signatures": [
@@ -1092,7 +3359,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 105,
 															"character": 39,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L105"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L105"
 														}
 													],
 													"parameters": [
@@ -1144,7 +3411,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 27,
 							"character": 14,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L27"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L27"
 						}
 					],
 					"signatures": [
@@ -1159,7 +3426,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 27,
 									"character": 29,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L27"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L27"
 								}
 							],
 							"type": {
@@ -1192,7 +3459,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 157,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L157"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
 						}
 					],
 					"signatures": [
@@ -1206,7 +3473,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Adds a handler which will be executed after every request. Handlers will fire regardless of whether\nthe response status code indicated an error"
+										"text": "Adds a handler which will be executed after every request. Handlers will fire regardless of whether\r\nthe response status code indicated an error"
 									}
 								],
 								"blockTags": [
@@ -1215,7 +3482,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\nsoFetch.config.onRequestComplete((r: Response) => {\n      console.info(`Response received from ${r.url} with status ${r.status}`\n   })\n```"
+												"text": "```ts\nsoFetch.config.onRequestComplete((r: Response) => {\r\n      console.info(`Response received from ${r.url} with status ${r.status}`\r\n   })\n```"
 											}
 										]
 									},
@@ -1235,7 +3502,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 157,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L157"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
 								}
 							],
 							"parameters": [
@@ -1258,7 +3525,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 157,
 													"character": 31,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L157"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
 												}
 											],
 											"signatures": [
@@ -1273,7 +3540,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 157,
 															"character": 31,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L157"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
 														}
 													],
 													"parameters": [
@@ -1320,7 +3587,7 @@
 																					"fileName": "src/soFetchConfig.ts",
 																					"line": 157,
 																					"character": 57,
-																					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L157"
+																					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
 																				}
 																			],
 																			"type": {
@@ -1339,7 +3606,7 @@
 																					"fileName": "src/soFetchConfig.ts",
 																					"line": 157,
 																					"character": 75,
-																					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L157"
+																					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
 																				}
 																			],
 																			"type": {
@@ -1362,7 +3629,7 @@
 																			"fileName": "src/soFetchConfig.ts",
 																			"line": 157,
 																			"character": 55,
-																			"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L157"
+																			"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
 																		}
 																	]
 																}
@@ -1420,7 +3687,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 49,
 							"character": 11,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L49"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L49"
 						}
 					],
 					"signatures": [
@@ -1434,7 +3701,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Use this method to set an auth token after it's been received from a server, typically as \nthe response to a login request"
+										"text": "Use this method to set an auth token after it's been received from a server, typically as \r\nthe response to a login request"
 									}
 								]
 							},
@@ -1443,7 +3710,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 49,
 									"character": 26,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L49"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L49"
 								}
 							],
 							"parameters": [
@@ -1477,7 +3744,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 280,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L280"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L280"
 						}
 					],
 					"signatures": [
@@ -1500,7 +3767,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 280,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L280"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L280"
 								}
 							],
 							"parameters": [
@@ -1532,7 +3799,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 283,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L283"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L283"
 														}
 													],
 													"type": {
@@ -1553,12 +3820,12 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 284,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L284"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L284"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 199,
+														"target": 257,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
@@ -1576,7 +3843,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 282,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L282"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L282"
 														}
 													],
 													"type": {
@@ -1597,7 +3864,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 281,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L281"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L281"
 														}
 													],
 													"type": {
@@ -1622,7 +3889,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 280,
 													"character": 85,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L280"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L280"
 												}
 											]
 										}
@@ -1647,7 +3914,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 180,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L180"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L180"
 						}
 					],
 					"signatures": [
@@ -1670,7 +3937,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 180,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L180"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L180"
 								}
 							],
 							"parameters": [
@@ -1702,7 +3969,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 181,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L181"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L181"
 														}
 													],
 													"type": {
@@ -1723,7 +3990,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 183,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L183"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L183"
 														}
 													],
 													"type": {
@@ -1744,12 +4011,12 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 182,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L182"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L182"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 199,
+														"target": 257,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
@@ -1770,7 +4037,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 180,
 													"character": 35,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L180"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L180"
 												}
 											]
 										}
@@ -1796,7 +4063,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 204,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L204"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L204"
 						}
 					],
 					"signatures": [
@@ -1819,7 +4086,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 204,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L204"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L204"
 								}
 							],
 							"parameters": [
@@ -1853,7 +4120,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 205,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L205"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L205"
 														}
 													],
 													"type": {
@@ -1874,7 +4141,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 206,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L206"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L206"
 														}
 													],
 													"type": {
@@ -1897,7 +4164,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 204,
 													"character": 35,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L204"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L204"
 												}
 											]
 										}
@@ -1922,7 +4189,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 232,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L232"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L232"
 						}
 					],
 					"signatures": [
@@ -1945,7 +4212,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 232,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L232"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L232"
 								}
 							],
 							"parameters": [
@@ -1977,7 +4244,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 234,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L234"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L234"
 														}
 													],
 													"type": {
@@ -1998,7 +4265,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 235,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L235"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L235"
 														}
 													],
 													"type": {
@@ -2019,12 +4286,12 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 236,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L236"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L236"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 199,
+														"target": 257,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
@@ -2040,7 +4307,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 233,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L233"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L233"
 														}
 													],
 													"type": {
@@ -2065,7 +4332,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 232,
 													"character": 88,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L232"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L232"
 												}
 											]
 										}
@@ -2090,7 +4357,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 256,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L256"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L256"
 						}
 					],
 					"signatures": [
@@ -2113,7 +4380,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 256,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L256"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L256"
 								}
 							],
 							"parameters": [
@@ -2145,7 +4412,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 258,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L258"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L258"
 														}
 													],
 													"type": {
@@ -2166,7 +4433,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 259,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L259"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L259"
 														}
 													],
 													"type": {
@@ -2187,12 +4454,12 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 260,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L260"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L260"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 199,
+														"target": 257,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
@@ -2208,7 +4475,7 @@
 															"fileName": "src/soFetchConfig.ts",
 															"line": 257,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L257"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L257"
 														}
 													],
 													"type": {
@@ -2233,7 +4500,7 @@
 													"fileName": "src/soFetchConfig.ts",
 													"line": 256,
 													"character": 98,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L256"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L256"
 												}
 											]
 										}
@@ -2291,7 +4558,7 @@
 					"fileName": "src/soFetchConfig.ts",
 					"line": 10,
 					"character": 13,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchConfig.ts#L10"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L10"
 				}
 			]
 		},
@@ -2314,7 +4581,7 @@
 						"content": [
 							{
 								"kind": "code",
-								"text": "```ts\nconst unicorn = await soFetch(\"https://unicorns.com/1234\")\n     .beforeSend(req:SoFetchRequest) => {\n         console.info(`Finding my unicorn at ${req.url}`)\n      })\n     .catchHttp(Status.NotFound404, (res:Response) => {\n        console.error(\"This unicorn can't be found\")\n      })\n```"
+								"text": "```ts\nconst unicorn = await soFetch(\"https://unicorns.com/1234\")\r\n     .beforeSend(req:SoFetchRequest) => {\r\n         console.info(`Finding my unicorn at ${req.url}`)\r\n      })\r\n     .catchHttp(Status.NotFound404, (res:Response) => {\r\n        console.error(\"This unicorn can't be found\")\r\n      })\n```"
 							}
 						]
 					}
@@ -2332,7 +4599,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 28,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L28"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L28"
 						}
 					],
 					"signatures": [
@@ -2347,7 +4614,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 28,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L28"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L28"
 								}
 							],
 							"typeParameters": [
@@ -2379,7 +4646,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 28,
 													"character": 26,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L28"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L28"
 												}
 											],
 											"signatures": [
@@ -2394,7 +4661,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 28,
 															"character": 26,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L28"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L28"
 														}
 													],
 													"parameters": [
@@ -2417,7 +4684,7 @@
 																			"fileName": "src/soFetchPromise.ts",
 																			"line": 29,
 																			"character": 17,
-																			"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L29"
+																			"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L29"
 																		}
 																	],
 																	"signatures": [
@@ -2432,7 +4699,7 @@
 																					"fileName": "src/soFetchPromise.ts",
 																					"line": 29,
 																					"character": 17,
-																					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L29"
+																					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L29"
 																				}
 																			],
 																			"parameters": [
@@ -2505,7 +4772,7 @@
 																			"fileName": "src/soFetchPromise.ts",
 																			"line": 30,
 																			"character": 16,
-																			"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L30"
+																			"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L30"
 																		}
 																	],
 																	"signatures": [
@@ -2520,7 +4787,7 @@
 																					"fileName": "src/soFetchPromise.ts",
 																					"line": 30,
 																					"character": 16,
-																					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L30"
+																					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L30"
 																				}
 																			],
 																			"parameters": [
@@ -2588,7 +4855,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 21,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L21"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L21"
 						}
 					],
 					"type": {
@@ -2606,7 +4873,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 21,
 										"character": 29,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L21"
+										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L21"
 									}
 								],
 								"signatures": [
@@ -2621,7 +4888,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 21,
 												"character": 29,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L21"
+												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L21"
 											}
 										],
 										"parameters": [
@@ -2711,7 +4978,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 20,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L20"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L20"
 						}
 					],
 					"type": {
@@ -2729,7 +4996,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 20,
 										"character": 24,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L20"
+										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L20"
 									}
 								],
 								"signatures": [
@@ -2744,7 +5011,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 20,
 												"character": 24,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L20"
+												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L20"
 											}
 										],
 										"parameters": [
@@ -2756,7 +5023,7 @@
 												"flags": {},
 												"type": {
 													"type": "reference",
-													"target": 249,
+													"target": 307,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												}
@@ -2771,7 +5038,7 @@
 												},
 												{
 													"type": "reference",
-													"target": 249,
+													"target": 307,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												},
@@ -2792,7 +5059,7 @@
 																},
 																{
 																	"type": "reference",
-																	"target": 249,
+																	"target": 307,
 																	"name": "SoFetchRequest",
 																	"package": "@antoinette-agency/sofetch"
 																}
@@ -2822,7 +5089,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 25,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L25"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L25"
 						}
 					],
 					"type": {
@@ -3039,12 +5306,12 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 19,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L19"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L19"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 202,
+						"target": 260,
 						"name": "ErrorHandlerDict",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -3061,7 +5328,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 26,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L26"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L26"
 						}
 					],
 					"type": {
@@ -3213,7 +5480,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 22,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L22"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
 						}
 					],
 					"type": {
@@ -3231,7 +5498,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 22,
 										"character": 32,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L22"
+										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
 									}
 								],
 								"signatures": [
@@ -3246,7 +5513,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 22,
 												"character": 32,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L22"
+												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
 											}
 										],
 										"parameters": [
@@ -3293,7 +5560,7 @@
 																		"fileName": "src/soFetchPromise.ts",
 																		"line": 22,
 																		"character": 68,
-																		"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L22"
+																		"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
 																	}
 																],
 																"type": {
@@ -3312,7 +5579,7 @@
 																		"fileName": "src/soFetchPromise.ts",
 																		"line": 22,
 																		"character": 86,
-																		"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L22"
+																		"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
 																	}
 																],
 																"type": {
@@ -3335,7 +5602,7 @@
 																"fileName": "src/soFetchPromise.ts",
 																"line": 22,
 																"character": 66,
-																"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L22"
+																"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
 															}
 														]
 													}
@@ -3385,7 +5652,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L24"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L24"
 						}
 					],
 					"type": {
@@ -3723,7 +5990,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 23,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L23"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L23"
 						}
 					],
 					"type": {
@@ -3743,7 +6010,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 97,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L97"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L97"
 						}
 					],
 					"signatures": [
@@ -3757,7 +6024,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Adds a handler which allows developers to modify the low-level fetch RequestInit object before the HTTP\nrequest is made. These handlers execute after beforeSend handlers. This is useful for one-off\noccasions when you need to access some aspect of the low-level Fetch API. If you're using this a lot\nit might make more sense for you to use the Fetch API directly."
+										"text": "Adds a handler which allows developers to modify the low-level fetch RequestInit object before the HTTP\r\nrequest is made. These handlers execute after beforeSend handlers. This is useful for one-off\r\noccasions when you need to access some aspect of the low-level Fetch API. If you're using this a lot\r\nit might make more sense for you to use the Fetch API directly."
 									}
 								],
 								"blockTags": [
@@ -3766,7 +6033,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\n//An example of how you might send both files and data in a single request.\n   const postFilesAndDataResponse = await soFetch.put<PostFilesAndDataResponse>(\"https://example.com/files-and-data\").beforeFetchSend((init:RequestInit) => {\n      const formData = new FormData()\n      formData.append(\"company\", \"Antoinette\");\n      formData.append(\"file1\", myFile)\n      const headers = {...init.headers} as Record<string,string>\n      if (headers[\"content-type\"]) {\n          delete headers[\"content-type\"]\n      }\n      init.body = formData\n      init.headers = headers\n      return init\n   })\n```"
+												"text": "```ts\n//An example of how you might send both files and data in a single request.\r\n   const postFilesAndDataResponse = await soFetch.put<PostFilesAndDataResponse>(\"https://example.com/files-and-data\").beforeFetchSend((init:RequestInit) => {\r\n      const formData = new FormData()\r\n      formData.append(\"company\", \"Antoinette\");\r\n      formData.append(\"file1\", myFile)\r\n      const headers = {...init.headers} as Record<string,string>\r\n      if (headers[\"content-type\"]) {\r\n          delete headers[\"content-type\"]\r\n      }\r\n      init.body = formData\r\n      init.headers = headers\r\n      return init\r\n   })\n```"
 											}
 										]
 									},
@@ -3786,7 +6053,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 97,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L97"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L97"
 								}
 							],
 							"parameters": [
@@ -3809,7 +6076,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 97,
 													"character": 29,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L97"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L97"
 												}
 											],
 											"signatures": [
@@ -3824,7 +6091,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 97,
 															"character": 29,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L97"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L97"
 														}
 													],
 													"parameters": [
@@ -3932,7 +6199,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 68,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L68"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L68"
 						}
 					],
 					"signatures": [
@@ -3946,7 +6213,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Adds a handler which will be executed before this HTTP request is sent. BeforeSend handlers added here will\nwill be executed after those added on the config."
+										"text": "Adds a handler which will be executed before this HTTP request is sent. BeforeSend handlers added here will\r\nwill be executed after those added on the config."
 									}
 								],
 								"blockTags": [
@@ -3955,7 +6222,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\nawait soFetch(\"https://example.com/users\",{name:\"Sarah\", id:1234}).beforeSend((req:SoFetchRequest) => {\n      console.info(`Sending ${req.method} request to URL ${req.url}`\n   })\n```"
+												"text": "```ts\nawait soFetch(\"https://example.com/users\",{name:\"Sarah\", id:1234}).beforeSend((req:SoFetchRequest) => {\r\n      console.info(`Sending ${req.method} request to URL ${req.url}`\r\n   })\n```"
 											}
 										]
 									},
@@ -3975,7 +6242,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 68,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L68"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L68"
 								}
 							],
 							"parameters": [
@@ -3998,7 +6265,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 68,
 													"character": 24,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L68"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L68"
 												}
 											],
 											"signatures": [
@@ -4013,7 +6280,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 68,
 															"character": 24,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L68"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L68"
 														}
 													],
 													"parameters": [
@@ -4025,7 +6292,7 @@
 															"flags": {},
 															"type": {
 																"type": "reference",
-																"target": 249,
+																"target": 307,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															}
@@ -4040,7 +6307,7 @@
 															},
 															{
 																"type": "reference",
-																"target": 249,
+																"target": 307,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															},
@@ -4061,7 +6328,7 @@
 																			},
 																			{
 																				"type": "reference",
-																				"target": 249,
+																				"target": 307,
 																				"name": "SoFetchRequest",
 																				"package": "@antoinette-agency/sofetch"
 																			}
@@ -4109,7 +6376,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 117,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L117"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L117"
 						}
 					],
 					"signatures": [
@@ -4123,7 +6390,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Adds a handler which will be executed on receipt from the server of the specified status code.\nMultiple handlers will be executed in the order in which they are added. If you add an error handler\nfor a specific status code here any corresponding handlers in the config will not be executed."
+										"text": "Adds a handler which will be executed on receipt from the server of the specified status code.\r\nMultiple handlers will be executed in the order in which they are added. If you add an error handler\r\nfor a specific status code here any corresponding handlers in the config will not be executed."
 									}
 								],
 								"blockTags": [
@@ -4132,7 +6399,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\nconst unicorn = await soFetch(\"https://unicorns.com/1234\")\n     .catchHttp(404, (res:Response) => {\n        console.error(\"This unicorn can't be found\")\n    })\n```"
+												"text": "```ts\nconst unicorn = await soFetch(\"https://unicorns.com/1234\")\r\n     .catchHttp(404, (res:Response) => {\r\n        console.error(\"This unicorn can't be found\")\r\n    })\n```"
 											}
 										]
 									},
@@ -4152,7 +6419,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 117,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L117"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L117"
 								}
 							],
 							"parameters": [
@@ -4172,11 +6439,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": {
-											"packageName": "@antoinette-agency/sofetch",
-											"packagePath": "src/httpStatus.ts",
-											"qualifiedName": "HttpStatus"
-										},
+										"target": 198,
 										"name": "HttpStatus",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -4208,7 +6471,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 117,
 													"character": 43,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L117"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L117"
 												}
 											],
 											"signatures": [
@@ -4223,7 +6486,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 117,
 															"character": 43,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L117"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L117"
 														}
 													],
 													"parameters": [
@@ -4285,7 +6548,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 51,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L51"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L51"
 						}
 					],
 					"signatures": [
@@ -4299,7 +6562,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Adds a handler which will be executed after this HTTP request is completed. Handlers will fire regardless of whether\nthe response status code indicated an error"
+										"text": "Adds a handler which will be executed after this HTTP request is completed. Handlers will fire regardless of whether\r\nthe response status code indicated an error"
 									}
 								],
 								"blockTags": [
@@ -4308,7 +6571,7 @@
 										"content": [
 											{
 												"kind": "code",
-												"text": "```ts\nawait soFetch(\"https://example.com/users\",{name:\"Sarah\", id:1234}).onRequestComplete((r: Response) => {\n      console.info(`Response received from ${r.url} with status ${r.status}`\n   })\n```"
+												"text": "```ts\nawait soFetch(\"https://example.com/users\",{name:\"Sarah\", id:1234}).onRequestComplete((r: Response) => {\r\n      console.info(`Response received from ${r.url} with status ${r.status}`\r\n   })\n```"
 											}
 										]
 									},
@@ -4328,7 +6591,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 51,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L51"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L51"
 								}
 							],
 							"parameters": [
@@ -4351,7 +6614,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 51,
 													"character": 31,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L51"
+													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L51"
 												}
 											],
 											"signatures": [
@@ -4366,7 +6629,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 51,
 															"character": 31,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L51"
+															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L51"
 														}
 													],
 													"parameters": [
@@ -4449,7 +6712,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 125,
 							"character": 10,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L125"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L125"
 						}
 					],
 					"signatures": [
@@ -4464,7 +6727,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 125,
 									"character": 10,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L125"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L125"
 								}
 							],
 							"parameters": [
@@ -4548,7 +6811,7 @@
 					"fileName": "src/soFetchPromise.ts",
 					"line": 17,
 					"character": 13,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchPromise.ts#L17"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L17"
 				}
 			],
 			"typeParameters": [
@@ -4562,14 +6825,14 @@
 			]
 		},
 		{
-			"id": 213,
+			"id": 271,
 			"name": "SoFetchLike",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 215,
+					"id": 273,
 					"name": "config",
 					"variant": "declaration",
 					"kind": 1024,
@@ -4579,7 +6842,7 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 7,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L7"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L7"
 						}
 					],
 					"type": {
@@ -4590,7 +6853,7 @@
 					}
 				},
 				{
-					"id": 214,
+					"id": 272,
 					"name": "verbose",
 					"variant": "declaration",
 					"kind": 1024,
@@ -4600,7 +6863,7 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 6,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L6"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L6"
 						}
 					],
 					"type": {
@@ -4609,7 +6872,7 @@
 					}
 				},
 				{
-					"id": 236,
+					"id": 294,
 					"name": "delete",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4619,12 +6882,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 17,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L17"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L17"
 						}
 					],
 					"signatures": [
 						{
-							"id": 237,
+							"id": 295,
 							"name": "delete",
 							"variant": "signature",
 							"kind": 4096,
@@ -4634,12 +6897,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 17,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L17"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L17"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 238,
+									"id": 296,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -4648,7 +6911,7 @@
 							],
 							"parameters": [
 								{
-									"id": 239,
+									"id": 297,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -4659,7 +6922,7 @@
 									}
 								},
 								{
-									"id": 240,
+									"id": 298,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -4668,7 +6931,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 254,
+										"target": 312,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -4680,7 +6943,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": 238,
+										"target": 296,
 										"name": "T",
 										"package": "@antoinette-agency/sofetch",
 										"refersToTypeParameter": true
@@ -4693,7 +6956,7 @@
 					]
 				},
 				{
-					"id": 216,
+					"id": 274,
 					"name": "get",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4703,12 +6966,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 9,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L9"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L9"
 						}
 					],
 					"signatures": [
 						{
-							"id": 217,
+							"id": 275,
 							"name": "get",
 							"variant": "signature",
 							"kind": 4096,
@@ -4718,12 +6981,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 9,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L9"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L9"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 218,
+									"id": 276,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -4732,7 +6995,7 @@
 							],
 							"parameters": [
 								{
-									"id": 219,
+									"id": 277,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -4743,7 +7006,7 @@
 									}
 								},
 								{
-									"id": 220,
+									"id": 278,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -4752,7 +7015,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 254,
+										"target": 312,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -4764,7 +7027,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": 218,
+										"target": 276,
 										"name": "T",
 										"package": "@antoinette-agency/sofetch",
 										"refersToTypeParameter": true
@@ -4777,7 +7040,7 @@
 					]
 				},
 				{
-					"id": 241,
+					"id": 299,
 					"name": "instance",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4787,12 +7050,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 21,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L21"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L21"
 						}
 					],
 					"signatures": [
 						{
-							"id": 242,
+							"id": 300,
 							"name": "instance",
 							"variant": "signature",
 							"kind": 4096,
@@ -4802,12 +7065,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 21,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L21"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L21"
 								}
 							],
 							"parameters": [
 								{
-									"id": 243,
+									"id": 301,
 									"name": "configOrAuthKey",
 									"variant": "param",
 									"kind": 32768,
@@ -4833,11 +7096,11 @@
 							],
 							"type": {
 								"type": "reference",
-								"target": 213,
+								"target": 271,
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": 244,
+										"target": 302,
 										"name": "TResponse",
 										"package": "@antoinette-agency/sofetch",
 										"qualifiedName": "SoFetchLike.TResponse",
@@ -4851,7 +7114,7 @@
 					]
 				},
 				{
-					"id": 231,
+					"id": 289,
 					"name": "patch",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4861,12 +7124,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 15,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L15"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L15"
 						}
 					],
 					"signatures": [
 						{
-							"id": 232,
+							"id": 290,
 							"name": "patch",
 							"variant": "signature",
 							"kind": 4096,
@@ -4876,12 +7139,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 15,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L15"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L15"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 233,
+									"id": 291,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -4890,7 +7153,7 @@
 							],
 							"parameters": [
 								{
-									"id": 234,
+									"id": 292,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -4901,7 +7164,7 @@
 									}
 								},
 								{
-									"id": 235,
+									"id": 293,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -4910,7 +7173,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 254,
+										"target": 312,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -4922,7 +7185,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": 233,
+										"target": 291,
 										"name": "T",
 										"package": "@antoinette-agency/sofetch",
 										"refersToTypeParameter": true
@@ -4935,7 +7198,7 @@
 					]
 				},
 				{
-					"id": 221,
+					"id": 279,
 					"name": "post",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4945,12 +7208,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L11"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L11"
 						}
 					],
 					"signatures": [
 						{
-							"id": 222,
+							"id": 280,
 							"name": "post",
 							"variant": "signature",
 							"kind": 4096,
@@ -4960,12 +7223,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 11,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L11"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L11"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 223,
+									"id": 281,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -4974,7 +7237,7 @@
 							],
 							"parameters": [
 								{
-									"id": 224,
+									"id": 282,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -4985,7 +7248,7 @@
 									}
 								},
 								{
-									"id": 225,
+									"id": 283,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -4994,7 +7257,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 254,
+										"target": 312,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -5006,7 +7269,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": 223,
+										"target": 281,
 										"name": "T",
 										"package": "@antoinette-agency/sofetch",
 										"refersToTypeParameter": true
@@ -5019,7 +7282,7 @@
 					]
 				},
 				{
-					"id": 226,
+					"id": 284,
 					"name": "put",
 					"variant": "declaration",
 					"kind": 2048,
@@ -5029,12 +7292,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 13,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L13"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L13"
 						}
 					],
 					"signatures": [
 						{
-							"id": 227,
+							"id": 285,
 							"name": "put",
 							"variant": "signature",
 							"kind": 4096,
@@ -5044,12 +7307,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 13,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L13"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L13"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 228,
+									"id": 286,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -5058,7 +7321,7 @@
 							],
 							"parameters": [
 								{
-									"id": 229,
+									"id": 287,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -5069,7 +7332,7 @@
 									}
 								},
 								{
-									"id": 230,
+									"id": 288,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -5078,7 +7341,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 254,
+										"target": 312,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -5090,7 +7353,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": 228,
+										"target": 286,
 										"name": "T",
 										"package": "@antoinette-agency/sofetch",
 										"refersToTypeParameter": true
@@ -5107,19 +7370,19 @@
 				{
 					"title": "Properties",
 					"children": [
-						215,
-						214
+						273,
+						272
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						236,
-						216,
-						241,
-						231,
-						221,
-						226
+						294,
+						274,
+						299,
+						289,
+						279,
+						284
 					]
 				}
 			],
@@ -5128,12 +7391,12 @@
 					"fileName": "src/soFetchLike.ts",
 					"line": 5,
 					"character": 17,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L5"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L5"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 244,
+					"id": 302,
 					"name": "TResponse",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -5146,7 +7409,7 @@
 			],
 			"signatures": [
 				{
-					"id": 245,
+					"id": 303,
 					"name": "SoFetchLike",
 					"variant": "signature",
 					"kind": 4096,
@@ -5156,12 +7419,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 19,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetchLike.ts#L19"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L19"
 						}
 					],
 					"typeParameters": [
 						{
-							"id": 246,
+							"id": 304,
 							"name": "T",
 							"variant": "typeParam",
 							"kind": 131072,
@@ -5170,7 +7433,7 @@
 					],
 					"parameters": [
 						{
-							"id": 247,
+							"id": 305,
 							"name": "url",
 							"variant": "param",
 							"kind": 32768,
@@ -5181,7 +7444,7 @@
 							}
 						},
 						{
-							"id": 248,
+							"id": 306,
 							"name": "body",
 							"variant": "param",
 							"kind": 32768,
@@ -5190,7 +7453,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 254,
+								"target": 312,
 								"name": "UploadPayload",
 								"package": "@antoinette-agency/sofetch"
 							}
@@ -5202,7 +7465,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": 246,
+								"target": 304,
 								"name": "T",
 								"package": "@antoinette-agency/sofetch",
 								"refersToTypeParameter": true
@@ -5215,14 +7478,14 @@
 			]
 		},
 		{
-			"id": 249,
+			"id": 307,
 			"name": "SoFetchRequest",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 252,
+					"id": 310,
 					"name": "body",
 					"variant": "declaration",
 					"kind": 1024,
@@ -5232,7 +7495,7 @@
 							"fileName": "src/soFetch.ts",
 							"line": 109,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetch.ts#L109"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L109"
 						}
 					],
 					"type": {
@@ -5250,7 +7513,7 @@
 					}
 				},
 				{
-					"id": 253,
+					"id": 311,
 					"name": "headers",
 					"variant": "declaration",
 					"kind": 1024,
@@ -5260,7 +7523,7 @@
 							"fileName": "src/soFetch.ts",
 							"line": 110,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetch.ts#L110"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L110"
 						}
 					],
 					"type": {
@@ -5285,7 +7548,7 @@
 					}
 				},
 				{
-					"id": 251,
+					"id": 309,
 					"name": "method",
 					"variant": "declaration",
 					"kind": 1024,
@@ -5295,7 +7558,7 @@
 							"fileName": "src/soFetch.ts",
 							"line": 108,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetch.ts#L108"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L108"
 						}
 					],
 					"type": {
@@ -5304,7 +7567,7 @@
 					}
 				},
 				{
-					"id": 250,
+					"id": 308,
 					"name": "url",
 					"variant": "declaration",
 					"kind": 1024,
@@ -5314,7 +7577,7 @@
 							"fileName": "src/soFetch.ts",
 							"line": 107,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetch.ts#L107"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L107"
 						}
 					],
 					"type": {
@@ -5327,10 +7590,10 @@
 				{
 					"title": "Properties",
 					"children": [
-						252,
-						253,
-						251,
-						250
+						310,
+						311,
+						309,
+						308
 					]
 				}
 			],
@@ -5339,12 +7602,12 @@
 					"fileName": "src/soFetch.ts",
 					"line": 106,
 					"character": 17,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetch.ts#L106"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L106"
 				}
 			]
 		},
 		{
-			"id": 198,
+			"id": 256,
 			"name": "AuthenticationType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -5353,7 +7616,7 @@
 				"summary": [
 					{
 						"kind": "text",
-						"text": "Describes the methods by which soFetch sends authentication credentials to a server\n- basic - Uses [basic authentication]("
+						"text": "Describes the methods by which soFetch sends authentication credentials to a server\r\n- basic - Uses [basic authentication]("
 					},
 					{
 						"kind": "relative-link",
@@ -5361,7 +7624,7 @@
 					},
 					{
 						"kind": "text",
-						"text": ") with a (typically non-expiring) username and password\n- bearer - Uses [bearer authentication]("
+						"text": ") with a (typically non-expiring) username and password\r\n- bearer - Uses [bearer authentication]("
 					},
 					{
 						"kind": "relative-link",
@@ -5369,7 +7632,7 @@
 					},
 					{
 						"kind": "text",
-						"text": ") with an authentication token. This is typically obtained as the result of a login process, e.g. OAuth\n- header - Uses a token, but passes it to the server via a custom header which is named with the "
+						"text": ") with an authentication token. This is typically obtained as the result of a login process, e.g. OAuth\r\n- header - Uses a token, but passes it to the server via a custom header which is named with the "
 					},
 					{
 						"kind": "code",
@@ -5377,7 +7640,7 @@
 					},
 					{
 						"kind": "text",
-						"text": " property of the config\n- header - Uses a token, but passes it to the server via a query string entry which is named with the "
+						"text": " property of the config\r\n- header - Uses a token, but passes it to the server via a query string entry which is named with the "
 					},
 					{
 						"kind": "code",
@@ -5385,7 +7648,7 @@
 					},
 					{
 						"kind": "text",
-						"text": " property of the config\n- cookies - Sends the cookie which is keyed under the "
+						"text": " property of the config\r\n- cookies - Sends the cookie which is keyed under the "
 					},
 					{
 						"kind": "code",
@@ -5393,7 +7656,7 @@
 					},
 					{
 						"kind": "text",
-						"text": " property (default value is 'SOFETCH_AUTHENTICATION')\n- null - Does not send authentication credentials to the server"
+						"text": " property (default value is 'SOFETCH_AUTHENTICATION')\r\n- null - Does not send authentication credentials to the server"
 					}
 				]
 			},
@@ -5402,7 +7665,7 @@
 					"fileName": "src/authenticationType.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/authenticationType.ts#L10"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/authenticationType.ts#L10"
 				}
 			],
 			"type": {
@@ -5436,7 +7699,7 @@
 			}
 		},
 		{
-			"id": 199,
+			"id": 257,
 			"name": "AuthTokenStorageType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -5445,7 +7708,7 @@
 				"summary": [
 					{
 						"kind": "text",
-						"text": "Describes the methods by which soFetch stores an auth token:\n- memory - stores the token in local memory. The token will persist between calls to soFetch() but will be lost when a user navigates away or refreshes the page. Can be used with Node\n- sessionStorage - stores the token in the browser's sessionStorage. The token will persist as long as the tab stays open and remains on the domain. Survives page refreshes but the token will be lost if the tab is closed. Will throw an error if used with Node.\n- localStorage - stores the token in the browsers' localStorage. The token will persist indefinitely and will be accessible to any script running within the current domain. Will throw an error if used with Node.\n- cookie - stores the token in a cookie for 7 days. Can be used with Node where the pseudo-cookie will persist for the lifetime of the instance\n- <code>(() => (string | Promise<string>))</code> - uses as a token the string value returned by a sync or async function\n- null - does not persist the token"
+						"text": "Describes the methods by which soFetch stores an auth token:\r\n- memory - stores the token in local memory. The token will persist between calls to soFetch() but will be lost when a user navigates away or refreshes the page. Can be used with Node\r\n- sessionStorage - stores the token in the browser's sessionStorage. The token will persist as long as the tab stays open and remains on the domain. Survives page refreshes but the token will be lost if the tab is closed. Will throw an error if used with Node.\r\n- localStorage - stores the token in the browsers' localStorage. The token will persist indefinitely and will be accessible to any script running within the current domain. Will throw an error if used with Node.\r\n- cookie - stores the token in a cookie for 7 days. Can be used with Node where the pseudo-cookie will persist for the lifetime of the instance\r\n- <code>(() => (string | Promise<string>))</code> - uses as a token the string value returned by a sync or async function\r\n- null - does not persist the token"
 					}
 				]
 			},
@@ -5454,7 +7717,7 @@
 					"fileName": "src/authTokenStorageType.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/authTokenStorageType.ts#L10"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/authTokenStorageType.ts#L10"
 				}
 			],
 			"type": {
@@ -5479,7 +7742,7 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 200,
+							"id": 258,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
@@ -5489,12 +7752,12 @@
 									"fileName": "src/authTokenStorageType.ts",
 									"line": 15,
 									"character": 7,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/authTokenStorageType.ts#L15"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/authTokenStorageType.ts#L15"
 								}
 							],
 							"signatures": [
 								{
-									"id": 201,
+									"id": 259,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
@@ -5536,7 +7799,7 @@
 			}
 		},
 		{
-			"id": 202,
+			"id": 260,
 			"name": "ErrorHandlerDict",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -5554,13 +7817,13 @@
 					"fileName": "src/errorHandlerDict.ts",
 					"line": 4,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/errorHandlerDict.ts#L4"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L4"
 				}
 			],
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 203,
+					"id": 261,
 					"name": "__type",
 					"variant": "declaration",
 					"kind": 65536,
@@ -5570,12 +7833,12 @@
 							"fileName": "src/errorHandlerDict.ts",
 							"line": 4,
 							"character": 31,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/errorHandlerDict.ts#L4"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L4"
 						}
 					],
 					"indexSignatures": [
 						{
-							"id": 204,
+							"id": 262,
 							"name": "__index",
 							"variant": "signature",
 							"kind": 8192,
@@ -5585,12 +7848,12 @@
 									"fileName": "src/errorHandlerDict.ts",
 									"line": 5,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/errorHandlerDict.ts#L5"
+									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L5"
 								}
 							],
 							"parameters": [
 								{
-									"id": 205,
+									"id": 263,
 									"name": "key",
 									"variant": "param",
 									"kind": 32768,
@@ -5606,7 +7869,7 @@
 								"elementType": {
 									"type": "reflection",
 									"declaration": {
-										"id": 206,
+										"id": 264,
 										"name": "__type",
 										"variant": "declaration",
 										"kind": 65536,
@@ -5616,12 +7879,12 @@
 												"fileName": "src/errorHandlerDict.ts",
 												"line": 5,
 												"character": 25,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/errorHandlerDict.ts#L5"
+												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L5"
 											}
 										],
 										"signatures": [
 											{
-												"id": 207,
+												"id": 265,
 												"name": "__type",
 												"variant": "signature",
 												"kind": 4096,
@@ -5631,12 +7894,12 @@
 														"fileName": "src/errorHandlerDict.ts",
 														"line": 5,
 														"character": 25,
-														"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/errorHandlerDict.ts#L5"
+														"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L5"
 													}
 												],
 												"parameters": [
 													{
-														"id": 208,
+														"id": 266,
 														"name": "r",
 														"variant": "param",
 														"kind": 32768,
@@ -5668,14 +7931,14 @@
 			}
 		},
 		{
-			"id": 209,
+			"id": 267,
 			"name": "FileWithFieldName",
 			"variant": "declaration",
 			"kind": 2097152,
 			"flags": {},
 			"children": [
 				{
-					"id": 212,
+					"id": 270,
 					"name": "fieldName",
 					"variant": "declaration",
 					"kind": 1024,
@@ -5685,7 +7948,7 @@
 							"fileName": "src/fileWithFieldName.ts",
 							"line": 3,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/fileWithFieldName.ts#L3"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/fileWithFieldName.ts#L3"
 						}
 					],
 					"type": {
@@ -5694,7 +7957,7 @@
 					}
 				},
 				{
-					"id": 211,
+					"id": 269,
 					"name": "file",
 					"variant": "declaration",
 					"kind": 1024,
@@ -5704,7 +7967,7 @@
 							"fileName": "src/fileWithFieldName.ts",
 							"line": 2,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/fileWithFieldName.ts#L2"
+							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/fileWithFieldName.ts#L2"
 						}
 					],
 					"type": {
@@ -5723,8 +7986,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						212,
-						211
+						270,
+						269
 					]
 				}
 			],
@@ -5733,12 +7996,12 @@
 					"fileName": "src/fileWithFieldName.ts",
 					"line": 1,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/fileWithFieldName.ts#L1"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/fileWithFieldName.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 254,
+			"id": 312,
 			"name": "UploadPayload",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -5747,7 +8010,7 @@
 				"summary": [
 					{
 						"kind": "text",
-						"text": "The payload supplied to a soFetch request. This can be undefined, or a plain serialisable object\n(for JSON requests) of a file, or array of files, or a FileWithFieldName or array of type FileWithFieldName\n(if your endpoint requires the files to have specified field names)"
+						"text": "The payload supplied to a soFetch request. This can be undefined, or a plain serialisable object\r\n(for JSON requests) of a file, or array of files, or a FileWithFieldName or array of type FileWithFieldName\r\n(if your endpoint requires the files to have specified field names)"
 					}
 				]
 			},
@@ -5756,7 +8019,7 @@
 					"fileName": "src/uploadPayload.ts",
 					"line": 8,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/uploadPayload.ts#L8"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/uploadPayload.ts#L8"
 				}
 			],
 			"type": {
@@ -5791,7 +8054,7 @@
 					},
 					{
 						"type": "reference",
-						"target": 209,
+						"target": 267,
 						"name": "FileWithFieldName",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -5799,7 +8062,7 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"target": 209,
+							"target": 267,
 							"name": "FileWithFieldName",
 							"package": "@antoinette-agency/sofetch"
 						}
@@ -5812,7 +8075,7 @@
 			}
 		},
 		{
-			"id": 255,
+			"id": 313,
 			"name": "default",
 			"variant": "declaration",
 			"kind": 32,
@@ -5891,12 +8154,12 @@
 					"fileName": "src/soFetch.ts",
 					"line": 173,
 					"character": 6,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/4b6df20ee2ebd707957b7d60595868ac06d6aba0/src/soFetch.ts#L173"
+					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L173"
 				}
 			],
 			"type": {
 				"type": "reference",
-				"target": 213,
+				"target": 271,
 				"typeArguments": [
 					{
 						"type": "intrinsic",
@@ -5911,6 +8174,12 @@
 	],
 	"groups": [
 		{
+			"title": "Enumerations",
+			"children": [
+				198
+			]
+		},
+		{
 			"title": "Classes",
 			"children": [
 				91,
@@ -5920,24 +8189,24 @@
 		{
 			"title": "Interfaces",
 			"children": [
-				213,
-				249
+				271,
+				307
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				198,
-				199,
-				202,
-				209,
-				254
+				256,
+				257,
+				260,
+				267,
+				312
 			]
 		},
 		{
 			"title": "Variables",
 			"children": [
-				255
+				313
 			]
 		}
 	],
@@ -6887,280 +9156,570 @@
 		},
 		"198": {
 			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus"
+		},
+		"199": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Continue100"
+		},
+		"200": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.SwitchingProtocols101"
+		},
+		"201": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Processing102"
+		},
+		"202": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.OK200"
+		},
+		"203": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Created201"
+		},
+		"204": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Accepted202"
+		},
+		"205": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NoContent204"
+		},
+		"206": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.ResetContent205"
+		},
+		"207": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.PartialContent206"
+		},
+		"208": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.MultipleChoices300"
+		},
+		"209": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.MovedPermanently301"
+		},
+		"210": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Found302"
+		},
+		"211": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.SeeOther303"
+		},
+		"212": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NotModified304"
+		},
+		"213": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.UseProxy305"
+		},
+		"214": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.TemporaryRedirect307"
+		},
+		"215": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.PermanentRedirect308"
+		},
+		"216": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.BadRequest400"
+		},
+		"217": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Unauthorized401"
+		},
+		"218": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.PaymentRequired402"
+		},
+		"219": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Forbidden403"
+		},
+		"220": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NotFound404"
+		},
+		"221": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.MethodNotAllowed405"
+		},
+		"222": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NotAcceptable406"
+		},
+		"223": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.ProxyAuthenticationRequired407"
+		},
+		"224": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.RequestTimeout408"
+		},
+		"225": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Conflict409"
+		},
+		"226": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Gone410"
+		},
+		"227": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.LengthRequired411"
+		},
+		"228": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.PreconditionFailed412"
+		},
+		"229": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.PayloadTooLarge413"
+		},
+		"230": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.URITooLong414"
+		},
+		"231": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.UnsupportedMediaType415"
+		},
+		"232": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.RangeNotSatisfiable416"
+		},
+		"233": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.ExpectationFailed417"
+		},
+		"234": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.ImATeapot418"
+		},
+		"235": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.MisdirectedRequest421"
+		},
+		"236": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.UnprocessableEntity422"
+		},
+		"237": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.Locked423"
+		},
+		"238": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.FailedDependency424"
+		},
+		"239": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.TooEarly425"
+		},
+		"240": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.UpgradeRequired426"
+		},
+		"241": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.PreconditionRequired428"
+		},
+		"242": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.TooManyRequests429"
+		},
+		"243": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.RequestHeaderFieldsTooLarge431"
+		},
+		"244": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.UnavailableForLegalReasons451"
+		},
+		"245": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.InternalServerError500"
+		},
+		"246": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NotImplemented501"
+		},
+		"247": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.BadGateway502"
+		},
+		"248": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.ServiceUnavailable503"
+		},
+		"249": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.GatewayTimeout504"
+		},
+		"250": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.HTTPVersionNotSupported505"
+		},
+		"251": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.VariantAlsoNegotiates506"
+		},
+		"252": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.InsufficientStorage507"
+		},
+		"253": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.LoopDetected508"
+		},
+		"254": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NotExtended510"
+		},
+		"255": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NetworkAuthenticationRequired511"
+		},
+		"256": {
+			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authenticationType.ts",
 			"qualifiedName": "AuthenticationType"
 		},
-		"199": {
+		"257": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "AuthTokenStorageType"
 		},
-		"200": {
+		"258": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "__type"
 		},
-		"201": {
+		"259": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "__type"
 		},
-		"202": {
+		"260": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "ErrorHandlerDict"
 		},
-		"203": {
+		"261": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"204": {
+		"262": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type.__index"
 		},
-		"206": {
+		"264": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"207": {
+		"265": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"208": {
+		"266": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "r"
 		},
-		"209": {
+		"267": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "FileWithFieldName"
 		},
-		"211": {
+		"269": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "__type.file"
 		},
-		"212": {
+		"270": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "__type.fieldName"
 		},
-		"213": {
+		"271": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike"
 		},
-		"214": {
+		"272": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.verbose"
 		},
-		"215": {
+		"273": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.config"
 		},
-		"216": {
+		"274": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.get"
 		},
-		"217": {
+		"275": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.get"
 		},
-		"218": {
+		"276": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "T"
 		},
-		"219": {
+		"277": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "url"
 		},
-		"220": {
+		"278": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "body"
 		},
-		"221": {
+		"279": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.post"
 		},
-		"222": {
+		"280": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.post"
 		},
-		"223": {
+		"281": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "T"
 		},
-		"224": {
+		"282": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "url"
 		},
-		"225": {
+		"283": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "body"
 		},
-		"226": {
+		"284": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.put"
 		},
-		"227": {
+		"285": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.put"
 		},
-		"228": {
+		"286": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "T"
 		},
-		"229": {
+		"287": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "url"
 		},
-		"230": {
+		"288": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "body"
 		},
-		"231": {
+		"289": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.patch"
 		},
-		"232": {
+		"290": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.patch"
 		},
-		"233": {
+		"291": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "T"
 		},
-		"234": {
+		"292": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "url"
 		},
-		"235": {
+		"293": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "body"
 		},
-		"236": {
+		"294": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.delete"
 		},
-		"237": {
+		"295": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.delete"
 		},
-		"238": {
+		"296": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "T"
 		},
-		"239": {
+		"297": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "url"
 		},
-		"240": {
+		"298": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "body"
 		},
-		"241": {
+		"299": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.instance"
 		},
-		"242": {
+		"300": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.instance"
 		},
-		"243": {
+		"301": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "configOrAuthKey"
 		},
-		"244": {
+		"302": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.TResponse"
 		},
-		"245": {
+		"303": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike"
 		},
-		"246": {
+		"304": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "T"
 		},
-		"247": {
+		"305": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "url"
 		},
-		"248": {
+		"306": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "body"
 		},
-		"249": {
+		"307": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest"
 		},
-		"250": {
+		"308": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.url"
 		},
-		"251": {
+		"309": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.method"
 		},
-		"252": {
+		"310": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.body"
 		},
-		"253": {
+		"311": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.headers"
 		},
-		"254": {
+		"312": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/uploadPayload.ts",
 			"qualifiedName": "UploadPayload"
 		},
-		"255": {
+		"313": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "soFetch"

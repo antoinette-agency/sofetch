@@ -1,6 +1,6 @@
 {
   "name": "@antoinette-agency/sofetch",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "An opinionated Fetch wrapper for JSON APIs",
   "repository": "https://github.com/antoinette-agency/sofetch",
   "homepage": "https://sofetch.antoinette.agency/",
@@ -19,9 +19,9 @@
   "type": "module",
   "scripts": {
     "test-server": "npx tsx testServer/testServer.ts",
-    "build": "node esbuild.config.js",
+    "build": "npm run build:docs && node esbuild.config.js",
     "build:docs": "npx typedoc src/index.ts --router kind-dir --json docs.json && npx typedoc src/index.ts --router kind-dir",
-    "test": "npm run build:docs && npm run build && tsc && npx jest --selectProjects ts-tests",
+    "test": "npm run build && tsc && npx jest --selectProjects ts-tests",
     "test:browser": "npx jest --selectProjects puppeteer-tests",
     "build:node": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js",
     "build:browser": "esbuild src/index.ts --bundle --platform=browser --target=es2017 --outfile=dist/index.browser.js"
