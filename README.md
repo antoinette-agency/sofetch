@@ -1,8 +1,10 @@
-<img alt="soFetchReadmeHeader" src="https://github.com/user-attachments/assets/ac1fed39-cdc4-4773-96fd-53d91f82dd81" />
+<a href="https://sofetch.antoinette.agency">
+   <img alt="soFetchReadmeHeader" src="https://github.com/user-attachments/assets/ac1fed39-cdc4-4773-96fd-53d91f82dd81" />
+</a>
 <p align="center">
   <a href="https://sofetch.antoinette.agency/#quickstart">Quick Start</a> | 
   <a href="https://sofetch.antoinette.agency/examples">Examples</a> |
-  <a href="https://sofetch.antoinette.agency/api-reference">API</a> |
+  <a href="https://sofetch.antoinette.agency/api-reference">API</a>
 </p>
 
 ### ✨ Features
