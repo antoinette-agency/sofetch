@@ -37,7 +37,7 @@ const successResponse = await soFetch<Success>("/api/users", newUser)
 
 //Handling errors
 const unicorn = await soFetch<Unicorn>("/api/unicorns/1234")
-    .catchHttp(404, (res:Response) => {
+    .catchHttp(HttpStatus.NotFound404, (res:Response) => {
         alert("This unicorn can't be found")
     })
 ```
