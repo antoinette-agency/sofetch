@@ -7,7 +7,7 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 198,
+			"id": 206,
 			"name": "HttpStatus",
 			"variant": "declaration",
 			"kind": 8,
@@ -35,7 +35,7 @@
 			},
 			"children": [
 				{
-					"id": 204,
+					"id": 212,
 					"name": "Accepted202",
 					"variant": "declaration",
 					"kind": 16,
@@ -64,7 +64,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 52,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L52"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L52"
 						}
 					],
 					"type": {
@@ -73,7 +73,7 @@
 					}
 				},
 				{
-					"id": 247,
+					"id": 255,
 					"name": "BadGateway502",
 					"variant": "declaration",
 					"kind": 16,
@@ -102,7 +102,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 311,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L311"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L311"
 						}
 					],
 					"type": {
@@ -111,7 +111,7 @@
 					}
 				},
 				{
-					"id": 216,
+					"id": 224,
 					"name": "BadRequest400",
 					"variant": "declaration",
 					"kind": 16,
@@ -140,7 +140,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 125,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L125"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L125"
 						}
 					],
 					"type": {
@@ -149,7 +149,7 @@
 					}
 				},
 				{
-					"id": 225,
+					"id": 233,
 					"name": "Conflict409",
 					"variant": "declaration",
 					"kind": 16,
@@ -178,7 +178,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 179,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L179"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L179"
 						}
 					],
 					"type": {
@@ -187,7 +187,7 @@
 					}
 				},
 				{
-					"id": 199,
+					"id": 207,
 					"name": "Continue100",
 					"variant": "declaration",
 					"kind": 16,
@@ -216,7 +216,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 18,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L18"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L18"
 						}
 					],
 					"type": {
@@ -225,7 +225,7 @@
 					}
 				},
 				{
-					"id": 203,
+					"id": 211,
 					"name": "Created201",
 					"variant": "declaration",
 					"kind": 16,
@@ -254,7 +254,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 46,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L46"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L46"
 						}
 					],
 					"type": {
@@ -263,7 +263,7 @@
 					}
 				},
 				{
-					"id": 233,
+					"id": 241,
 					"name": "ExpectationFailed417",
 					"variant": "declaration",
 					"kind": 16,
@@ -292,7 +292,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 227,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L227"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L227"
 						}
 					],
 					"type": {
@@ -301,7 +301,7 @@
 					}
 				},
 				{
-					"id": 238,
+					"id": 246,
 					"name": "FailedDependency424",
 					"variant": "declaration",
 					"kind": 16,
@@ -330,7 +330,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 257,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L257"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L257"
 						}
 					],
 					"type": {
@@ -339,7 +339,7 @@
 					}
 				},
 				{
-					"id": 219,
+					"id": 227,
 					"name": "Forbidden403",
 					"variant": "declaration",
 					"kind": 16,
@@ -368,7 +368,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 143,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L143"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L143"
 						}
 					],
 					"type": {
@@ -377,7 +377,7 @@
 					}
 				},
 				{
-					"id": 210,
+					"id": 218,
 					"name": "Found302",
 					"variant": "declaration",
 					"kind": 16,
@@ -406,7 +406,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 88,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L88"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L88"
 						}
 					],
 					"type": {
@@ -415,7 +415,7 @@
 					}
 				},
 				{
-					"id": 249,
+					"id": 257,
 					"name": "GatewayTimeout504",
 					"variant": "declaration",
 					"kind": 16,
@@ -444,7 +444,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 323,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L323"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L323"
 						}
 					],
 					"type": {
@@ -453,7 +453,7 @@
 					}
 				},
 				{
-					"id": 226,
+					"id": 234,
 					"name": "Gone410",
 					"variant": "declaration",
 					"kind": 16,
@@ -482,7 +482,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 185,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L185"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L185"
 						}
 					],
 					"type": {
@@ -491,7 +491,7 @@
 					}
 				},
 				{
-					"id": 250,
+					"id": 258,
 					"name": "HTTPVersionNotSupported505",
 					"variant": "declaration",
 					"kind": 16,
@@ -520,7 +520,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 329,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L329"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L329"
 						}
 					],
 					"type": {
@@ -529,7 +529,7 @@
 					}
 				},
 				{
-					"id": 234,
+					"id": 242,
 					"name": "ImATeapot418",
 					"variant": "declaration",
 					"kind": 16,
@@ -558,7 +558,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 233,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L233"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L233"
 						}
 					],
 					"type": {
@@ -567,7 +567,7 @@
 					}
 				},
 				{
-					"id": 252,
+					"id": 260,
 					"name": "InsufficientStorage507",
 					"variant": "declaration",
 					"kind": 16,
@@ -596,7 +596,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 341,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L341"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L341"
 						}
 					],
 					"type": {
@@ -605,7 +605,7 @@
 					}
 				},
 				{
-					"id": 245,
+					"id": 253,
 					"name": "InternalServerError500",
 					"variant": "declaration",
 					"kind": 16,
@@ -634,7 +634,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 299,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L299"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L299"
 						}
 					],
 					"type": {
@@ -643,7 +643,7 @@
 					}
 				},
 				{
-					"id": 227,
+					"id": 235,
 					"name": "LengthRequired411",
 					"variant": "declaration",
 					"kind": 16,
@@ -672,7 +672,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 191,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L191"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L191"
 						}
 					],
 					"type": {
@@ -681,7 +681,7 @@
 					}
 				},
 				{
-					"id": 237,
+					"id": 245,
 					"name": "Locked423",
 					"variant": "declaration",
 					"kind": 16,
@@ -710,7 +710,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 251,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L251"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L251"
 						}
 					],
 					"type": {
@@ -719,7 +719,7 @@
 					}
 				},
 				{
-					"id": 253,
+					"id": 261,
 					"name": "LoopDetected508",
 					"variant": "declaration",
 					"kind": 16,
@@ -748,7 +748,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 347,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L347"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L347"
 						}
 					],
 					"type": {
@@ -757,7 +757,7 @@
 					}
 				},
 				{
-					"id": 221,
+					"id": 229,
 					"name": "MethodNotAllowed405",
 					"variant": "declaration",
 					"kind": 16,
@@ -786,7 +786,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 155,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L155"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L155"
 						}
 					],
 					"type": {
@@ -795,7 +795,7 @@
 					}
 				},
 				{
-					"id": 235,
+					"id": 243,
 					"name": "MisdirectedRequest421",
 					"variant": "declaration",
 					"kind": 16,
@@ -824,7 +824,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 239,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L239"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L239"
 						}
 					],
 					"type": {
@@ -833,7 +833,7 @@
 					}
 				},
 				{
-					"id": 209,
+					"id": 217,
 					"name": "MovedPermanently301",
 					"variant": "declaration",
 					"kind": 16,
@@ -862,7 +862,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 82,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L82"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L82"
 						}
 					],
 					"type": {
@@ -871,7 +871,7 @@
 					}
 				},
 				{
-					"id": 208,
+					"id": 216,
 					"name": "MultipleChoices300",
 					"variant": "declaration",
 					"kind": 16,
@@ -900,7 +900,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 76,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L76"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L76"
 						}
 					],
 					"type": {
@@ -909,7 +909,7 @@
 					}
 				},
 				{
-					"id": 255,
+					"id": 263,
 					"name": "NetworkAuthenticationRequired511",
 					"variant": "declaration",
 					"kind": 16,
@@ -938,7 +938,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 359,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L359"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L359"
 						}
 					],
 					"type": {
@@ -947,7 +947,7 @@
 					}
 				},
 				{
-					"id": 205,
+					"id": 213,
 					"name": "NoContent204",
 					"variant": "declaration",
 					"kind": 16,
@@ -976,7 +976,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 58,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L58"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L58"
 						}
 					],
 					"type": {
@@ -985,7 +985,7 @@
 					}
 				},
 				{
-					"id": 222,
+					"id": 230,
 					"name": "NotAcceptable406",
 					"variant": "declaration",
 					"kind": 16,
@@ -1014,7 +1014,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 161,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L161"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L161"
 						}
 					],
 					"type": {
@@ -1023,7 +1023,7 @@
 					}
 				},
 				{
-					"id": 254,
+					"id": 262,
 					"name": "NotExtended510",
 					"variant": "declaration",
 					"kind": 16,
@@ -1052,7 +1052,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 353,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L353"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L353"
 						}
 					],
 					"type": {
@@ -1061,7 +1061,7 @@
 					}
 				},
 				{
-					"id": 220,
+					"id": 228,
 					"name": "NotFound404",
 					"variant": "declaration",
 					"kind": 16,
@@ -1090,7 +1090,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 149,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L149"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L149"
 						}
 					],
 					"type": {
@@ -1099,7 +1099,7 @@
 					}
 				},
 				{
-					"id": 246,
+					"id": 254,
 					"name": "NotImplemented501",
 					"variant": "declaration",
 					"kind": 16,
@@ -1128,7 +1128,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 305,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L305"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L305"
 						}
 					],
 					"type": {
@@ -1137,7 +1137,7 @@
 					}
 				},
 				{
-					"id": 212,
+					"id": 220,
 					"name": "NotModified304",
 					"variant": "declaration",
 					"kind": 16,
@@ -1166,7 +1166,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 100,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L100"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L100"
 						}
 					],
 					"type": {
@@ -1175,7 +1175,7 @@
 					}
 				},
 				{
-					"id": 202,
+					"id": 210,
 					"name": "OK200",
 					"variant": "declaration",
 					"kind": 16,
@@ -1204,7 +1204,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 40,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L40"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L40"
 						}
 					],
 					"type": {
@@ -1213,7 +1213,7 @@
 					}
 				},
 				{
-					"id": 207,
+					"id": 215,
 					"name": "PartialContent206",
 					"variant": "declaration",
 					"kind": 16,
@@ -1242,7 +1242,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 70,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L70"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L70"
 						}
 					],
 					"type": {
@@ -1251,7 +1251,7 @@
 					}
 				},
 				{
-					"id": 229,
+					"id": 237,
 					"name": "PayloadTooLarge413",
 					"variant": "declaration",
 					"kind": 16,
@@ -1280,7 +1280,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 203,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L203"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L203"
 						}
 					],
 					"type": {
@@ -1289,7 +1289,7 @@
 					}
 				},
 				{
-					"id": 218,
+					"id": 226,
 					"name": "PaymentRequired402",
 					"variant": "declaration",
 					"kind": 16,
@@ -1318,7 +1318,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 137,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L137"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L137"
 						}
 					],
 					"type": {
@@ -1327,7 +1327,7 @@
 					}
 				},
 				{
-					"id": 215,
+					"id": 223,
 					"name": "PermanentRedirect308",
 					"variant": "declaration",
 					"kind": 16,
@@ -1356,7 +1356,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 119,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L119"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L119"
 						}
 					],
 					"type": {
@@ -1365,7 +1365,7 @@
 					}
 				},
 				{
-					"id": 228,
+					"id": 236,
 					"name": "PreconditionFailed412",
 					"variant": "declaration",
 					"kind": 16,
@@ -1394,7 +1394,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 197,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L197"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L197"
 						}
 					],
 					"type": {
@@ -1403,7 +1403,7 @@
 					}
 				},
 				{
-					"id": 241,
+					"id": 249,
 					"name": "PreconditionRequired428",
 					"variant": "declaration",
 					"kind": 16,
@@ -1432,7 +1432,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 275,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L275"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L275"
 						}
 					],
 					"type": {
@@ -1441,7 +1441,7 @@
 					}
 				},
 				{
-					"id": 201,
+					"id": 209,
 					"name": "Processing102",
 					"variant": "declaration",
 					"kind": 16,
@@ -1470,7 +1470,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 30,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L30"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L30"
 						}
 					],
 					"type": {
@@ -1479,7 +1479,7 @@
 					}
 				},
 				{
-					"id": 223,
+					"id": 231,
 					"name": "ProxyAuthenticationRequired407",
 					"variant": "declaration",
 					"kind": 16,
@@ -1508,7 +1508,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 167,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L167"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L167"
 						}
 					],
 					"type": {
@@ -1517,7 +1517,7 @@
 					}
 				},
 				{
-					"id": 232,
+					"id": 240,
 					"name": "RangeNotSatisfiable416",
 					"variant": "declaration",
 					"kind": 16,
@@ -1546,7 +1546,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 221,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L221"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L221"
 						}
 					],
 					"type": {
@@ -1555,7 +1555,7 @@
 					}
 				},
 				{
-					"id": 243,
+					"id": 251,
 					"name": "RequestHeaderFieldsTooLarge431",
 					"variant": "declaration",
 					"kind": 16,
@@ -1584,7 +1584,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 287,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L287"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L287"
 						}
 					],
 					"type": {
@@ -1593,7 +1593,7 @@
 					}
 				},
 				{
-					"id": 224,
+					"id": 232,
 					"name": "RequestTimeout408",
 					"variant": "declaration",
 					"kind": 16,
@@ -1622,7 +1622,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 173,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L173"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L173"
 						}
 					],
 					"type": {
@@ -1631,7 +1631,7 @@
 					}
 				},
 				{
-					"id": 206,
+					"id": 214,
 					"name": "ResetContent205",
 					"variant": "declaration",
 					"kind": 16,
@@ -1660,7 +1660,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 64,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L64"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L64"
 						}
 					],
 					"type": {
@@ -1669,7 +1669,7 @@
 					}
 				},
 				{
-					"id": 211,
+					"id": 219,
 					"name": "SeeOther303",
 					"variant": "declaration",
 					"kind": 16,
@@ -1698,7 +1698,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 94,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L94"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L94"
 						}
 					],
 					"type": {
@@ -1707,7 +1707,7 @@
 					}
 				},
 				{
-					"id": 248,
+					"id": 256,
 					"name": "ServiceUnavailable503",
 					"variant": "declaration",
 					"kind": 16,
@@ -1736,7 +1736,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 317,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L317"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L317"
 						}
 					],
 					"type": {
@@ -1745,7 +1745,7 @@
 					}
 				},
 				{
-					"id": 200,
+					"id": 208,
 					"name": "SwitchingProtocols101",
 					"variant": "declaration",
 					"kind": 16,
@@ -1774,7 +1774,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L24"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L24"
 						}
 					],
 					"type": {
@@ -1783,7 +1783,7 @@
 					}
 				},
 				{
-					"id": 214,
+					"id": 222,
 					"name": "TemporaryRedirect307",
 					"variant": "declaration",
 					"kind": 16,
@@ -1812,7 +1812,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 113,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L113"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L113"
 						}
 					],
 					"type": {
@@ -1821,7 +1821,7 @@
 					}
 				},
 				{
-					"id": 239,
+					"id": 247,
 					"name": "TooEarly425",
 					"variant": "declaration",
 					"kind": 16,
@@ -1845,7 +1845,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 263,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L263"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L263"
 						}
 					],
 					"type": {
@@ -1854,7 +1854,7 @@
 					}
 				},
 				{
-					"id": 242,
+					"id": 250,
 					"name": "TooManyRequests429",
 					"variant": "declaration",
 					"kind": 16,
@@ -1883,7 +1883,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 281,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L281"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L281"
 						}
 					],
 					"type": {
@@ -1892,7 +1892,7 @@
 					}
 				},
 				{
-					"id": 217,
+					"id": 225,
 					"name": "Unauthorized401",
 					"variant": "declaration",
 					"kind": 16,
@@ -1921,7 +1921,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 131,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L131"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L131"
 						}
 					],
 					"type": {
@@ -1930,7 +1930,7 @@
 					}
 				},
 				{
-					"id": 244,
+					"id": 252,
 					"name": "UnavailableForLegalReasons451",
 					"variant": "declaration",
 					"kind": 16,
@@ -1959,7 +1959,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 293,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L293"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L293"
 						}
 					],
 					"type": {
@@ -1968,7 +1968,7 @@
 					}
 				},
 				{
-					"id": 236,
+					"id": 244,
 					"name": "UnprocessableEntity422",
 					"variant": "declaration",
 					"kind": 16,
@@ -1997,7 +1997,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 245,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L245"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L245"
 						}
 					],
 					"type": {
@@ -2006,7 +2006,7 @@
 					}
 				},
 				{
-					"id": 231,
+					"id": 239,
 					"name": "UnsupportedMediaType415",
 					"variant": "declaration",
 					"kind": 16,
@@ -2035,7 +2035,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 215,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L215"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L215"
 						}
 					],
 					"type": {
@@ -2044,7 +2044,7 @@
 					}
 				},
 				{
-					"id": 240,
+					"id": 248,
 					"name": "UpgradeRequired426",
 					"variant": "declaration",
 					"kind": 16,
@@ -2073,7 +2073,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 269,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L269"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L269"
 						}
 					],
 					"type": {
@@ -2082,7 +2082,7 @@
 					}
 				},
 				{
-					"id": 230,
+					"id": 238,
 					"name": "URITooLong414",
 					"variant": "declaration",
 					"kind": 16,
@@ -2111,7 +2111,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 209,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L209"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L209"
 						}
 					],
 					"type": {
@@ -2120,7 +2120,7 @@
 					}
 				},
 				{
-					"id": 213,
+					"id": 221,
 					"name": "UseProxy305",
 					"variant": "declaration",
 					"kind": 16,
@@ -2153,7 +2153,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 107,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L107"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L107"
 						}
 					],
 					"type": {
@@ -2162,7 +2162,7 @@
 					}
 				},
 				{
-					"id": 251,
+					"id": 259,
 					"name": "VariantAlsoNegotiates506",
 					"variant": "declaration",
 					"kind": 16,
@@ -2191,7 +2191,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 335,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L335"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L335"
 						}
 					],
 					"type": {
@@ -2204,63 +2204,63 @@
 				{
 					"title": "Enumeration Members",
 					"children": [
-						204,
-						247,
-						216,
-						225,
-						199,
-						203,
-						233,
-						238,
-						219,
-						210,
-						249,
-						226,
-						250,
-						234,
-						252,
-						245,
-						227,
-						237,
-						253,
-						221,
-						235,
-						209,
-						208,
+						212,
 						255,
-						205,
-						222,
+						224,
+						233,
+						207,
+						211,
+						241,
+						246,
+						227,
+						218,
+						257,
+						234,
+						258,
+						242,
+						260,
+						253,
+						235,
+						245,
+						261,
+						229,
+						243,
+						217,
+						216,
+						263,
+						213,
+						230,
+						262,
+						228,
 						254,
 						220,
-						246,
-						212,
-						202,
-						207,
-						229,
-						218,
+						210,
 						215,
-						228,
-						241,
-						201,
+						237,
+						226,
 						223,
-						232,
-						243,
-						224,
-						206,
-						211,
-						248,
-						200,
-						214,
-						239,
-						242,
-						217,
-						244,
 						236,
+						249,
+						209,
 						231,
 						240,
-						230,
-						213,
-						251
+						251,
+						232,
+						214,
+						219,
+						256,
+						208,
+						222,
+						247,
+						250,
+						225,
+						252,
+						244,
+						239,
+						248,
+						238,
+						221,
+						259
 					]
 				}
 			],
@@ -2269,7 +2269,7 @@
 					"fileName": "src/httpStatus.ts",
 					"line": 13,
 					"character": 18,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/httpStatus.ts#L13"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/httpStatus.ts#L13"
 				}
 			]
 		},
@@ -2327,9 +2327,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 79,
+							"line": 85,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L79"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L85"
 						}
 					],
 					"type": {
@@ -2357,14 +2357,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 25,
+							"line": 31,
 							"character": 11,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L25"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L31"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 256,
+						"target": 264,
 						"name": "AuthenticationType",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -2387,9 +2387,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 84,
+							"line": 90,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L84"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L90"
 						}
 					],
 					"type": {
@@ -2415,9 +2415,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 89,
+							"line": 95,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L89"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L95"
 						}
 					],
 					"type": {
@@ -2445,14 +2445,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 19,
+							"line": 25,
 							"character": 11,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L19"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L25"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 257,
+						"target": 267,
 						"name": "AuthTokenStorageType",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -2475,9 +2475,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 74,
+							"line": 80,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L74"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L80"
 						}
 					],
 					"type": {
@@ -2497,9 +2497,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 13,
+							"line": 16,
 							"character": 14,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L13"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L16"
 						}
 					],
 					"type": {
@@ -2515,9 +2515,9 @@
 								"sources": [
 									{
 										"fileName": "src/soFetchConfig.ts",
-										"line": 13,
+										"line": 16,
 										"character": 40,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L13"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L16"
 									}
 								],
 								"signatures": [
@@ -2530,9 +2530,9 @@
 										"sources": [
 											{
 												"fileName": "src/soFetchConfig.ts",
-												"line": 13,
+												"line": 16,
 												"character": 40,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L13"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L16"
 											}
 										],
 										"parameters": [
@@ -2622,9 +2622,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 12,
+							"line": 15,
 							"character": 14,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L12"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L15"
 						}
 					],
 					"type": {
@@ -2640,9 +2640,9 @@
 								"sources": [
 									{
 										"fileName": "src/soFetchConfig.ts",
-										"line": 12,
+										"line": 15,
 										"character": 35,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L12"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L15"
 									}
 								],
 								"signatures": [
@@ -2655,9 +2655,9 @@
 										"sources": [
 											{
 												"fileName": "src/soFetchConfig.ts",
-												"line": 12,
+												"line": 15,
 												"character": 35,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L12"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L15"
 											}
 										],
 										"parameters": [
@@ -2669,7 +2669,7 @@
 												"flags": {},
 												"type": {
 													"type": "reference",
-													"target": 307,
+													"target": 317,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												}
@@ -2684,7 +2684,7 @@
 												},
 												{
 													"type": "reference",
-													"target": 307,
+													"target": 317,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												},
@@ -2705,7 +2705,7 @@
 																},
 																{
 																	"type": "reference",
-																	"target": 307,
+																	"target": 317,
 																	"name": "SoFetchRequest",
 																	"package": "@antoinette-agency/sofetch"
 																}
@@ -2735,9 +2735,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 14,
+							"line": 17,
 							"character": 14,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L17"
 						}
 					],
 					"type": {
@@ -2753,9 +2753,9 @@
 								"sources": [
 									{
 										"fileName": "src/soFetchConfig.ts",
-										"line": 14,
+										"line": 17,
 										"character": 42,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L17"
 									}
 								],
 								"signatures": [
@@ -2768,9 +2768,9 @@
 										"sources": [
 											{
 												"fileName": "src/soFetchConfig.ts",
-												"line": 14,
+												"line": 17,
 												"character": 42,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L17"
 											}
 										],
 										"parameters": [
@@ -2815,9 +2815,9 @@
 																"sources": [
 																	{
 																		"fileName": "src/soFetchConfig.ts",
-																		"line": 14,
-																		"character": 78,
-																		"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
+																		"line": 18,
+																		"character": 8,
+																		"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L18"
 																	}
 																],
 																"type": {
@@ -2834,9 +2834,9 @@
 																"sources": [
 																	{
 																		"fileName": "src/soFetchConfig.ts",
-																		"line": 14,
-																		"character": 96,
-																		"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
+																		"line": 19,
+																		"character": 8,
+																		"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L19"
 																	}
 																],
 																"type": {
@@ -2857,9 +2857,9 @@
 														"sources": [
 															{
 																"fileName": "src/soFetchConfig.ts",
-																"line": 14,
+																"line": 17,
 																"character": 76,
-																"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L14"
+																"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L17"
 															}
 														]
 													}
@@ -2899,7 +2899,27 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 136,
+					"id": 123,
+					"name": "userAgent",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 96,
+							"character": 4,
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L96"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 137,
 					"name": "beforeFetchSend",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2907,14 +2927,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 141,
+							"line": 148,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L141"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L148"
 						}
 					],
 					"signatures": [
 						{
-							"id": 137,
+							"id": 138,
 							"name": "beforeFetchSend",
 							"variant": "signature",
 							"kind": 4096,
@@ -2950,14 +2970,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 141,
+									"line": 148,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L141"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L148"
 								}
 							],
 							"parameters": [
 								{
-									"id": 138,
+									"id": 139,
 									"name": "handler",
 									"variant": "param",
 									"kind": 32768,
@@ -2965,7 +2985,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 139,
+											"id": 140,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -2973,14 +2993,14 @@
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 141,
+													"line": 148,
 													"character": 29,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L141"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L148"
 												}
 											],
 											"signatures": [
 												{
-													"id": 140,
+													"id": 141,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -2988,14 +3008,14 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 141,
+															"line": 148,
 															"character": 29,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L141"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L148"
 														}
 													],
 													"parameters": [
 														{
-															"id": 141,
+															"id": 142,
 															"name": "request",
 															"variant": "param",
 															"kind": 32768,
@@ -3076,7 +3096,7 @@
 					]
 				},
 				{
-					"id": 130,
+					"id": 131,
 					"name": "beforeSend",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3084,14 +3104,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 125,
+							"line": 132,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L125"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L132"
 						}
 					],
 					"signatures": [
 						{
-							"id": 131,
+							"id": 132,
 							"name": "beforeSend",
 							"variant": "signature",
 							"kind": 4096,
@@ -3127,14 +3147,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 125,
+									"line": 132,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L125"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L132"
 								}
 							],
 							"parameters": [
 								{
-									"id": 132,
+									"id": 133,
 									"name": "handler",
 									"variant": "param",
 									"kind": 32768,
@@ -3142,7 +3162,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 133,
+											"id": 134,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -3150,14 +3170,14 @@
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 125,
+													"line": 132,
 													"character": 24,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L125"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L132"
 												}
 											],
 											"signatures": [
 												{
-													"id": 134,
+													"id": 135,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -3165,21 +3185,21 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 125,
+															"line": 132,
 															"character": 24,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L125"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L132"
 														}
 													],
 													"parameters": [
 														{
-															"id": 135,
+															"id": 136,
 															"name": "request",
 															"variant": "param",
 															"kind": 32768,
 															"flags": {},
 															"type": {
 																"type": "reference",
-																"target": 307,
+																"target": 317,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															}
@@ -3194,7 +3214,7 @@
 															},
 															{
 																"type": "reference",
-																"target": 307,
+																"target": 317,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															},
@@ -3215,7 +3235,7 @@
 																			},
 																			{
 																				"type": "reference",
-																				"target": 307,
+																				"target": 317,
 																				"name": "SoFetchRequest",
 																				"package": "@antoinette-agency/sofetch"
 																			}
@@ -3241,7 +3261,7 @@
 					]
 				},
 				{
-					"id": 123,
+					"id": 124,
 					"name": "catchHTTP",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3249,14 +3269,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 105,
+							"line": 112,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L105"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L112"
 						}
 					],
 					"signatures": [
 						{
-							"id": 124,
+							"id": 125,
 							"name": "catchHTTP",
 							"variant": "signature",
 							"kind": 4096,
@@ -3292,14 +3312,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 105,
+									"line": 112,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L105"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L112"
 								}
 							],
 							"parameters": [
 								{
-									"id": 125,
+									"id": 126,
 									"name": "status",
 									"variant": "param",
 									"kind": 32768,
@@ -3318,7 +3338,7 @@
 									}
 								},
 								{
-									"id": 126,
+									"id": 127,
 									"name": "handler",
 									"variant": "param",
 									"kind": 32768,
@@ -3334,7 +3354,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 127,
+											"id": 128,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -3342,14 +3362,14 @@
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 105,
+													"line": 112,
 													"character": 39,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L105"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L112"
 												}
 											],
 											"signatures": [
 												{
-													"id": 128,
+													"id": 129,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -3357,14 +3377,14 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 105,
+															"line": 112,
 															"character": 39,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L105"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L112"
 														}
 													],
 													"parameters": [
 														{
-															"id": 129,
+															"id": 130,
 															"name": "res",
 															"variant": "param",
 															"kind": 32768,
@@ -3409,9 +3429,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 27,
+							"line": 33,
 							"character": 14,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L27"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L33"
 						}
 					],
 					"signatures": [
@@ -3424,9 +3444,9 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 27,
+									"line": 33,
 									"character": 29,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L27"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L33"
 								}
 							],
 							"type": {
@@ -3449,7 +3469,7 @@
 					]
 				},
 				{
-					"id": 142,
+					"id": 143,
 					"name": "onRequestComplete",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3457,14 +3477,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 157,
+							"line": 164,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L164"
 						}
 					],
 					"signatures": [
 						{
-							"id": 143,
+							"id": 144,
 							"name": "onRequestComplete",
 							"variant": "signature",
 							"kind": 4096,
@@ -3500,14 +3520,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 157,
+									"line": 164,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L164"
 								}
 							],
 							"parameters": [
 								{
-									"id": 144,
+									"id": 145,
 									"name": "handler",
 									"variant": "param",
 									"kind": 32768,
@@ -3515,7 +3535,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 145,
+											"id": 146,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -3523,14 +3543,14 @@
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 157,
+													"line": 164,
 													"character": 31,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L164"
 												}
 											],
 											"signatures": [
 												{
-													"id": 146,
+													"id": 147,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -3538,14 +3558,14 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 157,
+															"line": 164,
 															"character": 31,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L164"
 														}
 													],
 													"parameters": [
 														{
-															"id": 147,
+															"id": 148,
 															"name": "r",
 															"variant": "param",
 															"kind": 32768,
@@ -3562,7 +3582,7 @@
 															}
 														},
 														{
-															"id": 148,
+															"id": 149,
 															"name": "metaData",
 															"variant": "param",
 															"kind": 32768,
@@ -3570,14 +3590,14 @@
 															"type": {
 																"type": "reflection",
 																"declaration": {
-																	"id": 149,
+																	"id": 150,
 																	"name": "__type",
 																	"variant": "declaration",
 																	"kind": 65536,
 																	"flags": {},
 																	"children": [
 																		{
-																			"id": 150,
+																			"id": 151,
 																			"name": "duration",
 																			"variant": "declaration",
 																			"kind": 1024,
@@ -3585,9 +3605,9 @@
 																			"sources": [
 																				{
 																					"fileName": "src/soFetchConfig.ts",
-																					"line": 157,
+																					"line": 164,
 																					"character": 57,
-																					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
+																					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L164"
 																				}
 																			],
 																			"type": {
@@ -3596,7 +3616,7 @@
 																			}
 																		},
 																		{
-																			"id": 151,
+																			"id": 152,
 																			"name": "method",
 																			"variant": "declaration",
 																			"kind": 1024,
@@ -3604,9 +3624,9 @@
 																			"sources": [
 																				{
 																					"fileName": "src/soFetchConfig.ts",
-																					"line": 157,
+																					"line": 164,
 																					"character": 75,
-																					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
+																					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L164"
 																				}
 																			],
 																			"type": {
@@ -3619,17 +3639,17 @@
 																		{
 																			"title": "Properties",
 																			"children": [
-																				150,
-																				151
+																				151,
+																				152
 																			]
 																		}
 																	],
 																	"sources": [
 																		{
 																			"fileName": "src/soFetchConfig.ts",
-																			"line": 157,
+																			"line": 164,
 																			"character": 55,
-																			"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L157"
+																			"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L164"
 																		}
 																	]
 																}
@@ -3685,9 +3705,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 49,
+							"line": 55,
 							"character": 11,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L49"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L55"
 						}
 					],
 					"signatures": [
@@ -3701,16 +3721,16 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "Use this method to set an auth token after it's been received from a server, typically as \r\nthe response to a login request"
+										"text": "Use this method to set an auth token after it's been received from a server, typically as\r\nthe response to a login request"
 									}
 								]
 							},
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 49,
+									"line": 55,
 									"character": 26,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L49"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L55"
 								}
 							],
 							"parameters": [
@@ -3734,7 +3754,157 @@
 					]
 				},
 				{
-					"id": 184,
+					"id": 199,
+					"name": "setUserAgent",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 319,
+							"character": 4,
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L319"
+						}
+					],
+					"signatures": [
+						{
+							"id": 200,
+							"name": "setUserAgent",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Tells SoFetch to use a specified user agent when making requests. You can either user a predefined user agent \r\nby specifying an OS and browser or explicitly pass the user agent string you want to use."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 319,
+									"character": 4,
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L319"
+								}
+							],
+							"parameters": [
+								{
+									"id": 201,
+									"name": "__namedParameters",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 202,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 203,
+													"name": "browser",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 319,
+															"character": 51,
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L319"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": 265,
+														"name": "Browser",
+														"package": "@antoinette-agency/sofetch"
+													}
+												},
+												{
+													"id": 204,
+													"name": "OS",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 319,
+															"character": 70,
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L319"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": 266,
+														"name": "OS",
+														"package": "@antoinette-agency/sofetch"
+													}
+												},
+												{
+													"id": 205,
+													"name": "userAgentString",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 319,
+															"character": 79,
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L319"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														203,
+														204,
+														205
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/soFetchConfig.ts",
+													"line": 319,
+													"character": 49,
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L319"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 185,
 					"name": "useBasicAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3742,14 +3912,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 280,
+							"line": 287,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L280"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L287"
 						}
 					],
 					"signatures": [
 						{
-							"id": 185,
+							"id": 186,
 							"name": "useBasicAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -3765,14 +3935,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 280,
+									"line": 287,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L280"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L287"
 								}
 							],
 							"parameters": [
 								{
-									"id": 186,
+									"id": 187,
 									"name": "__namedParameters",
 									"variant": "param",
 									"kind": 32768,
@@ -3780,14 +3950,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 187,
+											"id": 188,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 190,
+													"id": 191,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3797,9 +3967,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 283,
+															"line": 290,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L283"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L290"
 														}
 													],
 													"type": {
@@ -3808,7 +3978,7 @@
 													}
 												},
 												{
-													"id": 191,
+													"id": 192,
 													"name": "authTokenStorage",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3818,20 +3988,20 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 284,
+															"line": 291,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L284"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L291"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 257,
+														"target": 267,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
 												},
 												{
-													"id": 189,
+													"id": 190,
 													"name": "password",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3841,9 +4011,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 282,
+															"line": 289,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L282"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L289"
 														}
 													],
 													"type": {
@@ -3852,7 +4022,7 @@
 													}
 												},
 												{
-													"id": 188,
+													"id": 189,
 													"name": "username",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3862,9 +4032,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 281,
+															"line": 288,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L281"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L288"
 														}
 													],
 													"type": {
@@ -3877,19 +4047,19 @@
 												{
 													"title": "Properties",
 													"children": [
-														190,
 														191,
-														189,
-														188
+														192,
+														190,
+														189
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 280,
-													"character": 85,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L280"
+													"line": 287,
+													"character": 86,
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L287"
 												}
 											]
 										}
@@ -3904,7 +4074,7 @@
 					]
 				},
 				{
-					"id": 155,
+					"id": 156,
 					"name": "useBearerAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3912,14 +4082,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 180,
+							"line": 187,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L180"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L187"
 						}
 					],
 					"signatures": [
 						{
-							"id": 156,
+							"id": 157,
 							"name": "useBearerAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -3935,14 +4105,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 180,
+									"line": 187,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L180"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L187"
 								}
 							],
 							"parameters": [
 								{
-									"id": 157,
+									"id": 158,
 									"name": "props",
 									"variant": "param",
 									"kind": 32768,
@@ -3950,14 +4120,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 158,
+											"id": 159,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 159,
+													"id": 160,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3967,9 +4137,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 181,
+															"line": 188,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L181"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L188"
 														}
 													],
 													"type": {
@@ -3978,7 +4148,7 @@
 													}
 												},
 												{
-													"id": 161,
+													"id": 162,
 													"name": "authToken",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3988,9 +4158,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 183,
+															"line": 190,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L183"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L190"
 														}
 													],
 													"type": {
@@ -3999,7 +4169,7 @@
 													}
 												},
 												{
-													"id": 160,
+													"id": 161,
 													"name": "authTokenStorage",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4009,14 +4179,14 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 182,
+															"line": 189,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L182"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L189"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 257,
+														"target": 267,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
@@ -4026,18 +4196,18 @@
 												{
 													"title": "Properties",
 													"children": [
-														159,
-														161,
-														160
+														160,
+														162,
+														161
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 180,
+													"line": 187,
 													"character": 35,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L180"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L187"
 												}
 											]
 										}
@@ -4053,7 +4223,7 @@
 					]
 				},
 				{
-					"id": 162,
+					"id": 163,
 					"name": "useCookieAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4061,14 +4231,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 204,
+							"line": 211,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L204"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L211"
 						}
 					],
 					"signatures": [
 						{
-							"id": 163,
+							"id": 164,
 							"name": "useCookieAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -4084,14 +4254,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 204,
+									"line": 211,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L204"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L211"
 								}
 							],
 							"parameters": [
 								{
-									"id": 164,
+									"id": 165,
 									"name": "props",
 									"variant": "param",
 									"kind": 32768,
@@ -4101,14 +4271,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 165,
+											"id": 166,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 166,
+													"id": 167,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4118,9 +4288,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 205,
+															"line": 212,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L205"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L212"
 														}
 													],
 													"type": {
@@ -4129,7 +4299,7 @@
 													}
 												},
 												{
-													"id": 167,
+													"id": 168,
 													"name": "authToken",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4139,9 +4309,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 206,
+															"line": 213,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L206"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L213"
 														}
 													],
 													"type": {
@@ -4154,17 +4324,17 @@
 												{
 													"title": "Properties",
 													"children": [
-														166,
-														167
+														167,
+														168
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 204,
-													"character": 35,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L204"
+													"line": 211,
+													"character": 36,
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L211"
 												}
 											]
 										}
@@ -4179,7 +4349,7 @@
 					]
 				},
 				{
-					"id": 168,
+					"id": 169,
 					"name": "useHeaderAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4187,14 +4357,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 232,
+							"line": 239,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L232"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L239"
 						}
 					],
 					"signatures": [
 						{
-							"id": 169,
+							"id": 170,
 							"name": "useHeaderAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -4210,14 +4380,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 232,
+									"line": 239,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L232"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L239"
 								}
 							],
 							"parameters": [
 								{
-									"id": 170,
+									"id": 171,
 									"name": "__namedParameters",
 									"variant": "param",
 									"kind": 32768,
@@ -4225,14 +4395,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 171,
+											"id": 172,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 173,
+													"id": 174,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4242,30 +4412,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 234,
+															"line": 241,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L234"
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "string"
-													}
-												},
-												{
-													"id": 174,
-													"name": "authToken",
-													"variant": "declaration",
-													"kind": 1024,
-													"flags": {
-														"isOptional": true
-													},
-													"sources": [
-														{
-															"fileName": "src/soFetchConfig.ts",
-															"line": 235,
-															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L235"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L241"
 														}
 													],
 													"type": {
@@ -4275,6 +4424,27 @@
 												},
 												{
 													"id": 175,
+													"name": "authToken",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 242,
+															"character": 8,
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L242"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 176,
 													"name": "authTokenStorage",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4284,20 +4454,20 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 236,
+															"line": 243,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L236"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L243"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 257,
+														"target": 267,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
 												},
 												{
-													"id": 172,
+													"id": 173,
 													"name": "headerKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4305,9 +4475,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 233,
+															"line": 240,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L233"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L240"
 														}
 													],
 													"type": {
@@ -4320,19 +4490,19 @@
 												{
 													"title": "Properties",
 													"children": [
-														173,
 														174,
 														175,
-														172
+														176,
+														173
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 232,
-													"character": 88,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L232"
+													"line": 239,
+													"character": 89,
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L239"
 												}
 											]
 										}
@@ -4347,7 +4517,7 @@
 					]
 				},
 				{
-					"id": 176,
+					"id": 177,
 					"name": "useQueryStringAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4355,14 +4525,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 256,
+							"line": 263,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L256"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L263"
 						}
 					],
 					"signatures": [
 						{
-							"id": 177,
+							"id": 178,
 							"name": "useQueryStringAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -4378,14 +4548,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 256,
+									"line": 263,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L256"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L263"
 								}
 							],
 							"parameters": [
 								{
-									"id": 178,
+									"id": 179,
 									"name": "__namedParameters",
 									"variant": "param",
 									"kind": 32768,
@@ -4393,14 +4563,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 179,
+											"id": 180,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 181,
+													"id": 182,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4410,30 +4580,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 258,
+															"line": 265,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L258"
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "string"
-													}
-												},
-												{
-													"id": 182,
-													"name": "authToken",
-													"variant": "declaration",
-													"kind": 1024,
-													"flags": {
-														"isOptional": true
-													},
-													"sources": [
-														{
-															"fileName": "src/soFetchConfig.ts",
-															"line": 259,
-															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L259"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L265"
 														}
 													],
 													"type": {
@@ -4443,6 +4592,27 @@
 												},
 												{
 													"id": 183,
+													"name": "authToken",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 266,
+															"character": 8,
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L266"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 184,
 													"name": "authTokenStorage",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4452,20 +4622,20 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 260,
+															"line": 267,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L260"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L267"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 257,
+														"target": 267,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
 												},
 												{
-													"id": 180,
+													"id": 181,
 													"name": "queryStringKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4473,9 +4643,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 257,
+															"line": 264,
 															"character": 8,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L257"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L264"
 														}
 													],
 													"type": {
@@ -4488,19 +4658,19 @@
 												{
 													"title": "Properties",
 													"children": [
-														181,
 														182,
 														183,
-														180
+														184,
+														181
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 256,
-													"character": 98,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L256"
+													"line": 263,
+													"character": 99,
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L263"
 												}
 											]
 										}
@@ -4533,32 +4703,34 @@
 						119,
 						99,
 						95,
-						103
+						103,
+						123
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						136,
-						130,
-						123,
+						137,
+						131,
+						124,
 						114,
-						142,
+						143,
 						116,
-						184,
-						155,
-						162,
-						168,
-						176
+						199,
+						185,
+						156,
+						163,
+						169,
+						177
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/soFetchConfig.ts",
-					"line": 10,
+					"line": 13,
 					"character": 13,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchConfig.ts#L10"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchConfig.ts#L13"
 				}
 			]
 		},
@@ -4599,7 +4771,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 28,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L28"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L28"
 						}
 					],
 					"signatures": [
@@ -4614,7 +4786,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 28,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L28"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L28"
 								}
 							],
 							"typeParameters": [
@@ -4646,7 +4818,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 28,
 													"character": 26,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L28"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L28"
 												}
 											],
 											"signatures": [
@@ -4661,7 +4833,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 28,
 															"character": 26,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L28"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L28"
 														}
 													],
 													"parameters": [
@@ -4684,7 +4856,7 @@
 																			"fileName": "src/soFetchPromise.ts",
 																			"line": 29,
 																			"character": 17,
-																			"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L29"
+																			"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L29"
 																		}
 																	],
 																	"signatures": [
@@ -4699,7 +4871,7 @@
 																					"fileName": "src/soFetchPromise.ts",
 																					"line": 29,
 																					"character": 17,
-																					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L29"
+																					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L29"
 																				}
 																			],
 																			"parameters": [
@@ -4772,7 +4944,7 @@
 																			"fileName": "src/soFetchPromise.ts",
 																			"line": 30,
 																			"character": 16,
-																			"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L30"
+																			"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L30"
 																		}
 																	],
 																	"signatures": [
@@ -4787,7 +4959,7 @@
 																					"fileName": "src/soFetchPromise.ts",
 																					"line": 30,
 																					"character": 16,
-																					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L30"
+																					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L30"
 																				}
 																			],
 																			"parameters": [
@@ -4855,7 +5027,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 21,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L21"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L21"
 						}
 					],
 					"type": {
@@ -4873,7 +5045,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 21,
 										"character": 29,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L21"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L21"
 									}
 								],
 								"signatures": [
@@ -4888,7 +5060,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 21,
 												"character": 29,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L21"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L21"
 											}
 										],
 										"parameters": [
@@ -4978,7 +5150,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 20,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L20"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L20"
 						}
 					],
 					"type": {
@@ -4996,7 +5168,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 20,
 										"character": 24,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L20"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L20"
 									}
 								],
 								"signatures": [
@@ -5011,7 +5183,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 20,
 												"character": 24,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L20"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L20"
 											}
 										],
 										"parameters": [
@@ -5023,7 +5195,7 @@
 												"flags": {},
 												"type": {
 													"type": "reference",
-													"target": 307,
+													"target": 317,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												}
@@ -5038,7 +5210,7 @@
 												},
 												{
 													"type": "reference",
-													"target": 307,
+													"target": 317,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												},
@@ -5059,7 +5231,7 @@
 																},
 																{
 																	"type": "reference",
-																	"target": 307,
+																	"target": 317,
 																	"name": "SoFetchRequest",
 																	"package": "@antoinette-agency/sofetch"
 																}
@@ -5089,7 +5261,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 25,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L25"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L25"
 						}
 					],
 					"type": {
@@ -5306,12 +5478,12 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 19,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L19"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L19"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 260,
+						"target": 270,
 						"name": "ErrorHandlerDict",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -5328,7 +5500,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 26,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L26"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L26"
 						}
 					],
 					"type": {
@@ -5480,7 +5652,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 22,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L22"
 						}
 					],
 					"type": {
@@ -5498,7 +5670,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 22,
 										"character": 32,
-										"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L22"
 									}
 								],
 								"signatures": [
@@ -5513,7 +5685,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 22,
 												"character": 32,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L22"
 											}
 										],
 										"parameters": [
@@ -5560,7 +5732,7 @@
 																		"fileName": "src/soFetchPromise.ts",
 																		"line": 22,
 																		"character": 68,
-																		"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
+																		"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L22"
 																	}
 																],
 																"type": {
@@ -5579,7 +5751,7 @@
 																		"fileName": "src/soFetchPromise.ts",
 																		"line": 22,
 																		"character": 86,
-																		"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
+																		"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L22"
 																	}
 																],
 																"type": {
@@ -5602,7 +5774,7 @@
 																"fileName": "src/soFetchPromise.ts",
 																"line": 22,
 																"character": 66,
-																"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L22"
+																"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L22"
 															}
 														]
 													}
@@ -5652,7 +5824,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L24"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L24"
 						}
 					],
 					"type": {
@@ -5990,7 +6162,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 23,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L23"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L23"
 						}
 					],
 					"type": {
@@ -6010,7 +6182,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 97,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L97"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L97"
 						}
 					],
 					"signatures": [
@@ -6053,7 +6225,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 97,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L97"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L97"
 								}
 							],
 							"parameters": [
@@ -6076,7 +6248,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 97,
 													"character": 29,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L97"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L97"
 												}
 											],
 											"signatures": [
@@ -6091,7 +6263,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 97,
 															"character": 29,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L97"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L97"
 														}
 													],
 													"parameters": [
@@ -6199,7 +6371,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 68,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L68"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L68"
 						}
 					],
 					"signatures": [
@@ -6242,7 +6414,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 68,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L68"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L68"
 								}
 							],
 							"parameters": [
@@ -6265,7 +6437,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 68,
 													"character": 24,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L68"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L68"
 												}
 											],
 											"signatures": [
@@ -6280,7 +6452,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 68,
 															"character": 24,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L68"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L68"
 														}
 													],
 													"parameters": [
@@ -6292,7 +6464,7 @@
 															"flags": {},
 															"type": {
 																"type": "reference",
-																"target": 307,
+																"target": 317,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															}
@@ -6307,7 +6479,7 @@
 															},
 															{
 																"type": "reference",
-																"target": 307,
+																"target": 317,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															},
@@ -6328,7 +6500,7 @@
 																			},
 																			{
 																				"type": "reference",
-																				"target": 307,
+																				"target": 317,
 																				"name": "SoFetchRequest",
 																				"package": "@antoinette-agency/sofetch"
 																			}
@@ -6376,7 +6548,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 117,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L117"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L117"
 						}
 					],
 					"signatures": [
@@ -6419,7 +6591,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 117,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L117"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L117"
 								}
 							],
 							"parameters": [
@@ -6439,7 +6611,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 198,
+										"target": 206,
 										"name": "HttpStatus",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -6471,7 +6643,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 117,
 													"character": 43,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L117"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L117"
 												}
 											],
 											"signatures": [
@@ -6486,7 +6658,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 117,
 															"character": 43,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L117"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L117"
 														}
 													],
 													"parameters": [
@@ -6548,7 +6720,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 51,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L51"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L51"
 						}
 					],
 					"signatures": [
@@ -6591,7 +6763,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 51,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L51"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L51"
 								}
 							],
 							"parameters": [
@@ -6614,7 +6786,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 51,
 													"character": 31,
-													"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L51"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L51"
 												}
 											],
 											"signatures": [
@@ -6629,7 +6801,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 51,
 															"character": 31,
-															"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L51"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L51"
 														}
 													],
 													"parameters": [
@@ -6712,7 +6884,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 125,
 							"character": 10,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L125"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L125"
 						}
 					],
 					"signatures": [
@@ -6727,7 +6899,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 125,
 									"character": 10,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L125"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L125"
 								}
 							],
 							"parameters": [
@@ -6811,7 +6983,7 @@
 					"fileName": "src/soFetchPromise.ts",
 					"line": 17,
 					"character": 13,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchPromise.ts#L17"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchPromise.ts#L17"
 				}
 			],
 			"typeParameters": [
@@ -6825,14 +6997,14 @@
 			]
 		},
 		{
-			"id": 271,
+			"id": 281,
 			"name": "SoFetchLike",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 273,
+					"id": 283,
 					"name": "config",
 					"variant": "declaration",
 					"kind": 1024,
@@ -6842,7 +7014,7 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 7,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L7"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L7"
 						}
 					],
 					"type": {
@@ -6853,7 +7025,7 @@
 					}
 				},
 				{
-					"id": 272,
+					"id": 282,
 					"name": "verbose",
 					"variant": "declaration",
 					"kind": 1024,
@@ -6863,7 +7035,7 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 6,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L6"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L6"
 						}
 					],
 					"type": {
@@ -6872,7 +7044,7 @@
 					}
 				},
 				{
-					"id": 294,
+					"id": 304,
 					"name": "delete",
 					"variant": "declaration",
 					"kind": 2048,
@@ -6882,12 +7054,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 17,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L17"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L17"
 						}
 					],
 					"signatures": [
 						{
-							"id": 295,
+							"id": 305,
 							"name": "delete",
 							"variant": "signature",
 							"kind": 4096,
@@ -6897,12 +7069,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 17,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L17"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L17"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 296,
+									"id": 306,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -6911,7 +7083,7 @@
 							],
 							"parameters": [
 								{
-									"id": 297,
+									"id": 307,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -6922,7 +7094,7 @@
 									}
 								},
 								{
-									"id": 298,
+									"id": 308,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -6931,7 +7103,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 312,
+										"target": 322,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -6943,333 +7115,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": 296,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
-									}
-								],
-								"name": "SoFetchPromise",
-								"package": "@antoinette-agency/sofetch"
-							}
-						}
-					]
-				},
-				{
-					"id": 274,
-					"name": "get",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/soFetchLike.ts",
-							"line": 9,
-							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L9"
-						}
-					],
-					"signatures": [
-						{
-							"id": 275,
-							"name": "get",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "src/soFetchLike.ts",
-									"line": 9,
-									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L9"
-								}
-							],
-							"typeParameters": [
-								{
-									"id": 276,
-									"name": "T",
-									"variant": "typeParam",
-									"kind": 131072,
-									"flags": {}
-								}
-							],
-							"parameters": [
-								{
-									"id": 277,
-									"name": "url",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								},
-								{
-									"id": 278,
-									"name": "body",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {
-										"isOptional": true
-									},
-									"type": {
-										"type": "reference",
-										"target": 312,
-										"name": "UploadPayload",
-										"package": "@antoinette-agency/sofetch"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 1,
-								"typeArguments": [
-									{
-										"type": "reference",
-										"target": 276,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
-									}
-								],
-								"name": "SoFetchPromise",
-								"package": "@antoinette-agency/sofetch"
-							}
-						}
-					]
-				},
-				{
-					"id": 299,
-					"name": "instance",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/soFetchLike.ts",
-							"line": 21,
-							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L21"
-						}
-					],
-					"signatures": [
-						{
-							"id": 300,
-							"name": "instance",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "src/soFetchLike.ts",
-									"line": 21,
-									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L21"
-								}
-							],
-							"parameters": [
-								{
-									"id": 301,
-									"name": "configOrAuthKey",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {
-										"isOptional": true
-									},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "reference",
-												"target": 91,
-												"name": "SoFetchConfig",
-												"package": "@antoinette-agency/sofetch"
-											}
-										]
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 271,
-								"typeArguments": [
-									{
-										"type": "reference",
-										"target": 302,
-										"name": "TResponse",
-										"package": "@antoinette-agency/sofetch",
-										"qualifiedName": "SoFetchLike.TResponse",
-										"refersToTypeParameter": true
-									}
-								],
-								"name": "SoFetchLike",
-								"package": "@antoinette-agency/sofetch"
-							}
-						}
-					]
-				},
-				{
-					"id": 289,
-					"name": "patch",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/soFetchLike.ts",
-							"line": 15,
-							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L15"
-						}
-					],
-					"signatures": [
-						{
-							"id": 290,
-							"name": "patch",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "src/soFetchLike.ts",
-									"line": 15,
-									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L15"
-								}
-							],
-							"typeParameters": [
-								{
-									"id": 291,
-									"name": "T",
-									"variant": "typeParam",
-									"kind": 131072,
-									"flags": {}
-								}
-							],
-							"parameters": [
-								{
-									"id": 292,
-									"name": "url",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								},
-								{
-									"id": 293,
-									"name": "body",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {
-										"isOptional": true
-									},
-									"type": {
-										"type": "reference",
-										"target": 312,
-										"name": "UploadPayload",
-										"package": "@antoinette-agency/sofetch"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 1,
-								"typeArguments": [
-									{
-										"type": "reference",
-										"target": 291,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
-									}
-								],
-								"name": "SoFetchPromise",
-								"package": "@antoinette-agency/sofetch"
-							}
-						}
-					]
-				},
-				{
-					"id": 279,
-					"name": "post",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/soFetchLike.ts",
-							"line": 11,
-							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L11"
-						}
-					],
-					"signatures": [
-						{
-							"id": 280,
-							"name": "post",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "src/soFetchLike.ts",
-									"line": 11,
-									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L11"
-								}
-							],
-							"typeParameters": [
-								{
-									"id": 281,
-									"name": "T",
-									"variant": "typeParam",
-									"kind": 131072,
-									"flags": {}
-								}
-							],
-							"parameters": [
-								{
-									"id": 282,
-									"name": "url",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								},
-								{
-									"id": 283,
-									"name": "body",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {
-										"isOptional": true
-									},
-									"type": {
-										"type": "reference",
-										"target": 312,
-										"name": "UploadPayload",
-										"package": "@antoinette-agency/sofetch"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 1,
-								"typeArguments": [
-									{
-										"type": "reference",
-										"target": 281,
+										"target": 306,
 										"name": "T",
 										"package": "@antoinette-agency/sofetch",
 										"refersToTypeParameter": true
@@ -7283,31 +7129,31 @@
 				},
 				{
 					"id": 284,
-					"name": "put",
+					"name": "get",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {},
 					"sources": [
 						{
 							"fileName": "src/soFetchLike.ts",
-							"line": 13,
+							"line": 9,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L13"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L9"
 						}
 					],
 					"signatures": [
 						{
 							"id": 285,
-							"name": "put",
+							"name": "get",
 							"variant": "signature",
 							"kind": 4096,
 							"flags": {},
 							"sources": [
 								{
 									"fileName": "src/soFetchLike.ts",
-									"line": 13,
+									"line": 9,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L13"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L9"
 								}
 							],
 							"typeParameters": [
@@ -7341,7 +7187,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 312,
+										"target": 322,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -7364,25 +7210,351 @@
 							}
 						}
 					]
+				},
+				{
+					"id": 309,
+					"name": "instance",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 21,
+							"character": 4,
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L21"
+						}
+					],
+					"signatures": [
+						{
+							"id": 310,
+							"name": "instance",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 21,
+									"character": 4,
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L21"
+								}
+							],
+							"parameters": [
+								{
+									"id": 311,
+									"name": "configOrAuthKey",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "reference",
+												"target": 91,
+												"name": "SoFetchConfig",
+												"package": "@antoinette-agency/sofetch"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 281,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 312,
+										"name": "TResponse",
+										"package": "@antoinette-agency/sofetch",
+										"qualifiedName": "SoFetchLike.TResponse",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchLike",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 299,
+					"name": "patch",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 15,
+							"character": 4,
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L15"
+						}
+					],
+					"signatures": [
+						{
+							"id": 300,
+							"name": "patch",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 15,
+									"character": 4,
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L15"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 301,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 302,
+									"name": "url",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 303,
+									"name": "body",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 322,
+										"name": "UploadPayload",
+										"package": "@antoinette-agency/sofetch"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 301,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 289,
+					"name": "post",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 11,
+							"character": 4,
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L11"
+						}
+					],
+					"signatures": [
+						{
+							"id": 290,
+							"name": "post",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 11,
+									"character": 4,
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L11"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 291,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 292,
+									"name": "url",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 293,
+									"name": "body",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 322,
+										"name": "UploadPayload",
+										"package": "@antoinette-agency/sofetch"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 291,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
+				},
+				{
+					"id": 294,
+					"name": "put",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchLike.ts",
+							"line": 13,
+							"character": 4,
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L13"
+						}
+					],
+					"signatures": [
+						{
+							"id": 295,
+							"name": "put",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchLike.ts",
+									"line": 13,
+									"character": 4,
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L13"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 296,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 297,
+									"name": "url",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 298,
+									"name": "body",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 322,
+										"name": "UploadPayload",
+										"package": "@antoinette-agency/sofetch"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 296,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "SoFetchPromise",
+								"package": "@antoinette-agency/sofetch"
+							}
+						}
+					]
 				}
 			],
 			"groups": [
 				{
 					"title": "Properties",
 					"children": [
-						273,
-						272
+						283,
+						282
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						294,
-						274,
+						304,
+						284,
+						309,
 						299,
 						289,
-						279,
-						284
+						294
 					]
 				}
 			],
@@ -7391,12 +7563,12 @@
 					"fileName": "src/soFetchLike.ts",
 					"line": 5,
 					"character": 17,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L5"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L5"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 302,
+					"id": 312,
 					"name": "TResponse",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -7409,7 +7581,7 @@
 			],
 			"signatures": [
 				{
-					"id": 303,
+					"id": 313,
 					"name": "SoFetchLike",
 					"variant": "signature",
 					"kind": 4096,
@@ -7419,12 +7591,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 19,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetchLike.ts#L19"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetchLike.ts#L19"
 						}
 					],
 					"typeParameters": [
 						{
-							"id": 304,
+							"id": 314,
 							"name": "T",
 							"variant": "typeParam",
 							"kind": 131072,
@@ -7433,7 +7605,7 @@
 					],
 					"parameters": [
 						{
-							"id": 305,
+							"id": 315,
 							"name": "url",
 							"variant": "param",
 							"kind": 32768,
@@ -7444,7 +7616,7 @@
 							}
 						},
 						{
-							"id": 306,
+							"id": 316,
 							"name": "body",
 							"variant": "param",
 							"kind": 32768,
@@ -7453,7 +7625,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 312,
+								"target": 322,
 								"name": "UploadPayload",
 								"package": "@antoinette-agency/sofetch"
 							}
@@ -7465,7 +7637,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": 304,
+								"target": 314,
 								"name": "T",
 								"package": "@antoinette-agency/sofetch",
 								"refersToTypeParameter": true
@@ -7478,14 +7650,14 @@
 			]
 		},
 		{
-			"id": 307,
+			"id": 317,
 			"name": "SoFetchRequest",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 310,
+					"id": 320,
 					"name": "body",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7493,9 +7665,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetch.ts",
-							"line": 109,
+							"line": 119,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L109"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetch.ts#L119"
 						}
 					],
 					"type": {
@@ -7513,7 +7685,7 @@
 					}
 				},
 				{
-					"id": 311,
+					"id": 321,
 					"name": "headers",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7521,9 +7693,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetch.ts",
-							"line": 110,
+							"line": 120,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L110"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetch.ts#L120"
 						}
 					],
 					"type": {
@@ -7548,7 +7720,7 @@
 					}
 				},
 				{
-					"id": 309,
+					"id": 319,
 					"name": "method",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7556,9 +7728,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetch.ts",
-							"line": 108,
+							"line": 118,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L108"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetch.ts#L118"
 						}
 					],
 					"type": {
@@ -7567,7 +7739,7 @@
 					}
 				},
 				{
-					"id": 308,
+					"id": 318,
 					"name": "url",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7575,9 +7747,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetch.ts",
-							"line": 107,
+							"line": 117,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L107"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetch.ts#L117"
 						}
 					],
 					"type": {
@@ -7590,24 +7762,24 @@
 				{
 					"title": "Properties",
 					"children": [
-						310,
-						311,
-						309,
-						308
+						320,
+						321,
+						319,
+						318
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/soFetch.ts",
-					"line": 106,
+					"line": 116,
 					"character": 17,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L106"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetch.ts#L116"
 				}
 			]
 		},
 		{
-			"id": 256,
+			"id": 264,
 			"name": "AuthenticationType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -7665,7 +7837,7 @@
 					"fileName": "src/authenticationType.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/authenticationType.ts#L10"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/authenticationType.ts#L10"
 				}
 			],
 			"type": {
@@ -7699,7 +7871,7 @@
 			}
 		},
 		{
-			"id": 257,
+			"id": 267,
 			"name": "AuthTokenStorageType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -7717,7 +7889,7 @@
 					"fileName": "src/authTokenStorageType.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/authTokenStorageType.ts#L10"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/authTokenStorageType.ts#L10"
 				}
 			],
 			"type": {
@@ -7742,7 +7914,7 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 258,
+							"id": 268,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
@@ -7752,12 +7924,12 @@
 									"fileName": "src/authTokenStorageType.ts",
 									"line": 15,
 									"character": 7,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/authTokenStorageType.ts#L15"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/authTokenStorageType.ts#L15"
 								}
 							],
 							"signatures": [
 								{
-									"id": 259,
+									"id": 269,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
@@ -7799,7 +7971,47 @@
 			}
 		},
 		{
-			"id": 260,
+			"id": 265,
+			"name": "Browser",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/browser.ts",
+					"line": 1,
+					"character": 12,
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/browser.ts#L1"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "Chrome"
+					},
+					{
+						"type": "literal",
+						"value": "Firefox"
+					},
+					{
+						"type": "literal",
+						"value": "Safari"
+					},
+					{
+						"type": "literal",
+						"value": "Edge"
+					},
+					{
+						"type": "literal",
+						"value": null
+					}
+				]
+			}
+		},
+		{
+			"id": 270,
 			"name": "ErrorHandlerDict",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -7817,13 +8029,13 @@
 					"fileName": "src/errorHandlerDict.ts",
 					"line": 4,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L4"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/errorHandlerDict.ts#L4"
 				}
 			],
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 261,
+					"id": 271,
 					"name": "__type",
 					"variant": "declaration",
 					"kind": 65536,
@@ -7833,12 +8045,12 @@
 							"fileName": "src/errorHandlerDict.ts",
 							"line": 4,
 							"character": 31,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L4"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/errorHandlerDict.ts#L4"
 						}
 					],
 					"indexSignatures": [
 						{
-							"id": 262,
+							"id": 272,
 							"name": "__index",
 							"variant": "signature",
 							"kind": 8192,
@@ -7848,12 +8060,12 @@
 									"fileName": "src/errorHandlerDict.ts",
 									"line": 5,
 									"character": 4,
-									"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L5"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/errorHandlerDict.ts#L5"
 								}
 							],
 							"parameters": [
 								{
-									"id": 263,
+									"id": 273,
 									"name": "key",
 									"variant": "param",
 									"kind": 32768,
@@ -7869,7 +8081,7 @@
 								"elementType": {
 									"type": "reflection",
 									"declaration": {
-										"id": 264,
+										"id": 274,
 										"name": "__type",
 										"variant": "declaration",
 										"kind": 65536,
@@ -7879,12 +8091,12 @@
 												"fileName": "src/errorHandlerDict.ts",
 												"line": 5,
 												"character": 25,
-												"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L5"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/errorHandlerDict.ts#L5"
 											}
 										],
 										"signatures": [
 											{
-												"id": 265,
+												"id": 275,
 												"name": "__type",
 												"variant": "signature",
 												"kind": 4096,
@@ -7894,12 +8106,12 @@
 														"fileName": "src/errorHandlerDict.ts",
 														"line": 5,
 														"character": 25,
-														"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/errorHandlerDict.ts#L5"
+														"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/errorHandlerDict.ts#L5"
 													}
 												],
 												"parameters": [
 													{
-														"id": 266,
+														"id": 276,
 														"name": "r",
 														"variant": "param",
 														"kind": 32768,
@@ -7931,14 +8143,14 @@
 			}
 		},
 		{
-			"id": 267,
+			"id": 277,
 			"name": "FileWithFieldName",
 			"variant": "declaration",
 			"kind": 2097152,
 			"flags": {},
 			"children": [
 				{
-					"id": 270,
+					"id": 280,
 					"name": "fieldName",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7948,7 +8160,7 @@
 							"fileName": "src/fileWithFieldName.ts",
 							"line": 3,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/fileWithFieldName.ts#L3"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/fileWithFieldName.ts#L3"
 						}
 					],
 					"type": {
@@ -7957,7 +8169,7 @@
 					}
 				},
 				{
-					"id": 269,
+					"id": 279,
 					"name": "file",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7967,7 +8179,7 @@
 							"fileName": "src/fileWithFieldName.ts",
 							"line": 2,
 							"character": 4,
-							"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/fileWithFieldName.ts#L2"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/fileWithFieldName.ts#L2"
 						}
 					],
 					"type": {
@@ -7986,8 +8198,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						270,
-						269
+						280,
+						279
 					]
 				}
 			],
@@ -7996,12 +8208,44 @@
 					"fileName": "src/fileWithFieldName.ts",
 					"line": 1,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/fileWithFieldName.ts#L1"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/fileWithFieldName.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 312,
+			"id": 266,
+			"name": "OS",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/OS.ts",
+					"line": 1,
+					"character": 12,
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/OS.ts#L1"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "Windows"
+					},
+					{
+						"type": "literal",
+						"value": "macOS"
+					},
+					{
+						"type": "literal",
+						"value": "Linux"
+					}
+				]
+			}
+		},
+		{
+			"id": 322,
 			"name": "UploadPayload",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -8019,7 +8263,7 @@
 					"fileName": "src/uploadPayload.ts",
 					"line": 8,
 					"character": 12,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/uploadPayload.ts#L8"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/uploadPayload.ts#L8"
 				}
 			],
 			"type": {
@@ -8054,7 +8298,7 @@
 					},
 					{
 						"type": "reference",
-						"target": 267,
+						"target": 277,
 						"name": "FileWithFieldName",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -8062,7 +8306,7 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"target": 267,
+							"target": 277,
 							"name": "FileWithFieldName",
 							"package": "@antoinette-agency/sofetch"
 						}
@@ -8075,7 +8319,7 @@
 			}
 		},
 		{
-			"id": 313,
+			"id": 323,
 			"name": "default",
 			"variant": "declaration",
 			"kind": 32,
@@ -8152,14 +8396,14 @@
 			"sources": [
 				{
 					"fileName": "src/soFetch.ts",
-					"line": 173,
+					"line": 183,
 					"character": 6,
-					"url": "https://github.com/ludd-industries/so-fetch/blob/cbffd36be79e8616491621cff4f766c83ef5ed9f/src/soFetch.ts#L173"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/b9c1bd96354a6cfc999a462cd952d90ed8583ed3/src/soFetch.ts#L183"
 				}
 			],
 			"type": {
 				"type": "reference",
-				"target": 271,
+				"target": 281,
 				"typeArguments": [
 					{
 						"type": "intrinsic",
@@ -8176,7 +8420,7 @@
 		{
 			"title": "Enumerations",
 			"children": [
-				198
+				206
 			]
 		},
 		{
@@ -8189,24 +8433,26 @@
 		{
 			"title": "Interfaces",
 			"children": [
-				271,
-				307
+				281,
+				317
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				256,
-				257,
-				260,
+				264,
 				267,
-				312
+				265,
+				270,
+				277,
+				266,
+				322
 			]
 		},
 		{
 			"title": "Variables",
 			"children": [
-				313
+				323
 			]
 		}
 	],
@@ -8214,7 +8460,7 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "<img alt=\"soFetchReadmeHeader\" src=\"https://github.com/user-attachments/assets/ac1fed39-cdc4-4773-96fd-53d91f82dd81\" />\n<p align=\"center\">\n  <a href=\"https://sofetch.antoinette.agency/#quickstart\">Quick Start</a> | \n  <a href=\"https://sofetch.antoinette.agency/examples\">Examples</a> |\n  <a href=\"https://sofetch.antoinette.agency/api-reference\">API</a> |\n</p>\n\n### ✨ Features\n\n- Elegant interface. Less code. Minimal boilerplate\n- Serialise request ➡️ Post request ➡️ Serialise response with 1 line of code\n- Fluent error handling\n- Easy authentication\n- Build multiple clients effortlessly\n\n### 🌱 Install\n\n"
+			"text": "<a href=\"https://sofetch.antoinette.agency\">\n   <img alt=\"soFetchReadmeHeader\" src=\"https://github.com/user-attachments/assets/ac1fed39-cdc4-4773-96fd-53d91f82dd81\" />\n</a>\n<p align=\"center\">\n  <a href=\"https://sofetch.antoinette.agency/#quickstart\">Quick Start</a> | \n  <a href=\"https://sofetch.antoinette.agency/examples\">Examples</a> |\n  <a href=\"https://sofetch.antoinette.agency/api-reference\">API</a>\n</p>\n\n### ✨ Features\n\n- Elegant interface. Less code. Minimal boilerplate\n- Serialise request ➡️ Post request ➡️ Serialise response with 1 line of code\n- Fluent error handling\n- Easy authentication\n- Build multiple clients effortlessly\n\n### 🌱 Install\n\n"
 		},
 		{
 			"kind": "code",
@@ -8827,7 +9073,7 @@
 		"123": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.catchHTTP"
+			"qualifiedName": "SoFetchConfig.userAgent"
 		},
 		"124": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8837,17 +9083,17 @@
 		"125": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "status"
+			"qualifiedName": "SoFetchConfig.catchHTTP"
 		},
 		"126": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "handler"
+			"qualifiedName": "status"
 		},
 		"127": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "handler"
 		},
 		"128": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8857,12 +9103,12 @@
 		"129": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "res"
+			"qualifiedName": "__type"
 		},
 		"130": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.beforeSend"
+			"qualifiedName": "res"
 		},
 		"131": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8872,12 +9118,12 @@
 		"132": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "handler"
+			"qualifiedName": "SoFetchConfig.beforeSend"
 		},
 		"133": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "handler"
 		},
 		"134": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8887,12 +9133,12 @@
 		"135": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "request"
+			"qualifiedName": "__type"
 		},
 		"136": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.beforeFetchSend"
+			"qualifiedName": "request"
 		},
 		"137": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8902,12 +9148,12 @@
 		"138": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "handler"
+			"qualifiedName": "SoFetchConfig.beforeFetchSend"
 		},
 		"139": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "handler"
 		},
 		"140": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8917,12 +9163,12 @@
 		"141": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "request"
+			"qualifiedName": "__type"
 		},
 		"142": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.onRequestComplete"
+			"qualifiedName": "request"
 		},
 		"143": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8932,12 +9178,12 @@
 		"144": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "handler"
+			"qualifiedName": "SoFetchConfig.onRequestComplete"
 		},
 		"145": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "handler"
 		},
 		"146": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8947,32 +9193,32 @@
 		"147": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "r"
+			"qualifiedName": "__type"
 		},
 		"148": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "metaData"
+			"qualifiedName": "r"
 		},
 		"149": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "metaData"
 		},
 		"150": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.duration"
+			"qualifiedName": "__type"
 		},
 		"151": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.method"
+			"qualifiedName": "__type.duration"
 		},
-		"155": {
+		"152": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useBearerAuthentication"
+			"qualifiedName": "__type.method"
 		},
 		"156": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -8982,32 +9228,32 @@
 		"157": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "props"
+			"qualifiedName": "SoFetchConfig.useBearerAuthentication"
 		},
 		"158": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "props"
 		},
 		"159": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "__type"
 		},
 		"160": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authTokenStorage"
+			"qualifiedName": "__type.authenticationKey"
 		},
 		"161": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authToken"
+			"qualifiedName": "__type.authTokenStorage"
 		},
 		"162": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useCookieAuthentication"
+			"qualifiedName": "__type.authToken"
 		},
 		"163": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9017,27 +9263,27 @@
 		"164": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "props"
+			"qualifiedName": "SoFetchConfig.useCookieAuthentication"
 		},
 		"165": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "props"
 		},
 		"166": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "__type"
 		},
 		"167": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authToken"
+			"qualifiedName": "__type.authenticationKey"
 		},
 		"168": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useHeaderAuthentication"
+			"qualifiedName": "__type.authToken"
 		},
 		"169": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9047,37 +9293,37 @@
 		"170": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__0"
+			"qualifiedName": "SoFetchConfig.useHeaderAuthentication"
 		},
 		"171": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__0"
 		},
 		"172": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.headerKey"
+			"qualifiedName": "__type"
 		},
 		"173": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "__type.headerKey"
 		},
 		"174": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authToken"
+			"qualifiedName": "__type.authenticationKey"
 		},
 		"175": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authTokenStorage"
+			"qualifiedName": "__type.authToken"
 		},
 		"176": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useQueryStringAuthentication"
+			"qualifiedName": "__type.authTokenStorage"
 		},
 		"177": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9087,37 +9333,37 @@
 		"178": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__0"
+			"qualifiedName": "SoFetchConfig.useQueryStringAuthentication"
 		},
 		"179": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__0"
 		},
 		"180": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.queryStringKey"
+			"qualifiedName": "__type"
 		},
 		"181": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "__type.queryStringKey"
 		},
 		"182": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authToken"
+			"qualifiedName": "__type.authenticationKey"
 		},
 		"183": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authTokenStorage"
+			"qualifiedName": "__type.authToken"
 		},
 		"184": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useBasicAuthentication"
+			"qualifiedName": "__type.authTokenStorage"
 		},
 		"185": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9127,462 +9373,462 @@
 		"186": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__0"
+			"qualifiedName": "SoFetchConfig.useBasicAuthentication"
 		},
 		"187": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__0"
 		},
 		"188": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.username"
+			"qualifiedName": "__type"
 		},
 		"189": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.password"
+			"qualifiedName": "__type.username"
 		},
 		"190": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "__type.password"
 		},
 		"191": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authTokenStorage"
+			"qualifiedName": "__type.authenticationKey"
 		},
-		"198": {
+		"192": {
 			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus"
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.authTokenStorage"
 		},
 		"199": {
 			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Continue100"
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setUserAgent"
 		},
 		"200": {
 			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.SwitchingProtocols101"
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setUserAgent"
 		},
 		"201": {
 			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Processing102"
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__0"
 		},
 		"202": {
 			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.OK200"
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
 		},
 		"203": {
 			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Created201"
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.browser"
 		},
 		"204": {
 			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Accepted202"
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.OS"
 		},
 		"205": {
 			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.NoContent204"
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.userAgentString"
 		},
 		"206": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.ResetContent205"
+			"qualifiedName": "HttpStatus"
 		},
 		"207": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.PartialContent206"
+			"qualifiedName": "HttpStatus.Continue100"
 		},
 		"208": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.MultipleChoices300"
+			"qualifiedName": "HttpStatus.SwitchingProtocols101"
 		},
 		"209": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.MovedPermanently301"
+			"qualifiedName": "HttpStatus.Processing102"
 		},
 		"210": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Found302"
+			"qualifiedName": "HttpStatus.OK200"
 		},
 		"211": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.SeeOther303"
+			"qualifiedName": "HttpStatus.Created201"
 		},
 		"212": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.NotModified304"
+			"qualifiedName": "HttpStatus.Accepted202"
 		},
 		"213": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.UseProxy305"
+			"qualifiedName": "HttpStatus.NoContent204"
 		},
 		"214": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.TemporaryRedirect307"
+			"qualifiedName": "HttpStatus.ResetContent205"
 		},
 		"215": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.PermanentRedirect308"
+			"qualifiedName": "HttpStatus.PartialContent206"
 		},
 		"216": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.BadRequest400"
+			"qualifiedName": "HttpStatus.MultipleChoices300"
 		},
 		"217": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Unauthorized401"
+			"qualifiedName": "HttpStatus.MovedPermanently301"
 		},
 		"218": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.PaymentRequired402"
+			"qualifiedName": "HttpStatus.Found302"
 		},
 		"219": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Forbidden403"
+			"qualifiedName": "HttpStatus.SeeOther303"
 		},
 		"220": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.NotFound404"
+			"qualifiedName": "HttpStatus.NotModified304"
 		},
 		"221": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.MethodNotAllowed405"
+			"qualifiedName": "HttpStatus.UseProxy305"
 		},
 		"222": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.NotAcceptable406"
+			"qualifiedName": "HttpStatus.TemporaryRedirect307"
 		},
 		"223": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.ProxyAuthenticationRequired407"
+			"qualifiedName": "HttpStatus.PermanentRedirect308"
 		},
 		"224": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.RequestTimeout408"
+			"qualifiedName": "HttpStatus.BadRequest400"
 		},
 		"225": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Conflict409"
+			"qualifiedName": "HttpStatus.Unauthorized401"
 		},
 		"226": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Gone410"
+			"qualifiedName": "HttpStatus.PaymentRequired402"
 		},
 		"227": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.LengthRequired411"
+			"qualifiedName": "HttpStatus.Forbidden403"
 		},
 		"228": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.PreconditionFailed412"
+			"qualifiedName": "HttpStatus.NotFound404"
 		},
 		"229": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.PayloadTooLarge413"
+			"qualifiedName": "HttpStatus.MethodNotAllowed405"
 		},
 		"230": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.URITooLong414"
+			"qualifiedName": "HttpStatus.NotAcceptable406"
 		},
 		"231": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.UnsupportedMediaType415"
+			"qualifiedName": "HttpStatus.ProxyAuthenticationRequired407"
 		},
 		"232": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.RangeNotSatisfiable416"
+			"qualifiedName": "HttpStatus.RequestTimeout408"
 		},
 		"233": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.ExpectationFailed417"
+			"qualifiedName": "HttpStatus.Conflict409"
 		},
 		"234": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.ImATeapot418"
+			"qualifiedName": "HttpStatus.Gone410"
 		},
 		"235": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.MisdirectedRequest421"
+			"qualifiedName": "HttpStatus.LengthRequired411"
 		},
 		"236": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.UnprocessableEntity422"
+			"qualifiedName": "HttpStatus.PreconditionFailed412"
 		},
 		"237": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.Locked423"
+			"qualifiedName": "HttpStatus.PayloadTooLarge413"
 		},
 		"238": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.FailedDependency424"
+			"qualifiedName": "HttpStatus.URITooLong414"
 		},
 		"239": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.TooEarly425"
+			"qualifiedName": "HttpStatus.UnsupportedMediaType415"
 		},
 		"240": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.UpgradeRequired426"
+			"qualifiedName": "HttpStatus.RangeNotSatisfiable416"
 		},
 		"241": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.PreconditionRequired428"
+			"qualifiedName": "HttpStatus.ExpectationFailed417"
 		},
 		"242": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.TooManyRequests429"
+			"qualifiedName": "HttpStatus.ImATeapot418"
 		},
 		"243": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.RequestHeaderFieldsTooLarge431"
+			"qualifiedName": "HttpStatus.MisdirectedRequest421"
 		},
 		"244": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.UnavailableForLegalReasons451"
+			"qualifiedName": "HttpStatus.UnprocessableEntity422"
 		},
 		"245": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.InternalServerError500"
+			"qualifiedName": "HttpStatus.Locked423"
 		},
 		"246": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.NotImplemented501"
+			"qualifiedName": "HttpStatus.FailedDependency424"
 		},
 		"247": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.BadGateway502"
+			"qualifiedName": "HttpStatus.TooEarly425"
 		},
 		"248": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.ServiceUnavailable503"
+			"qualifiedName": "HttpStatus.UpgradeRequired426"
 		},
 		"249": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.GatewayTimeout504"
+			"qualifiedName": "HttpStatus.PreconditionRequired428"
 		},
 		"250": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.HTTPVersionNotSupported505"
+			"qualifiedName": "HttpStatus.TooManyRequests429"
 		},
 		"251": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.VariantAlsoNegotiates506"
+			"qualifiedName": "HttpStatus.RequestHeaderFieldsTooLarge431"
 		},
 		"252": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.InsufficientStorage507"
+			"qualifiedName": "HttpStatus.UnavailableForLegalReasons451"
 		},
 		"253": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.LoopDetected508"
+			"qualifiedName": "HttpStatus.InternalServerError500"
 		},
 		"254": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.NotExtended510"
+			"qualifiedName": "HttpStatus.NotImplemented501"
 		},
 		"255": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
-			"qualifiedName": "HttpStatus.NetworkAuthenticationRequired511"
+			"qualifiedName": "HttpStatus.BadGateway502"
 		},
 		"256": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.ServiceUnavailable503"
+		},
+		"257": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.GatewayTimeout504"
+		},
+		"258": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.HTTPVersionNotSupported505"
+		},
+		"259": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.VariantAlsoNegotiates506"
+		},
+		"260": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.InsufficientStorage507"
+		},
+		"261": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.LoopDetected508"
+		},
+		"262": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NotExtended510"
+		},
+		"263": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/httpStatus.ts",
+			"qualifiedName": "HttpStatus.NetworkAuthenticationRequired511"
+		},
+		"264": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authenticationType.ts",
 			"qualifiedName": "AuthenticationType"
 		},
-		"257": {
+		"265": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/browser.ts",
+			"qualifiedName": "Browser"
+		},
+		"266": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/OS.ts",
+			"qualifiedName": "OS"
+		},
+		"267": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "AuthTokenStorageType"
 		},
-		"258": {
+		"268": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "__type"
 		},
-		"259": {
+		"269": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "__type"
 		},
-		"260": {
+		"270": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "ErrorHandlerDict"
 		},
-		"261": {
+		"271": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"262": {
+		"272": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type.__index"
 		},
-		"264": {
+		"274": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"265": {
+		"275": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"266": {
+		"276": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "r"
 		},
-		"267": {
+		"277": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "FileWithFieldName"
 		},
-		"269": {
+		"279": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "__type.file"
 		},
-		"270": {
+		"280": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "__type.fieldName"
 		},
-		"271": {
+		"281": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike"
 		},
-		"272": {
+		"282": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.verbose"
 		},
-		"273": {
+		"283": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
 			"qualifiedName": "SoFetchLike.config"
 		},
-		"274": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.get"
-		},
-		"275": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.get"
-		},
-		"276": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
-		},
-		"277": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
-		},
-		"278": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
-		},
-		"279": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.post"
-		},
-		"280": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.post"
-		},
-		"281": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
-		},
-		"282": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
-		},
-		"283": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
-		},
 		"284": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.put"
+			"qualifiedName": "SoFetchLike.get"
 		},
 		"285": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.put"
+			"qualifiedName": "SoFetchLike.get"
 		},
 		"286": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9602,12 +9848,12 @@
 		"289": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.patch"
+			"qualifiedName": "SoFetchLike.post"
 		},
 		"290": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.patch"
+			"qualifiedName": "SoFetchLike.post"
 		},
 		"291": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9627,12 +9873,12 @@
 		"294": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.delete"
+			"qualifiedName": "SoFetchLike.put"
 		},
 		"295": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.delete"
+			"qualifiedName": "SoFetchLike.put"
 		},
 		"296": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9652,74 +9898,124 @@
 		"299": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.instance"
+			"qualifiedName": "SoFetchLike.patch"
 		},
 		"300": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.instance"
+			"qualifiedName": "SoFetchLike.patch"
 		},
 		"301": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "configOrAuthKey"
+			"qualifiedName": "T"
 		},
 		"302": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.TResponse"
+			"qualifiedName": "url"
 		},
 		"303": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike"
+			"qualifiedName": "body"
 		},
 		"304": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
+			"qualifiedName": "SoFetchLike.delete"
 		},
 		"305": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
+			"qualifiedName": "SoFetchLike.delete"
 		},
 		"306": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
+			"qualifiedName": "T"
 		},
 		"307": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"308": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"309": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.instance"
+		},
+		"310": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.instance"
+		},
+		"311": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "configOrAuthKey"
+		},
+		"312": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.TResponse"
+		},
+		"313": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike"
+		},
+		"314": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"315": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"316": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"317": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest"
 		},
-		"308": {
+		"318": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.url"
 		},
-		"309": {
+		"319": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.method"
 		},
-		"310": {
+		"320": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.body"
 		},
-		"311": {
+		"321": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.headers"
 		},
-		"312": {
+		"322": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/uploadPayload.ts",
 			"qualifiedName": "UploadPayload"
 		},
-		"313": {
+		"323": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "soFetch"

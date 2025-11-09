@@ -3,6 +3,9 @@ import {SoFetchRequest} from "./soFetch.ts";
 import {getCookie} from "./cookieTypescriptUtils.ts";
 import {AuthTokenStorageType} from "./authTokenStorageType.ts";
 import {AuthenticationType} from "./authenticationType.ts";
+import {Browser} from "./browser.ts";
+import {OS} from "./OS.ts";
+import {UserAgents} from "./UserAgents.ts";
 
 /**
  * Configures all requests for a specific soFetch instance
@@ -11,19 +14,22 @@ export class SoFetchConfig {
     private errorHandlers: ErrorHandlerDict = {}
     protected beforeSendHandlers: ((request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[] = []
     protected beforeFetchSendHandlers: ((request: RequestInit) => Promise<RequestInit | void> | RequestInit | void)[] = []
-    protected onRequestCompleteHandlers: ((response: Response, requestData: { duration: number, method: string }) => Promise<void> | void)[] = []
+    protected onRequestCompleteHandlers: ((response: Response, requestData: {
+        duration: number,
+        method: string
+    }) => Promise<void> | void)[] = []
 
     /**
      * Specifies how (or if) soFetch should persist and authentication
      */
-    public authTokenStorage:AuthTokenStorageType = null
+    public authTokenStorage: AuthTokenStorageType = null
     private inMemoryAuthToken: string = ""
 
     /**
      * Specifies how soFetch should send authentication credentials to the server
      */
-    public authenticationType:AuthenticationType = null
-    
+    public authenticationType: AuthenticationType = null
+
     protected getAuthToken = async () => {
         switch (this.authTokenStorage) {
             case null:
@@ -42,11 +48,11 @@ export class SoFetchConfig {
     }
 
     /**
-     * Use this method to set an auth token after it's been received from a server, typically as 
+     * Use this method to set an auth token after it's been received from a server, typically as
      * the response to a login request
      * @param authToken
      */
-    public setAuthToken = (authToken:string) => {
+    public setAuthToken = (authToken: string) => {
         switch (this.authTokenStorage) {
             case "memory":
                 this.inMemoryAuthToken = authToken
@@ -66,7 +72,7 @@ export class SoFetchConfig {
                 break
         }
     }
-    
+
     /**
      * The base URL for all HTTP requests in the instance. If absent this is assumed to be the current base url.
      * If running in Node relative requests without a baseUrl will throw an error.
@@ -87,6 +93,7 @@ export class SoFetchConfig {
      * The key which is used if an authentication token is sent to the server via the query string
      */
     authQueryStringKey: string = ""
+    userAgent: string = ""
 
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
@@ -108,18 +115,18 @@ export class SoFetchConfig {
         }
         this.errorHandlers[status].push(handler)
     }
-    
+
 
     /**
      * Adds a handler which will be executed before every request. beforeSend handlers on the config
      * will be executed before request-specific handlers
      * @param handler
      * @example
-     * 
+     *
      *    soFetch.config.beforeSend((req:SoFetchRequest) => {
      *       console.info(`Sending ${req.method} request to URL ${req.url}`
      *    })
-     *    
+     *
      * @see For more examples see https://sofetch.antoinette.agency
      */
     beforeSend(handler: (request: SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void) {
@@ -157,8 +164,8 @@ export class SoFetchConfig {
     onRequestComplete(handler: (r: Response, metaData: { duration: number, method: string }) => void | Promise<void>) {
         this.onRequestCompleteHandlers.push(handler)
     }
-    
-    private setAuthTokenStorage = (authTokenStorage?:AuthTokenStorageType) => {
+
+    private setAuthTokenStorage = (authTokenStorage?: AuthTokenStorageType) => {
         if (authTokenStorage) {
             this.authTokenStorage = authTokenStorage
             return
@@ -182,13 +189,13 @@ export class SoFetchConfig {
         authTokenStorage?: AuthTokenStorageType,
         authToken?: string,
     } = {}) {
-        let { authenticationKey, authTokenStorage, authToken } = props
+        let {authenticationKey, authTokenStorage, authToken} = props
         this.authenticationType = "bearer"
         if (authenticationKey) {
             this.authenticationKey = authenticationKey
         }
         if (authTokenStorage === undefined) {
-            authTokenStorage =  typeof(document) === "undefined" ? "memory" : "localStorage"
+            authTokenStorage = typeof (document) === "undefined" ? "memory" : "localStorage"
         }
         this.setAuthTokenStorage(authTokenStorage)
         if (authToken) {
@@ -201,10 +208,10 @@ export class SoFetchConfig {
      * @param authToken - optional. Use this if you have already obtained a token. Typically this would be left undefined for bearer authentication as the token is usually obtained from a login process.
      * @param authenticationKey - optional. Specify an authentication key if you don't want to use the default: 'SOFETCH_AUTHENTICATION'
      */
-    useCookieAuthentication(props?:{
-        authenticationKey?:string,
-        authToken?:string,
-    }|undefined) {
+    useCookieAuthentication(props?: {
+        authenticationKey?: string,
+        authToken?: string,
+    } | undefined) {
         this.authenticationType = "cookies"
         let authenticationKey, authToken
         if (props) {
@@ -214,26 +221,26 @@ export class SoFetchConfig {
         if (authenticationKey) {
             this.authenticationKey = authenticationKey
         }
-        
+
         //If we're in Node we'll simulate cookies in memory.
-        this.authTokenStorage =  typeof(document) === "undefined" ? "memory" : "cookie"
+        this.authTokenStorage = typeof (document) === "undefined" ? "memory" : "cookie"
         if (authToken) {
             this.setAuthToken(authToken)
         }
     }
 
     /**
-     * Tells soFetch to send an authentication token to the server 
+     * Tells soFetch to send an authentication token to the server
      * @param headerKey - required. The key of the header with which to send the authentication token
      * @param authToken - optional. Use this if you have already obtained a token.
      * @param authenticationKey - optional. Specify an authentication key if you don't want to use the default: 'SOFETCH_AUTHENTICATION'
      * @param authTokenStorage - optional, defaults to 'localStorage' on the browser and 'memory' in Node
      */
-    useHeaderAuthentication({headerKey, authToken, authenticationKey, authTokenStorage}:{
-        headerKey:string,
-        authenticationKey?:string,
-        authToken?:string,
-        authTokenStorage?:AuthTokenStorageType
+    useHeaderAuthentication({headerKey, authToken, authenticationKey, authTokenStorage}: {
+        headerKey: string,
+        authenticationKey?: string,
+        authToken?: string,
+        authTokenStorage?: AuthTokenStorageType
     }) {
         this.authenticationType = "header"
         this.authHeaderKey = headerKey
@@ -253,11 +260,11 @@ export class SoFetchConfig {
      * @param authenticationKey - optional. Specify an authentication key if you don't want to use the default: 'SOFETCH_AUTHENTICATION'
      * @param authTokenStorage - optional. Defaults to 'localStorage' on the browser and 'memory' in Node
      */
-    useQueryStringAuthentication({queryStringKey, authToken, authenticationKey, authTokenStorage}:{
-        queryStringKey:string,
-        authenticationKey?:string,
-        authToken?:string,
-        authTokenStorage?:AuthTokenStorageType
+    useQueryStringAuthentication({queryStringKey, authToken, authenticationKey, authTokenStorage}: {
+        queryStringKey: string,
+        authenticationKey?: string,
+        authToken?: string,
+        authTokenStorage?: AuthTokenStorageType
     }) {
         this.authenticationType = "queryString"
         this.authQueryStringKey = queryStringKey
@@ -277,11 +284,11 @@ export class SoFetchConfig {
      * @param authenticationKey - optional. Specify an authentication key if you don't want to use the default: 'SOFETCH_AUTHENTICATION'
      * @param authTokenStorage - optional, defaults to 'localStorage' on the browser and 'memory' in Node
      */
-    useBasicAuthentication({username, password, authenticationKey, authTokenStorage}:{
-        username?:string, 
-        password?:string,
-        authenticationKey?:string,
-        authTokenStorage?:AuthTokenStorageType
+    useBasicAuthentication({username, password, authenticationKey, authTokenStorage}: {
+        username?: string,
+        password?: string,
+        authenticationKey?: string,
+        authTokenStorage?: AuthTokenStorageType
     }) {
         this.authenticationType = "basic"
         if ((username && !password) || (password && !username)) {
@@ -295,9 +302,31 @@ export class SoFetchConfig {
             this.setBasicAuthCredentials({username, password})
         }
     }
-    
-    private setBasicAuthCredentials({username, password}: {password: string; username: string}) {
+
+    private setBasicAuthCredentials({username, password}: { password: string; username: string }) {
         const token = btoa(`${username}:${password}`);
         this.setAuthToken(token)
+    }
+
+    /**
+     * Tells SoFetch to use a specified user agent when making requests. You can either user a predefined user agent 
+     * by specifying an OS and browser or explicitly pass the user agent string you want to use.
+     * @param browser - optional, required if OS is also passed. Ignored if userAgentString is passed.
+     * @param OS - optional, required if browser is also passed. Ignored if userAgentString is passed.
+     * @param userAgentString optional
+     */
+
+    setUserAgent({browser, OS, userAgentString}: { browser?: Browser, OS?: OS, userAgentString?: string }) {
+        let finalUaString = ""
+        if (userAgentString) {
+            finalUaString = userAgentString
+        } else {
+            const entry = UserAgents.find(x => x.os === OS && x.browser == browser)
+            if (!entry) {
+                throw new Error(`No user agent defined for OS ${OS} and browser ${browser}`)
+            }
+            finalUaString = entry.value
+        }
+        this.userAgent = finalUaString
     }
 }

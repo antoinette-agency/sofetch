@@ -1,0 +1,1 @@
+export type OS = "Windows" | "macOS" | "Linux"

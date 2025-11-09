@@ -20,6 +20,8 @@ export declare type AuthenticationType = "basic" | "bearer" | "header" | "queryS
  */
 export declare type AuthTokenStorageType = "memory" | "sessionStorage" | "localStorage" | "cookie" | (() => (string | Promise<string>)) | null;
 
+export declare type Browser = "Chrome" | "Firefox" | "Safari" | "Edge" | null;
+
 /**
  * A integer-keyed dictionary of arrays of response handlers.
  */
@@ -337,6 +339,8 @@ export declare const enum HttpStatus {
     NetworkAuthenticationRequired511 = 511
 }
 
+export declare type OS = "Windows" | "macOS" | "Linux";
+
 /**
  * Makes an HTTP request to the specified URL.
  * @template TResponse The primitive or object type you're expecting from the server
@@ -396,6 +400,7 @@ export declare class SoFetchConfig {
      * The key which is used if an authentication token is sent to the server via the query string
      */
     authQueryStringKey: string;
+    userAgent: string;
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
      * Multiple handlers will be executed in the order in which they are added. If a request has it's
@@ -514,6 +519,18 @@ export declare class SoFetchConfig {
         authTokenStorage?: AuthTokenStorageType;
     }): void;
     private setBasicAuthCredentials;
+    /**
+     * Tells SoFetch to use a specified user agent when making requests. You can either user a predefined user agent
+     * by specifying an OS and browser or explicitly pass the user agent string you want to use.
+     * @param browser - optional, required if OS is also passed. Ignored if userAgentString is passed.
+     * @param OS - optional, required if browser is also passed. Ignored if userAgentString is passed.
+     * @param userAgentString optional
+     */
+    setUserAgent({ browser, OS, userAgentString }: {
+        browser?: Browser;
+        OS?: OS;
+        userAgentString?: string;
+    }): void;
 }
 
 export declare interface SoFetchLike<TResponse = unknown> {

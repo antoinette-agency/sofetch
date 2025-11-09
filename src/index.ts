@@ -8,6 +8,8 @@ import { FileWithFieldName } from "./fileWithFieldName.ts";
 import { AuthenticationType } from "./authenticationType.ts";
 import { AuthTokenStorageType } from "./authTokenStorageType.ts";
 import { HttpStatus } from "./httpStatus.ts";
+import { Browser } from "./browser.ts";
+import { OS } from "./OS.ts";
 
 export default soFetch
 
@@ -15,6 +17,8 @@ export {SoFetchPromise, SoFetchConfig, HttpStatus}
 
 export type {
     AuthenticationType,
+    Browser,
+    OS,
     AuthTokenStorageType,
     ErrorHandlerDict,
     FileWithFieldName,
