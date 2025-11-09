@@ -44,8 +44,18 @@ async function addAuthentication(request: SoFetchRequest, config: SoFetchConfig)
 
 /** @import { UploadPayload } from "./uploadPayload.ts" */
 
-const convertArgsToFetchInit = async <T>({url, method, body, config, promise}: { url: string, method:string, body?:UploadPayload, config:SoFetchConfig, promise:SoFetchPromise<T> }) => {
-    const headers = {}
+const convertArgsToFetchInit = async <T>({url, method, body, config, promise, userAgent}: { 
+    url: string, 
+    method:string, 
+    body?:UploadPayload, 
+    config:SoFetchConfig, 
+    promise:SoFetchPromise<T>,
+    userAgent:string
+}) => {
+    const headers: Record<string,string> = {}
+    if (userAgent) {
+        headers["User-Agent"] = userAgent
+    }
     let request = {url, method, body, headers}
     request.url = !config.baseUrl || request.url.startsWith("http") ? request.url : `${config.baseUrl}${request.url}`
     request = await addAuthentication(request, config)
@@ -63,7 +73,7 @@ const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url
     const promise = new SoFetchPromise<TResponse>((resolve, reject) => {
         (async () => {
             await sleep(0) //Allows the promise to be initialised
-            const {finalUrl, init} = await convertArgsToFetchInit({url, method, body, config, promise})
+            const {finalUrl, init} = await convertArgsToFetchInit({url, method, body, config, promise, userAgent:config.userAgent})
             
             const startTime = new Date().getTime()
             const response = await Promise.race([
@@ -298,6 +308,7 @@ soFetch.instance = (configOrAuthKey?:SoFetchConfig | string) => {
         newConfig["onRequestCompleteHandlers"] = [...oldConfig["onRequestCompleteHandlers"]]
         newConfig.authTokenStorage = oldConfig.authTokenStorage
         newConfig["inMemoryAuthToken"] = oldConfig["inMemoryAuthToken"]
+        newConfig.userAgent = oldConfig.userAgent
     }
     newConfig.authenticationKey = newAuthKey || generateNewAuthenticationKey(oldConfig.authenticationKey)
     
