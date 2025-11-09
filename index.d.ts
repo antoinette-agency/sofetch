@@ -20,6 +20,9 @@ export declare type AuthenticationType = "basic" | "bearer" | "header" | "queryS
  */
 export declare type AuthTokenStorageType = "memory" | "sessionStorage" | "localStorage" | "cookie" | (() => (string | Promise<string>)) | null;
 
+/**
+ * Specifies the browser when selecting a pre-defined user agent
+ */
 export declare type Browser = "Chrome" | "Firefox" | "Safari" | "Edge" | null;
 
 /**
@@ -339,6 +342,9 @@ export declare const enum HttpStatus {
     NetworkAuthenticationRequired511 = 511
 }
 
+/**
+ * Specifies the OS when selecting a predefined user agent
+ */
 export declare type OS = "Windows" | "macOS" | "Linux";
 
 /**
