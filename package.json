@@ -1,6 +1,6 @@
 {
   "name": "@antoinette-agency/sofetch",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "An opinionated Fetch wrapper for JSON APIs",
   "repository": "https://github.com/antoinette-agency/sofetch",
   "homepage": "https://sofetch.antoinette.agency/",
