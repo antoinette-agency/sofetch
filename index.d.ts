@@ -644,7 +644,7 @@ export declare class SoFetchPromise<T> {
      * @see For more examples see https://sofetch.antoinette.agency
      */
     catchHTTP(status: HttpStatus, handler: (response: Response) => void): SoFetchPromise<T>;
-    setTimeout(ms: number): Promise<this>;
+    setTimeout(ms: number): SoFetchPromise<T>;
 }
 
 export declare interface SoFetchRequest {

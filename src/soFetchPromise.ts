@@ -122,7 +122,7 @@ export class SoFetchPromise<T> {
         return this
     }
 
-    async setTimeout(ms: number) {
+     setTimeout(ms: number):SoFetchPromise<T> {
         this.timeout = ms
         return this
     }
