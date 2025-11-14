@@ -15,13 +15,17 @@ export default soFetch
 
 export {SoFetchPromise, SoFetchConfig, HttpStatus}
 
+class RequestMethod {
+}
+
 export type {
     AuthenticationType,
-    Browser,
-    OS,
     AuthTokenStorageType,
+    Browser,
     ErrorHandlerDict,
     FileWithFieldName,
+    OS,
+    RequestMethod,
     SoFetchLike, 
     SoFetchRequest, 
     UploadPayload
