@@ -8,3 +8,4 @@
  * - null - Does not send authentication credentials to the server
  */
 export type AuthenticationType = "basic" | "bearer" | "header" | "queryString" | "cookies" | null
+

@@ -9,6 +9,8 @@ import {handleHttpErrors} from "./handleHttpErrors.ts";
 import {transformRequest} from "./transformRequest.ts";
 import {handleBeforeFetchSend} from "./handleBeforeFetchSend.ts";
 
+import {RequestMethod} from "./requestMethod.ts";
+
 async function addAuthentication(request: SoFetchRequest, config: SoFetchConfig) {
     
     const token = config.authenticationType === null ? "" : await config["getAuthToken"]()
@@ -261,6 +263,26 @@ soFetch.put = (url: string, body?: object) => {
  */
 soFetch.patch = (url: string, body?: object) => {
     return makeRequestWrapper(soFetch.config,"PATCH", url, body)
+}
+
+/**
+ * Makes a request using supplied method to the specified URL
+ * @template TResponse The primitive or object type you're expecting from the server
+ * @param method One of GET, POST, PUT, PATCH, DELETE
+ * @param url An absolute or relative URL
+ * @param {UploadPayload} [body] The body of the request
+ * @returns An awaitable SoFetchPromise which resolves to type TResponse
+ * @example
+ *
+ *    const updateUserEmail = {
+ *        email:"regina@massive-deal.com"
+ *    }
+ *    const successResponse = await soFetch.patch<Success>("/api/users/1234", updateUserEmail)
+ *
+ * @see For more examples see https://sofetch.antoinette.agency
+ */
+soFetch.request = (method: RequestMethod, url: string, body?: object) => {
+    return makeRequestWrapper(soFetch.config, method, url, body)
 }
 
 /**
