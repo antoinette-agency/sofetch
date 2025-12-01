@@ -12,7 +12,7 @@ describe("SoFetch timeout handling", () => {
                 })
         }
         const start = Date.now();
-        await expect(testFunction()).rejects.toThrow("SoFetch timed out")
+        await expect(testFunction()).rejects.toThrow("SoFetch timed out. Timeout for this request set to 2000ms")
         const duration = Date.now() - start;
         expect(duration).toBeGreaterThanOrEqual(1000);
         expect(duration).toBeLessThanOrEqual(3000);

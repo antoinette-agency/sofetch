@@ -7,7 +7,7 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 207,
+			"id": 219,
 			"name": "HttpStatus",
 			"variant": "declaration",
 			"kind": 8,
@@ -35,7 +35,7 @@
 			},
 			"children": [
 				{
-					"id": 213,
+					"id": 225,
 					"name": "Accepted202",
 					"variant": "declaration",
 					"kind": 16,
@@ -64,7 +64,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 52,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L52"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L52"
 						}
 					],
 					"type": {
@@ -73,7 +73,7 @@
 					}
 				},
 				{
-					"id": 256,
+					"id": 268,
 					"name": "BadGateway502",
 					"variant": "declaration",
 					"kind": 16,
@@ -102,7 +102,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 311,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L311"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L311"
 						}
 					],
 					"type": {
@@ -111,7 +111,7 @@
 					}
 				},
 				{
-					"id": 225,
+					"id": 237,
 					"name": "BadRequest400",
 					"variant": "declaration",
 					"kind": 16,
@@ -140,7 +140,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 125,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L125"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L125"
 						}
 					],
 					"type": {
@@ -149,7 +149,7 @@
 					}
 				},
 				{
-					"id": 234,
+					"id": 246,
 					"name": "Conflict409",
 					"variant": "declaration",
 					"kind": 16,
@@ -178,7 +178,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 179,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L179"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L179"
 						}
 					],
 					"type": {
@@ -187,7 +187,7 @@
 					}
 				},
 				{
-					"id": 208,
+					"id": 220,
 					"name": "Continue100",
 					"variant": "declaration",
 					"kind": 16,
@@ -216,7 +216,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 18,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L18"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L18"
 						}
 					],
 					"type": {
@@ -225,7 +225,7 @@
 					}
 				},
 				{
-					"id": 212,
+					"id": 224,
 					"name": "Created201",
 					"variant": "declaration",
 					"kind": 16,
@@ -254,7 +254,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 46,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L46"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L46"
 						}
 					],
 					"type": {
@@ -263,7 +263,7 @@
 					}
 				},
 				{
-					"id": 242,
+					"id": 254,
 					"name": "ExpectationFailed417",
 					"variant": "declaration",
 					"kind": 16,
@@ -292,7 +292,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 227,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L227"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L227"
 						}
 					],
 					"type": {
@@ -301,7 +301,7 @@
 					}
 				},
 				{
-					"id": 247,
+					"id": 259,
 					"name": "FailedDependency424",
 					"variant": "declaration",
 					"kind": 16,
@@ -330,7 +330,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 257,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L257"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L257"
 						}
 					],
 					"type": {
@@ -339,7 +339,7 @@
 					}
 				},
 				{
-					"id": 228,
+					"id": 240,
 					"name": "Forbidden403",
 					"variant": "declaration",
 					"kind": 16,
@@ -368,7 +368,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 143,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L143"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L143"
 						}
 					],
 					"type": {
@@ -377,7 +377,7 @@
 					}
 				},
 				{
-					"id": 219,
+					"id": 231,
 					"name": "Found302",
 					"variant": "declaration",
 					"kind": 16,
@@ -406,7 +406,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 88,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L88"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L88"
 						}
 					],
 					"type": {
@@ -415,7 +415,7 @@
 					}
 				},
 				{
-					"id": 258,
+					"id": 270,
 					"name": "GatewayTimeout504",
 					"variant": "declaration",
 					"kind": 16,
@@ -444,7 +444,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 323,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L323"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L323"
 						}
 					],
 					"type": {
@@ -453,7 +453,7 @@
 					}
 				},
 				{
-					"id": 235,
+					"id": 247,
 					"name": "Gone410",
 					"variant": "declaration",
 					"kind": 16,
@@ -482,7 +482,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 185,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L185"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L185"
 						}
 					],
 					"type": {
@@ -491,7 +491,7 @@
 					}
 				},
 				{
-					"id": 259,
+					"id": 271,
 					"name": "HTTPVersionNotSupported505",
 					"variant": "declaration",
 					"kind": 16,
@@ -520,7 +520,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 329,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L329"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L329"
 						}
 					],
 					"type": {
@@ -529,7 +529,7 @@
 					}
 				},
 				{
-					"id": 243,
+					"id": 255,
 					"name": "ImATeapot418",
 					"variant": "declaration",
 					"kind": 16,
@@ -558,7 +558,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 233,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L233"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L233"
 						}
 					],
 					"type": {
@@ -567,7 +567,7 @@
 					}
 				},
 				{
-					"id": 261,
+					"id": 273,
 					"name": "InsufficientStorage507",
 					"variant": "declaration",
 					"kind": 16,
@@ -596,7 +596,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 341,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L341"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L341"
 						}
 					],
 					"type": {
@@ -605,7 +605,7 @@
 					}
 				},
 				{
-					"id": 254,
+					"id": 266,
 					"name": "InternalServerError500",
 					"variant": "declaration",
 					"kind": 16,
@@ -634,7 +634,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 299,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L299"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L299"
 						}
 					],
 					"type": {
@@ -643,7 +643,7 @@
 					}
 				},
 				{
-					"id": 236,
+					"id": 248,
 					"name": "LengthRequired411",
 					"variant": "declaration",
 					"kind": 16,
@@ -672,7 +672,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 191,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L191"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L191"
 						}
 					],
 					"type": {
@@ -681,7 +681,7 @@
 					}
 				},
 				{
-					"id": 246,
+					"id": 258,
 					"name": "Locked423",
 					"variant": "declaration",
 					"kind": 16,
@@ -710,7 +710,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 251,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L251"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L251"
 						}
 					],
 					"type": {
@@ -719,7 +719,7 @@
 					}
 				},
 				{
-					"id": 262,
+					"id": 274,
 					"name": "LoopDetected508",
 					"variant": "declaration",
 					"kind": 16,
@@ -748,7 +748,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 347,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L347"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L347"
 						}
 					],
 					"type": {
@@ -757,7 +757,7 @@
 					}
 				},
 				{
-					"id": 230,
+					"id": 242,
 					"name": "MethodNotAllowed405",
 					"variant": "declaration",
 					"kind": 16,
@@ -786,7 +786,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 155,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L155"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L155"
 						}
 					],
 					"type": {
@@ -795,7 +795,7 @@
 					}
 				},
 				{
-					"id": 244,
+					"id": 256,
 					"name": "MisdirectedRequest421",
 					"variant": "declaration",
 					"kind": 16,
@@ -824,7 +824,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 239,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L239"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L239"
 						}
 					],
 					"type": {
@@ -833,7 +833,7 @@
 					}
 				},
 				{
-					"id": 218,
+					"id": 230,
 					"name": "MovedPermanently301",
 					"variant": "declaration",
 					"kind": 16,
@@ -862,7 +862,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 82,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L82"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L82"
 						}
 					],
 					"type": {
@@ -871,7 +871,7 @@
 					}
 				},
 				{
-					"id": 217,
+					"id": 229,
 					"name": "MultipleChoices300",
 					"variant": "declaration",
 					"kind": 16,
@@ -900,7 +900,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 76,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L76"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L76"
 						}
 					],
 					"type": {
@@ -909,7 +909,7 @@
 					}
 				},
 				{
-					"id": 264,
+					"id": 276,
 					"name": "NetworkAuthenticationRequired511",
 					"variant": "declaration",
 					"kind": 16,
@@ -938,7 +938,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 359,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L359"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L359"
 						}
 					],
 					"type": {
@@ -947,7 +947,7 @@
 					}
 				},
 				{
-					"id": 214,
+					"id": 226,
 					"name": "NoContent204",
 					"variant": "declaration",
 					"kind": 16,
@@ -976,7 +976,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 58,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L58"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L58"
 						}
 					],
 					"type": {
@@ -985,7 +985,7 @@
 					}
 				},
 				{
-					"id": 231,
+					"id": 243,
 					"name": "NotAcceptable406",
 					"variant": "declaration",
 					"kind": 16,
@@ -1014,7 +1014,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 161,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L161"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L161"
 						}
 					],
 					"type": {
@@ -1023,7 +1023,7 @@
 					}
 				},
 				{
-					"id": 263,
+					"id": 275,
 					"name": "NotExtended510",
 					"variant": "declaration",
 					"kind": 16,
@@ -1052,7 +1052,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 353,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L353"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L353"
 						}
 					],
 					"type": {
@@ -1061,7 +1061,7 @@
 					}
 				},
 				{
-					"id": 229,
+					"id": 241,
 					"name": "NotFound404",
 					"variant": "declaration",
 					"kind": 16,
@@ -1090,7 +1090,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 149,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L149"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L149"
 						}
 					],
 					"type": {
@@ -1099,7 +1099,7 @@
 					}
 				},
 				{
-					"id": 255,
+					"id": 267,
 					"name": "NotImplemented501",
 					"variant": "declaration",
 					"kind": 16,
@@ -1128,7 +1128,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 305,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L305"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L305"
 						}
 					],
 					"type": {
@@ -1137,7 +1137,7 @@
 					}
 				},
 				{
-					"id": 221,
+					"id": 233,
 					"name": "NotModified304",
 					"variant": "declaration",
 					"kind": 16,
@@ -1166,7 +1166,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 100,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L100"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L100"
 						}
 					],
 					"type": {
@@ -1175,7 +1175,7 @@
 					}
 				},
 				{
-					"id": 211,
+					"id": 223,
 					"name": "OK200",
 					"variant": "declaration",
 					"kind": 16,
@@ -1204,7 +1204,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 40,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L40"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L40"
 						}
 					],
 					"type": {
@@ -1213,7 +1213,7 @@
 					}
 				},
 				{
-					"id": 216,
+					"id": 228,
 					"name": "PartialContent206",
 					"variant": "declaration",
 					"kind": 16,
@@ -1242,7 +1242,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 70,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L70"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L70"
 						}
 					],
 					"type": {
@@ -1251,7 +1251,7 @@
 					}
 				},
 				{
-					"id": 238,
+					"id": 250,
 					"name": "PayloadTooLarge413",
 					"variant": "declaration",
 					"kind": 16,
@@ -1280,7 +1280,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 203,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L203"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L203"
 						}
 					],
 					"type": {
@@ -1289,7 +1289,7 @@
 					}
 				},
 				{
-					"id": 227,
+					"id": 239,
 					"name": "PaymentRequired402",
 					"variant": "declaration",
 					"kind": 16,
@@ -1318,7 +1318,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 137,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L137"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L137"
 						}
 					],
 					"type": {
@@ -1327,7 +1327,7 @@
 					}
 				},
 				{
-					"id": 224,
+					"id": 236,
 					"name": "PermanentRedirect308",
 					"variant": "declaration",
 					"kind": 16,
@@ -1356,7 +1356,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 119,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L119"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L119"
 						}
 					],
 					"type": {
@@ -1365,7 +1365,7 @@
 					}
 				},
 				{
-					"id": 237,
+					"id": 249,
 					"name": "PreconditionFailed412",
 					"variant": "declaration",
 					"kind": 16,
@@ -1394,7 +1394,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 197,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L197"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L197"
 						}
 					],
 					"type": {
@@ -1403,7 +1403,7 @@
 					}
 				},
 				{
-					"id": 250,
+					"id": 262,
 					"name": "PreconditionRequired428",
 					"variant": "declaration",
 					"kind": 16,
@@ -1432,7 +1432,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 275,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L275"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L275"
 						}
 					],
 					"type": {
@@ -1441,7 +1441,7 @@
 					}
 				},
 				{
-					"id": 210,
+					"id": 222,
 					"name": "Processing102",
 					"variant": "declaration",
 					"kind": 16,
@@ -1470,7 +1470,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 30,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L30"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L30"
 						}
 					],
 					"type": {
@@ -1479,7 +1479,7 @@
 					}
 				},
 				{
-					"id": 232,
+					"id": 244,
 					"name": "ProxyAuthenticationRequired407",
 					"variant": "declaration",
 					"kind": 16,
@@ -1508,7 +1508,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 167,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L167"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L167"
 						}
 					],
 					"type": {
@@ -1517,7 +1517,7 @@
 					}
 				},
 				{
-					"id": 241,
+					"id": 253,
 					"name": "RangeNotSatisfiable416",
 					"variant": "declaration",
 					"kind": 16,
@@ -1546,7 +1546,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 221,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L221"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L221"
 						}
 					],
 					"type": {
@@ -1555,7 +1555,7 @@
 					}
 				},
 				{
-					"id": 252,
+					"id": 264,
 					"name": "RequestHeaderFieldsTooLarge431",
 					"variant": "declaration",
 					"kind": 16,
@@ -1584,7 +1584,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 287,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L287"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L287"
 						}
 					],
 					"type": {
@@ -1593,7 +1593,7 @@
 					}
 				},
 				{
-					"id": 233,
+					"id": 245,
 					"name": "RequestTimeout408",
 					"variant": "declaration",
 					"kind": 16,
@@ -1622,7 +1622,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 173,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L173"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L173"
 						}
 					],
 					"type": {
@@ -1631,7 +1631,7 @@
 					}
 				},
 				{
-					"id": 215,
+					"id": 227,
 					"name": "ResetContent205",
 					"variant": "declaration",
 					"kind": 16,
@@ -1660,7 +1660,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 64,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L64"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L64"
 						}
 					],
 					"type": {
@@ -1669,7 +1669,7 @@
 					}
 				},
 				{
-					"id": 220,
+					"id": 232,
 					"name": "SeeOther303",
 					"variant": "declaration",
 					"kind": 16,
@@ -1698,7 +1698,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 94,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L94"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L94"
 						}
 					],
 					"type": {
@@ -1707,7 +1707,7 @@
 					}
 				},
 				{
-					"id": 257,
+					"id": 269,
 					"name": "ServiceUnavailable503",
 					"variant": "declaration",
 					"kind": 16,
@@ -1736,7 +1736,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 317,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L317"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L317"
 						}
 					],
 					"type": {
@@ -1745,7 +1745,7 @@
 					}
 				},
 				{
-					"id": 209,
+					"id": 221,
 					"name": "SwitchingProtocols101",
 					"variant": "declaration",
 					"kind": 16,
@@ -1774,7 +1774,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L24"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L24"
 						}
 					],
 					"type": {
@@ -1783,7 +1783,7 @@
 					}
 				},
 				{
-					"id": 223,
+					"id": 235,
 					"name": "TemporaryRedirect307",
 					"variant": "declaration",
 					"kind": 16,
@@ -1812,7 +1812,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 113,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L113"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L113"
 						}
 					],
 					"type": {
@@ -1821,7 +1821,7 @@
 					}
 				},
 				{
-					"id": 248,
+					"id": 260,
 					"name": "TooEarly425",
 					"variant": "declaration",
 					"kind": 16,
@@ -1845,7 +1845,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 263,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L263"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L263"
 						}
 					],
 					"type": {
@@ -1854,7 +1854,7 @@
 					}
 				},
 				{
-					"id": 251,
+					"id": 263,
 					"name": "TooManyRequests429",
 					"variant": "declaration",
 					"kind": 16,
@@ -1883,7 +1883,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 281,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L281"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L281"
 						}
 					],
 					"type": {
@@ -1892,7 +1892,7 @@
 					}
 				},
 				{
-					"id": 226,
+					"id": 238,
 					"name": "Unauthorized401",
 					"variant": "declaration",
 					"kind": 16,
@@ -1921,7 +1921,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 131,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L131"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L131"
 						}
 					],
 					"type": {
@@ -1930,7 +1930,7 @@
 					}
 				},
 				{
-					"id": 253,
+					"id": 265,
 					"name": "UnavailableForLegalReasons451",
 					"variant": "declaration",
 					"kind": 16,
@@ -1959,7 +1959,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 293,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L293"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L293"
 						}
 					],
 					"type": {
@@ -1968,7 +1968,7 @@
 					}
 				},
 				{
-					"id": 245,
+					"id": 257,
 					"name": "UnprocessableEntity422",
 					"variant": "declaration",
 					"kind": 16,
@@ -1997,7 +1997,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 245,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L245"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L245"
 						}
 					],
 					"type": {
@@ -2006,7 +2006,7 @@
 					}
 				},
 				{
-					"id": 240,
+					"id": 252,
 					"name": "UnsupportedMediaType415",
 					"variant": "declaration",
 					"kind": 16,
@@ -2035,7 +2035,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 215,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L215"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L215"
 						}
 					],
 					"type": {
@@ -2044,7 +2044,7 @@
 					}
 				},
 				{
-					"id": 249,
+					"id": 261,
 					"name": "UpgradeRequired426",
 					"variant": "declaration",
 					"kind": 16,
@@ -2073,7 +2073,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 269,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L269"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L269"
 						}
 					],
 					"type": {
@@ -2082,7 +2082,7 @@
 					}
 				},
 				{
-					"id": 239,
+					"id": 251,
 					"name": "URITooLong414",
 					"variant": "declaration",
 					"kind": 16,
@@ -2111,7 +2111,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 209,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L209"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L209"
 						}
 					],
 					"type": {
@@ -2120,7 +2120,7 @@
 					}
 				},
 				{
-					"id": 222,
+					"id": 234,
 					"name": "UseProxy305",
 					"variant": "declaration",
 					"kind": 16,
@@ -2153,7 +2153,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 107,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L107"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L107"
 						}
 					],
 					"type": {
@@ -2162,7 +2162,7 @@
 					}
 				},
 				{
-					"id": 260,
+					"id": 272,
 					"name": "VariantAlsoNegotiates506",
 					"variant": "declaration",
 					"kind": 16,
@@ -2191,7 +2191,7 @@
 							"fileName": "src/httpStatus.ts",
 							"line": 335,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L335"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L335"
 						}
 					],
 					"type": {
@@ -2204,63 +2204,63 @@
 				{
 					"title": "Enumeration Members",
 					"children": [
-						213,
-						256,
 						225,
-						234,
-						208,
-						212,
-						242,
-						247,
-						228,
-						219,
-						258,
-						235,
-						259,
-						243,
-						261,
-						254,
-						236,
-						246,
-						262,
-						230,
-						244,
-						218,
-						217,
-						264,
-						214,
-						231,
-						263,
-						229,
-						255,
-						221,
-						211,
-						216,
-						238,
-						227,
-						224,
+						268,
 						237,
-						250,
-						210,
-						232,
-						241,
-						252,
-						233,
-						215,
+						246,
 						220,
-						257,
-						209,
-						223,
-						248,
-						251,
-						226,
-						253,
-						245,
+						224,
+						254,
+						259,
 						240,
-						249,
+						231,
+						270,
+						247,
+						271,
+						255,
+						273,
+						266,
+						248,
+						258,
+						274,
+						242,
+						256,
+						230,
+						229,
+						276,
+						226,
+						243,
+						275,
+						241,
+						267,
+						233,
+						223,
+						228,
+						250,
 						239,
+						236,
+						249,
+						262,
 						222,
-						260
+						244,
+						253,
+						264,
+						245,
+						227,
+						232,
+						269,
+						221,
+						235,
+						260,
+						263,
+						238,
+						265,
+						257,
+						252,
+						261,
+						251,
+						234,
+						272
 					]
 				}
 			],
@@ -2269,7 +2269,7 @@
 					"fileName": "src/httpStatus.ts",
 					"line": 13,
 					"character": 18,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/httpStatus.ts#L13"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/httpStatus.ts#L13"
 				}
 			]
 		},
@@ -2329,7 +2329,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 85,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L85"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L85"
 						}
 					],
 					"type": {
@@ -2359,12 +2359,12 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 31,
 							"character": 11,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L31"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L31"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 265,
+						"target": 277,
 						"name": "AuthenticationType",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -2389,7 +2389,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 90,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L90"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L90"
 						}
 					],
 					"type": {
@@ -2417,7 +2417,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 95,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L95"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L95"
 						}
 					],
 					"type": {
@@ -2447,12 +2447,12 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 25,
 							"character": 11,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L25"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L25"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 266,
+						"target": 278,
 						"name": "AuthTokenStorageType",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -2477,7 +2477,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 80,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L80"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L80"
 						}
 					],
 					"type": {
@@ -2499,7 +2499,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 16,
 							"character": 14,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L16"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L16"
 						}
 					],
 					"type": {
@@ -2517,7 +2517,7 @@
 										"fileName": "src/soFetchConfig.ts",
 										"line": 16,
 										"character": 40,
-										"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L16"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L16"
 									}
 								],
 								"signatures": [
@@ -2532,7 +2532,7 @@
 												"fileName": "src/soFetchConfig.ts",
 												"line": 16,
 												"character": 40,
-												"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L16"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L16"
 											}
 										],
 										"parameters": [
@@ -2624,7 +2624,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 15,
 							"character": 14,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L15"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L15"
 						}
 					],
 					"type": {
@@ -2642,7 +2642,7 @@
 										"fileName": "src/soFetchConfig.ts",
 										"line": 15,
 										"character": 35,
-										"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L15"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L15"
 									}
 								],
 								"signatures": [
@@ -2657,7 +2657,7 @@
 												"fileName": "src/soFetchConfig.ts",
 												"line": 15,
 												"character": 35,
-												"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L15"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L15"
 											}
 										],
 										"parameters": [
@@ -2669,7 +2669,7 @@
 												"flags": {},
 												"type": {
 													"type": "reference",
-													"target": 324,
+													"target": 336,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												}
@@ -2684,7 +2684,7 @@
 												},
 												{
 													"type": "reference",
-													"target": 324,
+													"target": 336,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												},
@@ -2705,7 +2705,7 @@
 																},
 																{
 																	"type": "reference",
-																	"target": 324,
+																	"target": 336,
 																	"name": "SoFetchRequest",
 																	"package": "@antoinette-agency/sofetch"
 																}
@@ -2725,6 +2725,101 @@
 					"defaultValue": "[]"
 				},
 				{
+					"id": 125,
+					"name": "globalErrorHandler",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 97,
+							"character": 4,
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L97"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 126,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 97,
+									"character": 25,
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L97"
+								}
+							],
+							"signatures": [
+								{
+									"id": 127,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/soFetchConfig.ts",
+											"line": 97,
+											"character": 25,
+											"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L97"
+										}
+									],
+									"parameters": [
+										{
+											"id": 128,
+											"name": "e",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										},
+										{
+											"id": 129,
+											"name": "res",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "reference",
+														"target": {
+															"packageName": "typescript",
+															"packagePath": "lib/lib.dom.d.ts",
+															"qualifiedName": "Response"
+														},
+														"name": "Response",
+														"package": "typescript"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
 					"id": 104,
 					"name": "onRequestCompleteHandlers",
 					"variant": "declaration",
@@ -2737,7 +2832,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 17,
 							"character": 14,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L17"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L17"
 						}
 					],
 					"type": {
@@ -2755,7 +2850,7 @@
 										"fileName": "src/soFetchConfig.ts",
 										"line": 17,
 										"character": 42,
-										"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L17"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L17"
 									}
 								],
 								"signatures": [
@@ -2770,7 +2865,7 @@
 												"fileName": "src/soFetchConfig.ts",
 												"line": 17,
 												"character": 42,
-												"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L17"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L17"
 											}
 										],
 										"parameters": [
@@ -2817,7 +2912,7 @@
 																		"fileName": "src/soFetchConfig.ts",
 																		"line": 18,
 																		"character": 8,
-																		"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L18"
+																		"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L18"
 																	}
 																],
 																"type": {
@@ -2836,7 +2931,7 @@
 																		"fileName": "src/soFetchConfig.ts",
 																		"line": 19,
 																		"character": 8,
-																		"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L19"
+																		"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L19"
 																	}
 																],
 																"type": {
@@ -2859,7 +2954,7 @@
 																"fileName": "src/soFetchConfig.ts",
 																"line": 17,
 																"character": 76,
-																"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L17"
+																"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L17"
 															}
 														]
 													}
@@ -2909,7 +3004,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 96,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L96"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L96"
 						}
 					],
 					"type": {
@@ -2919,7 +3014,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 138,
+					"id": 150,
 					"name": "beforeFetchSend",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2927,14 +3022,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 148,
+							"line": 159,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L148"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L159"
 						}
 					],
 					"signatures": [
 						{
-							"id": 139,
+							"id": 151,
 							"name": "beforeFetchSend",
 							"variant": "signature",
 							"kind": 4096,
@@ -2970,14 +3065,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 148,
+									"line": 159,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L148"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L159"
 								}
 							],
 							"parameters": [
 								{
-									"id": 140,
+									"id": 152,
 									"name": "handler",
 									"variant": "param",
 									"kind": 32768,
@@ -2985,7 +3080,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 141,
+											"id": 153,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -2993,14 +3088,14 @@
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 148,
+													"line": 159,
 													"character": 29,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L148"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L159"
 												}
 											],
 											"signatures": [
 												{
-													"id": 142,
+													"id": 154,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -3008,14 +3103,14 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 148,
+															"line": 159,
 															"character": 29,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L148"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L159"
 														}
 													],
 													"parameters": [
 														{
-															"id": 143,
+															"id": 155,
 															"name": "request",
 															"variant": "param",
 															"kind": 32768,
@@ -3096,7 +3191,7 @@
 					]
 				},
 				{
-					"id": 132,
+					"id": 144,
 					"name": "beforeSend",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3104,14 +3199,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 132,
+							"line": 143,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L132"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L143"
 						}
 					],
 					"signatures": [
 						{
-							"id": 133,
+							"id": 145,
 							"name": "beforeSend",
 							"variant": "signature",
 							"kind": 4096,
@@ -3147,14 +3242,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 132,
+									"line": 143,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L132"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L143"
 								}
 							],
 							"parameters": [
 								{
-									"id": 134,
+									"id": 146,
 									"name": "handler",
 									"variant": "param",
 									"kind": 32768,
@@ -3162,7 +3257,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 135,
+											"id": 147,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -3170,14 +3265,14 @@
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 132,
+													"line": 143,
 													"character": 24,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L132"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L143"
 												}
 											],
 											"signatures": [
 												{
-													"id": 136,
+													"id": 148,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -3185,21 +3280,21 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 132,
+															"line": 143,
 															"character": 24,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L132"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L143"
 														}
 													],
 													"parameters": [
 														{
-															"id": 137,
+															"id": 149,
 															"name": "request",
 															"variant": "param",
 															"kind": 32768,
 															"flags": {},
 															"type": {
 																"type": "reference",
-																"target": 324,
+																"target": 336,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															}
@@ -3214,7 +3309,7 @@
 															},
 															{
 																"type": "reference",
-																"target": 324,
+																"target": 336,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															},
@@ -3235,7 +3330,7 @@
 																			},
 																			{
 																				"type": "reference",
-																				"target": 324,
+																				"target": 336,
 																				"name": "SoFetchRequest",
 																				"package": "@antoinette-agency/sofetch"
 																			}
@@ -3261,7 +3356,149 @@
 					]
 				},
 				{
-					"id": 125,
+					"id": 137,
+					"name": "catch",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/soFetchConfig.ts",
+							"line": 126,
+							"character": 4,
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L126"
+						}
+					],
+					"signatures": [
+						{
+							"id": 138,
+							"name": "catch",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a global error handler which will be executed if any request fails for any reason\r\nand no request-specific or status-specific handler exists"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@handler",
+										"content": [
+											{
+												"kind": "text",
+												"text": "A function which accept an error (which could be anything) and\r\na Fetch Response as an argument"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/soFetchConfig.ts",
+									"line": 126,
+									"character": 4,
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L126"
+								}
+							],
+							"parameters": [
+								{
+									"id": 139,
+									"name": "handler",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 140,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/soFetchConfig.ts",
+													"line": 126,
+													"character": 19,
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L126"
+												}
+											],
+											"signatures": [
+												{
+													"id": 141,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/soFetchConfig.ts",
+															"line": 126,
+															"character": 19,
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L126"
+														}
+													],
+													"parameters": [
+														{
+															"id": 142,
+															"name": "e",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														},
+														{
+															"id": 143,
+															"name": "res",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "union",
+																"types": [
+																	{
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	{
+																		"type": "reference",
+																		"target": {
+																			"packageName": "typescript",
+																			"packagePath": "lib/lib.dom.d.ts",
+																			"qualifiedName": "Response"
+																		},
+																		"name": "Response",
+																		"package": "typescript"
+																	}
+																]
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 130,
 					"name": "catchHTTP",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3269,14 +3506,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 112,
+							"line": 113,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L112"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L113"
 						}
 					],
 					"signatures": [
 						{
-							"id": 126,
+							"id": 131,
 							"name": "catchHTTP",
 							"variant": "signature",
 							"kind": 4096,
@@ -3312,14 +3549,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 112,
+									"line": 113,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L112"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L113"
 								}
 							],
 							"parameters": [
 								{
-									"id": 127,
+									"id": 132,
 									"name": "status",
 									"variant": "param",
 									"kind": 32768,
@@ -3338,7 +3575,7 @@
 									}
 								},
 								{
-									"id": 128,
+									"id": 133,
 									"name": "handler",
 									"variant": "param",
 									"kind": 32768,
@@ -3354,7 +3591,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 129,
+											"id": 134,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -3362,14 +3599,14 @@
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 112,
+													"line": 113,
 													"character": 39,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L112"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L113"
 												}
 											],
 											"signatures": [
 												{
-													"id": 130,
+													"id": 135,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -3377,14 +3614,14 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 112,
+															"line": 113,
 															"character": 39,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L112"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L113"
 														}
 													],
 													"parameters": [
 														{
-															"id": 131,
+															"id": 136,
 															"name": "res",
 															"variant": "param",
 															"kind": 32768,
@@ -3431,7 +3668,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 33,
 							"character": 14,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L33"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L33"
 						}
 					],
 					"signatures": [
@@ -3446,7 +3683,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 33,
 									"character": 29,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L33"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L33"
 								}
 							],
 							"type": {
@@ -3469,7 +3706,7 @@
 					]
 				},
 				{
-					"id": 144,
+					"id": 156,
 					"name": "onRequestComplete",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3477,14 +3714,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 164,
+							"line": 175,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L164"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L175"
 						}
 					],
 					"signatures": [
 						{
-							"id": 145,
+							"id": 157,
 							"name": "onRequestComplete",
 							"variant": "signature",
 							"kind": 4096,
@@ -3520,14 +3757,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 164,
+									"line": 175,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L164"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L175"
 								}
 							],
 							"parameters": [
 								{
-									"id": 146,
+									"id": 158,
 									"name": "handler",
 									"variant": "param",
 									"kind": 32768,
@@ -3535,7 +3772,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 147,
+											"id": 159,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -3543,14 +3780,14 @@
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 164,
+													"line": 175,
 													"character": 31,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L164"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L175"
 												}
 											],
 											"signatures": [
 												{
-													"id": 148,
+													"id": 160,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -3558,14 +3795,14 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 164,
+															"line": 175,
 															"character": 31,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L164"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L175"
 														}
 													],
 													"parameters": [
 														{
-															"id": 149,
+															"id": 161,
 															"name": "r",
 															"variant": "param",
 															"kind": 32768,
@@ -3582,7 +3819,7 @@
 															}
 														},
 														{
-															"id": 150,
+															"id": 162,
 															"name": "metaData",
 															"variant": "param",
 															"kind": 32768,
@@ -3590,14 +3827,14 @@
 															"type": {
 																"type": "reflection",
 																"declaration": {
-																	"id": 151,
+																	"id": 163,
 																	"name": "__type",
 																	"variant": "declaration",
 																	"kind": 65536,
 																	"flags": {},
 																	"children": [
 																		{
-																			"id": 152,
+																			"id": 164,
 																			"name": "duration",
 																			"variant": "declaration",
 																			"kind": 1024,
@@ -3605,9 +3842,9 @@
 																			"sources": [
 																				{
 																					"fileName": "src/soFetchConfig.ts",
-																					"line": 164,
+																					"line": 175,
 																					"character": 57,
-																					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L164"
+																					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L175"
 																				}
 																			],
 																			"type": {
@@ -3616,7 +3853,7 @@
 																			}
 																		},
 																		{
-																			"id": 153,
+																			"id": 165,
 																			"name": "method",
 																			"variant": "declaration",
 																			"kind": 1024,
@@ -3624,9 +3861,9 @@
 																			"sources": [
 																				{
 																					"fileName": "src/soFetchConfig.ts",
-																					"line": 164,
+																					"line": 175,
 																					"character": 75,
-																					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L164"
+																					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L175"
 																				}
 																			],
 																			"type": {
@@ -3639,17 +3876,17 @@
 																		{
 																			"title": "Properties",
 																			"children": [
-																				152,
-																				153
+																				164,
+																				165
 																			]
 																		}
 																	],
 																	"sources": [
 																		{
 																			"fileName": "src/soFetchConfig.ts",
-																			"line": 164,
+																			"line": 175,
 																			"character": 55,
-																			"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L164"
+																			"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L175"
 																		}
 																	]
 																}
@@ -3707,7 +3944,7 @@
 							"fileName": "src/soFetchConfig.ts",
 							"line": 55,
 							"character": 11,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L55"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L55"
 						}
 					],
 					"signatures": [
@@ -3730,7 +3967,7 @@
 									"fileName": "src/soFetchConfig.ts",
 									"line": 55,
 									"character": 26,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L55"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L55"
 								}
 							],
 							"parameters": [
@@ -3754,7 +3991,7 @@
 					]
 				},
 				{
-					"id": 200,
+					"id": 212,
 					"name": "setUserAgent",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3762,14 +3999,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 319,
+							"line": 330,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L319"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L330"
 						}
 					],
 					"signatures": [
 						{
-							"id": 201,
+							"id": 213,
 							"name": "setUserAgent",
 							"variant": "signature",
 							"kind": 4096,
@@ -3785,14 +4022,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 319,
+									"line": 330,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L319"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L330"
 								}
 							],
 							"parameters": [
 								{
-									"id": 202,
+									"id": 214,
 									"name": "__namedParameters",
 									"variant": "param",
 									"kind": 32768,
@@ -3800,14 +4037,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 203,
+											"id": 215,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 204,
+													"id": 216,
 													"name": "browser",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3817,20 +4054,20 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 319,
+															"line": 330,
 															"character": 51,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L319"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L330"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 269,
+														"target": 281,
 														"name": "Browser",
 														"package": "@antoinette-agency/sofetch"
 													}
 												},
 												{
-													"id": 205,
+													"id": 217,
 													"name": "OS",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3840,20 +4077,20 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 319,
+															"line": 330,
 															"character": 70,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L319"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L330"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 281,
+														"target": 293,
 														"name": "OS",
 														"package": "@antoinette-agency/sofetch"
 													}
 												},
 												{
-													"id": 206,
+													"id": 218,
 													"name": "userAgentString",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3863,9 +4100,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 319,
+															"line": 330,
 															"character": 79,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L319"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L330"
 														}
 													],
 													"type": {
@@ -3878,18 +4115,18 @@
 												{
 													"title": "Properties",
 													"children": [
-														204,
-														205,
-														206
+														216,
+														217,
+														218
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 319,
+													"line": 330,
 													"character": 49,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L319"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L330"
 												}
 											]
 										}
@@ -3904,7 +4141,7 @@
 					]
 				},
 				{
-					"id": 186,
+					"id": 198,
 					"name": "useBasicAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3912,14 +4149,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 287,
+							"line": 298,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L287"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L298"
 						}
 					],
 					"signatures": [
 						{
-							"id": 187,
+							"id": 199,
 							"name": "useBasicAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -3935,14 +4172,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 287,
+									"line": 298,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L287"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L298"
 								}
 							],
 							"parameters": [
 								{
-									"id": 188,
+									"id": 200,
 									"name": "__namedParameters",
 									"variant": "param",
 									"kind": 32768,
@@ -3950,14 +4187,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 189,
+											"id": 201,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 192,
+													"id": 204,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3967,9 +4204,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 290,
+															"line": 301,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L290"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L301"
 														}
 													],
 													"type": {
@@ -3978,7 +4215,7 @@
 													}
 												},
 												{
-													"id": 193,
+													"id": 205,
 													"name": "authTokenStorage",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3988,20 +4225,20 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 291,
+															"line": 302,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L291"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L302"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 266,
+														"target": 278,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
 												},
 												{
-													"id": 191,
+													"id": 203,
 													"name": "password",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4011,9 +4248,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 289,
+															"line": 300,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L289"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L300"
 														}
 													],
 													"type": {
@@ -4022,7 +4259,7 @@
 													}
 												},
 												{
-													"id": 190,
+													"id": 202,
 													"name": "username",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4032,9 +4269,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 288,
+															"line": 299,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L288"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L299"
 														}
 													],
 													"type": {
@@ -4047,19 +4284,19 @@
 												{
 													"title": "Properties",
 													"children": [
-														192,
-														193,
-														191,
-														190
+														204,
+														205,
+														203,
+														202
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 287,
+													"line": 298,
 													"character": 86,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L287"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L298"
 												}
 											]
 										}
@@ -4074,7 +4311,7 @@
 					]
 				},
 				{
-					"id": 157,
+					"id": 169,
 					"name": "useBearerAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4082,14 +4319,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 187,
+							"line": 198,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L187"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L198"
 						}
 					],
 					"signatures": [
 						{
-							"id": 158,
+							"id": 170,
 							"name": "useBearerAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -4105,14 +4342,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 187,
+									"line": 198,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L187"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L198"
 								}
 							],
 							"parameters": [
 								{
-									"id": 159,
+									"id": 171,
 									"name": "props",
 									"variant": "param",
 									"kind": 32768,
@@ -4120,14 +4357,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 160,
+											"id": 172,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 161,
+													"id": 173,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4137,9 +4374,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 188,
+															"line": 199,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L188"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L199"
 														}
 													],
 													"type": {
@@ -4148,7 +4385,7 @@
 													}
 												},
 												{
-													"id": 163,
+													"id": 175,
 													"name": "authToken",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4158,9 +4395,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 190,
+															"line": 201,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L190"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L201"
 														}
 													],
 													"type": {
@@ -4169,7 +4406,7 @@
 													}
 												},
 												{
-													"id": 162,
+													"id": 174,
 													"name": "authTokenStorage",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4179,14 +4416,14 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 189,
+															"line": 200,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L189"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L200"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 266,
+														"target": 278,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
@@ -4196,18 +4433,18 @@
 												{
 													"title": "Properties",
 													"children": [
-														161,
-														163,
-														162
+														173,
+														175,
+														174
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 187,
+													"line": 198,
 													"character": 35,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L187"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L198"
 												}
 											]
 										}
@@ -4223,7 +4460,7 @@
 					]
 				},
 				{
-					"id": 164,
+					"id": 176,
 					"name": "useCookieAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4231,14 +4468,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 211,
+							"line": 222,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L211"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L222"
 						}
 					],
 					"signatures": [
 						{
-							"id": 165,
+							"id": 177,
 							"name": "useCookieAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -4254,14 +4491,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 211,
+									"line": 222,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L211"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L222"
 								}
 							],
 							"parameters": [
 								{
-									"id": 166,
+									"id": 178,
 									"name": "props",
 									"variant": "param",
 									"kind": 32768,
@@ -4271,14 +4508,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 167,
+											"id": 179,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 168,
+													"id": 180,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4288,9 +4525,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 212,
+															"line": 223,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L212"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L223"
 														}
 													],
 													"type": {
@@ -4299,7 +4536,7 @@
 													}
 												},
 												{
-													"id": 169,
+													"id": 181,
 													"name": "authToken",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4309,9 +4546,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 213,
+															"line": 224,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L213"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L224"
 														}
 													],
 													"type": {
@@ -4324,17 +4561,17 @@
 												{
 													"title": "Properties",
 													"children": [
-														168,
-														169
+														180,
+														181
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 211,
+													"line": 222,
 													"character": 36,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L211"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L222"
 												}
 											]
 										}
@@ -4349,7 +4586,7 @@
 					]
 				},
 				{
-					"id": 170,
+					"id": 182,
 					"name": "useHeaderAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4357,14 +4594,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 239,
+							"line": 250,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L239"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L250"
 						}
 					],
 					"signatures": [
 						{
-							"id": 171,
+							"id": 183,
 							"name": "useHeaderAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -4380,14 +4617,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 239,
+									"line": 250,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L239"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L250"
 								}
 							],
 							"parameters": [
 								{
-									"id": 172,
+									"id": 184,
 									"name": "__namedParameters",
 									"variant": "param",
 									"kind": 32768,
@@ -4395,14 +4632,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 173,
+											"id": 185,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 175,
+													"id": 187,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4412,9 +4649,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 241,
+															"line": 252,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L241"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L252"
 														}
 													],
 													"type": {
@@ -4423,7 +4660,7 @@
 													}
 												},
 												{
-													"id": 176,
+													"id": 188,
 													"name": "authToken",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4433,9 +4670,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 242,
+															"line": 253,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L242"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L253"
 														}
 													],
 													"type": {
@@ -4444,7 +4681,7 @@
 													}
 												},
 												{
-													"id": 177,
+													"id": 189,
 													"name": "authTokenStorage",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4454,20 +4691,20 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 243,
+															"line": 254,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L243"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L254"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 266,
+														"target": 278,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
 												},
 												{
-													"id": 174,
+													"id": 186,
 													"name": "headerKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4475,9 +4712,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 240,
+															"line": 251,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L240"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L251"
 														}
 													],
 													"type": {
@@ -4490,19 +4727,19 @@
 												{
 													"title": "Properties",
 													"children": [
-														175,
-														176,
-														177,
-														174
+														187,
+														188,
+														189,
+														186
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 239,
+													"line": 250,
 													"character": 89,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L239"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L250"
 												}
 											]
 										}
@@ -4517,7 +4754,7 @@
 					]
 				},
 				{
-					"id": 178,
+					"id": 190,
 					"name": "useQueryStringAuthentication",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4525,14 +4762,14 @@
 					"sources": [
 						{
 							"fileName": "src/soFetchConfig.ts",
-							"line": 263,
+							"line": 274,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L263"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L274"
 						}
 					],
 					"signatures": [
 						{
-							"id": 179,
+							"id": 191,
 							"name": "useQueryStringAuthentication",
 							"variant": "signature",
 							"kind": 4096,
@@ -4548,14 +4785,14 @@
 							"sources": [
 								{
 									"fileName": "src/soFetchConfig.ts",
-									"line": 263,
+									"line": 274,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L263"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L274"
 								}
 							],
 							"parameters": [
 								{
-									"id": 180,
+									"id": 192,
 									"name": "__namedParameters",
 									"variant": "param",
 									"kind": 32768,
@@ -4563,14 +4800,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 181,
+											"id": 193,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 183,
+													"id": 195,
 													"name": "authenticationKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4580,9 +4817,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 265,
+															"line": 276,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L265"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L276"
 														}
 													],
 													"type": {
@@ -4591,7 +4828,7 @@
 													}
 												},
 												{
-													"id": 184,
+													"id": 196,
 													"name": "authToken",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4601,9 +4838,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 266,
+															"line": 277,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L266"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L277"
 														}
 													],
 													"type": {
@@ -4612,7 +4849,7 @@
 													}
 												},
 												{
-													"id": 185,
+													"id": 197,
 													"name": "authTokenStorage",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4622,20 +4859,20 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 267,
+															"line": 278,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L267"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L278"
 														}
 													],
 													"type": {
 														"type": "reference",
-														"target": 266,
+														"target": 278,
 														"name": "AuthTokenStorageType",
 														"package": "@antoinette-agency/sofetch"
 													}
 												},
 												{
-													"id": 182,
+													"id": 194,
 													"name": "queryStringKey",
 													"variant": "declaration",
 													"kind": 1024,
@@ -4643,9 +4880,9 @@
 													"sources": [
 														{
 															"fileName": "src/soFetchConfig.ts",
-															"line": 264,
+															"line": 275,
 															"character": 8,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L264"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L275"
 														}
 													],
 													"type": {
@@ -4658,19 +4895,19 @@
 												{
 													"title": "Properties",
 													"children": [
-														183,
-														184,
-														185,
-														182
+														195,
+														196,
+														197,
+														194
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "src/soFetchConfig.ts",
-													"line": 263,
+													"line": 274,
 													"character": 99,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L263"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L274"
 												}
 											]
 										}
@@ -4703,6 +4940,7 @@
 						120,
 						100,
 						96,
+						125,
 						104,
 						124
 					]
@@ -4710,18 +4948,19 @@
 				{
 					"title": "Methods",
 					"children": [
-						138,
-						132,
-						125,
-						115,
+						150,
 						144,
+						137,
+						130,
+						115,
+						156,
 						117,
-						200,
-						186,
-						157,
-						164,
-						170,
-						178
+						212,
+						198,
+						169,
+						176,
+						182,
+						190
 					]
 				}
 			],
@@ -4730,7 +4969,7 @@
 					"fileName": "src/soFetchConfig.ts",
 					"line": 13,
 					"character": 13,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchConfig.ts#L13"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchConfig.ts#L13"
 				}
 			]
 		},
@@ -4771,7 +5010,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 28,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L28"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L28"
 						}
 					],
 					"signatures": [
@@ -4786,7 +5025,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 28,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L28"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L28"
 								}
 							],
 							"typeParameters": [
@@ -4818,7 +5057,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 28,
 													"character": 26,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L28"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L28"
 												}
 											],
 											"signatures": [
@@ -4833,7 +5072,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 28,
 															"character": 26,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L28"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L28"
 														}
 													],
 													"parameters": [
@@ -4856,7 +5095,7 @@
 																			"fileName": "src/soFetchPromise.ts",
 																			"line": 29,
 																			"character": 17,
-																			"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L29"
+																			"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L29"
 																		}
 																	],
 																	"signatures": [
@@ -4871,7 +5110,7 @@
 																					"fileName": "src/soFetchPromise.ts",
 																					"line": 29,
 																					"character": 17,
-																					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L29"
+																					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L29"
 																				}
 																			],
 																			"parameters": [
@@ -4944,7 +5183,7 @@
 																			"fileName": "src/soFetchPromise.ts",
 																			"line": 30,
 																			"character": 16,
-																			"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L30"
+																			"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L30"
 																		}
 																	],
 																	"signatures": [
@@ -4959,7 +5198,7 @@
 																					"fileName": "src/soFetchPromise.ts",
 																					"line": 30,
 																					"character": 16,
-																					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L30"
+																					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L30"
 																				}
 																			],
 																			"parameters": [
@@ -5027,7 +5266,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 21,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L21"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L21"
 						}
 					],
 					"type": {
@@ -5045,7 +5284,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 21,
 										"character": 29,
-										"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L21"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L21"
 									}
 								],
 								"signatures": [
@@ -5060,7 +5299,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 21,
 												"character": 29,
-												"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L21"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L21"
 											}
 										],
 										"parameters": [
@@ -5150,7 +5389,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 20,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L20"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L20"
 						}
 					],
 					"type": {
@@ -5168,7 +5407,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 20,
 										"character": 24,
-										"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L20"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L20"
 									}
 								],
 								"signatures": [
@@ -5183,7 +5422,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 20,
 												"character": 24,
-												"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L20"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L20"
 											}
 										],
 										"parameters": [
@@ -5195,7 +5434,7 @@
 												"flags": {},
 												"type": {
 													"type": "reference",
-													"target": 324,
+													"target": 336,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												}
@@ -5210,7 +5449,7 @@
 												},
 												{
 													"type": "reference",
-													"target": 324,
+													"target": 336,
 													"name": "SoFetchRequest",
 													"package": "@antoinette-agency/sofetch"
 												},
@@ -5231,7 +5470,7 @@
 																},
 																{
 																	"type": "reference",
-																	"target": 324,
+																	"target": 336,
 																	"name": "SoFetchRequest",
 																	"package": "@antoinette-agency/sofetch"
 																}
@@ -5261,7 +5500,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 25,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L25"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L25"
 						}
 					],
 					"type": {
@@ -5478,12 +5717,12 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 19,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L19"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L19"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 270,
+						"target": 282,
 						"name": "ErrorHandlerDict",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -5500,7 +5739,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 26,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L26"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L26"
 						}
 					],
 					"type": {
@@ -5652,7 +5891,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 22,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L22"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L22"
 						}
 					],
 					"type": {
@@ -5670,7 +5909,7 @@
 										"fileName": "src/soFetchPromise.ts",
 										"line": 22,
 										"character": 32,
-										"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L22"
+										"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L22"
 									}
 								],
 								"signatures": [
@@ -5685,7 +5924,7 @@
 												"fileName": "src/soFetchPromise.ts",
 												"line": 22,
 												"character": 32,
-												"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L22"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L22"
 											}
 										],
 										"parameters": [
@@ -5732,7 +5971,7 @@
 																		"fileName": "src/soFetchPromise.ts",
 																		"line": 22,
 																		"character": 68,
-																		"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L22"
+																		"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L22"
 																	}
 																],
 																"type": {
@@ -5751,7 +5990,7 @@
 																		"fileName": "src/soFetchPromise.ts",
 																		"line": 22,
 																		"character": 86,
-																		"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L22"
+																		"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L22"
 																	}
 																],
 																"type": {
@@ -5774,7 +6013,7 @@
 																"fileName": "src/soFetchPromise.ts",
 																"line": 22,
 																"character": 66,
-																"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L22"
+																"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L22"
 															}
 														]
 													}
@@ -5824,7 +6063,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L24"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L24"
 						}
 					],
 					"type": {
@@ -6162,7 +6401,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 23,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L23"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L23"
 						}
 					],
 					"type": {
@@ -6182,7 +6421,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 97,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L97"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L97"
 						}
 					],
 					"signatures": [
@@ -6225,7 +6464,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 97,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L97"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L97"
 								}
 							],
 							"parameters": [
@@ -6248,7 +6487,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 97,
 													"character": 29,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L97"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L97"
 												}
 											],
 											"signatures": [
@@ -6263,7 +6502,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 97,
 															"character": 29,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L97"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L97"
 														}
 													],
 													"parameters": [
@@ -6371,7 +6610,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 68,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L68"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L68"
 						}
 					],
 					"signatures": [
@@ -6414,7 +6653,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 68,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L68"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L68"
 								}
 							],
 							"parameters": [
@@ -6437,7 +6676,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 68,
 													"character": 24,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L68"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L68"
 												}
 											],
 											"signatures": [
@@ -6452,7 +6691,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 68,
 															"character": 24,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L68"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L68"
 														}
 													],
 													"parameters": [
@@ -6464,7 +6703,7 @@
 															"flags": {},
 															"type": {
 																"type": "reference",
-																"target": 324,
+																"target": 336,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															}
@@ -6479,7 +6718,7 @@
 															},
 															{
 																"type": "reference",
-																"target": 324,
+																"target": 336,
 																"name": "SoFetchRequest",
 																"package": "@antoinette-agency/sofetch"
 															},
@@ -6500,7 +6739,7 @@
 																			},
 																			{
 																				"type": "reference",
-																				"target": 324,
+																				"target": 336,
 																				"name": "SoFetchRequest",
 																				"package": "@antoinette-agency/sofetch"
 																			}
@@ -6548,7 +6787,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 117,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L117"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L117"
 						}
 					],
 					"signatures": [
@@ -6591,7 +6830,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 117,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L117"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L117"
 								}
 							],
 							"parameters": [
@@ -6611,7 +6850,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 207,
+										"target": 219,
 										"name": "HttpStatus",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -6643,7 +6882,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 117,
 													"character": 43,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L117"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L117"
 												}
 											],
 											"signatures": [
@@ -6658,7 +6897,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 117,
 															"character": 43,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L117"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L117"
 														}
 													],
 													"parameters": [
@@ -6720,7 +6959,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 51,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L51"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L51"
 						}
 					],
 					"signatures": [
@@ -6763,7 +7002,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 51,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L51"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L51"
 								}
 							],
 							"parameters": [
@@ -6786,7 +7025,7 @@
 													"fileName": "src/soFetchPromise.ts",
 													"line": 51,
 													"character": 31,
-													"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L51"
+													"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L51"
 												}
 											],
 											"signatures": [
@@ -6801,7 +7040,7 @@
 															"fileName": "src/soFetchPromise.ts",
 															"line": 51,
 															"character": 31,
-															"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L51"
+															"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L51"
 														}
 													],
 													"parameters": [
@@ -6884,7 +7123,7 @@
 							"fileName": "src/soFetchPromise.ts",
 							"line": 125,
 							"character": 5,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L125"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L125"
 						}
 					],
 					"signatures": [
@@ -6899,7 +7138,7 @@
 									"fileName": "src/soFetchPromise.ts",
 									"line": 125,
 									"character": 5,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L125"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L125"
 								}
 							],
 							"parameters": [
@@ -6971,7 +7210,7 @@
 					"fileName": "src/soFetchPromise.ts",
 					"line": 17,
 					"character": 13,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchPromise.ts#L17"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchPromise.ts#L17"
 				}
 			],
 			"typeParameters": [
@@ -6995,19 +7234,19 @@
 					"fileName": "src/index.ts",
 					"line": 18,
 					"character": 6,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/index.ts#L18"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/index.ts#L18"
 				}
 			]
 		},
 		{
-			"id": 282,
+			"id": 294,
 			"name": "SoFetchLike",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 284,
+					"id": 296,
 					"name": "config",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7017,7 +7256,7 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 9,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L9"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L9"
 						}
 					],
 					"type": {
@@ -7028,7 +7267,7 @@
 					}
 				},
 				{
-					"id": 283,
+					"id": 295,
 					"name": "verbose",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7038,7 +7277,7 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 8,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L8"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L8"
 						}
 					],
 					"type": {
@@ -7047,7 +7286,7 @@
 					}
 				},
 				{
-					"id": 305,
+					"id": 317,
 					"name": "delete",
 					"variant": "declaration",
 					"kind": 2048,
@@ -7057,12 +7296,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 19,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L19"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L19"
 						}
 					],
 					"signatures": [
 						{
-							"id": 306,
+							"id": 318,
 							"name": "delete",
 							"variant": "signature",
 							"kind": 4096,
@@ -7072,12 +7311,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 19,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L19"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L19"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 307,
+									"id": 319,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -7086,7 +7325,7 @@
 							],
 							"parameters": [
 								{
-									"id": 308,
+									"id": 320,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -7097,7 +7336,7 @@
 									}
 								},
 								{
-									"id": 309,
+									"id": 321,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -7106,7 +7345,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 329,
+										"target": 341,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -7117,11 +7356,20 @@
 								"target": 2,
 								"typeArguments": [
 									{
-										"type": "reference",
-										"target": 307,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 319,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"refersToTypeParameter": true
+											}
+										]
 									}
 								],
 								"name": "SoFetchPromise",
@@ -7131,7 +7379,7 @@
 					]
 				},
 				{
-					"id": 285,
+					"id": 297,
 					"name": "get",
 					"variant": "declaration",
 					"kind": 2048,
@@ -7141,12 +7389,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L11"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L11"
 						}
 					],
 					"signatures": [
 						{
-							"id": 286,
+							"id": 298,
 							"name": "get",
 							"variant": "signature",
 							"kind": 4096,
@@ -7156,12 +7404,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 11,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L11"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L11"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 287,
+									"id": 299,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -7170,7 +7418,7 @@
 							],
 							"parameters": [
 								{
-									"id": 288,
+									"id": 300,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -7181,7 +7429,7 @@
 									}
 								},
 								{
-									"id": 289,
+									"id": 301,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -7190,7 +7438,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 329,
+										"target": 341,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -7201,11 +7449,20 @@
 								"target": 2,
 								"typeArguments": [
 									{
-										"type": "reference",
-										"target": 287,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 299,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"refersToTypeParameter": true
+											}
+										]
 									}
 								],
 								"name": "SoFetchPromise",
@@ -7215,7 +7472,7 @@
 					]
 				},
 				{
-					"id": 316,
+					"id": 328,
 					"name": "instance",
 					"variant": "declaration",
 					"kind": 2048,
@@ -7225,12 +7482,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 25,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L25"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L25"
 						}
 					],
 					"signatures": [
 						{
-							"id": 317,
+							"id": 329,
 							"name": "instance",
 							"variant": "signature",
 							"kind": 4096,
@@ -7240,12 +7497,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 25,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L25"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L25"
 								}
 							],
 							"parameters": [
 								{
-									"id": 318,
+									"id": 330,
 									"name": "configOrAuthKey",
 									"variant": "param",
 									"kind": 32768,
@@ -7271,11 +7528,11 @@
 							],
 							"type": {
 								"type": "reference",
-								"target": 282,
+								"target": 294,
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": 319,
+										"target": 331,
 										"name": "TResponse",
 										"package": "@antoinette-agency/sofetch",
 										"qualifiedName": "SoFetchLike.TResponse",
@@ -7289,7 +7546,7 @@
 					]
 				},
 				{
-					"id": 300,
+					"id": 312,
 					"name": "patch",
 					"variant": "declaration",
 					"kind": 2048,
@@ -7299,12 +7556,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 17,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L17"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L17"
 						}
 					],
 					"signatures": [
 						{
-							"id": 301,
+							"id": 313,
 							"name": "patch",
 							"variant": "signature",
 							"kind": 4096,
@@ -7314,12 +7571,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 17,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L17"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L17"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 302,
+									"id": 314,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -7328,7 +7585,7 @@
 							],
 							"parameters": [
 								{
-									"id": 303,
+									"id": 315,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -7339,7 +7596,7 @@
 									}
 								},
 								{
-									"id": 304,
+									"id": 316,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -7348,7 +7605,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 329,
+										"target": 341,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -7359,11 +7616,20 @@
 								"target": 2,
 								"typeArguments": [
 									{
-										"type": "reference",
-										"target": 302,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 314,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"refersToTypeParameter": true
+											}
+										]
 									}
 								],
 								"name": "SoFetchPromise",
@@ -7373,7 +7639,7 @@
 					]
 				},
 				{
-					"id": 290,
+					"id": 302,
 					"name": "post",
 					"variant": "declaration",
 					"kind": 2048,
@@ -7383,12 +7649,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 13,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L13"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L13"
 						}
 					],
 					"signatures": [
 						{
-							"id": 291,
+							"id": 303,
 							"name": "post",
 							"variant": "signature",
 							"kind": 4096,
@@ -7398,12 +7664,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 13,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L13"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L13"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 292,
+									"id": 304,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -7412,7 +7678,7 @@
 							],
 							"parameters": [
 								{
-									"id": 293,
+									"id": 305,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -7423,7 +7689,7 @@
 									}
 								},
 								{
-									"id": 294,
+									"id": 306,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -7432,7 +7698,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 329,
+										"target": 341,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -7443,11 +7709,20 @@
 								"target": 2,
 								"typeArguments": [
 									{
-										"type": "reference",
-										"target": 292,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 304,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"refersToTypeParameter": true
+											}
+										]
 									}
 								],
 								"name": "SoFetchPromise",
@@ -7457,7 +7732,7 @@
 					]
 				},
 				{
-					"id": 295,
+					"id": 307,
 					"name": "put",
 					"variant": "declaration",
 					"kind": 2048,
@@ -7467,12 +7742,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 15,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L15"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L15"
 						}
 					],
 					"signatures": [
 						{
-							"id": 296,
+							"id": 308,
 							"name": "put",
 							"variant": "signature",
 							"kind": 4096,
@@ -7482,12 +7757,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 15,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L15"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L15"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 297,
+									"id": 309,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -7496,7 +7771,7 @@
 							],
 							"parameters": [
 								{
-									"id": 298,
+									"id": 310,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -7507,7 +7782,7 @@
 									}
 								},
 								{
-									"id": 299,
+									"id": 311,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -7516,7 +7791,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 329,
+										"target": 341,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -7527,11 +7802,20 @@
 								"target": 2,
 								"typeArguments": [
 									{
-										"type": "reference",
-										"target": 297,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 309,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"refersToTypeParameter": true
+											}
+										]
 									}
 								],
 								"name": "SoFetchPromise",
@@ -7541,7 +7825,7 @@
 					]
 				},
 				{
-					"id": 310,
+					"id": 322,
 					"name": "request",
 					"variant": "declaration",
 					"kind": 2048,
@@ -7551,12 +7835,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 21,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L21"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L21"
 						}
 					],
 					"signatures": [
 						{
-							"id": 311,
+							"id": 323,
 							"name": "request",
 							"variant": "signature",
 							"kind": 4096,
@@ -7566,12 +7850,12 @@
 									"fileName": "src/soFetchLike.ts",
 									"line": 21,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L21"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L21"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 312,
+									"id": 324,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -7580,7 +7864,7 @@
 							],
 							"parameters": [
 								{
-									"id": 313,
+									"id": 325,
 									"name": "method",
 									"variant": "param",
 									"kind": 32768,
@@ -7597,7 +7881,7 @@
 									}
 								},
 								{
-									"id": 314,
+									"id": 326,
 									"name": "url",
 									"variant": "param",
 									"kind": 32768,
@@ -7608,7 +7892,7 @@
 									}
 								},
 								{
-									"id": 315,
+									"id": 327,
 									"name": "body",
 									"variant": "param",
 									"kind": 32768,
@@ -7617,7 +7901,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 329,
+										"target": 341,
 										"name": "UploadPayload",
 										"package": "@antoinette-agency/sofetch"
 									}
@@ -7628,11 +7912,20 @@
 								"target": 2,
 								"typeArguments": [
 									{
-										"type": "reference",
-										"target": 312,
-										"name": "T",
-										"package": "@antoinette-agency/sofetch",
-										"refersToTypeParameter": true
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 324,
+												"name": "T",
+												"package": "@antoinette-agency/sofetch",
+												"refersToTypeParameter": true
+											}
+										]
 									}
 								],
 								"name": "SoFetchPromise",
@@ -7646,20 +7939,20 @@
 				{
 					"title": "Properties",
 					"children": [
-						284,
-						283
+						296,
+						295
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						305,
-						285,
-						316,
-						300,
-						290,
-						295,
-						310
+						317,
+						297,
+						328,
+						312,
+						302,
+						307,
+						322
 					]
 				}
 			],
@@ -7668,12 +7961,12 @@
 					"fileName": "src/soFetchLike.ts",
 					"line": 7,
 					"character": 17,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L7"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L7"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 319,
+					"id": 331,
 					"name": "TResponse",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -7686,7 +7979,7 @@
 			],
 			"signatures": [
 				{
-					"id": 320,
+					"id": 332,
 					"name": "SoFetchLike",
 					"variant": "signature",
 					"kind": 4096,
@@ -7696,12 +7989,12 @@
 							"fileName": "src/soFetchLike.ts",
 							"line": 23,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetchLike.ts#L23"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetchLike.ts#L23"
 						}
 					],
 					"typeParameters": [
 						{
-							"id": 321,
+							"id": 333,
 							"name": "T",
 							"variant": "typeParam",
 							"kind": 131072,
@@ -7710,7 +8003,7 @@
 					],
 					"parameters": [
 						{
-							"id": 322,
+							"id": 334,
 							"name": "url",
 							"variant": "param",
 							"kind": 32768,
@@ -7721,7 +8014,7 @@
 							}
 						},
 						{
-							"id": 323,
+							"id": 335,
 							"name": "body",
 							"variant": "param",
 							"kind": 32768,
@@ -7730,7 +8023,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 329,
+								"target": 341,
 								"name": "UploadPayload",
 								"package": "@antoinette-agency/sofetch"
 							}
@@ -7741,11 +8034,20 @@
 						"target": 2,
 						"typeArguments": [
 							{
-								"type": "reference",
-								"target": 321,
-								"name": "T",
-								"package": "@antoinette-agency/sofetch",
-								"refersToTypeParameter": true
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"target": 333,
+										"name": "T",
+										"package": "@antoinette-agency/sofetch",
+										"refersToTypeParameter": true
+									}
+								]
 							}
 						],
 						"name": "SoFetchPromise",
@@ -7755,14 +8057,14 @@
 			]
 		},
 		{
-			"id": 324,
+			"id": 336,
 			"name": "SoFetchRequest",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 327,
+					"id": 339,
 					"name": "body",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7770,9 +8072,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetch.ts",
-							"line": 121,
+							"line": 135,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetch.ts#L121"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetch.ts#L135"
 						}
 					],
 					"type": {
@@ -7790,7 +8092,7 @@
 					}
 				},
 				{
-					"id": 328,
+					"id": 340,
 					"name": "headers",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7798,9 +8100,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetch.ts",
-							"line": 122,
+							"line": 136,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetch.ts#L122"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetch.ts#L136"
 						}
 					],
 					"type": {
@@ -7825,7 +8127,7 @@
 					}
 				},
 				{
-					"id": 326,
+					"id": 338,
 					"name": "method",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7833,9 +8135,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetch.ts",
-							"line": 120,
+							"line": 134,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetch.ts#L120"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetch.ts#L134"
 						}
 					],
 					"type": {
@@ -7844,7 +8146,7 @@
 					}
 				},
 				{
-					"id": 325,
+					"id": 337,
 					"name": "url",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7852,9 +8154,9 @@
 					"sources": [
 						{
 							"fileName": "src/soFetch.ts",
-							"line": 119,
+							"line": 133,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetch.ts#L119"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetch.ts#L133"
 						}
 					],
 					"type": {
@@ -7867,24 +8169,24 @@
 				{
 					"title": "Properties",
 					"children": [
-						327,
-						328,
-						326,
-						325
+						339,
+						340,
+						338,
+						337
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/soFetch.ts",
-					"line": 118,
+					"line": 132,
 					"character": 17,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetch.ts#L118"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetch.ts#L132"
 				}
 			]
 		},
 		{
-			"id": 265,
+			"id": 277,
 			"name": "AuthenticationType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -7942,7 +8244,7 @@
 					"fileName": "src/authenticationType.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/authenticationType.ts#L10"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/authenticationType.ts#L10"
 				}
 			],
 			"type": {
@@ -7976,7 +8278,7 @@
 			}
 		},
 		{
-			"id": 266,
+			"id": 278,
 			"name": "AuthTokenStorageType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -7994,7 +8296,7 @@
 					"fileName": "src/authTokenStorageType.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/authTokenStorageType.ts#L10"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/authTokenStorageType.ts#L10"
 				}
 			],
 			"type": {
@@ -8019,7 +8321,7 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 267,
+							"id": 279,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
@@ -8029,12 +8331,12 @@
 									"fileName": "src/authTokenStorageType.ts",
 									"line": 15,
 									"character": 7,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/authTokenStorageType.ts#L15"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/authTokenStorageType.ts#L15"
 								}
 							],
 							"signatures": [
 								{
-									"id": 268,
+									"id": 280,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
@@ -8076,7 +8378,7 @@
 			}
 		},
 		{
-			"id": 269,
+			"id": 281,
 			"name": "Browser",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -8094,7 +8396,7 @@
 					"fileName": "src/browser.ts",
 					"line": 4,
 					"character": 12,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/browser.ts#L4"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/browser.ts#L4"
 				}
 			],
 			"type": {
@@ -8124,7 +8426,7 @@
 			}
 		},
 		{
-			"id": 270,
+			"id": 282,
 			"name": "ErrorHandlerDict",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -8142,13 +8444,13 @@
 					"fileName": "src/errorHandlerDict.ts",
 					"line": 4,
 					"character": 12,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/errorHandlerDict.ts#L4"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/errorHandlerDict.ts#L4"
 				}
 			],
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 271,
+					"id": 283,
 					"name": "__type",
 					"variant": "declaration",
 					"kind": 65536,
@@ -8158,12 +8460,12 @@
 							"fileName": "src/errorHandlerDict.ts",
 							"line": 4,
 							"character": 31,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/errorHandlerDict.ts#L4"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/errorHandlerDict.ts#L4"
 						}
 					],
 					"indexSignatures": [
 						{
-							"id": 272,
+							"id": 284,
 							"name": "__index",
 							"variant": "signature",
 							"kind": 8192,
@@ -8173,12 +8475,12 @@
 									"fileName": "src/errorHandlerDict.ts",
 									"line": 5,
 									"character": 4,
-									"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/errorHandlerDict.ts#L5"
+									"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/errorHandlerDict.ts#L5"
 								}
 							],
 							"parameters": [
 								{
-									"id": 273,
+									"id": 285,
 									"name": "key",
 									"variant": "param",
 									"kind": 32768,
@@ -8194,7 +8496,7 @@
 								"elementType": {
 									"type": "reflection",
 									"declaration": {
-										"id": 274,
+										"id": 286,
 										"name": "__type",
 										"variant": "declaration",
 										"kind": 65536,
@@ -8204,12 +8506,12 @@
 												"fileName": "src/errorHandlerDict.ts",
 												"line": 5,
 												"character": 25,
-												"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/errorHandlerDict.ts#L5"
+												"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/errorHandlerDict.ts#L5"
 											}
 										],
 										"signatures": [
 											{
-												"id": 275,
+												"id": 287,
 												"name": "__type",
 												"variant": "signature",
 												"kind": 4096,
@@ -8219,12 +8521,12 @@
 														"fileName": "src/errorHandlerDict.ts",
 														"line": 5,
 														"character": 25,
-														"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/errorHandlerDict.ts#L5"
+														"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/errorHandlerDict.ts#L5"
 													}
 												],
 												"parameters": [
 													{
-														"id": 276,
+														"id": 288,
 														"name": "r",
 														"variant": "param",
 														"kind": 32768,
@@ -8256,14 +8558,14 @@
 			}
 		},
 		{
-			"id": 277,
+			"id": 289,
 			"name": "FileWithFieldName",
 			"variant": "declaration",
 			"kind": 2097152,
 			"flags": {},
 			"children": [
 				{
-					"id": 280,
+					"id": 292,
 					"name": "fieldName",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8273,7 +8575,7 @@
 							"fileName": "src/fileWithFieldName.ts",
 							"line": 3,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/fileWithFieldName.ts#L3"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/fileWithFieldName.ts#L3"
 						}
 					],
 					"type": {
@@ -8282,7 +8584,7 @@
 					}
 				},
 				{
-					"id": 279,
+					"id": 291,
 					"name": "file",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8292,7 +8594,7 @@
 							"fileName": "src/fileWithFieldName.ts",
 							"line": 2,
 							"character": 4,
-							"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/fileWithFieldName.ts#L2"
+							"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/fileWithFieldName.ts#L2"
 						}
 					],
 					"type": {
@@ -8311,8 +8613,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						280,
-						279
+						292,
+						291
 					]
 				}
 			],
@@ -8321,12 +8623,12 @@
 					"fileName": "src/fileWithFieldName.ts",
 					"line": 1,
 					"character": 12,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/fileWithFieldName.ts#L1"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/fileWithFieldName.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 281,
+			"id": 293,
 			"name": "OS",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -8344,7 +8646,7 @@
 					"fileName": "src/OS.ts",
 					"line": 4,
 					"character": 12,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/OS.ts#L4"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/OS.ts#L4"
 				}
 			],
 			"type": {
@@ -8366,7 +8668,7 @@
 			}
 		},
 		{
-			"id": 329,
+			"id": 341,
 			"name": "UploadPayload",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -8384,7 +8686,7 @@
 					"fileName": "src/uploadPayload.ts",
 					"line": 8,
 					"character": 12,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/uploadPayload.ts#L8"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/uploadPayload.ts#L8"
 				}
 			],
 			"type": {
@@ -8419,7 +8721,7 @@
 					},
 					{
 						"type": "reference",
-						"target": 277,
+						"target": 289,
 						"name": "FileWithFieldName",
 						"package": "@antoinette-agency/sofetch"
 					},
@@ -8427,7 +8729,7 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"target": 277,
+							"target": 289,
 							"name": "FileWithFieldName",
 							"package": "@antoinette-agency/sofetch"
 						}
@@ -8440,7 +8742,7 @@
 			}
 		},
 		{
-			"id": 330,
+			"id": 342,
 			"name": "default",
 			"variant": "declaration",
 			"kind": 32,
@@ -8517,14 +8819,14 @@
 			"sources": [
 				{
 					"fileName": "src/soFetch.ts",
-					"line": 185,
+					"line": 199,
 					"character": 6,
-					"url": "https://github.com/antoinette-agency/sofetch/blob/76713a428be6112a636aa60358b010065589a3bc/src/soFetch.ts#L185"
+					"url": "https://github.com/antoinette-agency/sofetch/blob/049c05a9e6b986bdab68075edc7e598b6f2f094e/src/soFetch.ts#L199"
 				}
 			],
 			"type": {
 				"type": "reference",
-				"target": 282,
+				"target": 294,
 				"typeArguments": [
 					{
 						"type": "intrinsic",
@@ -8541,7 +8843,7 @@
 		{
 			"title": "Enumerations",
 			"children": [
-				207
+				219
 			]
 		},
 		{
@@ -8555,26 +8857,26 @@
 			"title": "Interfaces",
 			"children": [
 				1,
-				282,
-				324
+				294,
+				336
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				265,
-				266,
-				269,
-				270,
 				277,
+				278,
 				281,
-				329
+				282,
+				289,
+				293,
+				341
 			]
 		},
 		{
 			"title": "Variables",
 			"children": [
-				330
+				342
 			]
 		}
 	],
@@ -9205,52 +9507,52 @@
 		"125": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.catchHTTP"
+			"qualifiedName": "SoFetchConfig.globalErrorHandler"
 		},
 		"126": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.catchHTTP"
+			"qualifiedName": "__type"
 		},
 		"127": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "status"
+			"qualifiedName": "__type"
 		},
 		"128": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "handler"
+			"qualifiedName": "e"
 		},
 		"129": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "res"
 		},
 		"130": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "SoFetchConfig.catchHTTP"
 		},
 		"131": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "res"
+			"qualifiedName": "SoFetchConfig.catchHTTP"
 		},
 		"132": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.beforeSend"
+			"qualifiedName": "status"
 		},
 		"133": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.beforeSend"
+			"qualifiedName": "handler"
 		},
 		"134": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "handler"
+			"qualifiedName": "__type"
 		},
 		"135": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9260,27 +9562,27 @@
 		"136": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "res"
 		},
 		"137": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "request"
+			"qualifiedName": "SoFetchConfig.catch"
 		},
 		"138": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.beforeFetchSend"
+			"qualifiedName": "SoFetchConfig.catch"
 		},
 		"139": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.beforeFetchSend"
+			"qualifiedName": "handler"
 		},
 		"140": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "handler"
+			"qualifiedName": "__type"
 		},
 		"141": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9290,22 +9592,22 @@
 		"142": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "e"
 		},
 		"143": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "request"
+			"qualifiedName": "res"
 		},
 		"144": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.onRequestComplete"
+			"qualifiedName": "SoFetchConfig.beforeSend"
 		},
 		"145": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.onRequestComplete"
+			"qualifiedName": "SoFetchConfig.beforeSend"
 		},
 		"146": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9325,42 +9627,57 @@
 		"149": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "r"
+			"qualifiedName": "request"
 		},
 		"150": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "metaData"
+			"qualifiedName": "SoFetchConfig.beforeFetchSend"
 		},
 		"151": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "SoFetchConfig.beforeFetchSend"
 		},
 		"152": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.duration"
+			"qualifiedName": "handler"
 		},
 		"153": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.method"
+			"qualifiedName": "__type"
+		},
+		"154": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"155": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "request"
+		},
+		"156": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.onRequestComplete"
 		},
 		"157": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useBearerAuthentication"
+			"qualifiedName": "SoFetchConfig.onRequestComplete"
 		},
 		"158": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useBearerAuthentication"
+			"qualifiedName": "handler"
 		},
 		"159": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "props"
+			"qualifiedName": "__type"
 		},
 		"160": {
 			"packageName": "@antoinette-agency/sofetch",
@@ -9370,809 +9687,854 @@
 		"161": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "r"
 		},
 		"162": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authTokenStorage"
+			"qualifiedName": "metaData"
 		},
 		"163": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authToken"
+			"qualifiedName": "__type"
 		},
 		"164": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useCookieAuthentication"
+			"qualifiedName": "__type.duration"
 		},
 		"165": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useCookieAuthentication"
-		},
-		"166": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "props"
-		},
-		"167": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
-		},
-		"168": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "__type.method"
 		},
 		"169": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authToken"
+			"qualifiedName": "SoFetchConfig.useBearerAuthentication"
 		},
 		"170": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useHeaderAuthentication"
+			"qualifiedName": "SoFetchConfig.useBearerAuthentication"
 		},
 		"171": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useHeaderAuthentication"
+			"qualifiedName": "props"
 		},
 		"172": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__0"
+			"qualifiedName": "__type"
 		},
 		"173": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.authenticationKey"
 		},
 		"174": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.headerKey"
+			"qualifiedName": "__type.authTokenStorage"
 		},
 		"175": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "__type.authToken"
 		},
 		"176": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authToken"
+			"qualifiedName": "SoFetchConfig.useCookieAuthentication"
 		},
 		"177": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authTokenStorage"
+			"qualifiedName": "SoFetchConfig.useCookieAuthentication"
 		},
 		"178": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useQueryStringAuthentication"
+			"qualifiedName": "props"
 		},
 		"179": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useQueryStringAuthentication"
+			"qualifiedName": "__type"
 		},
 		"180": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__0"
+			"qualifiedName": "__type.authenticationKey"
 		},
 		"181": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.authToken"
 		},
 		"182": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.queryStringKey"
+			"qualifiedName": "SoFetchConfig.useHeaderAuthentication"
 		},
 		"183": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "SoFetchConfig.useHeaderAuthentication"
 		},
 		"184": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authToken"
+			"qualifiedName": "__0"
 		},
 		"185": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authTokenStorage"
+			"qualifiedName": "__type"
 		},
 		"186": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useBasicAuthentication"
+			"qualifiedName": "__type.headerKey"
 		},
 		"187": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.useBasicAuthentication"
+			"qualifiedName": "__type.authenticationKey"
 		},
 		"188": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__0"
+			"qualifiedName": "__type.authToken"
 		},
 		"189": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.authTokenStorage"
 		},
 		"190": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.username"
+			"qualifiedName": "SoFetchConfig.useQueryStringAuthentication"
 		},
 		"191": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.password"
+			"qualifiedName": "SoFetchConfig.useQueryStringAuthentication"
 		},
 		"192": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.authenticationKey"
+			"qualifiedName": "__0"
 		},
 		"193": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"194": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.queryStringKey"
+		},
+		"195": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.authenticationKey"
+		},
+		"196": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.authToken"
+		},
+		"197": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
 			"qualifiedName": "__type.authTokenStorage"
+		},
+		"198": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.useBasicAuthentication"
+		},
+		"199": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.useBasicAuthentication"
 		},
 		"200": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.setUserAgent"
+			"qualifiedName": "__0"
 		},
 		"201": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "SoFetchConfig.setUserAgent"
+			"qualifiedName": "__type"
 		},
 		"202": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__0"
+			"qualifiedName": "__type.username"
 		},
 		"203": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.password"
 		},
 		"204": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
-			"qualifiedName": "__type.browser"
+			"qualifiedName": "__type.authenticationKey"
 		},
 		"205": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.authTokenStorage"
+		},
+		"212": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setUserAgent"
+		},
+		"213": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "SoFetchConfig.setUserAgent"
+		},
+		"214": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__0"
+		},
+		"215": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type"
+		},
+		"216": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
+			"qualifiedName": "__type.browser"
+		},
+		"217": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchConfig.ts",
 			"qualifiedName": "__type.OS"
 		},
-		"206": {
+		"218": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchConfig.ts",
 			"qualifiedName": "__type.userAgentString"
 		},
-		"207": {
+		"219": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus"
 		},
-		"208": {
+		"220": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Continue100"
 		},
-		"209": {
+		"221": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.SwitchingProtocols101"
 		},
-		"210": {
+		"222": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Processing102"
 		},
-		"211": {
+		"223": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.OK200"
 		},
-		"212": {
+		"224": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Created201"
 		},
-		"213": {
+		"225": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Accepted202"
 		},
-		"214": {
+		"226": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.NoContent204"
 		},
-		"215": {
+		"227": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.ResetContent205"
 		},
-		"216": {
+		"228": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.PartialContent206"
 		},
-		"217": {
+		"229": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.MultipleChoices300"
 		},
-		"218": {
+		"230": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.MovedPermanently301"
 		},
-		"219": {
+		"231": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Found302"
 		},
-		"220": {
+		"232": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.SeeOther303"
 		},
-		"221": {
+		"233": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.NotModified304"
 		},
-		"222": {
+		"234": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.UseProxy305"
 		},
-		"223": {
+		"235": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.TemporaryRedirect307"
 		},
-		"224": {
+		"236": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.PermanentRedirect308"
 		},
-		"225": {
+		"237": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.BadRequest400"
 		},
-		"226": {
+		"238": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Unauthorized401"
 		},
-		"227": {
+		"239": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.PaymentRequired402"
 		},
-		"228": {
+		"240": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Forbidden403"
 		},
-		"229": {
+		"241": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.NotFound404"
 		},
-		"230": {
+		"242": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.MethodNotAllowed405"
 		},
-		"231": {
+		"243": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.NotAcceptable406"
 		},
-		"232": {
+		"244": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.ProxyAuthenticationRequired407"
 		},
-		"233": {
+		"245": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.RequestTimeout408"
 		},
-		"234": {
+		"246": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Conflict409"
 		},
-		"235": {
+		"247": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Gone410"
 		},
-		"236": {
+		"248": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.LengthRequired411"
 		},
-		"237": {
+		"249": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.PreconditionFailed412"
 		},
-		"238": {
+		"250": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.PayloadTooLarge413"
 		},
-		"239": {
+		"251": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.URITooLong414"
 		},
-		"240": {
+		"252": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.UnsupportedMediaType415"
 		},
-		"241": {
+		"253": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.RangeNotSatisfiable416"
 		},
-		"242": {
+		"254": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.ExpectationFailed417"
 		},
-		"243": {
+		"255": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.ImATeapot418"
 		},
-		"244": {
+		"256": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.MisdirectedRequest421"
 		},
-		"245": {
+		"257": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.UnprocessableEntity422"
 		},
-		"246": {
+		"258": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.Locked423"
 		},
-		"247": {
+		"259": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.FailedDependency424"
 		},
-		"248": {
+		"260": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.TooEarly425"
 		},
-		"249": {
+		"261": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.UpgradeRequired426"
 		},
-		"250": {
+		"262": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.PreconditionRequired428"
 		},
-		"251": {
+		"263": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.TooManyRequests429"
 		},
-		"252": {
+		"264": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.RequestHeaderFieldsTooLarge431"
 		},
-		"253": {
+		"265": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.UnavailableForLegalReasons451"
 		},
-		"254": {
+		"266": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.InternalServerError500"
 		},
-		"255": {
+		"267": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.NotImplemented501"
 		},
-		"256": {
+		"268": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.BadGateway502"
 		},
-		"257": {
+		"269": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.ServiceUnavailable503"
 		},
-		"258": {
+		"270": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.GatewayTimeout504"
 		},
-		"259": {
+		"271": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.HTTPVersionNotSupported505"
 		},
-		"260": {
+		"272": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.VariantAlsoNegotiates506"
 		},
-		"261": {
+		"273": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.InsufficientStorage507"
 		},
-		"262": {
+		"274": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.LoopDetected508"
 		},
-		"263": {
+		"275": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.NotExtended510"
 		},
-		"264": {
+		"276": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/httpStatus.ts",
 			"qualifiedName": "HttpStatus.NetworkAuthenticationRequired511"
 		},
-		"265": {
+		"277": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authenticationType.ts",
 			"qualifiedName": "AuthenticationType"
 		},
-		"266": {
+		"278": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "AuthTokenStorageType"
 		},
-		"267": {
+		"279": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "__type"
 		},
-		"268": {
+		"280": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/authTokenStorageType.ts",
 			"qualifiedName": "__type"
 		},
-		"269": {
+		"281": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/browser.ts",
 			"qualifiedName": "Browser"
 		},
-		"270": {
+		"282": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "ErrorHandlerDict"
 		},
-		"271": {
+		"283": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"272": {
+		"284": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type.__index"
 		},
-		"274": {
+		"286": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"275": {
+		"287": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "__type"
 		},
-		"276": {
+		"288": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/errorHandlerDict.ts",
 			"qualifiedName": "r"
 		},
-		"277": {
+		"289": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "FileWithFieldName"
 		},
-		"279": {
+		"291": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "__type.file"
 		},
-		"280": {
+		"292": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/fileWithFieldName.ts",
 			"qualifiedName": "__type.fieldName"
 		},
-		"281": {
+		"293": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/OS.ts",
 			"qualifiedName": "OS"
 		},
-		"282": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike"
-		},
-		"283": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.verbose"
-		},
-		"284": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.config"
-		},
-		"285": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.get"
-		},
-		"286": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.get"
-		},
-		"287": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
-		},
-		"288": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
-		},
-		"289": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
-		},
-		"290": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.post"
-		},
-		"291": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.post"
-		},
-		"292": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
-		},
-		"293": {
-			"packageName": "@antoinette-agency/sofetch",
-			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
-		},
 		"294": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
+			"qualifiedName": "SoFetchLike"
 		},
 		"295": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.put"
+			"qualifiedName": "SoFetchLike.verbose"
 		},
 		"296": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.put"
+			"qualifiedName": "SoFetchLike.config"
 		},
 		"297": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
+			"qualifiedName": "SoFetchLike.get"
 		},
 		"298": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
+			"qualifiedName": "SoFetchLike.get"
 		},
 		"299": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
+			"qualifiedName": "T"
 		},
 		"300": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.patch"
+			"qualifiedName": "url"
 		},
 		"301": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.patch"
+			"qualifiedName": "body"
 		},
 		"302": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
+			"qualifiedName": "SoFetchLike.post"
 		},
 		"303": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
+			"qualifiedName": "SoFetchLike.post"
 		},
 		"304": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
+			"qualifiedName": "T"
 		},
 		"305": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.delete"
+			"qualifiedName": "url"
 		},
 		"306": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.delete"
+			"qualifiedName": "body"
 		},
 		"307": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
+			"qualifiedName": "SoFetchLike.put"
 		},
 		"308": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
+			"qualifiedName": "SoFetchLike.put"
 		},
 		"309": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
+			"qualifiedName": "T"
 		},
 		"310": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.request"
+			"qualifiedName": "url"
 		},
 		"311": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.request"
+			"qualifiedName": "body"
 		},
 		"312": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
+			"qualifiedName": "SoFetchLike.patch"
 		},
 		"313": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "method"
+			"qualifiedName": "SoFetchLike.patch"
 		},
 		"314": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
+			"qualifiedName": "T"
 		},
 		"315": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
+			"qualifiedName": "url"
 		},
 		"316": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.instance"
+			"qualifiedName": "body"
 		},
 		"317": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.instance"
+			"qualifiedName": "SoFetchLike.delete"
 		},
 		"318": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "configOrAuthKey"
+			"qualifiedName": "SoFetchLike.delete"
 		},
 		"319": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike.TResponse"
+			"qualifiedName": "T"
 		},
 		"320": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "SoFetchLike"
+			"qualifiedName": "url"
 		},
 		"321": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "T"
+			"qualifiedName": "body"
 		},
 		"322": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "url"
+			"qualifiedName": "SoFetchLike.request"
 		},
 		"323": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetchLike.ts",
-			"qualifiedName": "body"
+			"qualifiedName": "SoFetchLike.request"
 		},
 		"324": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"325": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "method"
+		},
+		"326": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"327": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"328": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.instance"
+		},
+		"329": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.instance"
+		},
+		"330": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "configOrAuthKey"
+		},
+		"331": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike.TResponse"
+		},
+		"332": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "SoFetchLike"
+		},
+		"333": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "T"
+		},
+		"334": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "url"
+		},
+		"335": {
+			"packageName": "@antoinette-agency/sofetch",
+			"packagePath": "src/soFetchLike.ts",
+			"qualifiedName": "body"
+		},
+		"336": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest"
 		},
-		"325": {
+		"337": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.url"
 		},
-		"326": {
+		"338": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.method"
 		},
-		"327": {
+		"339": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.body"
 		},
-		"328": {
+		"340": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "SoFetchRequest.headers"
 		},
-		"329": {
+		"341": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/uploadPayload.ts",
 			"qualifiedName": "UploadPayload"
 		},
-		"330": {
+		"342": {
 			"packageName": "@antoinette-agency/sofetch",
 			"packagePath": "src/soFetch.ts",
 			"qualifiedName": "soFetch"

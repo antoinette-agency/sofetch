@@ -26,9 +26,9 @@ describe("SoFetch can handle bad requests", () => {
             expect(res.url).toBe(`${BaseTestUrl}/handling-errors`)
             done()
         })
-        .catchHTTP(HttpStatus.NotFound404, (res: Response) => {
-            expect(res.url).toBe(`${BaseTestUrl}/handling-errors`)
-        })
+            .catchHTTP(HttpStatus.NotFound404, (res: Response) => {
+                expect(res.url).toBe(`${BaseTestUrl}/handling-errors`)
+            })
     })
     it('Will catch errors if specified in the config', (done) => {
         soFetch.config.catchHTTP(HttpStatus.BadRequest400, (res: Response) => {
@@ -48,5 +48,24 @@ describe("SoFetch can handle bad requests", () => {
         })
         expect(requestHandlerFired).toBeTruthy()
         expect(configHandlerFired).toBeFalsy()
+    })
+    it('Can add a catch-all error handler via the config', async () => {
+        let configHandlerFired = false
+        soFetch.config.catch((e: any, res: Response | undefined) => {
+            configHandlerFired = true
+        })
+        await soFetch(`${BaseTestUrl}/not-any-kind-of-real`).setTimeout(500)
+        expect(configHandlerFired).toBeTruthy()
+    })
+    it('Can add a catch-all error handler which works with timeouts', async () => {
+        let configHandlerFired = false
+        soFetch.config.catch((e: any, res: Response | undefined) => {
+            expect(e.message).toBe("SoFetch timed out. Timeout for this request set to 2000ms.")
+            expect(res).toBeUndefined()
+            configHandlerFired = true
+        })
+        await soFetch(`${BaseTestUrl}/timeouts/neverReturn`)
+            .setTimeout(2000)
+        expect(configHandlerFired).toBeTruthy()
     })
 })
