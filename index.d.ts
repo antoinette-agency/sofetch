@@ -420,6 +420,7 @@ export declare class SoFetchConfig {
      */
     authQueryStringKey: string;
     userAgent: string;
+    globalErrorHandler?: (e: any, res: (Response | undefined)) => void;
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
      * Multiple handlers will be executed in the order in which they are added. If a request has it's
@@ -435,6 +436,13 @@ export declare class SoFetchConfig {
      * @see For more examples see https://sofetch.antoinette.agency
      */
     catchHTTP(status: number, handler: (res: Response) => void): void;
+    /**
+     * Adds a global error handler which will be executed if any request fails for any reason
+     * and no request-specific or status-specific handler exists
+     * @handler A function which accept an error (which could be anything) and
+     * a Fetch Response as an argument
+     */
+    catch(handler: (e: any, res: (Response | undefined)) => void): void;
     /**
      * Adds a handler which will be executed before every request. beforeSend handlers on the config
      * will be executed before request-specific handlers
@@ -555,13 +563,13 @@ export declare class SoFetchConfig {
 export declare interface SoFetchLike<TResponse = unknown> {
     verbose: boolean;
     config: SoFetchConfig;
-    get<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
-    post<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
-    put<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
-    patch<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
-    delete<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
-    request<T>(method: RequestMethod_2, url: string, body?: UploadPayload): SoFetchPromise<T>;
-    <T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
+    get<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
+    post<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
+    put<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
+    patch<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
+    delete<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
+    request<T>(method: RequestMethod_2, url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
+    <T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
     instance(configOrAuthKey?: SoFetchConfig | string): SoFetchLike<TResponse>;
 }
 

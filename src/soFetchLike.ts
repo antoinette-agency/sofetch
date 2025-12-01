@@ -8,19 +8,19 @@ export interface SoFetchLike<TResponse = unknown> {
     verbose: boolean;
     config: SoFetchConfig;
 
-    get<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
+    get<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
 
-    post<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
+    post<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
 
-    put<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
+    put<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
 
-    patch<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
+    patch<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
 
-    delete<T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
+    delete<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
     
-    request<T>(method:RequestMethod, url: string, body?: UploadPayload): SoFetchPromise<T>
+    request<T>(method:RequestMethod, url: string, body?: UploadPayload): SoFetchPromise<T | undefined>
 
-    <T>(url: string, body?: UploadPayload): SoFetchPromise<T>;
+    <T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
 
     instance(configOrAuthKey?:SoFetchConfig | string): SoFetchLike<TResponse>;
 }

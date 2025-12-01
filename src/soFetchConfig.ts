@@ -94,6 +94,7 @@ export class SoFetchConfig {
      */
     authQueryStringKey: string = ""
     userAgent: string = ""
+    globalErrorHandler?: (e: any, res: (Response | undefined)) => void;
 
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
@@ -114,6 +115,16 @@ export class SoFetchConfig {
             this.errorHandlers[status] = []
         }
         this.errorHandlers[status].push(handler)
+    }
+
+    /**
+     * Adds a global error handler which will be executed if any request fails for any reason
+     * and no request-specific or status-specific handler exists
+     * @handler A function which accept an error (which could be anything) and
+     * a Fetch Response as an argument
+     */
+    catch(handler: (e: any, res: (Response | undefined)) => void) {
+        this.globalErrorHandler = handler
     }
 
 

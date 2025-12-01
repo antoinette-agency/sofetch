@@ -72,7 +72,7 @@ const convertArgsToFetchInit = async <T>({url, method, body, config, promise, us
 }
 
 const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url:string, body?:UploadPayload) => {
-    const promise = new SoFetchPromise<TResponse>((resolve, reject) => {
+    const promise = new SoFetchPromise<TResponse | undefined>((resolve, reject) => {
         (async () => {
             await sleep(0) //Allows the promise to be initialised
             const {finalUrl, init} = await convertArgsToFetchInit({url, method, body, config, promise, userAgent:config.userAgent})
@@ -81,7 +81,10 @@ const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url
             const response = await Promise.race([
                 fetch(finalUrl, init),
                 new Promise<Response>((_, reject) =>
-                    setTimeout(() => reject(new Error("SoFetch timed out")), promise.timeout)
+                    setTimeout(() => {
+                        const error = new Error(`SoFetch timed out. Timeout for this request set to ${promise.timeout}ms.`)
+                        reject(error)
+                    }, promise.timeout)
                 )
             ]);
             const duration = new Date().getTime() - startTime
@@ -101,6 +104,12 @@ const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url
                 if (!requestHandled) {
                     configHandled = handleHttpErrors(response, config["errorHandlers"])
                 }
+                if (config.globalErrorHandler) {
+                    // @ts-ignore
+                    const error = new Error(`Received response ${response.status} from URL ${response.url}`, {cause: response})
+                    config.globalErrorHandler(error, response)
+                    configHandled = true
+                }
                 if (!requestHandled && !configHandled) {
                     // @ts-ignore
                     throw new Error(`Received response ${response.status} from URL ${response.url}`, {cause: response})
@@ -109,7 +118,12 @@ const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url
             const returnObject = await handleResponse(response)
             resolve(returnObject)
         })().catch(e => {
-            reject(e)
+            if (config.globalErrorHandler) {
+                config.globalErrorHandler(e, undefined)
+                resolve(undefined)
+            } else {
+                reject(e)
+            }
         })
     })
     return promise
@@ -182,8 +196,8 @@ const handleResponse = async (response:Response) => {
  *    
  * @see For more examples see https://sofetch.antoinette.agency
  */
-const soFetch = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
-    return makeRequestWrapper<TResponse>(soFetch.config || new SoFetchConfig(), body ? "POST" : "GET", url,  body)
+const soFetch = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse | undefined> => {
+    return makeRequestWrapper<TResponse | undefined>(soFetch.config || new SoFetchConfig(), body ? "POST" : "GET", url,  body)
 }) as SoFetchLike;
 
 soFetch.verbose = false;
@@ -334,8 +348,8 @@ soFetch.instance = (configOrAuthKey?:SoFetchConfig | string) => {
     }
     newConfig.authenticationKey = newAuthKey || generateNewAuthenticationKey(oldConfig.authenticationKey)
     
-    const soFetchInstance = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse> => {
-        return makeRequestWrapper<TResponse>(newConfig,body ? "POST" : "GET", url,  body)
+    const soFetchInstance = (<TResponse>(url: string, body?: UploadPayload): SoFetchPromise<TResponse | undefined> => {
+        return makeRequestWrapper<TResponse | undefined>(newConfig,body ? "POST" : "GET", url,  body)
     }) as SoFetchLike;
     soFetchInstance.get = (url: string, body?: UploadPayload) => {
         return makeRequestWrapper(newConfig, "GET", url, body)
