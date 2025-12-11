@@ -10,7 +10,7 @@
  *
  * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
  */
-export const enum HttpStatus {
+export enum HttpStatus {
     /**
      * Interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.
      * @see https://http.cat/status/100
