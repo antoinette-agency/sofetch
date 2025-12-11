@@ -15,9 +15,6 @@ export default soFetch
 
 export {SoFetchPromise, SoFetchConfig, HttpStatus}
 
-class RequestMethod {
-}
-
 export type {
     AuthenticationType,
     AuthTokenStorageType,
@@ -25,7 +22,6 @@ export type {
     ErrorHandlerDict,
     FileWithFieldName,
     OS,
-    RequestMethod,
     SoFetchLike, 
     SoFetchRequest, 
     UploadPayload

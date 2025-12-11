@@ -49,7 +49,7 @@ export declare type FileWithFieldName = {
  *
  * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
  */
-export declare const enum HttpStatus {
+export declare enum HttpStatus {
     /**
      * Interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.
      * @see https://http.cat/status/100
@@ -347,9 +347,6 @@ export declare const enum HttpStatus {
  */
 export declare type OS = "Windows" | "macOS" | "Linux";
 
-export declare class RequestMethod {
-}
-
 /**
  * Classifies the desired action to be performed on a resource.
  * - GET The request is for a representation of a resource. The server should only retrieve data; not modify state.
@@ -358,7 +355,7 @@ export declare class RequestMethod {
  * - PATCH The request is to modify a resource according to its partial state in the request.
  * - DELETE The request is to delete a resource.
  */
-declare type RequestMethod_2 = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
+declare type RequestMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
 
 /**
  * Makes an HTTP request to the specified URL.
@@ -568,7 +565,7 @@ export declare interface SoFetchLike<TResponse = unknown> {
     put<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
     patch<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
     delete<T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
-    request<T>(method: RequestMethod_2, url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
+    request<T>(method: RequestMethod, url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
     <T>(url: string, body?: UploadPayload): SoFetchPromise<T | undefined>;
     instance(configOrAuthKey?: SoFetchConfig | string): SoFetchLike<TResponse>;
 }
