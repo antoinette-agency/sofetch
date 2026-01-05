@@ -15,8 +15,10 @@ describe("The basic functions of SoFetch", () => {
         expect(result).toBe(true)
     })
     test("It can receive an empty result", async () => {
-        const result = await soFetch<undefined>(`${BaseTestUrl}/getting-started/get-empty-result`)
-        expect(result).toBe(undefined)
+        const instance = soFetch.instance()
+        instance.config.coerceEmptySuccessToTrue = false
+        const result = await instance<undefined>(`${BaseTestUrl}/getting-started/get-empty-result`)
+        expect(result).toBe("")
     })
     test("It can receive a basic JSON object from a GET request", async () => {
         interface Poco {
@@ -27,7 +29,7 @@ describe("The basic functions of SoFetch", () => {
             ]
             child?:Poco
         }
-        const result:Poco = await soFetch<Poco>(`${BaseTestUrl}/getting-started/get-poco`)
+        const result:Poco | undefined = await soFetch<Poco>(`${BaseTestUrl}/getting-started/get-poco`)
         expect(JSON.stringify(result)).toEqual(JSON.stringify({
             str:"string",
             num:42,

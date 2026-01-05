@@ -416,8 +416,21 @@ export declare class SoFetchConfig {
      * The key which is used if an authentication token is sent to the server via the query string
      */
     authQueryStringKey: string;
+    /**
+     * The user agent send to the server by defaulrt
+     */
     userAgent: string;
+    /**
+     * The error handler that's executed if an error isn't handled previously
+     * by an error-response specific handler
+     */
     globalErrorHandler?: (e: any, res: (Response | undefined)) => void;
+    /**
+     * By default if the response is OK (2--) but the response body is falsy
+     * SoFetch will coerce the response to 'true'. You can change this behaviour by
+     * setting the `coerceEmptySuccessToTrue` property to false.
+     */
+    coerceEmptySuccessToTrue: boolean;
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
      * Multiple handlers will be executed in the order in which they are added. If a request has it's
@@ -591,6 +604,7 @@ export declare class SoFetchPromise<T> {
         duration: number;
         method: string;
     }) => void | Promise<void>)[];
+    coerceEmptySuccess?: boolean;
     timeout: number;
     then: Promise<T>["then"];
     catch: Promise<T>["catch"];
@@ -663,7 +677,17 @@ export declare class SoFetchPromise<T> {
      * @see For more examples see https://sofetch.antoinette.agency
      */
     catchHTTP(status: HttpStatus, handler: (response: Response) => void): SoFetchPromise<T>;
+    /**
+     * Sets a timeout value for this request only
+     * @param ms
+     */
     setTimeout(ms: number): SoFetchPromise<T>;
+    /**
+     * By default if the response is OK (2--) but the response body is falsy
+     * SoFetch will coerce the response to 'true'. You can override the default behaviour
+     * for this request by setting the `coerceEmptySuccessToTrue` value here
+     */
+    coerceEmptySuccessToTrue(b: boolean): SoFetchPromise<T>;
 }
 
 export declare interface SoFetchRequest {

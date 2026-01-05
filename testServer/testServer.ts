@@ -152,6 +152,16 @@ const routes:Route[] = [
         handler:async req => {
             await sleep(1000 * 60)
         }
+    },
+    {
+        url:"/empty-responses/200",
+        handler: async _ => {
+            return ""
+        }
+    },
+    {
+        url:"/empty-responses/204",
+        status:204
     }
 ]
 

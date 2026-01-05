@@ -40,6 +40,7 @@ async function runBuilds() {
         outfile: "/index.browser.js",
         minify: true,
         sourcemap: true,
+
     });
 
     // 4. Type Declarations

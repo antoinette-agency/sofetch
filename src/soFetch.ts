@@ -115,7 +115,7 @@ const makeRequestWrapper = <TResponse>(config: SoFetchConfig, method:string, url
                     throw new Error(`Received response ${response.status} from URL ${response.url}`, {cause: response})
                 }
             }
-            const returnObject = await handleResponse(response)
+            const returnObject = await handleResponse(response, config, promise.coerceEmptySuccess)
             resolve(returnObject)
         })().catch(e => {
             if (config.globalErrorHandler) {
@@ -165,22 +165,25 @@ const makeFilesRequest = (request: SoFetchRequest, files: FileWithFieldName[], s
     return init
 }
 
-const handleResponse = async (response:Response) => {
+const handleResponse = async (response: Response, config: SoFetchConfig, coerceEmptySuccessFromPromise: undefined | boolean) => {
 
     if (response.status === 203) {
         return undefined
     }
-
+    
     const responseBody = await response.text();
+    const coerceEmptyToTrue = (config.coerceEmptySuccessToTrue && coerceEmptySuccessFromPromise !== false) || coerceEmptySuccessFromPromise
     if (!responseBody) {
-        return undefined
+        return coerceEmptyToTrue ? true : responseBody
     }
     let responseObject: any = responseBody
     try {
         responseObject = JSON.parse(responseBody);
     } catch {
     }
-
+    if (responseObject === "") {
+        return coerceEmptyToTrue ? true : responseObject
+    }
     return responseObject
 }
 
@@ -345,6 +348,7 @@ soFetch.instance = (configOrAuthKey?:SoFetchConfig | string) => {
         newConfig.authTokenStorage = oldConfig.authTokenStorage
         newConfig["inMemoryAuthToken"] = oldConfig["inMemoryAuthToken"]
         newConfig.userAgent = oldConfig.userAgent
+        newConfig.coerceEmptySuccessToTrue = oldConfig.coerceEmptySuccessToTrue
     }
     newConfig.authenticationKey = newAuthKey || generateNewAuthenticationKey(oldConfig.authenticationKey)
     

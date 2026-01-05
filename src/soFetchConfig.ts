@@ -93,8 +93,24 @@ export class SoFetchConfig {
      * The key which is used if an authentication token is sent to the server via the query string
      */
     authQueryStringKey: string = ""
+
+    /**
+     * The user agent send to the server by defaulrt
+     */
     userAgent: string = ""
+
+    /**
+     * The error handler that's executed if an error isn't handled previously
+     * by an error-response specific handler
+     */
     globalErrorHandler?: (e: any, res: (Response | undefined)) => void;
+
+    /**
+     * By default if the response is OK (2--) but the response body is falsy
+     * SoFetch will coerce the response to 'true'. You can change this behaviour by
+     * setting the `coerceEmptySuccessToTrue` property to false.
+     */
+    coerceEmptySuccessToTrue: boolean = true
 
     /**
      * Adds a handler which will be executed on receipt from the server of the specified status code.
