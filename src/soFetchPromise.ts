@@ -20,6 +20,7 @@ export class SoFetchPromise<T> {
     beforeSendHandlers:((request:SoFetchRequest) => Promise<SoFetchRequest | void> | SoFetchRequest | void)[] = []
     beforeFetchSendHandlers:((init:RequestInit) => Promise<RequestInit | void> | RequestInit | void)[] = []
     onRequestCompleteHandlers: ((response: Response, requestData: { duration: number, method: string }) => void | Promise<void>)[] = []
+    coerceEmptySuccess?: boolean
     timeout: number = 30000
     then: Promise<T>["then"];
     catch: Promise<T>["catch"];
@@ -122,8 +123,22 @@ export class SoFetchPromise<T> {
         return this
     }
 
+    /**
+     * Sets a timeout value for this request only
+     * @param ms
+     */
      setTimeout(ms: number):SoFetchPromise<T> {
         this.timeout = ms
+        return this
+    }
+
+    /**
+     * By default if the response is OK (2--) but the response body is falsy
+     * SoFetch will coerce the response to 'true'. You can override the default behaviour 
+     * for this request by setting the `coerceEmptySuccessToTrue` value here
+     */
+    coerceEmptySuccessToTrue(b: boolean):SoFetchPromise<T> {
+        this.coerceEmptySuccess = b
         return this
     }
 }
