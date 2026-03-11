@@ -371,6 +371,7 @@ declare type RequestMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
  */
 declare const soFetch: SoFetchLike;
 export default soFetch;
+export { soFetch }
 
 /**
  * Configures all requests for a specific soFetch instance

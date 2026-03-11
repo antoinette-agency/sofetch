@@ -13,7 +13,7 @@ import { OS } from "./OS.ts";
 
 export default soFetch
 
-export {SoFetchPromise, SoFetchConfig, HttpStatus}
+export {soFetch, SoFetchPromise, SoFetchConfig, HttpStatus}
 
 export type {
     AuthenticationType,
